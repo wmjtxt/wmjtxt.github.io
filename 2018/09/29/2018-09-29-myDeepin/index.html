@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wmjtxt.net">
-  <title>博客迁移 | 木夕木火</title>
+  <title>The Config of my Deepin | 木夕木火</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
-<meta name="keywords" content="日志">
+  <meta name="description" content="目录 ssh git gcc">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客迁移">
-<meta property="og:url" content="http://wmjtxt.net/2019/03/29/博客迁移/index.html">
+<meta property="og:title" content="The Config of my Deepin">
+<meta property="og:url" content="http://wmjtxt.net/2018/09/29/2018-09-29-myDeepin/index.html">
 <meta property="og:site_name" content="木夕木火">
-<meta property="og:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta property="og:description" content="目录 ssh git gcc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T07:06:24.905Z">
+<meta property="og:updated_time" content="2019-03-29T07:12:10.561Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客迁移">
-<meta name="twitter:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta name="twitter:title" content="The Config of my Deepin">
+<meta name="twitter:description" content="目录 ssh git gcc">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火" type="application/atom+xml">
   
@@ -151,28 +150,95 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-博客迁移" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2018-09-29-myDeepin" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      博客迁移
+      The Config of my Deepin
     </h1>
   
 
         
-        <a href="/2019/03/29/博客迁移/" class="archive-article-date">
-  	<time datetime="2019-03-29T06:49:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
+        <a href="/2018/09/29/2018-09-29-myDeepin/" class="archive-article-date">
+  	<time datetime="2018-09-28T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-09-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。</p>
-<p>这个以后再说吧, 反正现在能用。</p>
+        <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="#ssh">ssh</a></li>
+<li><a href="#git">git</a></li>
+<li><a href="#gcc">gcc</a><a id="more"></a></li>
+<li><a href="#youcompleteme">YouCompleteMe</a></li>
+<li><a href="#vim-instant-markdown">vim-instant-markdown</a></li>
+<li><a href="#variety">Variety</a></li>
+<li><a href="#conky">Conky</a></li>
+<li><a href="#pycharm">Pycharm</a></li>
+<li><a href="#texstudio">TexStudio</a></li>
+<li><a href="#atom">Atom</a></li>
+<li><a href></a></li>
+</ul>
+<h1 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h1><ul>
+<li>安装ssh<ul>
+<li><code>sudo apt-get install openssh-server</code></li>
+</ul>
+</li>
+<li>开启ssh服务<ul>
+<li><code>sudo service sshd start</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><ul>
+<li>安装git<ul>
+<li><code>sudo apt-get install git</code></li>
+</ul>
+</li>
+<li>设置name和email<ul>
+<li><code>git config --global user.name &quot;name&quot;</code></li>
+<li><code>git config --global user.email &quot;email&quot;</code></li>
+</ul>
+</li>
+<li>设置ssh-key<ul>
+<li>先执行<code>ssh-keygen -t rsa -C &quot;email&quot;</code></li>
+<li>然后在github上找到”Account settings”,”SSH Keys”页面,点击”Add SSH Key”,将~/.ssh/id_rsa.pub的内容粘贴到Key文本框内。</li>
+</ul>
+</li>
+<li>连接远程库<ul>
+<li><code>git remote add origin git@github.com:yourname/reponame.git</code></li>
+</ul>
+</li>
+<li>常用命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git push origin master</span><br><span class="line">git pull origin master</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;text&quot;</span><br><span class="line">git status</span><br><span class="line">git log</span><br><span class="line">git clone repoAddress</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><ul>
+<li><p>系统好像是自带了gcc,但g++需要手动安装</p>
+</li>
+<li><p><code>sudo apt-get install g++</code></p>
+</li>
+</ul>
+<h1 id="YouCompleteMe"><a href="#YouCompleteMe" class="headerlink" title="YouCompleteMe"></a>YouCompleteMe</h1><p>一款强大的vim插件</p>
+<p>安装方法参考：<a href="https://wmjtxt.github.io/2018-05-14-%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/" target="_blank" rel="noopener">在deepin里安装YouCompleteMe</a></p>
+<h1 id="vim-instant-markdown"><a href="#vim-instant-markdown" class="headerlink" title="vim-instant-markdown"></a>vim-instant-markdown</h1><p>一款vim插件，可以实现markdown文件即时预览</p>
+<p>安装方法参考：<a href="https://github.com/yangyangwithgnu/use_vim_as_ide#8.4" target="_blank" rel="noopener">https://github.com/yangyangwithgnu/use_vim_as_ide.git</a></p>
+<h1 id="Variety"><a href="#Variety" class="headerlink" title="Variety"></a>Variety</h1><p>Variety是一款自动更换壁纸的软件<br>来源:深度商店</p>
+<h1 id="Conky"><a href="#Conky" class="headerlink" title="Conky"></a>Conky</h1><p>Conky是一款可以显示天气的桌面软件。来源：深度论坛</p>
+<ul>
+<li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=148009&amp;highlight=conky" target="_blank" rel="noopener">deepin利用conky打造一个炫酷的桌面</a></li>
+<li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=152734&amp;highlight=conky" target="_blank" rel="noopener">conky-weather 3.0 (Conky天气)</a></li>
+</ul>
+<p>我用的第二个</p>
+<h1 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h1><p><code>sudo apt-get install pycharm-community</code></p>
+<h1 id="TexStudio"><a href="#TexStudio" class="headerlink" title="TexStudio"></a>TexStudio</h1><p>Latex编辑器</p>
+<ul>
+<li>首先安装texlive, 可以直接在官网下载下来安装, <a href="http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz" target="_blank" rel="noopener">install-tl-unx.tar.gz</a>, 也可以命令安装, <code>sudo apt-get install texlive-full</code></li>
+<li>然后安装texstudio, <code>sudo apt-get install texstudio</code></li>
+</ul>
+<h1 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a>Atom</h1><p>开源文本编辑器, <code>sudo apt-get install atom</code>, 也可以在深度商店安装</p>
 
       
 
@@ -202,17 +268,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日志</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -263,7 +318,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/29/博客迁移/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2018/09/29/2018-09-29-myDeepin/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,9 +332,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/10/17/2018-10-17-importDatatoMySQL/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          从Excel导数据到MySQL
+        
+      </div>
+    </a>
   
-    <a href="/2019/03/25/2019-03-25-gdb_make/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">GDB and Make</div>
+  
+    <a href="/2018/09/28/2018-09-28-Community-Detection-values/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">社团检测基本概念</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -310,8 +374,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://wmjtxt.net/2019/03/29/博客迁移/", 
-    sourceId: "博客迁移",
+    url: "http://wmjtxt.net/2018/09/29/2018-09-29-myDeepin/", 
+    sourceId: "2018-09-29-myDeepin",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };

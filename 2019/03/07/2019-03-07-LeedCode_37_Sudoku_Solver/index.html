@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wmjtxt.net">
-  <title>博客迁移 | 木夕木火</title>
+  <title>LeedCode 37.Sudoku Solver | 木夕木火</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
-<meta name="keywords" content="日志">
+  <meta name="description" content="LeedCode 37.Sudoku Solver题目描述">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客迁移">
-<meta property="og:url" content="http://wmjtxt.net/2019/03/29/博客迁移/index.html">
+<meta property="og:title" content="LeedCode 37.Sudoku Solver">
+<meta property="og:url" content="http://wmjtxt.net/2019/03/07/2019-03-07-LeedCode_37_Sudoku_Solver/index.html">
 <meta property="og:site_name" content="木夕木火">
-<meta property="og:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta property="og:description" content="LeedCode 37.Sudoku Solver题目描述">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T07:06:24.905Z">
+<meta property="og:updated_time" content="2019-03-29T07:12:10.565Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客迁移">
-<meta name="twitter:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta name="twitter:title" content="LeedCode 37.Sudoku Solver">
+<meta name="twitter:description" content="LeedCode 37.Sudoku Solver题目描述">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火" type="application/atom+xml">
   
@@ -151,28 +150,48 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-博客迁移" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2019-03-07-LeedCode_37_Sudoku_Solver" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      博客迁移
+      LeedCode 37.Sudoku Solver
     </h1>
   
 
         
-        <a href="/2019/03/29/博客迁移/" class="archive-article-date">
-  	<time datetime="2019-03-29T06:49:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
+        <a href="/2019/03/07/2019-03-07-LeedCode_37_Sudoku_Solver/" class="archive-article-date">
+  	<time datetime="2019-03-06T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-07</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。</p>
-<p>这个以后再说吧, 反正现在能用。</p>
+        <h1 id="LeedCode-37-Sudoku-Solver"><a href="#LeedCode-37-Sudoku-Solver" class="headerlink" title="LeedCode 37.Sudoku Solver"></a>LeedCode 37.Sudoku Solver</h1><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1><a id="more"></a>
+<p>就是数独游戏</p>
+<h1 id="解法思路"><a href="#解法思路" class="headerlink" title="解法思路"></a>解法思路</h1><p>把所有空位置找出来,并找到该位置可以填的数字的集合.针对每个空位置,把其集合中的数字依次填进去验证(这里采用递归):</p>
+<pre><code>* 如果返回flase,就把该位置重新设为空,验证集合中的下一个数字
+* 直到递归完成,返回true
+</code></pre><h1 id="解法分析"><a href="#解法分析" class="headerlink" title="解法分析"></a>解法分析</h1><ul>
+<li>方法1: 采用set\&lt;char>存储数字集合,Runtime: 248ms(unordered_set也差不多)</li>
+<li>方法2: 采用vector\&lt;int>表示数字集合,Runtime: 36ms</li>
+<li>方法3: 采用int,位运算表示数字集合,Runtime: 12ms</li>
+<li>可见,能用简单数据结构实现还是最好的</li>
+</ul>
+<h1 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h1><ul>
+<li><p>方法1:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">solveSudoku</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board)</span> </span>&#123;</span><br><span class="line">        solve(board);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">solve</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; ++i)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; ++j)&#123;</span><br><span class="line">                <span class="keyword">if</span>(board[i][j] == <span class="string">'.'</span>)&#123;</span><br><span class="line">                    <span class="built_in">set</span>&lt;<span class="keyword">char</span>&gt; tmp;</span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">9</span>; ++k)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(board[i][k] != <span class="string">'.'</span>)</span><br><span class="line">                            tmp.insert(board[i][k]);</span><br><span class="line">                        <span class="keyword">if</span>(board[k][j] != <span class="string">'.'</span>)</span><br><span class="line">                            tmp.insert(board[k][j]);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">3</span>; ++k)&#123;</span><br><span class="line">                        <span class="keyword">for</span>(<span class="keyword">int</span> m = <span class="number">0</span>; m &lt; <span class="number">3</span>; ++m)&#123;</span><br><span class="line">                            <span class="keyword">int</span> ii = i/<span class="number">3</span>*<span class="number">3</span>+k;</span><br><span class="line">                            <span class="keyword">int</span> jj = j/<span class="number">3</span>*<span class="number">3</span>+m;</span><br><span class="line">                            <span class="keyword">if</span>(board[ii][jj] != <span class="string">'.'</span>)&#123;</span><br><span class="line">                                tmp.insert(board[ii][jj]);</span><br><span class="line">                            &#125;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    </span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">char</span> c = <span class="string">'1'</span>; c &lt;= <span class="string">'9'</span>; ++c)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(tmp.find(c) == tmp.end())&#123;</span><br><span class="line">                            board[i][j] = c;</span><br><span class="line">                            <span class="keyword">if</span>(solve(board))</span><br><span class="line">                                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                            <span class="keyword">else</span></span><br><span class="line">                                board[i][j] = <span class="string">'.'</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>方法2:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">solveSudoku</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board)</span> </span>&#123;</span><br><span class="line">        solve(board);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">solve</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; ++i)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; ++j)&#123;</span><br><span class="line">                <span class="keyword">if</span>(board[i][j] == <span class="string">'.'</span>)&#123;</span><br><span class="line">                    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; tmp(<span class="number">9</span>,<span class="number">0</span>);</span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">9</span>; ++k)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(board[i][k] != <span class="string">'.'</span>)</span><br><span class="line">                            tmp[board[i][k]-<span class="string">'0'</span><span class="number">-1</span>] = <span class="number">1</span>;</span><br><span class="line">                        <span class="keyword">if</span>(board[k][j] != <span class="string">'.'</span>)</span><br><span class="line">                            tmp[board[k][j]-<span class="string">'0'</span><span class="number">-1</span>] = <span class="number">1</span>;</span><br><span class="line">                        <span class="keyword">if</span>(board[i/<span class="number">3</span>*<span class="number">3</span>+k/<span class="number">3</span>][j/<span class="number">3</span>*<span class="number">3</span>+k%<span class="number">3</span>] != <span class="string">'.'</span>)</span><br><span class="line">                            tmp[board[i/<span class="number">3</span>*<span class="number">3</span>+k/<span class="number">3</span>][j/<span class="number">3</span>*<span class="number">3</span>+k%<span class="number">3</span>]-<span class="string">'0'</span><span class="number">-1</span>] = <span class="number">1</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                    </span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">9</span>; ++k)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(!tmp[k])&#123;</span><br><span class="line">                            board[i][j] = k + <span class="string">'0'</span> + <span class="number">1</span>;</span><br><span class="line">                            <span class="keyword">if</span>(solve(board))</span><br><span class="line">                                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                            <span class="keyword">else</span></span><br><span class="line">                                board[i][j] = <span class="string">'.'</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>方法3:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line">lass Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">solveSudoku</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board)</span> </span>&#123;</span><br><span class="line">        solve(board);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">bool</span> <span class="title">solve</span><span class="params">(<span class="built_in">vector</span>&lt;<span class="built_in">vector</span>&lt;<span class="keyword">char</span>&gt;&gt;&amp; board)</span></span>&#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">9</span>; ++i)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j = <span class="number">0</span>; j &lt; <span class="number">9</span>; ++j)&#123;</span><br><span class="line">                <span class="keyword">if</span>(board[i][j] == <span class="string">'.'</span>)&#123;</span><br><span class="line">                    <span class="keyword">int</span> row = <span class="number">0x1ff</span>;</span><br><span class="line">                    <span class="keyword">int</span> col = <span class="number">0x1ff</span>;</span><br><span class="line">                    <span class="keyword">int</span> squ = <span class="number">0x1ff</span>;</span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">9</span>; ++k)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(board[i][k] != <span class="string">'.'</span>)</span><br><span class="line">                            row ^= <span class="number">1</span> &lt;&lt; (board[i][k] - <span class="number">49</span>);</span><br><span class="line">                        <span class="keyword">if</span>(board[k][j] != <span class="string">'.'</span>)</span><br><span class="line">                            col ^= <span class="number">1</span> &lt;&lt; (board[k][j] - <span class="number">49</span>);</span><br><span class="line">                        <span class="keyword">if</span>(board[i/<span class="number">3</span>*<span class="number">3</span>+k/<span class="number">3</span>][j/<span class="number">3</span>*<span class="number">3</span>+k%<span class="number">3</span>] != <span class="string">'.'</span>)</span><br><span class="line">                            squ ^= <span class="number">1</span> &lt;&lt; (board[i/<span class="number">3</span>*<span class="number">3</span> + k/<span class="number">3</span>][j/<span class="number">3</span>*<span class="number">3</span> + k%<span class="number">3</span>] - <span class="number">49</span>);</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">int</span> flag = row &amp; col &amp; squ;</span><br><span class="line">                    </span><br><span class="line">                    <span class="keyword">for</span>(<span class="keyword">int</span> k = <span class="number">0</span>; k &lt; <span class="number">9</span>; ++k,flag&gt;&gt;=<span class="number">1</span>)&#123;</span><br><span class="line">                        <span class="keyword">if</span>(flag%<span class="number">2</span>)&#123;</span><br><span class="line">                            board[i][j] = k + <span class="string">'0'</span> + <span class="number">1</span>;</span><br><span class="line">                            <span class="keyword">if</span>(solve(board))</span><br><span class="line">                                <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">                            <span class="keyword">else</span></span><br><span class="line">                                board[i][j] = <span class="string">'.'</span>;</span><br><span class="line">                        &#125;</span><br><span class="line">                    &#125;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 
       
 
@@ -202,17 +221,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日志</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -263,7 +271,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/29/博客迁移/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/07/2019-03-07-LeedCode_37_Sudoku_Solver/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,9 +285,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/03/09/2019-03-09-epoll/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Epoll、Select与poll
+        
+      </div>
+    </a>
   
-    <a href="/2019/03/25/2019-03-25-gdb_make/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">GDB and Make</div>
+  
+    <a href="/2019/03/06/2019-03-06-LeedCode_438/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">LeetCode 438.Find All Anagrams in a String</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -310,8 +327,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://wmjtxt.net/2019/03/29/博客迁移/", 
-    sourceId: "博客迁移",
+    url: "http://wmjtxt.net/2019/03/07/2019-03-07-LeedCode_37_Sudoku_Solver/", 
+    sourceId: "2019-03-07-LeedCode_37_Sudoku_Solver",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };

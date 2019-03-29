@@ -6,20 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wmjtxt.net">
-  <title>博客迁移 | 木夕木火</title>
+  <title>在deepin里安装YouCompleteMe | 木夕木火</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
-<meta name="keywords" content="日志">
+  <meta name="description" content="参考https://github.com/Valloric/YouCompleteMe  1.安装Vundle  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 把以下内容复制到.vimrc:">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客迁移">
-<meta property="og:url" content="http://wmjtxt.net/2019/03/29/博客迁移/index.html">
+<meta property="og:title" content="在deepin里安装YouCompleteMe">
+<meta property="og:url" content="http://wmjtxt.net/2018/05/14/2018-05-14-在deepin上安装YouCompleteMe/index.html">
 <meta property="og:site_name" content="木夕木火">
-<meta property="og:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta property="og:description" content="参考https://github.com/Valloric/YouCompleteMe  1.安装Vundle  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 把以下内容复制到.vimrc:">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T07:06:24.905Z">
+<meta property="og:image" content="http://wmjtxt.net/images/YouCompleteMe.JPG">
+<meta property="og:updated_time" content="2019-03-29T07:12:10.553Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客迁移">
-<meta name="twitter:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta name="twitter:title" content="在deepin里安装YouCompleteMe">
+<meta name="twitter:description" content="参考https://github.com/Valloric/YouCompleteMe  1.安装Vundle  git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim 把以下内容复制到.vimrc:">
+<meta name="twitter:image" content="http://wmjtxt.net/images/YouCompleteMe.JPG">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火" type="application/atom+xml">
   
@@ -151,28 +152,76 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-博客迁移" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2018-05-14-在deepin上安装YouCompleteMe" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      博客迁移
+      在deepin里安装YouCompleteMe
     </h1>
   
 
         
-        <a href="/2019/03/29/博客迁移/" class="archive-article-date">
-  	<time datetime="2019-03-29T06:49:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
+        <a href="/2018/05/14/2018-05-14-在deepin上安装YouCompleteMe/" class="archive-article-date">
+  	<time datetime="2018-05-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。</p>
-<p>这个以后再说吧, 反正现在能用。</p>
+        <p>参考<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">https://github.com/Valloric/YouCompleteMe</a></p>
+<ul>
+<li><p>1.安装Vundle</p>
+<ul>
+<li><code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</code></li>
+<li><p>把以下内容复制到.vimrc:</p>
+<a id="more"></a>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">set nocompatible              " be iMproved, required</span><br><span class="line">filetype off                  " required</span><br><span class="line"></span><br><span class="line">" set the runtime path to include Vundle and initialize</span><br><span class="line">set rtp+=~/.vim/bundle/Vundle.vim</span><br><span class="line">call vundle#begin()</span><br><span class="line">" alternatively, pass a path where Vundle should install plugins</span><br><span class="line">"call vundle#begin('~/some/path/here')</span><br><span class="line"></span><br><span class="line">" let Vundle manage Vundle, required</span><br><span class="line">Plugin 'VundleVim/Vundle.vim'</span><br><span class="line"></span><br><span class="line">" The following are examples of different formats supported.</span><br><span class="line">" Keep Plugin commands between vundle#begin/end.</span><br><span class="line">" plugin on GitHub repo</span><br><span class="line">Plugin 'tpope/vim-fugitive'</span><br><span class="line">" plugin from http://vim-scripts.org/vim/scripts.html</span><br><span class="line">" Plugin 'L9'</span><br><span class="line">" Git plugin not hosted on GitHub</span><br><span class="line">Plugin 'git://git.wincent.com/command-t.git'</span><br><span class="line">" git repos on your local machine (i.e. when working on your own plugin)</span><br><span class="line">"Plugin 'file:///home/gmarik/path/to/plugin'</span><br><span class="line">" The sparkup vim script is in a subdirectory of this repo called vim.</span><br><span class="line">" Pass the path to set the runtimepath properly.</span><br><span class="line">Plugin 'rstacruz/sparkup', &#123;'rtp': 'vim/'&#125;</span><br><span class="line">" Install L9 and avoid a Naming conflict if you've already installed a</span><br><span class="line">" different version somewhere else.</span><br><span class="line">" Plugin 'ascenator/L9', &#123;'name': 'newL9'&#125;</span><br><span class="line"></span><br><span class="line">" All of your Plugins must be added before the following line</span><br><span class="line">call vundle#end()            " required</span><br><span class="line">filetype plugin indent on    " required</span><br><span class="line">" To ignore plugin indent changes, instead use:</span><br><span class="line">"filetype plugin on</span><br><span class="line">"</span><br><span class="line">" Brief help</span><br><span class="line">" :PluginList       - lists configured plugins</span><br><span class="line">" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate</span><br><span class="line">" :PluginSearch foo - searches for foo; append `!` to refresh local cache</span><br><span class="line">" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal</span><br><span class="line">"</span><br><span class="line">" see :h vundle for more details or wiki for FAQ</span><br><span class="line">" Put your non-Plugin stuff after this line</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Install Plugins: 打开vim执行<code>:PluginInstall</code> 或者直接输入命令<code>sudo vim +PluginInstall +qall</code></p>
+</li>
+</ul>
+</li>
+<li>2.Install development tools and CMake:<ul>
+<li><code>sudo apt-get install build-essential cmake</code></li>
+</ul>
+</li>
+<li>3.Make sure you have Python headers installed:<ul>
+<li><code>sudo apt-get install python-dev python3-dev</code></li>
+</ul>
+</li>
+<li>4.安装clang<ul>
+<li><code>sudo apt-get install clang</code></li>
+</ul>
+</li>
+<li>5.Compiling YCM with semantic support for C-family languages:<ul>
+<li><code>git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe</code></li>
+<li><code>cd ~/.vim/bundle/YouCompleteMe</code></li>
+<li><code>./install.py --clang-completer</code></li>
+<li>如果出错执行 <code>git submodule update --init --recursive</code></li>
+</ul>
+</li>
+<li><p>6.把以下内容复制到.vimrc中</p>
+  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">"----------------------------"</span><br><span class="line">"------ YouCompleteMe -------"</span><br><span class="line">"----------------------------"</span><br><span class="line">let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">" YouCompleteMe</span><br><span class="line">set runtimepath+=~/.vim/bundle/YouCompleteMe</span><br><span class="line">let g:ycm_collect_identifiers_from_tags_files = 1           " 开启 YCM 基于标签引擎</span><br><span class="line">let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释与字符串中的内容也用于补全</span><br><span class="line">let g:syntastic_ignore_files=[".*\.py$"]</span><br><span class="line">let g:ycm_seed_identifiers_with_syntax = 1                  " 语法关键字补全</span><br><span class="line">let g:ycm_complete_in_comments = 1</span><br><span class="line">let g:ycm_confirm_extra_conf = 0</span><br><span class="line">let g:ycm_key_list_select_completion = ['&lt;c-n&gt;', '&lt;Down&gt;']  " 映射按键, 没有这个会拦截掉tab, 导致其他插件的tab不能用.</span><br><span class="line">let g:ycm_key_list_previous_completion = ['&lt;c-p&gt;', '&lt;Up&gt;']</span><br><span class="line">let g:ycm_complete_in_comments = 1                          " 在注释输入中也能补全</span><br><span class="line">let g:ycm_complete_in_strings = 1                           " 在字符串输入中也能补全</span><br><span class="line">let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串中的文字也会被收入补全</span><br><span class="line">let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'</span><br><span class="line">let g:ycm_show_diagnostics_ui = 0                           " 禁用语法检查</span><br><span class="line">inoremap &lt;expr&gt; &lt;CR&gt; pumvisible() ? "\&lt;C-y&gt;" : "\&lt;CR&gt;" |            " 回车即选中当前项</span><br><span class="line">nnoremap &lt;c-j&gt; :YcmCompleter GoToDefinitionElseDeclaration&lt;CR&gt;|     " 跳转到定义处</span><br><span class="line">"let g:ycm_min_num_of_chars_for_completion=2                 " 从第2个键入字符就开始罗列匹配项</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>按说这样应该就可以用了，不过提示有错误。</p>
+<p><code>YouCompleteMe unavailable: requires Vim compiled with Python (2.7.1+ or 3.4+) support.</code></p>
+<p>在网上找了好久，试了好多方法，最终还是按深度社区的方法才解决。<br><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=43716" target="_blank" rel="noopener">编译安装vim8.0,添加python支持</a></p>
+<ul>
+<li>1.<code>vim --version|grep python</code> 查看是否支持python</li>
+<li>2.<code>sudo apt-get install python-dev python3-dev libncurses5-dev</code>，前面安装过python-dev python3-dev,这里会提示已是最新版本</li>
+<li>3.<code>git clone https://github.com/vim/vim.git</code></li>
+<li>4.<code>cd ~/vim</code></li>
+<li>5.<code>./configure --with-features=huge --enable-python3interp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu/ --enable-rubyinterp --enable-luainterp --enable-perlinterp --with-python3-config-dir=/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/ --enable-multibyte --enable-cscope      --prefix=/usr/local/vim/</code>,这里python2.7和python3.6要跟你安装的版本相对应</li>
+<li>6.<code>sudo make &amp;&amp; sudo make install</code></li>
+<li>7.<code>which vim</code>查看vim安装位置，我的是/usr/bin/vim，然后<code>sudo cp /usr/local/vim/bin/vim /usr/bin/</code></li>
+</ul>
+<p>截图:</p>
+<p><img src="/images/YouCompleteMe.JPG" alt="YCM"></p>
 
       
 
@@ -202,17 +251,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日志</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -263,7 +301,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/29/博客迁移/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2018/05/14/2018-05-14-在deepin上安装YouCompleteMe/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,9 +315,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/09/19/2018-09-19-配置win10/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          配置win10
+        
+      </div>
+    </a>
   
-    <a href="/2019/03/25/2019-03-25-gdb_make/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">GDB and Make</div>
+  
+    <a href="/2018/05/03/2018-05-03-wmj-auto.sh/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">auto.sh</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -310,8 +357,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://wmjtxt.net/2019/03/29/博客迁移/", 
-    sourceId: "博客迁移",
+    url: "http://wmjtxt.net/2018/05/14/2018-05-14-在deepin上安装YouCompleteMe/", 
+    sourceId: "2018-05-14-在deepin上安装YouCompleteMe",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };

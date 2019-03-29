@@ -6,20 +6,22 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wmjtxt.net">
-  <title>博客迁移 | 木夕木火</title>
+  <title>LPA算法C++实现及模块度计算 | 木夕木火</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
-<meta name="keywords" content="日志">
+  <meta name="description" content="前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客迁移">
-<meta property="og:url" content="http://wmjtxt.net/2019/03/29/博客迁移/index.html">
+<meta property="og:title" content="LPA算法C++实现及模块度计算">
+<meta property="og:url" content="http://wmjtxt.net/2018/11/12/2018-11-12-lpa算法c++实现及模块度计算/index.html">
 <meta property="og:site_name" content="木夕木火">
-<meta property="og:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta property="og:description" content="前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T07:06:24.905Z">
+<meta property="og:image" content="http://wmjtxt.net/images/lpa1.png">
+<meta property="og:image" content="http://wmjtxt.net/images/lpa2.png">
+<meta property="og:updated_time" content="2019-03-29T07:12:10.561Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客迁移">
-<meta name="twitter:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta name="twitter:title" content="LPA算法C++实现及模块度计算">
+<meta name="twitter:description" content="前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。">
+<meta name="twitter:image" content="http://wmjtxt.net/images/lpa1.png">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火" type="application/atom+xml">
   
@@ -151,28 +153,54 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-博客迁移" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2018-11-12-lpa算法c++实现及模块度计算" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      博客迁移
+      LPA算法C++实现及模块度计算
     </h1>
   
 
         
-        <a href="/2019/03/29/博客迁移/" class="archive-article-date">
-  	<time datetime="2019-03-29T06:49:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
+        <a href="/2018/11/12/2018-11-12-lpa算法c++实现及模块度计算/" class="archive-article-date">
+  	<time datetime="2018-11-11T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。</p>
-<p>这个以后再说吧, 反正现在能用。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>这学期开始看社团检测的东西，了解了一些经典算法。<br>比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。</p>
+<a id="more"></a>
+<p>我先看的LPA（毕竟算法思想最简单,hhh，怪我太笨了），又看了Louvain。<br>Louvain算法的代码，作者在文章里给了网址，是C++写的，我下到本地运行并认真研究了一下，写的真挺好的。<br>然后昨天突发奇想，干脆自己仿照Louvain的代码风格，用C++把LPA实现一下，<br>因为在网上只看到过Python和Java实现的LPA算法，还没见过C++实现的。</p>
+<p>然后昨天把框架写好，今天把细节补全，最后又从Louvain的代码里搬来了模块度的计算部分。<br>最后调试好，就OK啦。</p>
+<h1 id="1-LPA基本思想"><a href="#1-LPA基本思想" class="headerlink" title="1.LPA基本思想"></a>1.LPA基本思想</h1><p>给每一个节点添加标签，初始时可以以各自的nodeid作为标签，标签传播过程中将一个节点的邻居节点的标签中<br>数量最多的标签作为该节点的标签。标签即代表所属社区。</p>
+<ul>
+<li>1 初始时，给每个节点一个标签，通常以其id作为初始标签。</li>
+<li>2 每个节点使用其邻居节点的标签中数量最多的标签更新自身标签。</li>
+<li>3 反复执行步骤2，直到满足终止条件。(至于终止条件是什么，这个可以自己设置，<pre><code>比如我就直接设定迭代5次结束，也可以根据每次迭代模块度的增加程度来设定，
+网上有说直到每个节点的标签不再变化为止，其实这比较难判定，
+而且据研究，大部分网络经过5次迭代，其95%的节点标签都不再变化，
+后面每次迭代虽部分标签还在变化，但相比来说性价比不高了)
+</code></pre></li>
+</ul>
+<p>LPA算法的优点是收敛周期很短，而且不需要任何先验知识。时间复杂度接近线性：对节点分配标签为O(n)，<br>每次迭代需要遍历所有的边两次，也就是O(2m)，所以时间复杂度为O(n+2m)，其中n为节点数，m为边数。</p>
+<p>同步更新和异步更新还没搞懂，回头看看再说。</p>
+<p><strong>缺点</strong> </p>
+<ul>
+<li>1 由于迭代过程中可能会出现随机选择的情况，所以LPA算法具有不稳定性，也就是同一个网络每次执行的结果可能都不一样。</li>
+<li>2 可能出现巨型社区。</li>
+</ul>
+<p><strong>算法改进思路</strong></p>
+<ul>
+<li>目前还没</li>
+</ul>
+<h1 id="2-数据集"><a href="#2-数据集" class="headerlink" title="2.数据集"></a>2.数据集</h1><p><strong><em>dolphins</em></strong></p>
+<h1 id="3-代码"><a href="#3-代码" class="headerlink" title="3.代码"></a>3.代码</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"lpa.h"</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">display_time</span><span class="params">(<span class="keyword">const</span> <span class="keyword">char</span> *str)</span></span>&#123;</span><br><span class="line">	<span class="keyword">time_t</span> rawtime;</span><br><span class="line">	time ( &amp;rawtime );</span><br><span class="line">	<span class="built_in">cerr</span> &lt;&lt; str &lt;&lt; <span class="string">" : "</span> &lt;&lt; ctime (&amp;rawtime);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">(<span class="keyword">int</span> argc, <span class="keyword">char</span> **argv)</span></span>&#123;</span><br><span class="line">	srand(time(<span class="literal">NULL</span>));</span><br><span class="line"></span><br><span class="line">	<span class="comment">//parse_args(argc, argv);</span></span><br><span class="line">	<span class="keyword">if</span>(argc != <span class="number">2</span>)&#123;</span><br><span class="line">		<span class="built_in">cerr</span> &lt;&lt; <span class="string">"argc not 2"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">string</span> filename = argv[<span class="number">1</span>];</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"filename = "</span> &lt;&lt; filename &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	</span><br><span class="line">	<span class="keyword">time_t</span> time_begin, time_end;</span><br><span class="line">	time(&amp;time_begin);</span><br><span class="line">	display_time(<span class="string">"start"</span>);</span><br><span class="line"></span><br><span class="line">	<span class="comment">//sleep(3);</span></span><br><span class="line">	<span class="function">LPA <span class="title">lpa</span><span class="params">(filename)</span></span>;</span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt; <span class="string">"初始模块度 = "</span> &lt;&lt; lpa.modularity() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; <span class="number">5</span>; i++)&#123;</span><br><span class="line">		lpa.labeled();</span><br><span class="line">		lpa.display();</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	display_time(<span class="string">"end"</span>);</span><br><span class="line"></span><br><span class="line">	time(&amp;time_end);</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="4-运行结果"><a href="#4-运行结果" class="headerlink" title="4.运行结果"></a>4.运行结果</h1><p><img src="/images/lpa1.png" alt="运行结果1"><br><img src="/images/lpa2.png" alt="运行结果2"></p>
 
       
 
@@ -202,17 +230,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日志</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -263,7 +280,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/29/博客迁移/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2018/11/12/2018-11-12-lpa算法c++实现及模块度计算/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,9 +294,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2018/12/26/2018-12-26-three_method_of_fibonacci/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          斐波那契数列三种解法及时间复杂度分析
+        
+      </div>
+    </a>
   
-    <a href="/2019/03/25/2019-03-25-gdb_make/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">GDB and Make</div>
+  
+    <a href="/2018/11/06/2018-11-06-deepin-lockscreen/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">去掉deepin登录界面的模糊效果</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -310,8 +336,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://wmjtxt.net/2019/03/29/博客迁移/", 
-    sourceId: "博客迁移",
+    url: "http://wmjtxt.net/2018/11/12/2018-11-12-lpa算法c++实现及模块度计算/", 
+    sourceId: "2018-11-12-lpa算法c++实现及模块度计算",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };

@@ -6,20 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wmjtxt.net">
-  <title>博客迁移 | 木夕木火</title>
+  <title>Linux常用命令总结 | 木夕木火</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
-<meta name="keywords" content="日志">
+  <meta name="description" content="Linux常用命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="博客迁移">
-<meta property="og:url" content="http://wmjtxt.net/2019/03/29/博客迁移/index.html">
+<meta property="og:title" content="Linux常用命令总结">
+<meta property="og:url" content="http://wmjtxt.net/2019/03/18/2019-03-18-linux_command/index.html">
 <meta property="og:site_name" content="木夕木火">
-<meta property="og:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta property="og:description" content="Linux常用命令">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T07:06:24.905Z">
+<meta property="og:updated_time" content="2019-03-29T07:12:10.565Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="博客迁移">
-<meta name="twitter:description" content="把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。 这个以后再说吧, 反正现在能用。">
+<meta name="twitter:title" content="Linux常用命令总结">
+<meta name="twitter:description" content="Linux常用命令">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火" type="application/atom+xml">
   
@@ -151,28 +150,168 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-博客迁移" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-2019-03-18-linux_command" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      博客迁移
+      Linux常用命令总结
     </h1>
   
 
         
-        <a href="/2019/03/29/博客迁移/" class="archive-article-date">
-  	<time datetime="2019-03-29T06:49:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-29</time>
+        <a href="/2019/03/18/2019-03-18-linux_command/" class="archive-article-date">
+  	<time datetime="2019-03-17T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-18</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>把博客迁移到hexo了，主题是yilia, 比原来的好看一点。就是原来的顺序打乱了，hexo好像不支持按标题里的date排序。</p>
-<p>这个以后再说吧, 反正现在能用。</p>
+        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>df -h</code></td>
+<td>查看磁盘使用情况</td>
+<td></td>
+</tr>
+<tr>
+<td><code>du -ah --max-depth==1</code></td>
+<td>查看当前目录下的文件及文件夹的大小</td>
+<td></td>
+</tr>
+<tr>
+<td><code>du -sh</code></td>
+<td>查看当前文件夹大小</td>
+<td></td>
+</tr>
+<tr>
+<td><code>ls -ltr</code></td>
+<td>按修改时间排序</td>
+<td></td>
+</tr>
+<tr>
+<td>`ls -l\</td>
+<td>wc -l`</td>
+<td>查看当前文件夹下文件及文件夹个数</td>
+<td></td>
+</tr>
+<tr>
+<td>`ls -l\</td>
+<td>grep “^-“\</td>
+<td>wc -l`</td>
+<td>查看当前文件夹下文件个数</td>
+<td></td>
+</tr>
+<tr>
+<td>`ls -l\</td>
+<td>grep “^d”\</td>
+<td>wc -l`</td>
+<td>查看当前文件夹下文件夹个数</td>
+<td></td>
+</tr>
+<tr>
+<td><code>free</code></td>
+<td>查看内存使用情况</td>
+<td></td>
+</tr>
+<tr>
+<td><code>top</code></td>
+<td>实时显示系统运行各项信息，相当于任务管理器</td>
+<td></td>
+</tr>
+<tr>
+<td>`ps -ef \</td>
+<td>grep sth`</td>
+<td>查看当前运行进程</td>
+<td></td>
+</tr>
+<tr>
+<td><code>rename &#39;s/\.cc$/.cpp/&#39; *.cc</code></td>
+<td>将后缀为.cc的文件后缀修改为.cpp</td>
+<td>批量修改文件名</td>
+</tr>
+<tr>
+<td><code>rename &#39;s/\s/./&#39; *.c</code></td>
+<td>将后缀为.c的文件名中的空格替换为”.”</td>
+<td>批量修改文件名</td>
+</tr>
+<tr>
+<td><code>rename &#39;s/^/00/&#39; [0-9]*</code></td>
+<td>将文件名以数字开头的文件前面加上00</td>
+<td>批量修改文件名</td>
+</tr>
+<tr>
+<td>`history \</td>
+<td>awk ‘{print $2}’ \</td>
+<td>sort \</td>
+<td>uniq -c \</td>
+<td>sort -rn \</td>
+<td>head -15`</td>
+<td>查看使用频次前15的历史命令</td>
+<td></td>
+</tr>
+<tr>
+<td><code>linuxlogo</code></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td><code>wc filename</code></td>
+<td>统计指定文件中的行数、字数、字节数</td>
+<td></td>
+</tr>
+<tr>
+<td><code>usermod -l 新用户名 -d /home/新用户名 -m 旧用户名</code></td>
+<td>修改用户名</td>
+<td></td>
+</tr>
+<tr>
+<td><code>ln</code></td>
+<td>链接，软链接，硬链接</td>
+<td></td>
+</tr>
+<tr>
+<td><code>scp</code></td>
+<td>linux之间文件远程传输</td>
+<td></td>
+</tr>
+<tr>
+<td><code>more</code></td>
+<td>与cat类似，可以翻页浏览,空格键下一页，b回上一页</td>
+<td></td>
+</tr>
+<tr>
+<td><code>less</code></td>
+<td>与more类似，还可以使用vi编辑查找</td>
+<td></td>
+</tr>
+<tr>
+<td><code>awk</code></td>
+<td>AWK是一种处理文本文件的语言，是一个强大的文本分析工具</td>
+<td></td>
+</tr>
+<tr>
+<td><code>:%s/foo/bar/g</code></td>
+<td>全文查找替换</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
       
 
@@ -202,17 +341,6 @@
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">日志</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
       
 
       
@@ -263,7 +391,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/29/博客迁移/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/18/2019-03-18-linux_command/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -277,9 +405,18 @@
   
 <nav id="article-nav">
   
+    <a href="/2019/03/25/2019-03-25-find_wc/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          find+wc统计代码行数(文件名含空格)
+        
+      </div>
+    </a>
   
-    <a href="/2019/03/25/2019-03-25-gdb_make/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">GDB and Make</div>
+  
+    <a href="/2019/03/09/2019-03-09-epoll/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Epoll、Select与poll</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -310,8 +447,8 @@
   <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
 <script>
   var cloudTieConfig = {
-    url: "http://wmjtxt.net/2019/03/29/博客迁移/", 
-    sourceId: "博客迁移",
+    url: "http://wmjtxt.net/2019/03/18/2019-03-18-linux_command/", 
+    sourceId: "2019-03-18-linux_command",
     productKey: "true",
     target: "cloud-tie-wrapper"
   };
