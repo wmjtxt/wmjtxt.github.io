@@ -6,20 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wmjtxt.net">
-  <title>Epoll、Select与poll | 木夕的博客</title>
+  <title>木夕的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
-<meta name="keywords" content="Linux,Socket">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Epoll、Select与poll">
-<meta property="og:url" content="http://wmjtxt.net/2019/03/09/epoll/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="木夕的博客">
+<meta property="og:url" content="http://wmjtxt.net/page/4/index.html">
 <meta property="og:site_name" content="木夕的博客">
-<meta property="og:description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T08:16:32.434Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Epoll、Select与poll">
-<meta name="twitter:description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
+<meta name="twitter:title" content="木夕的博客">
   
     <link rel="alternative" href="/atom.xml" title="木夕的博客" type="application/atom+xml">
   
@@ -147,136 +142,41 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-epoll" class="article article-type-post " itemscope itemprop="blogPost">
+            
+  
+    <article id="post-在deepin上安装YouCompleteMe" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      Epoll、Select与poll
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/14/在deepin上安装YouCompleteMe/">在deepin里安装YouCompleteMe</a>
     </h1>
   
 
         
-        <a href="/2019/03/09/epoll/" class="archive-article-date">
-  	<time datetime="2019-03-09T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-09</time>
+        <a href="/2018/05/14/在deepin上安装YouCompleteMe/" class="archive-article-date">
+  	<time datetime="2018-05-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="1-epoll"><a href="#1-epoll" class="headerlink" title="1.epoll"></a>1.epoll</h1><p>epoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。</p>
+        <p>参考<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">https://github.com/Valloric/YouCompleteMe</a></p>
 <ul>
-<li>首先，epoll使用一组函数来完成任务，而不是单个函数。</li>
-<li>其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。</li>
-<li>但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。<a id="more"></a></li>
-<li>这个文件描述符使用<code>epoll_create</code>函数来创建：<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/epoll.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_create</span><span class="params">(<span class="keyword">int</span> size)</span></span>;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>size参数现在不起作用,只是给内核一个提示，告诉它事件表需要多大。</p>
+<li><p>1.安装Vundle</p>
 <ul>
-<li><code>epoll_ctl</code>用来操作epoll的内核事件表。</li>
-<li><p>epoll系列系统调用的主要接口是<code>epoll_wait</code>函数。</p>
-</li>
-<li><p>epoll对文件描述符的操作有两种模式：LT和ET</p>
-<ul>
-<li>LT（Level Trigger，电平触发）模式是默认的工作模式，在这种模式下epoll相当于一个效率较高的poll。</li>
-<li>ET（Edge Trigger，边沿触发）模式是epoll的高效工作模式。</li>
-</ul>
-</li>
-</ul>
-<h1 id="2-poll"><a href="#2-poll" class="headerlink" title="2.poll"></a>2.poll</h1><p>poll系统调用和select类似，也是在指定时间内轮询一定数量的文件描述符，以测试其中是否有就绪者。poll的原型如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;poll.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">poll</span><span class="params">(struct pollfd* fds, <span class="keyword">nfds_t</span> nfds, <span class="keyword">int</span> timeout)</span></span>;</span><br></pre></td></tr></table></figure></p>
-<ul>
-<li>fds参数是一个pollfd结构类型的数组，它指定所有我们感兴趣的文件描述符上发生的可读、可写和异常等事件。pollfd结构体的定义如下：<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">pollfd</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> fd;         <span class="comment">//文件描述符</span></span><br><span class="line">    <span class="keyword">short</span> events;   <span class="comment">//注册的事件</span></span><br><span class="line">    <span class="keyword">short</span> revents;  <span class="comment">//实际发生的事件，由内核填充</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<h1 id="3-select"><a href="#3-select" class="headerlink" title="3.select"></a>3.select</h1><p>select的用途：在一段指定时间内，监听用户感兴趣的文件描述符上的可读、可写和异常等事件。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/select.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">select</span><span class="params">(<span class="keyword">int</span> nfds, fd_set* readfds, fd_set* writefds, fd_set* exceptfds, struct timeval* timeout)</span></span>;</span><br></pre></td></tr></table></figure></p>
-<p>其中：</p>
-<ul>
-<li>nfds参数指定被监听的文件描述符的总数。</li>
-<li>readfds,writefds,exceptfds参数分别指向可读、可写和异常等事件对应的文件描述符。</li>
-<li>timeout参数用来设置select函数的超时时间。如果timeout传递NULL，则select将一直阻塞，直到某个文件描述符就绪。</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">系统调用</th>
-<th style="text-align:center">select</th>
-<th style="text-align:center">poll</th>
-<th style="text-align:center">epoll</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">事件集合</td>
-<td style="text-align:center">用户通过3个参数<br>分别传入感兴趣的<br>可读、可写及异常<br>等事件，内核通过<br>对这些参数的在线<br>修改来反馈其中的<br>就绪事件。这使得<br>用户每次调用select<br>都要重置这<br>3个参数</td>
-<td style="text-align:center">统一处理所有事件<br>类型，因此只需<br>一个事件集参数。用<br>户通过pollfd.events<br>传入感兴趣的事件，<br>内核通过修改<br>pollfd.revents反馈<br>其中就绪的事件</td>
-<td style="text-align:center">内核通过一个事件表<br>直接管理用户感兴趣的<br>所有事件。因此每次<br>调用epoll_wait时，<br>无须反复传入用户感<br>兴趣的事件。epoll_wait<br>系统调用的参数events<br>仅用来反馈就绪的事件</td>
-</tr>
-<tr>
-<td style="text-align:center">应用程序索引<br>就绪文件描述符<br>的时间复杂度</td>
-<td style="text-align:center">O(n)</td>
-<td style="text-align:center">O(n)</td>
-<td style="text-align:center">O(1)</td>
-</tr>
-<tr>
-<td style="text-align:center">最大支持<br>文件描述符数</td>
-<td style="text-align:center">一般有最大值限制，1024或2048</td>
-<td style="text-align:center">65535</td>
-<td style="text-align:center">65535</td>
-</tr>
-<tr>
-<td style="text-align:center">工作模式</td>
-<td style="text-align:center">LT</td>
-<td style="text-align:center">LT</td>
-<td style="text-align:center">LT,同时支持ET高效模式</td>
-</tr>
-<tr>
-<td style="text-align:center">内核实现<br>和工作效率</td>
-<td style="text-align:center">采用轮询方式来<br>检测就绪事件，<br>算法时间复杂度为<br>O(n)</td>
-<td style="text-align:center">采用轮询方式<br>来检测就绪事件，<br>算法时间复杂度为<br>O(n)</td>
-<td style="text-align:center">采用回调方式来<br>检测就绪事件，<br>算法时间复杂度为<br>O(1)</td>
-</tr>
-</tbody>
-</table>
-
+<li><code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</code></li>
+<li><p>把以下内容复制到.vimrc:</p>
+        
+          <a class="article-more-a" href="/2018/05/14/在deepin上安装YouCompleteMe/#more">more >></a>
+        
       
 
       
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zfb.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/wx.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
+    </li></ul></li></ul></div>
     <div class="article-info article-info-index">
       
       
@@ -289,7 +189,7 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Socket</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
         		</li>
       		
 		</ul>
@@ -298,84 +198,16 @@
       
 
       
-
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/14/在deepin上安装YouCompleteMe/">展开全文 >></a>
+        </p>
       
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://wmjtxt.net/2019/03/09/epoll/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/03/18/linux_command/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Linux常用命令总结
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2019/03/07/LeedCode_37_Sudoku_Solver/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">LeedCode 37.Sudoku Solver</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -395,55 +227,338 @@
 
 
 
+
   
-  <div class="duoshuo">
-	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="epoll" data-title="Epoll、Select与poll" data-url="http://wmjtxt.net/2019/03/09/epoll/"></div>
-	<!-- 多说评论框 end -->
-	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-	<script type="text/javascript">
-	var duoshuoQuery = {short_name:"true"};
-	(function() {
-		var ds = document.createElement('script');
-		ds.type = 'text/javascript';ds.async = true;
-		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-		ds.charset = 'UTF-8';
-		(document.getElementsByTagName('head')[0] 
-		 || document.getElementsByTagName('body')[0]).appendChild(ds);
-	})();
-	</script>
-	<!-- 多说公共JS代码 end -->
-</div>
+    <article id="post-wmj-auto.sh" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/03/wmj-auto.sh/">auto.sh</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/03/wmj-auto.sh/" class="archive-article-date">
+  	<time datetime="2018-05-03T05:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>!/bin/sh</span><br><span class="line">echo "\</span><br><span class="line">---\n\</span><br><span class="line">layout: post\n\</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">title:\n\</span><br><span class="line">---\</span><br><span class="line">" &gt; $(date +%Y-%m-%d)-$1.md;</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">shell</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/03/wmj-auto.sh/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-chvt" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/03/chvt/">Chvt-N</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/03/chvt/" class="archive-article-date">
+  	<time datetime="2018-05-03T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-03</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ul>
+<li>在deepin中</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>效果</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>chvt 1</code></td>
+<td>进入锁屏</td>
+<td>这个界面可以用screenshot.sh截屏，截到的是锁屏界面，而以下几个截到的都是黑屏</td>
+</tr>
+</tbody>
+</table>
+        
+          <a class="article-more-a" href="/2018/05/03/chvt/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Deepin</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/03/chvt/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-学习爬虫" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/05/01/学习爬虫/">学习爬虫 &amp; Linux登录页面截屏</a>
+    </h1>
+  
+
+        
+        <a href="/2018/05/01/学习爬虫/" class="archive-article-date">
+  	<time datetime="2018-05-01T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>想学爬虫，在知乎上看了帖子，然后不少人都建议用scrapy，就学习了一下，几经周折例子总算运行成功，但还是有点不太懂。</p>
+<p>还有一个事，之前在网上找了一个给登录界面截屏(因为在锁屏状态，快捷键截屏无效)的脚本，在ubuntu上可以运行，一开始在deepin上也可以运行，但后来就不行了，不知道是不是更新了系统的原因。看来还是有问题。程序一运行，图形界面就黑屏了，也不报错，开始还会嘀一声，后来也没有什么声音了。不知道为什么。同样的程序在ubuntu上运行一点事没有啊。</p>
+<p>真搞不懂。<br>
+        
+          <a class="article-more-a" href="/2018/05/01/学习爬虫/#more">more >></a>
+        
+      
+
+      
+    </p></div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/05/01/学习爬虫/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-WMJTXT" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/11/WMJTXT/">Some Notes of 201804</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/11/WMJTXT/" class="archive-article-date">
+  	<time datetime="2018-04-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-11</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="一些笔记"><a href="#一些笔记" class="headerlink" title="一些笔记"></a>一些笔记</h1><h1 id="2018-4-11"><a href="#2018-4-11" class="headerlink" title="2018.4.11"></a>2018.4.11</h1>
+        
+          <a class="article-more-a" href="/2018/04/11/WMJTXT/#more">more >></a>
+        
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">笔记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/11/WMJTXT/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
 
   
   
-  
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-  var cloudTieConfig = {
-    url: "http://wmjtxt.net/2019/03/09/epoll/", 
-    sourceId: "epoll",
-    productKey: "true",
-    target: "cloud-tie-wrapper"
-  };
-</script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-  
-
-  
-  <div id="SOHUCS" sid="epoll"></div> 
-<script charset="utf-8" type="text/javascript" src="//changyan.sohu.com/upload/changyan.js"></script>
-<script type="text/javascript">
-    window.changyan.api.config({
-        appid: "true",
-        conf: "true"
-    });
-</script>
-
-  
-
-  
-
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/page/3/">&laquo; Prev</a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span>
+    </nav>
   
 
 
@@ -471,8 +586,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: false,
-		isPost: true,
+		isHome: true,
+		isPost: false,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
