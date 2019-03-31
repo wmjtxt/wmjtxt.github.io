@@ -6,14 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://wmjtxt.net">
-  <title>斐波那契数列三种解法及时间复杂度分析 | 木夕的博客</title>
+  <title>斐波那契数列三种解法及时间复杂度分析 | 木夕のblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.定义及递推公式斐波那契数列(Fibonacci sequence),又称黄金分割数列，因数学家Leonardoda Fibonacci以兔子繁殖为例子而引入，故又称兔子数列。1,1,2,3,5,8,13…即：f(1) = 1,f(2) = 1,f(3) = 2,f(4) = 3…添加0项后,Fibonacci数列归纳如下：">
 <meta name="keywords" content="C++,斐波那契">
 <meta property="og:type" content="article">
 <meta property="og:title" content="斐波那契数列三种解法及时间复杂度分析">
 <meta property="og:url" content="http://wmjtxt.net/2018/12/26/three_method_of_fibonacci/index.html">
-<meta property="og:site_name" content="木夕的博客">
+<meta property="og:site_name" content="木夕のblog">
 <meta property="og:description" content="1.定义及递推公式斐波那契数列(Fibonacci sequence),又称黄金分割数列，因数学家Leonardoda Fibonacci以兔子繁殖为例子而引入，故又称兔子数列。1,1,2,3,5,8,13…即：f(1) = 1,f(2) = 1,f(3) = 2,f(4) = 3…添加0项后,Fibonacci数列归纳如下：">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://wmjtxt.net/images/fibonacci.jpg">
@@ -28,7 +28,7 @@
 <meta name="twitter:description" content="1.定义及递推公式斐波那契数列(Fibonacci sequence),又称黄金分割数列，因数学家Leonardoda Fibonacci以兔子繁殖为例子而引入，故又称兔子数列。1,1,2,3,5,8,13…即：f(1) = 1,f(2) = 1,f(3) = 2,f(4) = 3…添加0项后,Fibonacci数列归纳如下：">
 <meta name="twitter:image" content="http://wmjtxt.net/images/fibonacci.jpg">
   
-    <link rel="alternative" href="/atom.xml" title="木夕的博客" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="木夕のblog" type="application/atom+xml">
   
   
     <link rel="icon" href="/images/favicon.ico">
@@ -58,8 +58,10 @@
 			<img src="/images/wmj.png" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/">wmjtxt</a></h1>
+		  <h1 class="header-author"><a href="/">写诗的木夕</a></h1>
 		</hgroup>
+		
+		<p class="header-subtitle">采菊东篱下,悠然见南山</p>
 		
 
 		<nav class="header-menu">
@@ -68,6 +70,8 @@
 				<li><a href="/">主页</a></li>
 	        
 				<li><a href="/tags/随笔">随笔</a></li>
+	        
+				<li><a href="/tags/诗歌">诗歌</a></li>
 	        
 			</ul>
 		</nav>
@@ -110,10 +114,14 @@
 				<img src="/images/wmj.png" class="js-avatar">
 			</div>
 			<hgroup>
-			  <h1 class="header-author js-header-author">wmjtxt</h1>
+			  <h1 class="header-author js-header-author">写诗的木夕</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>采菊东篱下,悠然见南山<i class="icon icon-quo-right"></i></p>
 			
+			
+			
+				
 			
 				
 			
@@ -134,12 +142,14 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/随笔">随笔</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/随笔">随笔</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/诗歌">诗歌</a></li>
 		        
 				</ul>
 			</nav>
@@ -407,7 +417,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2019 wmjtxt
+    		&copy; 2019 写诗的木夕
     	</div>
         <br>
       	<div class="footer-left">
