@@ -17,25 +17,23 @@
     <title>LPA算法C++实现及模块度计算 | 木夕のblog | 采菊东篱下,悠然见南山</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="theme-color" content="#9932CD">
-    
     
     <meta name="keywords" content="复杂网络,LPA">
     <meta name="description" content="前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。">
 <meta name="keywords" content="复杂网络,LPA">
 <meta property="og:type" content="article">
 <meta property="og:title" content="LPA算法C++实现及模块度计算">
-<meta property="og:url" content="http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/index.html">
+<meta property="og:url" content="http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/index.html">
 <meta property="og:site_name" content="木夕のblog">
 <meta property="og:description" content="前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://wmjtxt.net/images/lpa1.png">
-<meta property="og:image" content="http://wmjtxt.net/images/lpa2.png">
+<meta property="og:image" content="http://www.wmjtxt.net/images/lpa1.png">
+<meta property="og:image" content="http://www.wmjtxt.net/images/lpa2.png">
 <meta property="og:updated_time" content="2019-03-29T08:17:17.008Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LPA算法C++实现及模块度计算">
 <meta name="twitter:description" content="前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。">
-<meta name="twitter:image" content="http://wmjtxt.net/images/lpa1.png">
+<meta name="twitter:image" content="http://www.wmjtxt.net/images/lpa1.png">
     
         <link rel="alternate" type="application/atom+xml" title="木夕のblog" href="/atom.xml">
     
@@ -56,7 +54,7 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(/images/lighnting.jpg)">
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
           <img src="/images/wmj.png">
@@ -85,7 +83,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/tags/">
+              <a href="/tags">
                 <i class="icon icon-lg icon-tags"></i>
                 Tags
               </a>
@@ -255,7 +253,7 @@
     </div>
     
     <footer>
-        <a href="http://wmjtxt.net">
+        <a href="http://www.wmjtxt.net">
             <img src="/images/wmj.png" alt="写诗的木夕">
             写诗的木夕
         </a>
@@ -281,7 +279,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&pic=http://wmjtxt.net/images/wmj.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&pic=http://www.wmjtxt.net/images/wmj.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -291,22 +289,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&source=前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&source=前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《LPA算法C++实现及模块度计算》 — 木夕のblog&url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&via=http://wmjtxt.net" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《LPA算法C++实现及模块度计算》 — 木夕のblog&url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&via=http://www.wmjtxt.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -350,15 +348,6 @@
 
     
 
-
-<section class="comments" id="comments">
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_shortname = 'true';
-    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
 
 
 
@@ -467,7 +456,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&pic=http://wmjtxt.net/images/wmj.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&pic=http://www.wmjtxt.net/images/wmj.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -477,22 +466,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&source=前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA..." data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&title=《LPA算法C++实现及模块度计算》 — 木夕のblog&source=前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA..." data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《LPA算法C++实现及模块度计算》 — 木夕のblog&url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&via=http://wmjtxt.net" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《LPA算法C++实现及模块度计算》 — 木夕のblog&url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/&via=http://www.wmjtxt.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -503,7 +492,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACvklEQVR42u3a0W7CQAwEQP7/p9vXShVh184VKk2eEKXBc0jni+3HI76+flw/37n+5O/PP7vDs//6fefHiQsPDw9vEfosuOvP7BclWY6nS4OHh4d3jHe9Ebfs5PNFiJfUFxY8PDy8D+Dlf2239XZZ8fDw8P4XL9my2yW4jgoPDw/v03izzfq6GJGXgzfv3FZrwcPDw+ue9KMu0ue8PtLfw8PDw1t31Wctsc3ReVbwfRonHh4e3gFeOxbQlhjy0u0mLeHh4eG9ize73ezwnX9vW+CIqtR4eHh4a17efJoVavODddviuqFoi4eHhzfiXYeeBNomg029uV0mPDw8vHt5baB52SJZpnbQqk5UeHh4eAd4eSGgDa5diLwcPEwzeHh4eAd4s206Ty13LWte/MXDw8M7wUvcszZ/vqG3KSEaF8h/Vjw8PLySN2tu5eWJTTMsiTC6Ax4eHt6tvHaDboeukoN1XsKoR7Lw8PDw/oQ3a9vnm3WylHmRInpiwMPDwzvGmx2I90llE8OLJcbDw8M7wMtPoW3jf99/y0sPeHh4eO/ltdQ8ebQH7vz92eMBHh4e3oyXfFneskoSyYw0PLLj4eHhHeC1A6CzEPMDcT6+UPwAeHh4eLfyZo/3yeu86ZUnj7oJh4eHh3eY1946R7Zh5ekhqqbg4eHh3cqblR5mgwX5Ib5tm71YXDw8PLxbebMvzq92BCH53qLMgYeHh3eAtynm5i2xvLxbzDXkeQ8PDw/vVt5Xec0O08kyJdR8WfHw8PDO8WaH4/2wVFu8SBpveQkYDw8Pb89rw8q371nLbdMew8PDw/tLXhJK3tZKMs9dIwIv2Hh4eHhv5c1aaJsDegJ4cXDHw8PDeyuvHY3KSxL7UYais4eHh4d3E2/T9JphNmNbeZLAw8PDO8HbDDblXbV84CAPd4jBw8PDm/O+AfjPIhZQxvqqAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACtklEQVR42u3awU7sMAwFUP7/p2H7JJjMtR0XnnS6QjDT5HRRm+t8fMTX5z/Xq99//2vyyfO3zqtfu/Dw8PAGWz9v4oyswr5/N9lDvmc8PDy8bd6rbeWv73yL5xXzB3HeMx4eHt7f4SWNdf6ZalOOh4eH97/z8uJRbcR7a+Hh4eE9yasGAZPiceu7l7MWPDw8vE7XOnpBP/nzynwPDw8PbzxVr75we+HC/P4v18XDw8Nb4FVDgWSQP/9udWx2XgsPDw/ved48qL0bWFTDXzw8PLy7vOrRqPPyvdFXUhKa7TgeHh7eGq/ayJ4HUW8a3LjhTh7Bm8eBh4eHt8DL49f5kL46+L82zcPDw8NbOygwOW41Ly15u3ztZBkeHh7egNcLapOhV96CVwPiaPSFh4eHt8DLC0C1/b3VLueHEn64Px4eHt4arxcr9FrqPAKuBiU/rIiHh4e3xpsck6qOwfI4OC8tUd3Dw8PDu8qbhK3VKLZ3YKtQDCZ5MB4eHl7MSzaUH5zKy8N8vv8m8MXDw8N7hJe/jvOhVy+qyB/Ky1Xw8PDwFnj5R/OWuloAquVhsi4eHh7enJccmeq9dveefWFveHh4eGu83rVXEpIHFzX0eHh4eAu8atCQHyPoHQKoHjjI74aHh4d3lzffUF4GetFwPhKL/m/Aw8PDW+b1mtq85b1VkAo9OB4eHt5VXlISepFr9ZPzowZ4eHh4T/J6Qer8pd+73twHDw8P7yqvF5Umty6/vltx8Jv94OHh4S3wei/f+fGC3iMYRRJ4eHh4V3m9kXwe9Z6LRzV6SEoRHh4e3jO8aqzQC16rDfS1moaHh4f3q7weJm+489AharXx8PDw/gwvCQ7yxjpvx/ODC3h4eHjbvN5xqzy8qBaPW8M2PDw8vA1e9T/66jLVx1Rd93JggYeHh3e6vgC1Uc8U606vrwAAAABJRU5ErkJggg==" alt="微信分享二维码">
 </div>
 
 

@@ -17,15 +17,13 @@
     <title>Find+wc统计代码行数(文件名含空格) | 木夕のblog | 采菊东篱下,悠然见南山</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
-    <meta name="theme-color" content="#9932CD">
-    
     
     <meta name="keywords" content="shell,linux">
     <meta name="description" content="一开始这样写find . -name &amp;quot;*.cpp&amp;quot; | xargs wc -l，名字有空格的文件无法处理 后来就在网上找，下面这个方法可以： 12&amp;lt;!-- more --&amp;gt;find . -name &quot;*.cpp&quot; -print0 | xargs -0 wc -l 好像是把空格替换成’\0’了">
 <meta name="keywords" content="shell,linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Find+wc统计代码行数(文件名含空格)">
-<meta property="og:url" content="http://wmjtxt.net/2019/03/25/find_wc/index.html">
+<meta property="og:url" content="http://www.wmjtxt.net/2019/03/25/find_wc/index.html">
 <meta property="og:site_name" content="木夕のblog">
 <meta property="og:description" content="一开始这样写find . -name &amp;quot;*.cpp&amp;quot; | xargs wc -l，名字有空格的文件无法处理 后来就在网上找，下面这个方法可以： 12&amp;lt;!-- more --&amp;gt;find . -name &quot;*.cpp&quot; -print0 | xargs -0 wc -l 好像是把空格替换成’\0’了">
 <meta property="og:locale" content="default">
@@ -53,7 +51,7 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(/images/lighnting.jpg)">
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
           <img src="/images/wmj.png">
@@ -82,7 +80,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/tags/">
+              <a href="/tags">
                 <i class="icon icon-lg icon-tags"></i>
                 Tags
               </a>
@@ -208,7 +206,7 @@
     </div>
     
     <footer>
-        <a href="http://wmjtxt.net">
+        <a href="http://www.wmjtxt.net">
             <img src="/images/wmj.png" alt="写诗的木夕">
             写诗的木夕
         </a>
@@ -234,7 +232,7 @@
 <div class="page-share" id="pageShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&pic=http://wmjtxt.net/images/wmj.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&pic=http://www.wmjtxt.net/images/wmj.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -244,22 +242,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://wmjtxt.net/2019/03/25/find_wc/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.wmjtxt.net/2019/03/25/find_wc/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&url=http://wmjtxt.net/2019/03/25/find_wc/&via=http://wmjtxt.net" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&url=http://www.wmjtxt.net/2019/03/25/find_wc/&via=http://www.wmjtxt.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://wmjtxt.net/2019/03/25/find_wc/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.wmjtxt.net/2019/03/25/find_wc/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -303,15 +301,6 @@
 
     
 
-
-<section class="comments" id="comments">
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_shortname = 'true';
-    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
 
 
 
@@ -420,7 +409,7 @@
 <div class="global-share" id="globalShare">
     <ul class="reset share-icons">
       <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&pic=http://wmjtxt.net/images/wmj.png" data-title="微博">
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&pic=http://www.wmjtxt.net/images/wmj.png" data-title="微博">
           <i class="icon icon-weibo"></i>
         </a>
       </li>
@@ -430,22 +419,22 @@
         </a>
       </li>
       <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&source=" data-title=" QQ">
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.wmjtxt.net/2019/03/25/find_wc/&title=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&source=" data-title=" QQ">
           <i class="icon icon-qq"></i>
         </a>
       </li>
       <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://wmjtxt.net/2019/03/25/find_wc/" data-title=" Facebook">
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.wmjtxt.net/2019/03/25/find_wc/" data-title=" Facebook">
           <i class="icon icon-facebook"></i>
         </a>
       </li>
       <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&url=http://wmjtxt.net/2019/03/25/find_wc/&via=http://wmjtxt.net" data-title=" Twitter">
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Find+wc统计代码行数(文件名含空格)》 — 木夕のblog&url=http://www.wmjtxt.net/2019/03/25/find_wc/&via=http://www.wmjtxt.net" data-title=" Twitter">
           <i class="icon icon-twitter"></i>
         </a>
       </li>
       <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://wmjtxt.net/2019/03/25/find_wc/" data-title=" Google+">
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.wmjtxt.net/2019/03/25/find_wc/" data-title=" Google+">
           <i class="icon icon-google-plus"></i>
         </a>
       </li>
@@ -456,7 +445,7 @@
 <div class="page-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABvElEQVR42u3aQY7DIAwF0N7/0h1pVrNJ+m0DjUaPVRSl8OjCMjavVzzev+Pv89W4+v7+efHAxcUdc/Pl77+52t79tsvz4+LiHuTmU+cL36+SBDVcXNznc5NUJvkSFxf3v3Jz+v0bXFzcJ3N7YShJaCZBEBcX91vcXsF07fP2+i4uLu6irkR15CGvOT8uLu4Rbp6OTI40eXqUbB4XF/cMtzd1UiRNSqX5Wri4uGe41SsUOag3/4dvcHFxj3AnjZMeKz8+RUENFxd3MzfPidY2WkatFFxc3G3c+x300pS87ZqvhYuLe56bh7BJYaX6RxRui+Di4i7lrs2VqgnQKC/DxcXdwE1KEpPrWTk3eYOLi3uSO+nN5keaSUsGFxf3JLfX8kyI1bSp2UTBxcXdwJ0s1guLecIUHX5wcXE3cCes6pWLahLz4Ve4uLjbuO/iKDQ5WgHrQ3DExcU9ws1HHtQS3HwbuLi4u7m94FVtlFZZl4kRLi7uQW7eJqluoxo7ywURXFzcB3DnZdNqQMTFxX0yt3qMyVOZQtkFFxf3IDc//BQOKkGKUz4a4eLiHuH22iF5ijMppy6o7+Li4ta4P8Uh3UQ4j94JAAAAAElFTkSuQmCC" alt="微信分享二维码">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxUlEQVR42u3aS4rDMBAFwNz/0h6YVWCw8lotKR4orQyxlbIXTX/0esXr+l3v1+/r7v67p/7uuXjh4uK2uddwVbn9l/mwAy4u7kFuErw6fzzeMzHg4uI+kztOSpJ75j4HLi7uk7lJKjNOfXBxcf8XN0lNouIkQB+q1XBxcbv7T6Yjq66393dxcXEXTSWqAS5pi3T+FxcX9wx3rp3RaXPkLdfCA7i4uEu51RCTFzbVUidqoODi4h7h5klJPmLpt1k/fBpcXNyD3GrqUx2fzO1Wnvzg4uIu5SZFSN4Q6RzvwMXF/S43H5RWy5V8tySRwsXFPcnNG5d5UOukPoUPgYuLu5k7JvaHIp0mCC4u7nluNQDlr5GkMvnRjdvTIri4uBu4cylLYSAalDF54YSLi3ue2xmRVlOcVn8XFxf3q9y1Bcwc6MM9uLi4R7g7jmVUE5q5NAgXF3cV9yquvOXRCYW3v+Li4h7hzkW+TiBbVWjh4uLu5ubBq98AXXxOBBcXdzN3VaDpHOAoHMLAxcV9PLeTVbXOkeHi4j6AW21hJHeWm6q4uLgHuXmTdBzmqoPY8ugFFxf3CHeuYZoPYucOWCzu7+Li4qbcH0K/BhwSK+caAAAAAElFTkSuQmCC" alt="微信分享二维码">
 </div>
 
 
