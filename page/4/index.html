@@ -77,7 +77,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/tags">
+              <a href="/tags/">
                 <i class="icon icon-lg icon-tags"></i>
                 Tags
               </a>
@@ -98,7 +98,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="http://www.weibo.com/木夕木火" target="_blank">
+              <a href="https://weibo.com/671238643/home?wvr=5" target="_blank">
                 <i class="icon icon-lg icon-weibo"></i>
                 Weibo
               </a>
@@ -128,7 +128,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -187,16 +187,16 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        目录
-ssh
-git
-gcc
+        <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
+<li><a href="#ssh">ssh</a></li>
+<li><a href="#git">git</a></li>
+<li><a href="#gcc">gcc</a>
     
 
         <a href="/2018/09/29/myDeepin/" class="post-more waves-effect waves-button">
-            続きを読む…
+            Continue reading...
         </a>
-    </div>
+    </li></ul></div>
     
     <div class="post-footer">
         
@@ -234,13 +234,13 @@ gcc
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        1.模块度(Modularity)&emsp;&emsp;把划分社团后的网络与相应的零模型(Null model)进行比较，以度量社团划分划分的质量。一个网络的模块度定义为：该网络的社团内部边数与相应的零模型的社团内部变数之差占整个网络边数的比例。&emsp;&emsp;计算公式为：
+        <h2 id="1-模块度-Modularity"><a href="#1-模块度-Modularity" class="headerlink" title="1.模块度(Modularity)"></a>1.模块度(Modularity)</h2><p>&emsp;&emsp;把划分社团后的网络与相应的零模型(Null model)进行比较，以度量社团划分划分的质量。一个网络的模块度定义为：该网络的社团内部边数与相应的零模型的社团内部变数之差占整个网络边数的比例。<br><br>&emsp;&emsp;计算公式为：<br><br>
     
 
         <a href="/2018/09/28/Community-Detection-values/" class="post-more waves-effect waves-button">
-            続きを読む…
+            Continue reading...
         </a>
-    </div>
+    </p></div>
     
     <div class="post-footer">
         
@@ -278,14 +278,14 @@ gcc
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        1.安装mingw一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。
-安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个IDE比较好。
+        <h2 id="1-安装mingw"><a href="#1-安装mingw" class="headerlink" title="1.安装mingw"></a>1.安装mingw</h2><p>一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。</p>
+<p>安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个IDE比较好。<br>
     
 
         <a href="/2018/09/19/配置win10/" class="post-more waves-effect waves-button">
-            続きを読む…
+            Continue reading...
         </a>
-    </div>
+    </p></div>
     
     <div class="post-footer">
         
@@ -323,18 +323,18 @@ gcc
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        参考https://github.com/Valloric/YouCompleteMe
-
-1.安装Vundle
-
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-把以下内容复制到.vimrc:
+        <p>参考<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">https://github.com/Valloric/YouCompleteMe</a></p>
+<ul>
+<li><p>1.安装Vundle</p>
+<ul>
+<li><code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</code></li>
+<li><p>把以下内容复制到.vimrc:</p>
     
 
         <a href="/2018/05/14/在deepin上安装YouCompleteMe/" class="post-more waves-effect waves-button">
-            続きを読む…
+            Continue reading...
         </a>
-    </div>
+    </li></ul></li></ul></div>
     
     <div class="post-footer">
         
@@ -372,12 +372,12 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        12345678#!/bin/shecho "\---\n\layout: post\n\&lt;!-- more --&gt;title:\n\---\" &gt; $(date +%Y-%m-%d)-$1.md;
+        <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>!/bin/sh</span><br><span class="line">echo "\</span><br><span class="line">---\n\</span><br><span class="line">layout: post\n\</span><br><span class="line">&lt;!-- more --&gt;</span><br><span class="line">title:\n\</span><br><span class="line">---\</span><br><span class="line">" &gt; $(date +%Y-%m-%d)-$1.md;</span><br></pre></td></tr></table></figure>
 
     
 
         <a href="/2018/05/03/wmj-auto.sh/" class="post-more waves-effect waves-button">
-            続きを読む…
+            Continue reading...
         </a>
     </div>
     
@@ -420,7 +420,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">

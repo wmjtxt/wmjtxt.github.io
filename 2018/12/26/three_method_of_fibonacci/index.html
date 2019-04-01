@@ -88,7 +88,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="/tags">
+              <a href="/tags/">
                 <i class="icon icon-lg icon-tags"></i>
                 Tags
               </a>
@@ -109,7 +109,7 @@
             </li>
         
             <li class="waves-block waves-effect">
-              <a href="http://www.weibo.com/木夕木火" target="_blank">
+              <a href="https://weibo.com/671238643/home?wvr=5" target="_blank">
                 <i class="icon icon-lg icon-weibo"></i>
                 Weibo
               </a>
@@ -139,7 +139,7 @@
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
                 <i class="icon icon-lg icon-chevron-left"></i>
             </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="検索">
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
             <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
                 <i class="icon icon-lg icon-search"></i>
             </a>
@@ -260,7 +260,7 @@
     <div class="content">
         
 <span class="post-time">
-    最終更新：<time datetime="2019-03-29T08:17:40.568Z" itemprop="dateUpdated">2019-03-29 16:17:40</time>
+    Last updated: <time datetime="2019-03-29T08:17:40.568Z" itemprop="dateUpdated">2019-03-29 16:17:40</time>
 </span><br>
 
 
@@ -364,11 +364,37 @@
     
 
 
+<section class="comments" id="comments">
+    <div id="disqus_thread"></div>
+    <script>
+    var disqus_shortname = 'true';
+    lazyScripts.push('//' + disqus_shortname + '.disqus.com/embed.js')
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
 
 
 
 
 
+
+
+<section class="comments" id="comments">
+    <div id="gitment_thread"></div>
+    <link rel="stylesheet" href="//unpkg.com/gitment/style/default.css">
+    <script src="//unpkg.com/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+            owner: '',
+            repo: '',
+            oauth: {
+                client_id: '',
+                client_secret: '',
+            },
+        })
+        gitment.render('comments')
+    </script>
+</section>
 
 
 
@@ -430,7 +456,7 @@
             
                 <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
             
-            <span>このブログの内容物は<a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ja">クリエイティブ・コモンズ 表示 - 非営利 - 継承 4.0 国際ライセンスの下に提供されています</a></span>
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
         </p>
     </div>
     <div class="bottom">
