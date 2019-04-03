@@ -29,8 +29,8 @@
     
         <link rel="alternate" type="application/atom+xml" title="木夕のblog" href="/atom.xml">
     
-    <link rel="shortcut icon" href="/images/favicon.ico">
-    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <link rel="shortcut icon" href="/">
+    <link rel="stylesheet" href="/css/style.css?v=1.7.2">
     <script>window.lazyScripts=[]</script>
 
     <!-- custom head -->
@@ -46,68 +46,19 @@
     <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
         <i class="icon icon-lg icon-close"></i>
     </a>
-    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+    <div class="brand-wrap" style="background-image:url(/)">
       <div class="brand">
         <a href="/" class="avatar waves-effect waves-circle waves-light">
-          <img src="/images/wmj.png">
+          <img src="/">
         </a>
         <hgroup class="introduce">
           <h5 class="nickname">写诗的木夕</h5>
-          <a href="mailto:972213032@qq.com" title="972213032@qq.com" class="mail">972213032@qq.com</a>
-        </hgroup>
+          <a href="mailto:undefined" class="mail">
+        </a></hgroup>
       </div>
     </div>
     <div class="scroll-wrap flex-col">
       <ul class="nav">
-        
-            <li class="waves-block waves-effect">
-              <a href="/">
-                <i class="icon icon-lg icon-home"></i>
-                主页
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/archives">
-                <i class="icon icon-lg icon-archives"></i>
-                Archives
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/tags">
-                <i class="icon icon-lg icon-tags"></i>
-                Tags
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/categories">
-                <i class="icon icon-lg icon-th-list"></i>
-                Categories
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="https://github.com/wmjtxt" target="_blank">
-                <i class="icon icon-lg icon-github"></i>
-                Github
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="https://weibo.com/671238643/home?wvr=5" target="_blank">
-                <i class="icon icon-lg icon-weibo"></i>
-                Weibo
-              </a>
-            </li>
-        
-            <li class="waves-block waves-effect">
-              <a href="/tags/诗歌">
-                <i class="icon icon-lg icon-link"></i>
-                诗歌
-              </a>
-            </li>
         
       </ul>
     </div>
@@ -122,20 +73,6 @@
         </a>
         <div class="flex-col header-title ellipsis">木夕のblog</div>
         
-        <div class="search-wrap" id="search-wrap">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
-                <i class="icon icon-lg icon-chevron-left"></i>
-            </a>
-            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
-            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
-                <i class="icon icon-lg icon-search"></i>
-            </a>
-        </div>
-        
-        
-        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
-            <i class="icon icon-lg icon-share-alt"></i>
-        </a>
         
     </div>
 </header>
@@ -185,11 +122,7 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <p>一开始这样写<code>find . -name &quot;*.cpp&quot; | xargs wc -l</code>，名字有空格的文件无法处理</p>
-<p>后来就在网上找，下面这个方法可以：</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br><span class="line">find . -name "*.cpp" -print0 | xargs -0 wc -l</span><br></pre></td></tr></table></figure>
-<p>好像是把空格替换成’\0’了</p>
-
+        一开始这样写find . -name &quot;*....
     
 
         <a href="/2019/03/25/find_wc/" class="post-more waves-effect waves-button">
@@ -233,7 +166,7 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1>
+        Linux常用命令
     
 
         <a href="/2019/03/18/linux_command/" class="post-more waves-effect waves-button">
@@ -277,17 +210,17 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <h1 id="1-epoll"><a href="#1-epoll" class="headerlink" title="1.epoll"></a>1.epoll</h1><p>epoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。</p>
-<ul>
-<li>首先，epoll使用一组函数来完成任务，而不是单个函数。</li>
-<li>其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。</li>
-<li>但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。
+        1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。
+
+首先，epoll使用一组函数来完成任务，而不是单个函数。
+其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。
+但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。
     
 
         <a href="/2019/03/09/epoll/" class="post-more waves-effect waves-button">
             Continue reading...
         </a>
-    </li></ul></div>
+    </div>
     
     <div class="post-footer">
         
@@ -325,7 +258,7 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <h1 id="LeedCode-37-Sudoku-Solver"><a href="#LeedCode-37-Sudoku-Solver" class="headerlink" title="LeedCode 37.Sudoku Solver"></a>LeedCode 37.Sudoku Solver</h1><h1 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h1>
+        LeedCode 37.Sudoku Solver题目描述
     
 
         <a href="/2019/03/07/LeedCode_37_Sudoku_Solver/" class="post-more waves-effect waves-button">
@@ -369,7 +302,7 @@
     <div class="post-content" id="post-content" itemprop="postContent">
 
     
-        <h1 id="438-Find-All-Anagrams-in-a-String"><a href="#438-Find-All-Anagrams-in-a-String" class="headerlink" title="438.Find All Anagrams in a String"></a>438.Find All Anagrams in a String</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述:"></a>题目描述:</h2>
+        438.Find All Anagrams in a String题目描述:
     
 
         <a href="/2019/03/06/LeedCode_438/" class="post-more waves-effect waves-button">
@@ -402,15 +335,6 @@
         <footer class="footer">
     <div class="top">
         
-<p>
-    <span id="busuanzi_container_site_uv" style="display:none">
-        站点总访客数：<span id="busuanzi_value_site_uv"></span>
-    </span>
-    <span id="busuanzi_container_site_pv" style="display:none">
-        站点总访问量：<span id="busuanzi_value_site_pv"></span>
-    </span>
-</p>
-
 
         <p>
             
@@ -420,10 +344,8 @@
         </p>
     </div>
     <div class="bottom">
-        <p><span>写诗的木夕 &copy; 2015 - 2019</span>
+        <p><span>写诗的木夕 &copy; 2019</span>
             <span>
-                
-                <a href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP19007801</a><br>
                 
                 Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
             </span>
@@ -436,87 +358,19 @@
 <a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
 
 
-
-<div class="global-share" id="globalShare">
-    <ul class="reset share-icons">
-      <li>
-        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.wmjtxt.net/page/2/&title=木夕のblog&pic=http://www.wmjtxt.net/images/wmj.png" data-title="微博">
-          <i class="icon icon-weibo"></i>
-        </a>
-      </li>
-      <li>
-        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
-          <i class="icon icon-weixin"></i>
-        </a>
-      </li>
-      <li>
-        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.wmjtxt.net/page/2/&title=木夕のblog&source=" data-title=" QQ">
-          <i class="icon icon-qq"></i>
-        </a>
-      </li>
-      <li>
-        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.wmjtxt.net/page/2/" data-title=" Facebook">
-          <i class="icon icon-facebook"></i>
-        </a>
-      </li>
-      <li>
-        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=木夕のblog&url=http://www.wmjtxt.net/page/2/&via=http://www.wmjtxt.net" data-title=" Twitter">
-          <i class="icon icon-twitter"></i>
-        </a>
-      </li>
-      <li>
-        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.wmjtxt.net/page/2/" data-title=" Google+">
-          <i class="icon icon-google-plus"></i>
-        </a>
-      </li>
-    </ul>
- </div>
-
-
-<div class="page-modal wx-share" id="wxShare">
-    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxUlEQVR42u3aQW7DMAwEwPz/0ynQayp3KcqEA4xORWvL0wshLfl6xev9u1a//1yrZ5I9DyxcXNw29325PrfOP796a7V/8s/j4uJOcq+L1z9bFGvOav+ogOLi4j6Me01PDjqrUoiLi/u93OQz1SdxcXGfzN27nPSvOjfe1XBxcRvcamB6x8835ru4uLhF7ru4ksNKEqruLVxc3Blu/vlqSUqK1F5QgouLezf3VKx5dsxis4Th4uIe4u6NX+TDW0kgUi6LuLi4I9xyKSk2QqrjGuV3cXFxj3I7YxCFIKNRLpcpDi4u7s3cvJDlh5Xqu4VuMC4u7gg3H3fojFN0vouLizvJTRoknYtQFRQdfXBxcUe41fZGZ2KqE7Pi4uLOcPNjTTVIrTZRkiMRLi7uDLcK6oehrcAUFxd3hJsPQ+TXnr1LTlT+cHFxB7n9UYlqRLJ56cLFxR3k7oUanYK1F6fi4uLOcKsFpRqeJlem62tPK9/FxcVtcKuBRR6OnH0eFxd3nrtXvPJitFdB/3geFxf3Ydx8LKPfnomarLi4uI/hVhulydUo+SsuLu4892y42Wm+HotFcHFxG9x+SzUPU069i4uLexv3BwgITdTb6AO3AAAAAElFTkSuQmCC" alt="微信分享二维码">
-</div>
-
-
-
-
     <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
 <script>
-var BLOG = { ROOT: '/', SHARE: true, REWARD: false };
+var BLOG = { ROOT: '/', SHARE: , REWARD: false };
 
 
 </script>
 
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
-
-
-<div class="search-panel" id="search-panel">
-    <ul class="search-result" id="search-result"></ul>
-</div>
-<template id="search-tpl">
-<li class="item">
-    <a href="{path}" class="waves-block waves-effect">
-        <div class="title ellipsis" title="{title}">{title}</div>
-        <div class="flex-row flex-middle">
-            <div class="tags ellipsis">
-                {tags}
-            </div>
-            <time class="flex-col time">{date}</time>
-        </div>
-    </a>
-</li>
-</template>
-
-<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+<script src="/js/main.min.js?v=1.7.2"></script>
 
 
 
 
 
-
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
