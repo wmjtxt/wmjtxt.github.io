@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>GDB and Make | 木夕のblog | 采菊东篱下,悠然见南山</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    
+    <meta name="keywords" content="C++">
+    <meta name="description" content="MySQL Oracle poi epoll">
+<meta name="keywords" content="C++">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GDB and Make">
+<meta property="og:url" content="http://www.wmjtxt.net/2019/03/25/gdb_make/index.html">
+<meta property="og:site_name" content="木夕のblog">
+<meta property="og:description" content="MySQL Oracle poi epoll">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-03-29T07:57:01.159Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GDB and Make">
+<meta name="twitter:description" content="MySQL Oracle poi epoll">
+    
+        <link rel="alternate" type="application/atom+xml" title="木夕のblog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+</head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide">
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/images/wmj.png">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">写诗的木夕</h5>
+          <a href="mailto:972213032@qq.com" title="972213032@qq.com" class="mail">972213032@qq.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/">
+                <i class="icon icon-lg icon-home"></i>
+                主页
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives">
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags">
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/categories">
+                <i class="icon icon-lg icon-th-list"></i>
+                Categories
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/wmjtxt" target="_blank">
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://weibo.com/671238643/home?wvr=5" target="_blank">
+                <i class="icon icon-lg icon-weibo"></i>
+                Weibo
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags/诗歌">
+                <i class="icon icon-lg icon-link"></i>
+                写诗的木夕
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">GDB and Make</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">GDB and Make</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2019-03-25T05:00:00.000Z" itemprop="datePublished" class="page-time">
+  2019-03-25
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#GDB"><span class="post-toc-number">1.</span> <span class="post-toc-text">GDB</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Make"><span class="post-toc-number">2.</span> <span class="post-toc-text">Make</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#定义变量的两种方法"><span class="post-toc-number">2.1.</span> <span class="post-toc-text">定义变量的两种方法</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#函数"><span class="post-toc-number">2.2.</span> <span class="post-toc-text">函数</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#make的命令行选项"><span class="post-toc-number">2.3.</span> <span class="post-toc-text">make的命令行选项</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#采用for循环编译多个目标文件的Makefile写法"><span class="post-toc-number">2.4.</span> <span class="post-toc-text">采用for循环编译多个目标文件的Makefile写法</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-gdb_make" class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">GDB and Make</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2019-03-25 13:00:00" datetime="2019-03-25T05:00:00.000Z" itemprop="datePublished">2019-03-25</time>
+
+            
+
+
+            
+<span id="busuanzi_container_page_pv" title="文章总阅读量" style="display:none">
+    <i class="icon icon-eye icon-pr"></i><span id="busuanzi_value_page_pv"></span>
+</span>
+
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <ul>
+<li><a href>MySQL</a></li>
+<li><a href>Oracle</a></li>
+<li><a href>poi</a></li>
+<li><a href>epoll</a><a id="more"></a></li>
+<li><a href>redis</a></li>
+<li><a href>log4cpp</a></li>
+<li><a href>socket</a></li>
+<li><a href>C/S模式</a></li>
+<li><a href>C++, Java, Python</a></li>
+<li><a href>STL</a></li>
+<li><a href>Linux环境编程</a></li>
+<li><a href="#gdb">GDB</a></li>
+<li><a href="#make">Make</a></li>
+<li><a href>多线程编程</a></li>
+<li><a href>git,github</a></li>
+</ul>
+<h1 id="GDB"><a href="#GDB" class="headerlink" title="GDB"></a>GDB</h1><ul>
+<li><p>1.编译时加上-g</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ g++ *.cpp -g</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>2.执行时</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ gdb a.out</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>或者分两步<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ gdb</span><br><span class="line">(gdb)file a.out</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>命令</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>含义</th>
+<th>对应windows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>l</td>
+<td>显示代码</td>
+<td></td>
+</tr>
+<tr>
+<td>r</td>
+<td>开始运行</td>
+<td>F9</td>
+</tr>
+<tr>
+<td>b 4</td>
+<td>在第四行设置断点</td>
+<td>F5</td>
+</tr>
+<tr>
+<td>info b</td>
+<td>查看所有断点</td>
+<td></td>
+</tr>
+<tr>
+<td>delete [断点号]</td>
+<td>查看所有断点</td>
+<td></td>
+</tr>
+<tr>
+<td>n</td>
+<td>下一步,不进入函数</td>
+<td>F10</td>
+</tr>
+<tr>
+<td>s</td>
+<td>表示单步进入函数</td>
+<td>F11</td>
+</tr>
+<tr>
+<td>p i</td>
+<td>打印变量i</td>
+<td></td>
+</tr>
+<tr>
+<td>c</td>
+<td>继续运行,直到函数结束或遇到新的断点</td>
+<td></td>
+</tr>
+<tr>
+<td>q</td>
+<td>退出</td>
+</tr>
+</tbody>
+</table>
+<h1 id="Make"><a href="#Make" class="headerlink" title="Make"></a>Make</h1><p>格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">target: dependency_files</span><br><span class="line">&lt; tab &gt; command</span><br></pre></td></tr></table></figure>
+<p>.PHONY是Makefile文件的关键字，表示它后面列表中的目标均为伪目标。伪目标通常用在清理文件、强制重新编译等情况下</p>
+<p>自定义文件名的话,比如makename执行时在后面加上-f makename</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">make -f makename</span><br></pre></td></tr></table></figure>
+<p><strong>变量函数与规则</strong></p>
+<p>随着项目越来越大，源文件也越来越复杂，这个时候就要用到变量，写出通用性较强的makefile文件</p>
+<h2 id="定义变量的两种方法"><a href="#定义变量的两种方法" class="headerlink" title="定义变量的两种方法"></a>定义变量的两种方法</h2><ul>
+<li>1.变量名=变量值   递归变量展开（几个变量共享一个值） //不常用</li>
+<li>2.变量名:=变量值  简单变量展开（类似于C++的赋值）    //常用</li>
+</ul>
+<p>变量分为; 用户自定义变量，预定义变量（CFLAGS），自动变量，环境变量</p>
+<p>自动变量：指在使用的时候，自动用特定的值替换，常用的有: </p>
+<table>
+<thead>
+<tr>
+<th>变量</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$@</td>
+<td>当前规则的目标文件（重点）</td>
+</tr>
+<tr>
+<td>$&lt;</td>
+<td>当前规则的第一个依赖文件</td>
+</tr>
+<tr>
+<td>$^</td>
+<td>当前规则的所有依赖文件，以空格分隔（重点）</td>
+</tr>
+<tr>
+<td>$?</td>
+<td>规则中日期新于目标文件的所有相关文件列表，逗号分隔</td>
+</tr>
+<tr>
+<td>$(@D)</td>
+<td>目标文件的目录名部分</td>
+</tr>
+<tr>
+<td>$(@F)</td>
+<td>目标文件的文件名部分</td>
+</tr>
+</tbody>
+</table>
+<p>预定义变量：内部事先定义好的变量，但是它的值是固定的，并且有些的值是为空的。</p>
+<ul>
+<li>AR: 库文件打包程序默认为ar</li>
+<li>AS: 汇编程序，默认为as</li>
+<li>CC: c编译器默认为cc</li>
+<li>CPP: C预编译器，默认为$(CC) -E</li>
+<li>CXX: C++编译器，默认为g++</li>
+<li>RM: 删除，默认为rm -f</li>
+<li>ARFLAGS: 库选项，无默认</li>
+<li>ASFLAGS: 汇编选项，无默认</li>
+<li>CFLAGS: c编译器选项，无默认</li>
+<li>CPPFLAGS: c预编译器选项，无默认</li>
+<li>CXXFLAGS: c++编译器选项</li>
+</ul>
+<h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ul>
+<li><p>1.wildcard : 搜索当前目录下的文件名，展开成一列所有符合由其参数描述的文件名，文件间以空格间隔。<br><code>SOURCES=$(wildcard *.cpp)</code>把当前目录下所有.cpp文件存入变量SOURCES里。</p>
+</li>
+<li><p>2.字符串替换函数: $(patsubst要查找的子串，替换后的目标子串，源字符串)。将源字符串(以空格分隔)中的<br>所有要查找的子串替换成目标子串。如OBJS=$(patsubst %.cpp,%.o,$(SOURCES))<br>把SOURCES中的.cpp替换为.o</p>
+</li>
+<li><p>3.$(addprefix 前缀，源字符串)函数把第二个参数列表的每一项前缀上第一个参数值???</p>
+</li>
+</ul>
+<p>下面是一个较为通用的makefile:</p>
+<figure class="highlight makefile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">DIR      := ./debug</span><br><span class="line">EXE      := <span class="variable">$(DIR)</span>/main.exe</span><br><span class="line">CC       := g++</span><br><span class="line">LIBS     :=</span><br><span class="line">SRCS     := <span class="variable">$(<span class="built_in">wildcard</span> *.cpp)</span> <span class="variable">$(<span class="built_in">wildcard</span> *.c)</span> <span class="variable">$(<span class="built_in">wildcard</span> *.cc)</span></span><br><span class="line">OCPP     := <span class="variable">$(<span class="built_in">patsubst</span> %.cpp, <span class="variable">$(DIR)</span>/%.o, $(<span class="built_in">wildcard</span> *.cpp)</span>)</span><br><span class="line">OC       := <span class="variable">$(<span class="built_in">patsubst</span> %.c, <span class="variable">$(DIR)</span>/%.co, $(<span class="built_in">wildcard</span> *.c)</span>)</span><br><span class="line">OCC      := <span class="variable">$(<span class="built_in">patsubst</span> %.cc, <span class="variable">$(DIR)</span>/%.cco, $(<span class="built_in">wildcard</span> *.cc)</span>)</span><br><span class="line">OCC      := <span class="variable">$(OC)</span> <span class="variable">$(OCC)</span> <span class="variable">$(OCPP)</span></span><br><span class="line">RM       := rm -rf</span><br><span class="line">CXXFLAGS := -Wall -g</span><br><span class="line">start : mkdebug <span class="variable">$(EXE)</span></span><br><span class="line">mkdebug :</span><br><span class="line">    @if[! -d <span class="variable">$(DIR)</span>]; then mkdir <span class="variable">$(DIR)</span>; fi;</span><br><span class="line"><span class="variable">$(EXE)</span> : <span class="variable">$(OBJS)</span></span><br><span class="line">    <span class="variable">$(CC)</span> -o <span class="variable">$@</span> <span class="variable">$(OBJS)</span> <span class="variable">$(<span class="built_in">addprefix</span> -l, <span class="variable">$(LIBS)</span>)</span></span><br><span class="line"><span class="variable">$(DIR)</span>/%.o : %.cpp</span><br><span class="line">    <span class="variable">$(CC)</span> -c <span class="variable">$(CXXFLAGS)</span> <span class="variable">$&lt;</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="variable">$(DIR)</span>/%.co : %.c</span><br><span class="line">    <span class="variable">$(CC)</span> -c <span class="variable">$(CXXFLAGS)</span> <span class="variable">$&lt;</span> -o <span class="variable">$@</span></span><br><span class="line"><span class="variable">$(DIR)</span>/%.cco : %.cc</span><br><span class="line">    <span class="variable">$(CC)</span> -c <span class="variable">$(CXXFLAGS)</span> <span class="variable">$&lt;</span> -o <span class="variable">$@</span></span><br><span class="line"></span><br><span class="line">.PHONY : clean rebuild</span><br><span class="line">clean :</span><br><span class="line">    @D<span class="variable">$(RM)</span> <span class="variable">$(DIR)</span>/*.exe <span class="variable">$(DIR)</span>/*.o <span class="variable">$(DIR)</span>/*.co <span class="variable">$(DIR)</span>/*.cco</span><br><span class="line">rebuild : clean start</span><br></pre></td></tr></table></figure>
+<h2 id="make的命令行选项"><a href="#make的命令行选项" class="headerlink" title="make的命令行选项"></a>make的命令行选项</h2><table>
+<thead>
+<tr>
+<th>命令格式</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-C dir</td>
+<td>读入指定目录下的makefile</td>
+</tr>
+<tr>
+<td>-f file</td>
+<td>读入当前目录下的file文件作为makefile</td>
+</tr>
+<tr>
+<td>-i</td>
+<td>忽略所有的命令行执行错误</td>
+</tr>
+<tr>
+<td>-I dir</td>
+<td>指定被包含的makefile所在目录</td>
+</tr>
+<tr>
+<td>-n</td>
+<td>只打印要执行的命令，但不执行这些命令</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>显示make变量数据库和隐含规则</td>
+</tr>
+<tr>
+<td>-s</td>
+<td>在执行命令时不显示命令</td>
+</tr>
+<tr>
+<td>-w</td>
+<td>如果make在执行过程中改变目录, 则打印当前目录名</td>
+</tr>
+</tbody>
+</table>
+<h2 id="采用for循环编译多个目标文件的Makefile写法"><a href="#采用for循环编译多个目标文件的Makefile写法" class="headerlink" title="采用for循环编译多个目标文件的Makefile写法"></a>采用for循环编译多个目标文件的Makefile写法</h2><p>…</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2019-03-29T07:57:01.159Z" itemprop="dateUpdated">2019-03-29 15:57:01</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="http://www.wmjtxt.net">
+            <img src="/images/wmj.png" alt="写诗的木夕">
+            写诗的木夕
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/C/">C++</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.wmjtxt.net/2019/03/25/gdb_make/&title=《GDB and Make》 — 木夕のblog&pic=http://www.wmjtxt.net/images/wmj.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.wmjtxt.net/2019/03/25/gdb_make/&title=《GDB and Make》 — 木夕のblog&source=
+MySQL
+Oracle
+poi
+epoll" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.wmjtxt.net/2019/03/25/gdb_make/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《GDB and Make》 — 木夕のblog&url=http://www.wmjtxt.net/2019/03/25/gdb_make/&via=http://www.wmjtxt.net" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.wmjtxt.net/2019/03/25/gdb_make/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between">
+  
+    <div class="waves-block waves-effect prev">
+      <a href="/2019/03/29/blog-transfer-to-Hexo/" id="post-prev" class="post-nav-link">
+        <div class="tips"><i class="icon icon-angle-left icon-lg icon-pr"></i> Prev</div>
+        <h4 class="title">博客迁移到Hexo</h4>
+      </a>
+    </div>
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2019/03/25/find_wc/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">Find+wc统计代码行数(文件名含空格)</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Valine Comments -->
+    <div class="comments vcomment" id="comments"></div>
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine@latest/dist/Valine.min.js"></script>
+    <!-- Valine Comments script -->
+    <script>
+        var GUEST_INFO = ['nick','mail','link'];
+        var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+          return GUEST_INFO.indexOf(item) > -1
+        });
+        new Valine({
+            el: '#comments',
+            notify: 'false' == 'true',
+            verify: 'false' == 'true',
+            appId: "4tTGIFVIbVtLxkWj9STjVP6q-gzGzoHsz",
+            appKey: "WyhzS2MIGIGDdxqiRCSEmHyh",
+            avatar: "mm",
+            placeholder: "Just go go",
+            guest_info: guest_info.length == 0 ? GUEST_INFO : guest_info,
+            pageSize: "10"
+        })
+    </script>
+    <!-- Valine Comments end -->
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        谢谢大爷~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/images/wx.png" alt="打赏二维码">
+        </div>
+        
+        <label class="reward-toggle">
+            <input id="rewardToggle" type="checkbox" class="reward-toggle-check" data-wechat="/images/wx.png" data-alipay="/images/zfb.png">
+            <div class="reward-toggle-ctrol">
+                <span class="reward-toggle-item wechat">微信</span>
+                <span class="reward-toggle-label"></span>
+                <span class="reward-toggle-item alipay">支付宝</span>
+            </div>
+        </label>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+<p>
+    <span id="busuanzi_container_site_uv" style="display:none">
+        站点总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style="display:none">
+        站点总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>写诗的木夕 &copy; 2018 - 2019</span>
+            <span>
+                
+                <a href="http://www.miitbeian.gov.cn/" target="_blank">豫ICP备19007801号</a><br>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://www.wmjtxt.net/2019/03/25/gdb_make/&title=《GDB and Make》 — 木夕のblog&pic=http://www.wmjtxt.net/images/wmj.png" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://www.wmjtxt.net/2019/03/25/gdb_make/&title=《GDB and Make》 — 木夕のblog&source=
+MySQL
+Oracle
+poi
+epoll" data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://www.wmjtxt.net/2019/03/25/gdb_make/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《GDB and Make》 — 木夕のblog&url=http://www.wmjtxt.net/2019/03/25/gdb_make/&via=http://www.wmjtxt.net" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://www.wmjtxt.net/2019/03/25/gdb_make/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3aQXLDIAwF0Nz/0u62i5p8SYamnccq4zjwyEIjJF6veFzfRvJ8/U7yq9HAxcUdc6/lWC+ZzHz35G7+OwMuLu557nqxdQhbb683/+1zXFzcj+Tm4Ww9My4u7v/jVpOhXsKEi4v7u9wE0TvqJKnPlrMaLi7ugJtXKfd93lLfxcXFbXGv4kjaKvNU6XZ1XFzcI9xq+lJNRPJWSqG5i4uLe5BbTUSS5krvskXhrIaLi7uZ+yZ8tIog1cNPM8XBxcV9lJuEsMm3vQB3OzMuLu5BbkJ56lpVtWHzQyDDxcXdzM3TjmpJNC+nlv8IXFzc49zJtYl8w6OSCi4u7kFuL03pHZOqpVJcXNyT3Gq7tHrlIvm2cNUDFxf3CLfa3kgSl2Tzk8IKLi7ueW71akW1wPpwwRQXF3czNy9Y7Eh38otiuLi4J7n5ktXlq+PNDLi4uJu5V3Hkh6JqySPaJC4u7hFuNbismyWT5KY3Ay4u7j7upGCRl1Dzd0aJDi4u7qPcaqDpJSsPpDK4uLh/lts7ViVJDy4u7idzJ+GpegJ70xPGxcXdxq1eney9mbMKPWFcXNwN3N6JI2+lzEMkLi7uQe4XCz3sC5hU7JIAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+
+
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+</body>
+</html>
