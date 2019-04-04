@@ -5,9 +5,9 @@
   <subtitle>采菊东篱下,悠然见南山</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://www.wmjtxt.net/"/>
+  <link href="https://wmjtxt.net/"/>
   <updated>2019-03-31T14:08:43.388Z</updated>
-  <id>http://www.wmjtxt.net/</id>
+  <id>https://wmjtxt.net/</id>
   
   <author>
     <name>写诗的木夕</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>饮酒</title>
-    <link href="http://www.wmjtxt.net/2019/03/31/drink/"/>
-    <id>http://www.wmjtxt.net/2019/03/31/drink/</id>
+    <link href="https://wmjtxt.net/2019/03/31/drink/"/>
+    <id>https://wmjtxt.net/2019/03/31/drink/</id>
     <published>2019-03-31T13:49:40.000Z</published>
     <updated>2019-03-31T14:08:43.388Z</updated>
     
@@ -36,14 +36,14 @@
     </summary>
     
     
-      <category term="诗歌" scheme="http://www.wmjtxt.net/tags/%E8%AF%97%E6%AD%8C/"/>
+      <category term="诗歌" scheme="https://wmjtxt.net/tags/%E8%AF%97%E6%AD%8C/"/>
     
   </entry>
   
   <entry>
     <title>旧照片</title>
-    <link href="http://www.wmjtxt.net/2019/03/30/oldPhotos/"/>
-    <id>http://www.wmjtxt.net/2019/03/30/oldPhotos/</id>
+    <link href="https://wmjtxt.net/2019/03/30/oldPhotos/"/>
+    <id>https://wmjtxt.net/2019/03/30/oldPhotos/</id>
     <published>2019-03-30T14:03:30.000Z</published>
     <updated>2019-03-31T01:31:48.852Z</updated>
     
@@ -56,14 +56,14 @@
     </summary>
     
     
-      <category term="照片" scheme="http://www.wmjtxt.net/tags/%E7%85%A7%E7%89%87/"/>
+      <category term="照片" scheme="https://wmjtxt.net/tags/%E7%85%A7%E7%89%87/"/>
     
   </entry>
   
   <entry>
     <title>Reading</title>
-    <link href="http://www.wmjtxt.net/2019/03/30/reading/"/>
-    <id>http://www.wmjtxt.net/2019/03/30/reading/</id>
+    <link href="https://wmjtxt.net/2019/03/30/reading/"/>
+    <id>https://wmjtxt.net/2019/03/30/reading/</id>
     <published>2019-03-30T13:16:37.000Z</published>
     <updated>2019-03-30T14:18:07.920Z</updated>
     
@@ -83,14 +83,14 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://www.wmjtxt.net/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://wmjtxt.net/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>博客迁移到Hexo</title>
-    <link href="http://www.wmjtxt.net/2019/03/29/blog-transfer-to-Hexo/"/>
-    <id>http://www.wmjtxt.net/2019/03/29/blog-transfer-to-Hexo/</id>
+    <link href="https://wmjtxt.net/2019/03/29/blog-transfer-to-Hexo/"/>
+    <id>https://wmjtxt.net/2019/03/29/blog-transfer-to-Hexo/</id>
     <published>2019-03-29T06:49:54.000Z</published>
     <updated>2019-03-30T09:54:00.237Z</updated>
     
@@ -110,14 +110,14 @@
     </summary>
     
     
-      <category term="笔记" scheme="http://www.wmjtxt.net/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://wmjtxt.net/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>GDB and Make</title>
-    <link href="http://www.wmjtxt.net/2019/03/25/gdb_make/"/>
-    <id>http://www.wmjtxt.net/2019/03/25/gdb_make/</id>
+    <link href="https://wmjtxt.net/2019/03/25/gdb_make/"/>
+    <id>https://wmjtxt.net/2019/03/25/gdb_make/</id>
     <published>2019-03-25T05:00:00.000Z</published>
     <updated>2019-03-29T07:57:01.159Z</updated>
     
@@ -134,14 +134,14 @@
     </summary>
     
     
-      <category term="C++" scheme="http://www.wmjtxt.net/tags/C/"/>
+      <category term="C++" scheme="https://wmjtxt.net/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>Find+wc统计代码行数(文件名含空格)</title>
-    <link href="http://www.wmjtxt.net/2019/03/25/find_wc/"/>
-    <id>http://www.wmjtxt.net/2019/03/25/find_wc/</id>
+    <link href="https://wmjtxt.net/2019/03/25/find_wc/"/>
+    <id>https://wmjtxt.net/2019/03/25/find_wc/</id>
     <published>2019-03-25T04:00:00.000Z</published>
     <updated>2019-03-29T08:14:56.233Z</updated>
     
@@ -159,16 +159,16 @@
     </summary>
     
     
-      <category term="shell" scheme="http://www.wmjtxt.net/tags/shell/"/>
+      <category term="shell" scheme="https://wmjtxt.net/tags/shell/"/>
     
-      <category term="linux" scheme="http://www.wmjtxt.net/tags/linux/"/>
+      <category term="linux" scheme="https://wmjtxt.net/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>Linux常用命令总结</title>
-    <link href="http://www.wmjtxt.net/2019/03/18/linux_command/"/>
-    <id>http://www.wmjtxt.net/2019/03/18/linux_command/</id>
+    <link href="https://wmjtxt.net/2019/03/18/linux_command/"/>
+    <id>https://wmjtxt.net/2019/03/18/linux_command/</id>
     <published>2019-03-18T04:00:00.000Z</published>
     <updated>2019-03-30T13:54:46.939Z</updated>
     
@@ -181,18 +181,18 @@
     </summary>
     
     
-      <category term="shell" scheme="http://www.wmjtxt.net/tags/shell/"/>
+      <category term="shell" scheme="https://wmjtxt.net/tags/shell/"/>
     
-      <category term="c" scheme="http://www.wmjtxt.net/tags/c/"/>
+      <category term="c" scheme="https://wmjtxt.net/tags/c/"/>
     
-      <category term="linux" scheme="http://www.wmjtxt.net/tags/linux/"/>
+      <category term="linux" scheme="https://wmjtxt.net/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>Epoll、Select与poll</title>
-    <link href="http://www.wmjtxt.net/2019/03/09/epoll/"/>
-    <id>http://www.wmjtxt.net/2019/03/09/epoll/</id>
+    <link href="https://wmjtxt.net/2019/03/09/epoll/"/>
+    <id>https://wmjtxt.net/2019/03/09/epoll/</id>
     <published>2019-03-09T04:00:00.000Z</published>
     <updated>2019-03-29T08:16:32.434Z</updated>
     
@@ -209,16 +209,16 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://www.wmjtxt.net/tags/Linux/"/>
+      <category term="Linux" scheme="https://wmjtxt.net/tags/Linux/"/>
     
-      <category term="Socket" scheme="http://www.wmjtxt.net/tags/Socket/"/>
+      <category term="Socket" scheme="https://wmjtxt.net/tags/Socket/"/>
     
   </entry>
   
   <entry>
     <title>LeedCode 37.Sudoku Solver</title>
-    <link href="http://www.wmjtxt.net/2019/03/07/LeedCode_37_Sudoku_Solver/"/>
-    <id>http://www.wmjtxt.net/2019/03/07/LeedCode_37_Sudoku_Solver/</id>
+    <link href="https://wmjtxt.net/2019/03/07/LeedCode_37_Sudoku_Solver/"/>
+    <id>https://wmjtxt.net/2019/03/07/LeedCode_37_Sudoku_Solver/</id>
     <published>2019-03-07T04:00:00.000Z</published>
     <updated>2019-03-29T07:54:28.942Z</updated>
     
@@ -231,14 +231,14 @@
     </summary>
     
     
-      <category term="LeetCode" scheme="http://www.wmjtxt.net/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="https://wmjtxt.net/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode 438.Find All Anagrams in a String</title>
-    <link href="http://www.wmjtxt.net/2019/03/06/LeedCode_438/"/>
-    <id>http://www.wmjtxt.net/2019/03/06/LeedCode_438/</id>
+    <link href="https://wmjtxt.net/2019/03/06/LeedCode_438/"/>
+    <id>https://wmjtxt.net/2019/03/06/LeedCode_438/</id>
     <published>2019-03-06T04:00:00.000Z</published>
     <updated>2019-03-29T07:54:03.071Z</updated>
     
@@ -251,14 +251,14 @@
     </summary>
     
     
-      <category term="LeetCode" scheme="http://www.wmjtxt.net/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="https://wmjtxt.net/tags/LeetCode/"/>
     
   </entry>
   
   <entry>
     <title>斐波那契数列三种解法及时间复杂度分析</title>
-    <link href="http://www.wmjtxt.net/2018/12/26/three_method_of_fibonacci/"/>
-    <id>http://www.wmjtxt.net/2018/12/26/three_method_of_fibonacci/</id>
+    <link href="https://wmjtxt.net/2018/12/26/three_method_of_fibonacci/"/>
+    <id>https://wmjtxt.net/2018/12/26/three_method_of_fibonacci/</id>
     <published>2018-12-25T16:00:00.000Z</published>
     <updated>2019-03-29T08:17:40.568Z</updated>
     
@@ -271,16 +271,16 @@
     </summary>
     
     
-      <category term="C++" scheme="http://www.wmjtxt.net/tags/C/"/>
+      <category term="C++" scheme="https://wmjtxt.net/tags/C/"/>
     
-      <category term="斐波那契" scheme="http://www.wmjtxt.net/tags/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91/"/>
+      <category term="斐波那契" scheme="https://wmjtxt.net/tags/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91/"/>
     
   </entry>
   
   <entry>
     <title>LPA算法C++实现及模块度计算</title>
-    <link href="http://www.wmjtxt.net/2018/11/12/lpa%E7%AE%97%E6%B3%95c++%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%A8%A1%E5%9D%97%E5%BA%A6%E8%AE%A1%E7%AE%97/"/>
-    <id>http://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/</id>
+    <link href="https://wmjtxt.net/2018/11/12/lpa%E7%AE%97%E6%B3%95c++%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%A8%A1%E5%9D%97%E5%BA%A6%E8%AE%A1%E7%AE%97/"/>
+    <id>https://wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/</id>
     <published>2018-11-11T16:00:00.000Z</published>
     <updated>2019-03-29T08:17:17.008Z</updated>
     
@@ -293,16 +293,16 @@
     </summary>
     
     
-      <category term="复杂网络" scheme="http://www.wmjtxt.net/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
+      <category term="复杂网络" scheme="https://wmjtxt.net/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
     
-      <category term="LPA" scheme="http://www.wmjtxt.net/tags/LPA/"/>
+      <category term="LPA" scheme="https://wmjtxt.net/tags/LPA/"/>
     
   </entry>
   
   <entry>
     <title>去掉Deepin登录界面的模糊效果</title>
-    <link href="http://www.wmjtxt.net/2018/11/06/deepin-lockscreen/"/>
-    <id>http://www.wmjtxt.net/2018/11/06/deepin-lockscreen/</id>
+    <link href="https://wmjtxt.net/2018/11/06/deepin-lockscreen/"/>
+    <id>https://wmjtxt.net/2018/11/06/deepin-lockscreen/</id>
     <published>2018-11-05T16:00:00.000Z</published>
     <updated>2019-03-29T07:59:52.798Z</updated>
     
@@ -317,14 +317,14 @@
     </summary>
     
     
-      <category term="Deepin" scheme="http://www.wmjtxt.net/tags/Deepin/"/>
+      <category term="Deepin" scheme="https://wmjtxt.net/tags/Deepin/"/>
     
   </entry>
   
   <entry>
     <title>一些想法</title>
-    <link href="http://www.wmjtxt.net/2018/10/28/somethinkings/"/>
-    <id>http://www.wmjtxt.net/2018/10/28/somethinkings/</id>
+    <link href="https://wmjtxt.net/2018/10/28/somethinkings/"/>
+    <id>https://wmjtxt.net/2018/10/28/somethinkings/</id>
     <published>2018-10-27T16:00:00.000Z</published>
     <updated>2019-03-30T13:13:46.486Z</updated>
     
@@ -343,14 +343,14 @@
     </summary>
     
     
-      <category term="随笔" scheme="http://www.wmjtxt.net/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://wmjtxt.net/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>从Excel导数据到MySQL</title>
-    <link href="http://www.wmjtxt.net/2018/10/17/importDatatoMySQL/"/>
-    <id>http://www.wmjtxt.net/2018/10/17/importDatatoMySQL/</id>
+    <link href="https://wmjtxt.net/2018/10/17/importDatatoMySQL/"/>
+    <id>https://wmjtxt.net/2018/10/17/importDatatoMySQL/</id>
     <published>2018-10-16T16:00:00.000Z</published>
     <updated>2019-03-29T07:55:10.048Z</updated>
     
@@ -363,14 +363,14 @@
     </summary>
     
     
-      <category term="mysql" scheme="http://www.wmjtxt.net/tags/mysql/"/>
+      <category term="mysql" scheme="https://wmjtxt.net/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>The Config of My Deepin</title>
-    <link href="http://www.wmjtxt.net/2018/09/29/myDeepin/"/>
-    <id>http://www.wmjtxt.net/2018/09/29/myDeepin/</id>
+    <link href="https://wmjtxt.net/2018/09/29/myDeepin/"/>
+    <id>https://wmjtxt.net/2018/09/29/myDeepin/</id>
     <published>2018-09-28T16:00:00.000Z</published>
     <updated>2019-03-29T07:56:39.051Z</updated>
     
@@ -386,14 +386,14 @@
     </summary>
     
     
-      <category term="Deepin" scheme="http://www.wmjtxt.net/tags/Deepin/"/>
+      <category term="Deepin" scheme="https://wmjtxt.net/tags/Deepin/"/>
     
   </entry>
   
   <entry>
     <title>社团检测基本概念</title>
-    <link href="http://www.wmjtxt.net/2018/09/28/Community-Detection-values/"/>
-    <id>http://www.wmjtxt.net/2018/09/28/Community-Detection-values/</id>
+    <link href="https://wmjtxt.net/2018/09/28/Community-Detection-values/"/>
+    <id>https://wmjtxt.net/2018/09/28/Community-Detection-values/</id>
     <published>2018-09-27T16:00:00.000Z</published>
     <updated>2019-03-29T07:56:21.061Z</updated>
     
@@ -406,14 +406,14 @@
     </summary>
     
     
-      <category term="复杂网络" scheme="http://www.wmjtxt.net/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
+      <category term="复杂网络" scheme="https://wmjtxt.net/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>配置Win10</title>
-    <link href="http://www.wmjtxt.net/2018/09/19/%E9%85%8D%E7%BD%AEwin10/"/>
-    <id>http://www.wmjtxt.net/2018/09/19/配置win10/</id>
+    <link href="https://wmjtxt.net/2018/09/19/%E9%85%8D%E7%BD%AEwin10/"/>
+    <id>https://wmjtxt.net/2018/09/19/配置win10/</id>
     <published>2018-09-18T16:00:00.000Z</published>
     <updated>2019-03-29T07:56:03.711Z</updated>
     
@@ -427,14 +427,14 @@
     </summary>
     
     
-      <category term="windows" scheme="http://www.wmjtxt.net/tags/windows/"/>
+      <category term="windows" scheme="https://wmjtxt.net/tags/windows/"/>
     
   </entry>
   
   <entry>
     <title>在deepin里安装YouCompleteMe</title>
-    <link href="http://www.wmjtxt.net/2018/05/14/%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/"/>
-    <id>http://www.wmjtxt.net/2018/05/14/在deepin上安装YouCompleteMe/</id>
+    <link href="https://wmjtxt.net/2018/05/14/%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/"/>
+    <id>https://wmjtxt.net/2018/05/14/在deepin上安装YouCompleteMe/</id>
     <published>2018-05-13T16:00:00.000Z</published>
     <updated>2019-03-29T08:18:01.166Z</updated>
     
@@ -452,16 +452,16 @@
     </summary>
     
     
-      <category term="Linux" scheme="http://www.wmjtxt.net/tags/Linux/"/>
+      <category term="Linux" scheme="https://wmjtxt.net/tags/Linux/"/>
     
-      <category term="vim" scheme="http://www.wmjtxt.net/tags/vim/"/>
+      <category term="vim" scheme="https://wmjtxt.net/tags/vim/"/>
     
   </entry>
   
   <entry>
     <title>auto.sh</title>
-    <link href="http://www.wmjtxt.net/2018/05/03/wmj-auto.sh/"/>
-    <id>http://www.wmjtxt.net/2018/05/03/wmj-auto.sh/</id>
+    <link href="https://wmjtxt.net/2018/05/03/wmj-auto.sh/"/>
+    <id>https://wmjtxt.net/2018/05/03/wmj-auto.sh/</id>
     <published>2018-05-03T05:00:00.000Z</published>
     <updated>2019-03-29T08:01:04.191Z</updated>
     
@@ -477,7 +477,7 @@
     </summary>
     
     
-      <category term="shell" scheme="http://www.wmjtxt.net/tags/shell/"/>
+      <category term="shell" scheme="https://wmjtxt.net/tags/shell/"/>
     
   </entry>
   
