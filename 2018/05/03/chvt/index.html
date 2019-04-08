@@ -226,23 +226,11 @@
 </tr>
 </tbody>
 </table>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/screenshot1.png" alt="image" title>
-                </div>
-                <div class="image-caption">image</div>
-            </figure>
+<p><img src="/images/screenshot1.png" alt="image"></p>
 <p><code>screenshot.sh</code>代码如下<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span>!/bin/sh</span><br><span class="line">chvt 1; #在ubuntu中为 chvt 7;</span><br><span class="line">sleep 5s;</span><br><span class="line">DISPLAY=:0 XAUTHORITY=/var/run/lightdm/root/:0 xwd -root -out ~/screenshot.xwd;</span><br><span class="line"></span><br><span class="line">convert ~/screenshot.xwd /home/wmj/screenshot_$(date +%Y%m%d%H%M%S).png;</span><br><span class="line">rm ~/screenshot.xwd</span><br></pre></td></tr></table></figure></p>
 <p>并且，在deepin中，执行<code>screenshot.sh</code>需要<code>sudo /bin/sh screenshot.sh</code><br>而在ubuntu中只需要<code>/bin/sh screenshot.sh</code>就可以了。</p>
 <p>好吧，刚刚又发现，在deepin中需要sudo应该是权限不够。所以chmod改了权限后，就不用sudo了。<br>但是截到的图依然不好，如下所示:</p>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/screenshot2.png" alt="screenshot2" title>
-                </div>
-                <div class="image-caption">screenshot2</div>
-            </figure>
+<p><img src="/images/screenshot2.png" alt="screenshot2"></p>
 <p>为了保持可读性，上面的表格就放着（因为我之前操作确实是那样，也许deepin还在持续修改中，今天更新系统后，效果就变成下面的情况了），现在（2018-05-03-21-38）的效果如下表格所示：</p>
 <ul>
 <li>在deepin中</li>
@@ -267,13 +255,7 @@
 </tr>
 </tbody>
 </table>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/screenshot3.png" alt="screenshot3" title>
-                </div>
-                <div class="image-caption">screenshot3</div>
-            </figure>
+<p><img src="/images/screenshot3.png" alt="screenshot3"></p>
 <ul>
 <li>在ubuntu中</li>
 </ul>
@@ -594,11 +576,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -614,6 +596,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vim</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">windows</a>
               </li>
              
@@ -622,11 +608,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vim</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color4">LPA</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -635,10 +621,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">斐波那契</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LPA</a>
               </li>
              
               <li class="article-tag-list-item">

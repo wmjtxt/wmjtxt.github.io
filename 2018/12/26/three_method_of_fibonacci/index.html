@@ -17,6 +17,7 @@
 <meta property="og:description" content="1.定义及递推公式斐波那契数列(Fibonacci sequence),又称黄金分割数列，因数学家Leonardoda Fibonacci以兔子繁殖为例子而引入，故又称兔子数列。1,1,2,3,5,8,13…即：f(1) = 1,f(2) = 1,f(3) = 2,f(4) = 3…添加0项后,Fibonacci数列归纳如下：">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://www.wmjtxt.net/images/fibonacci.jpg">
+<meta property="og:image" content="https://www.wmjtxt.net/images/fb4.png">
 <meta property="og:image" content="https://www.wmjtxt.net/images/fbn.png">
 <meta property="og:image" content="https://www.wmjtxt.net/images/fibonacci_matrix.png">
 <meta property="og:image" content="https://www.wmjtxt.net/images/fibonacci_result40.png">
@@ -189,46 +190,15 @@
 <li>f(0) = 0;</li>
 <li>f(1) = 1;</li>
 </ul>
-<h1 id="2-通项公式"><a href="#2-通项公式" class="headerlink" title="2.通项公式"></a>2.通项公式</h1><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/fibonacci.jpg" alt="txgs" title>
-                </div>
-                <div class="image-caption">txgs</div>
-            </figure>
+<h1 id="2-通项公式"><a href="#2-通项公式" class="headerlink" title="2.通项公式"></a>2.通项公式</h1><p><img src="/images/fibonacci.jpg" alt="txgs"></p>
 <h1 id="3-方法一：递归求解-时间复杂度O-2-n"><a href="#3-方法一：递归求解-时间复杂度O-2-n" class="headerlink" title="3.方法一：递归求解(时间复杂度O(2^n))"></a>3.方法一：递归求解(时间复杂度O(2^n))</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="title">fibonacci</span><span class="params">(<span class="keyword">unsigned</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n &lt; <span class="number">2</span>) <span class="keyword">return</span> n;</span><br><span class="line">    <span class="keyword">return</span> fibonacci(n<span class="number">-1</span>) + fibonacci(n<span class="number">-2</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/fbn.png" alt="txgs](/images/fb4.png) ![txgs" title>
-                </div>
-                <div class="image-caption">txgs](/images/fb4.png) ![txgs</div>
-            </figure>
+<p><img src="/images/fb4.png" alt="txgs"> <img src="/images/fbn.png" alt="txgs"></p>
 <p>时间复杂度分析：可以看到,递归解法存在大量的重复计算。<br>求f(n)的过程可以用一颗二叉树表示,树中的每个节点就代表一次基本计算.<br>易知,树的高度为n,一棵高度为n的满二叉树的节点个数为2^n-1,当然,上图中的树肯定不是满二叉树,但也可以看出来,该树的节点个数<br>大于满二叉树节点数的一半,即（2^n-1)/2,设计算次数为T(n),可知(2^n-1)/2 &lt; T(n) &lt; 2^n-1.<br>因此该算法的时间复杂度为O(2^n).</p>
 <h1 id="4-方法二：利用动态规划-dp-求解-时间复杂度O-n"><a href="#4-方法二：利用动态规划-dp-求解-时间复杂度O-n" class="headerlink" title="4.方法二：利用动态规划(dp)求解(时间复杂度O(n))"></a>4.方法二：利用动态规划(dp)求解(时间复杂度O(n))</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">long</span> <span class="title">fibonacci_dp</span><span class="params">(<span class="keyword">unsigned</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (n &lt; <span class="number">2</span>) <span class="keyword">return</span> n;</span><br><span class="line">    <span class="keyword">long</span> dp[n+<span class="number">1</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">    dp[<span class="number">0</span>] = <span class="number">0</span>;</span><br><span class="line">    dp[<span class="number">1</span>] = <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">unsigned</span> i = <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">while</span>(i&lt;=n)&#123;</span><br><span class="line">        dp[i] = dp[i<span class="number">-1</span>] + dp[i<span class="number">-2</span>];</span><br><span class="line">        i++;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> dp[n];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>显然,动态规划解法的时间复杂度为O(n).</p>
 <h1 id="5-方法三：利用矩阵求解-时间复杂度O-logn"><a href="#5-方法三：利用矩阵求解-时间复杂度O-logn" class="headerlink" title="5.方法三：利用矩阵求解(时间复杂度O(logn)"></a>5.方法三：利用矩阵求解(时间复杂度O(logn)</h1><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Matrix</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="keyword">unsigned</span> n;</span><br><span class="line">    <span class="keyword">long</span> **m;</span><br><span class="line">    Matrix(<span class="keyword">unsigned</span> num)</span><br><span class="line">    &#123;</span><br><span class="line">        m=<span class="keyword">new</span> <span class="keyword">long</span>*[num];</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">unsigned</span> i=<span class="number">0</span>; i&lt;num; i++) &#123;</span><br><span class="line">            m[i]=<span class="keyword">new</span> <span class="keyword">long</span>[num];</span><br><span class="line">        &#125;</span><br><span class="line">        n=num;</span><br><span class="line">        clear();</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">clear</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">unsigned</span> i=<span class="number">0</span>; i&lt;n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">unsigned</span> j=<span class="number">0</span>; j&lt;n; ++j) &#123;</span><br><span class="line">                m[i][j]=<span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">unit</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        clear();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">unsigned</span> i=<span class="number">0</span>; i&lt;n; ++i) &#123;</span><br><span class="line">            m[i][i]=<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    Matrix <span class="keyword">operator</span>=(<span class="keyword">const</span> Matrix mtx)</span><br><span class="line">    &#123;</span><br><span class="line">        Matrix(mtx.n);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">unsigned</span> i=<span class="number">0</span>; i&lt;mtx.n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">unsigned</span> j=<span class="number">0</span>; j&lt;mtx.n; ++j) &#123;</span><br><span class="line">                m[i][j]=mtx.m[i][j];</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> *<span class="keyword">this</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Matrix <span class="keyword">operator</span>*(<span class="keyword">const</span> Matrix &amp;mtx)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function">Matrix <span class="title">result</span><span class="params">(mtx.n)</span></span>;</span><br><span class="line">        result.clear();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">unsigned</span> i=<span class="number">0</span>; i&lt;mtx.n; ++i) &#123;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">unsigned</span> j=<span class="number">0</span>; j&lt;mtx.n; ++j) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">unsigned</span> k=<span class="number">0</span>; k&lt;mtx.n; ++k) &#123;</span><br><span class="line">                    result.m[i][j]+=m[i][k]*mtx.m[k][j];</span><br><span class="line">                &#125;   </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="title">fb_matrix</span><span class="params">(<span class="keyword">unsigned</span> n)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">unsigned</span> num=<span class="number">2</span>;</span><br><span class="line">    <span class="function">Matrix <span class="title">first</span><span class="params">(num)</span></span>;</span><br><span class="line">    first.m[<span class="number">0</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    first.m[<span class="number">0</span>][<span class="number">1</span>]=<span class="number">1</span>;</span><br><span class="line">    first.m[<span class="number">1</span>][<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">    first.m[<span class="number">1</span>][<span class="number">1</span>]=<span class="number">0</span>;</span><br><span class="line">    <span class="function">Matrix <span class="title">result</span><span class="params">(num)</span></span>;</span><br><span class="line">    result.unit();</span><br><span class="line">    <span class="keyword">unsigned</span> t=n<span class="number">-2</span>;</span><br><span class="line">    <span class="keyword">while</span> (t) &#123;</span><br><span class="line">        <span class="keyword">if</span> (t%<span class="number">2</span>) &#123;</span><br><span class="line">            result=result*first;</span><br><span class="line">            &#125;</span><br><span class="line">        first=first*first;</span><br><span class="line">        t=t/<span class="number">2</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result.m[<span class="number">0</span>][<span class="number">0</span>]+result.m[<span class="number">0</span>][<span class="number">1</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>根据递推公式可以得到<br><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/fibonacci_matrix.png" alt="matrix" title>
-                </div>
-                <div class="image-caption">matrix</div>
-            </figure><br>因而计算f(n)就简化为计算矩阵的(n-2)次方，而计算矩阵的(n-2)次方，又可以分解为计算矩阵的(n-2)/2次方的平方,逐步分解,直到(n-2)/(2^m)==1,因而时间复杂度为O(logn).<br>matrix解法的时间复杂度为O(logn).</p>
-<h1 id="6-运行结果比较"><a href="#6-运行结果比较" class="headerlink" title="6.运行结果比较"></a>6.运行结果比较</h1><figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/fibonacci_result40.png" alt="40" title>
-                </div>
-                <div class="image-caption">40</div>
-            </figure>
-<figure class="image-bubble">
-                <div class="img-lightbox">
-                    <div class="overlay"></div>
-                    <img src="/images/fibonacci_result90.png" alt="90" title>
-                </div>
-                <div class="image-caption">90</div>
-            </figure>
+<p>根据递推公式可以得到<br><img src="/images/fibonacci_matrix.png" alt="matrix"><br>因而计算f(n)就简化为计算矩阵的(n-2)次方，而计算矩阵的(n-2)次方，又可以分解为计算矩阵的(n-2)/2次方的平方,逐步分解,直到(n-2)/(2^m)==1,因而时间复杂度为O(logn).<br>matrix解法的时间复杂度为O(logn).</p>
+<h1 id="6-运行结果比较"><a href="#6-运行结果比较" class="headerlink" title="6.运行结果比较"></a>6.运行结果比较</h1><p><img src="/images/fibonacci_result40.png" alt="40"><br><img src="/images/fibonacci_result90.png" alt="90"></p>
 <ul>
 <li>可以看到，后两种解法比递归解法明显要快很多。</li>
 <li>当n = 40时,动态规划解法比矩阵解法还要快些,都比递归解法快得多。</li>
@@ -529,11 +499,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -549,6 +519,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vim</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">windows</a>
               </li>
              
@@ -557,11 +531,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vim</a>
+                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+                <a href="javascript:void(0)" class="js-tag color4">LPA</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -570,10 +544,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">斐波那契</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LPA</a>
               </li>
              
               <li class="article-tag-list-item">
