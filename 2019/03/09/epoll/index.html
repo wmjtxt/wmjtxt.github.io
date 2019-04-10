@@ -6,14 +6,14 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://www.wmjtxt.net">
-  <title>Epoll、Select与poll | 木夕のblog</title>
+  <title>Epoll、Select与poll | 木夕的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
 <meta name="keywords" content="技术,Linux,Socket">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Epoll、Select与poll">
 <meta property="og:url" content="https://www.wmjtxt.net/2019/03/09/epoll/index.html">
-<meta property="og:site_name" content="木夕のblog">
+<meta property="og:site_name" content="木夕的博客">
 <meta property="og:description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
 <meta property="og:locale" content="default">
 <meta property="og:updated_time" content="2019-04-10T00:58:03.188Z">
@@ -21,7 +21,7 @@
 <meta name="twitter:title" content="Epoll、Select与poll">
 <meta name="twitter:description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
   
-    <link rel="alternative" href="/atom.xml" title="木夕のblog" type="application/atom+xml">
+    <link rel="alternative" href="/atom.xml" title="木夕的博客" type="application/atom+xml">
   
   
     <link rel="icon" href="/images/favicon.ico">
