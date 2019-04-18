@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="https://www.wmjtxt.net">
+  <link rel="dns-prefetch" href="https://wmjtxt.github.io">
   <title>Epoll、Select与poll | 木夕のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
 <meta name="keywords" content="技术,Linux,Socket">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Epoll、Select与poll">
-<meta property="og:url" content="https://www.wmjtxt.net/2019/03/09/epoll/index.html">
+<meta property="og:url" content="https://wmjtxt.github.io/2019/03/09/epoll/index.html">
 <meta property="og:site_name" content="木夕のBlog">
 <meta property="og:description" content="1.epollepoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。  首先，epoll使用一组函数来完成任务，而不是单个函数。 其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。 但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。">
 <meta property="og:locale" content="default">
@@ -379,7 +379,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3ay27DIBAF0Pz/T7vbSm3wHQaIFR1WVYPwsRejefB6xet6s37/+ndnctprx8LFxW1zr+EaPyBh5S883oOLi3uemzws/3su/I0NuLi4T+YmISwPbbi4uN/BHZcuc+kRLi7uM7n9xkcS2pIzl9VquLi4De6q1KRfLC3u7+Li4k5xr+LKz+kHr3/OxMXFPcKtpibjhyWlSzV9wcXFPc9NWhtJUBuXRtViqRzCcHFxt3E7Dc08nF2NhYuLe4abH1dNd+bGJFEDBRcXdzM3oeSpTDW0lT8NLi7ucW4n3PTHpVHDBRcX90PcalozN6DNGyU3gQwXF3czN09iEtbcJ7j5NLi4uA/g7hi7jne2AhkuLu4ibmfkOff/5KNEO3FxcTdz54Yl1VfNG7I3+3FxcT/ETcYec02QJIW6SX1wcXEPcnc0QPNEqrAHFxd3M3fy0uSisFV9VVxc3DPcfFWvW81d4+gHWVxc3FXcJHhVr151LncWih9cXNzN3MkJTPwCi2s1XFzch3FzVrWsKlRsuLi4j+TmpdHcJYy3Qlxc3IPcJMR0xqvVYeqCWg0XF7fBLYeSRZOOalmFi4t7hPsDwHTsC3jLARQAAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABxElEQVR42u3aS27DMAwFwNz/0inQVRex80jJtAuMVgbsKKMNIX5er3i9f1fy/Hfle25euLi4y9z36Tonnu9z9DY56uGxcXFxB7lJ8MqDVE7MDbi4uM/kVt8mYQsXF/e/c5PrS/VXuLi4T+YmyU9yxUm+TPbfkKvh4uIucPcWTHvPt9V3cXFxi12JPKidf7Pt33FxcUe4ScmjVyjJ27HVQgkuLu7V3CT09IYq8kBW2AEXF3eEmxQsqqNUK+WVpLSKi4t7NTcfw8rfrrRJorQHFxd3hJuHs/WGRzXh+VDFwcXFvZibD0/kZdBqeWUp4cHFxR3k5ilQnsbkxVZcXNx7ub2BiV7DdcMOuLi449w83FRDUrU8eijBxcUd5PaKIL2+TW9CBBcXd5KbX256B6iGtii5wsXFvZhbDWF7rzvldAsXF3eQ22t5rhRH8oWLi3sXN197RzTKAxy4uLgj3GpAqY5brTRWl4IgLi7uMrfXKM1LnEliUwhzuLi4g9yV8JRfVpII+uUbXFzch3GTsYl8wCL59w9vcXFxH8nNx6p6zZgvVyhcXNxBbpL85IGpej0qpFi4uLgj3JWCaa8pmx8SFxd3nPsDTpPdREY7ZcEAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 

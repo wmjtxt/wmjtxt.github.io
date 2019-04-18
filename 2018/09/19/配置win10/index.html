@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="https://www.wmjtxt.net">
+  <link rel="dns-prefetch" href="https://wmjtxt.github.io">
   <title>配置Win10 | 木夕のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="1.安装mingw一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。 安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个">
 <meta name="keywords" content="windows">
 <meta property="og:type" content="article">
 <meta property="og:title" content="配置Win10">
-<meta property="og:url" content="https://www.wmjtxt.net/2018/09/19/配置win10/index.html">
+<meta property="og:url" content="https://wmjtxt.github.io/2018/09/19/配置win10/index.html">
 <meta property="og:site_name" content="木夕のBlog">
 <meta property="og:description" content="1.安装mingw一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。 安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个">
 <meta property="og:locale" content="default">
@@ -300,7 +300,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJElEQVR42u3ay27jMBAEQP//T3uBPQXIRu4eSsGKKp58sB6lw4DD6dcrXu+/6+vv49Ve9f0/rysWBgbGbRkrD7iC1OIxMDCew1gpssd3+/D4H56VvxsGBgZG8nLH/8nviYGBgXEuoy3QyVUYGBgYx4y2BU2a2+PSnLAv6cUxMDBuyJgNBn7n9+XzDQwMjP+e8S7X+hZwfWDwj/tgYGBszcgfcEXTe3x4V/8TAwNjU8bsEG3l5Wbt8YcPh4GBsTVjdkB2RRSsHZRG4TAMDIwtGCsxr9nAIN8UFmwMDIytGSsxr7zdzaknhMYwMDA2ZSTFrt2uXfEJPrwbBgbGYxizbWL+0vlV9ftgYGBsykhaxHwwMGtiZxvB4rgNAwPj5ow87tBuBJM2uB2aDo/bMDAwbs5YH1u2G8SkEOctMQYGxnMYbemcBSbaYl18DgwMjMcw8qDDrLldGRUUmREMDIztGHkTmz+g/SgzUp0yw8DA2ILRjhvrDVwcGmtDHhgYGHszVoaXbbQrD1gkSAwMjGcy2s1iHqRoS3AdIMPAwNiasR6DmB3AzVYRC8PAwNiI8S5XWwRn1PxIDgMD4wmM9WK3ErM4d5yJgYGxN2OlyLYbwfy4v30HDAyMJzCSItuODfLjvPZD/FhwMTAwHs9oy2Wb9ZiRMDAwMFaO2PJwRgL4EN3AwMB4ACNvYmchsHPDGRgYGE9jzAYDs5uuFNYTwhwYGBj3Y/wBU3L1G62BCy8AAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACH0lEQVR42u3aS5KjMBAFQN//0p4LdOP3qtoTgUhWBAZBaiHXR69XfLwvj+s7r0dLrv/ZgYGBcVtG8okJ4LeRkxGuz6O3Y2BgPICRfET+ue3ImxEwMDAwfrunXUCvF/F2+jAwMDDycK1dcNvkFgMDA6NNYtuXzQBfz8UxMDBuyMir7v///Cv9DQwMjFsx3uVxHZwlgWB7JfoqDAyMoxmzwK7lzRqldaCJgYFxKGNW1m+L/m37M5+aKAPGwMC4OaMN1/YfMWsVRO/CwMB4AGNW0M+T2Fnzsii9YWBgHMpoA7hNgLhpSX5Y+jEwMI5m7EO3zT2bMBEDA+NpjE2YOAsH80BwCMPAwDiI0bYE8s0WeTraTsqHFiYGBsahjFd8JK9Mfk2oeWEOAwPjbMamNL/5tS2lFdsvMDAwHsbI25NtgDjbChZNMQYGxtGMdnvEJtGNWpKb+j8GBsZBjE3JLH/9X7UHilwcAwPjIMamiLYJ75Ix28UdAwPjCYx2k0RRAhsBkvD0h38PDAyMoxl5KtuW3vLEOJmIOs7FwMA4iNG2EvOSXLuM5s9iYGA8gfEuj3abRXtncr3wYWBgHMGYLXZtkjl7albgw8DAOJWRL7KbwDGfv9kEYWBgPIHRLnz7BXf2D/AhF8fAwMBYJJObZDhqHmBgYGCMzvdPFQ0JDAyMBzDyZkCyCLbBXzsyBgbG0xh5YNd+1mbMrzQ1MTAw7sf4B3cSvCrPs4WvAAAAAElFTkSuQmCC" alt="微信分享二维码">
     </div>
 </div>
 

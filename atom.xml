@@ -5,9 +5,9 @@
   <subtitle>梦孑渊</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://www.wmjtxt.net/"/>
+  <link href="https://wmjtxt.github.io/"/>
   <updated>2019-04-10T02:19:59.622Z</updated>
-  <id>https://www.wmjtxt.net/</id>
+  <id>https://wmjtxt.github.io/</id>
   
   <author>
     <name>写诗的木夕</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>木夕的诗</title>
-    <link href="https://www.wmjtxt.net/2019/04/10/mjpoet/"/>
-    <id>https://www.wmjtxt.net/2019/04/10/mjpoet/</id>
+    <link href="https://wmjtxt.github.io/2019/04/10/mjpoet/"/>
+    <id>https://wmjtxt.github.io/2019/04/10/mjpoet/</id>
     <published>2019-04-10T01:01:34.000Z</published>
     <updated>2019-04-10T02:19:59.622Z</updated>
     
@@ -33,14 +33,14 @@
     </summary>
     
     
-      <category term="诗歌" scheme="https://www.wmjtxt.net/tags/%E8%AF%97%E6%AD%8C/"/>
+      <category term="诗歌" scheme="https://wmjtxt.github.io/tags/%E8%AF%97%E6%AD%8C/"/>
     
   </entry>
   
   <entry>
     <title>饮酒</title>
-    <link href="https://www.wmjtxt.net/2019/03/31/drink/"/>
-    <id>https://www.wmjtxt.net/2019/03/31/drink/</id>
+    <link href="https://wmjtxt.github.io/2019/03/31/drink/"/>
+    <id>https://wmjtxt.github.io/2019/03/31/drink/</id>
     <published>2019-03-31T13:49:40.000Z</published>
     <updated>2019-03-31T14:08:43.388Z</updated>
     
@@ -57,14 +57,14 @@
     </summary>
     
     
-      <category term="诗歌" scheme="https://www.wmjtxt.net/tags/%E8%AF%97%E6%AD%8C/"/>
+      <category term="诗歌" scheme="https://wmjtxt.github.io/tags/%E8%AF%97%E6%AD%8C/"/>
     
   </entry>
   
   <entry>
     <title>旧照片</title>
-    <link href="https://www.wmjtxt.net/2019/03/30/oldPhotos/"/>
-    <id>https://www.wmjtxt.net/2019/03/30/oldPhotos/</id>
+    <link href="https://wmjtxt.github.io/2019/03/30/oldPhotos/"/>
+    <id>https://wmjtxt.github.io/2019/03/30/oldPhotos/</id>
     <published>2019-03-30T14:03:30.000Z</published>
     <updated>2019-03-31T01:31:48.852Z</updated>
     
@@ -77,14 +77,14 @@
     </summary>
     
     
-      <category term="照片" scheme="https://www.wmjtxt.net/tags/%E7%85%A7%E7%89%87/"/>
+      <category term="照片" scheme="https://wmjtxt.github.io/tags/%E7%85%A7%E7%89%87/"/>
     
   </entry>
   
   <entry>
     <title>Reading</title>
-    <link href="https://www.wmjtxt.net/2019/03/30/reading/"/>
-    <id>https://www.wmjtxt.net/2019/03/30/reading/</id>
+    <link href="https://wmjtxt.github.io/2019/03/30/reading/"/>
+    <id>https://wmjtxt.github.io/2019/03/30/reading/</id>
     <published>2019-03-30T13:16:37.000Z</published>
     <updated>2019-03-30T14:18:07.920Z</updated>
     
@@ -98,14 +98,14 @@
     </summary>
     
     
-      <category term="随笔" scheme="https://www.wmjtxt.net/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>博客迁移到Hexo</title>
-    <link href="https://www.wmjtxt.net/2019/03/29/blog-transfer-to-Hexo/"/>
-    <id>https://www.wmjtxt.net/2019/03/29/blog-transfer-to-Hexo/</id>
+    <link href="https://wmjtxt.github.io/2019/03/29/blog-transfer-to-Hexo/"/>
+    <id>https://wmjtxt.github.io/2019/03/29/blog-transfer-to-Hexo/</id>
     <published>2019-03-29T06:49:54.000Z</published>
     <updated>2019-03-30T09:54:00.237Z</updated>
     
@@ -119,14 +119,14 @@
     </summary>
     
     
-      <category term="笔记" scheme="https://www.wmjtxt.net/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="https://wmjtxt.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>GDB and Make</title>
-    <link href="https://www.wmjtxt.net/2019/03/25/gdb_make/"/>
-    <id>https://www.wmjtxt.net/2019/03/25/gdb_make/</id>
+    <link href="https://wmjtxt.github.io/2019/03/25/gdb_make/"/>
+    <id>https://wmjtxt.github.io/2019/03/25/gdb_make/</id>
     <published>2019-03-25T05:00:00.000Z</published>
     <updated>2019-04-10T00:59:26.936Z</updated>
     
@@ -143,16 +143,16 @@
     </summary>
     
     
-      <category term="技术" scheme="https://www.wmjtxt.net/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="C++" scheme="https://www.wmjtxt.net/tags/C/"/>
+      <category term="C++" scheme="https://wmjtxt.github.io/tags/C/"/>
     
   </entry>
   
   <entry>
     <title>Find+wc统计代码行数(文件名含空格)</title>
-    <link href="https://www.wmjtxt.net/2019/03/25/find_wc/"/>
-    <id>https://www.wmjtxt.net/2019/03/25/find_wc/</id>
+    <link href="https://wmjtxt.github.io/2019/03/25/find_wc/"/>
+    <id>https://wmjtxt.github.io/2019/03/25/find_wc/</id>
     <published>2019-03-25T04:00:00.000Z</published>
     <updated>2019-03-29T08:14:56.233Z</updated>
     
@@ -170,16 +170,16 @@
     </summary>
     
     
-      <category term="shell" scheme="https://www.wmjtxt.net/tags/shell/"/>
+      <category term="shell" scheme="https://wmjtxt.github.io/tags/shell/"/>
     
-      <category term="linux" scheme="https://www.wmjtxt.net/tags/linux/"/>
+      <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>Linux常用命令总结</title>
-    <link href="https://www.wmjtxt.net/2019/03/18/linux_command/"/>
-    <id>https://www.wmjtxt.net/2019/03/18/linux_command/</id>
+    <link href="https://wmjtxt.github.io/2019/03/18/linux_command/"/>
+    <id>https://wmjtxt.github.io/2019/03/18/linux_command/</id>
     <published>2019-03-18T04:00:00.000Z</published>
     <updated>2019-03-30T13:54:46.939Z</updated>
     
@@ -192,18 +192,18 @@
     </summary>
     
     
-      <category term="shell" scheme="https://www.wmjtxt.net/tags/shell/"/>
+      <category term="shell" scheme="https://wmjtxt.github.io/tags/shell/"/>
     
-      <category term="c" scheme="https://www.wmjtxt.net/tags/c/"/>
+      <category term="c" scheme="https://wmjtxt.github.io/tags/c/"/>
     
-      <category term="linux" scheme="https://www.wmjtxt.net/tags/linux/"/>
+      <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
     
   </entry>
   
   <entry>
     <title>Epoll、Select与poll</title>
-    <link href="https://www.wmjtxt.net/2019/03/09/epoll/"/>
-    <id>https://www.wmjtxt.net/2019/03/09/epoll/</id>
+    <link href="https://wmjtxt.github.io/2019/03/09/epoll/"/>
+    <id>https://wmjtxt.github.io/2019/03/09/epoll/</id>
     <published>2019-03-09T04:00:00.000Z</published>
     <updated>2019-04-10T00:58:03.188Z</updated>
     
@@ -220,18 +220,18 @@
     </summary>
     
     
-      <category term="技术" scheme="https://www.wmjtxt.net/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="Linux" scheme="https://www.wmjtxt.net/tags/Linux/"/>
+      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
     
-      <category term="Socket" scheme="https://www.wmjtxt.net/tags/Socket/"/>
+      <category term="Socket" scheme="https://wmjtxt.github.io/tags/Socket/"/>
     
   </entry>
   
   <entry>
     <title>LeedCode 37.Sudoku Solver</title>
-    <link href="https://www.wmjtxt.net/2019/03/07/LeedCode_37_Sudoku_Solver/"/>
-    <id>https://www.wmjtxt.net/2019/03/07/LeedCode_37_Sudoku_Solver/</id>
+    <link href="https://wmjtxt.github.io/2019/03/07/LeedCode_37_Sudoku_Solver/"/>
+    <id>https://wmjtxt.github.io/2019/03/07/LeedCode_37_Sudoku_Solver/</id>
     <published>2019-03-07T04:00:00.000Z</published>
     <updated>2019-04-10T00:57:13.072Z</updated>
     
@@ -244,16 +244,16 @@
     </summary>
     
     
-      <category term="LeetCode" scheme="https://www.wmjtxt.net/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="https://wmjtxt.github.io/tags/LeetCode/"/>
     
-      <category term="刷题" scheme="https://www.wmjtxt.net/tags/%E5%88%B7%E9%A2%98/"/>
+      <category term="刷题" scheme="https://wmjtxt.github.io/tags/%E5%88%B7%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>LeetCode 438.Find All Anagrams in a String</title>
-    <link href="https://www.wmjtxt.net/2019/03/06/LeedCode_438/"/>
-    <id>https://www.wmjtxt.net/2019/03/06/LeedCode_438/</id>
+    <link href="https://wmjtxt.github.io/2019/03/06/LeedCode_438/"/>
+    <id>https://wmjtxt.github.io/2019/03/06/LeedCode_438/</id>
     <published>2019-03-06T04:00:00.000Z</published>
     <updated>2019-04-10T00:56:47.564Z</updated>
     
@@ -266,16 +266,16 @@
     </summary>
     
     
-      <category term="LeetCode" scheme="https://www.wmjtxt.net/tags/LeetCode/"/>
+      <category term="LeetCode" scheme="https://wmjtxt.github.io/tags/LeetCode/"/>
     
-      <category term="刷题" scheme="https://www.wmjtxt.net/tags/%E5%88%B7%E9%A2%98/"/>
+      <category term="刷题" scheme="https://wmjtxt.github.io/tags/%E5%88%B7%E9%A2%98/"/>
     
   </entry>
   
   <entry>
     <title>斐波那契数列三种解法及时间复杂度分析</title>
-    <link href="https://www.wmjtxt.net/2018/12/26/three_method_of_fibonacci/"/>
-    <id>https://www.wmjtxt.net/2018/12/26/three_method_of_fibonacci/</id>
+    <link href="https://wmjtxt.github.io/2018/12/26/three_method_of_fibonacci/"/>
+    <id>https://wmjtxt.github.io/2018/12/26/three_method_of_fibonacci/</id>
     <published>2018-12-25T16:00:00.000Z</published>
     <updated>2019-04-10T00:58:56.608Z</updated>
     
@@ -288,18 +288,18 @@
     </summary>
     
     
-      <category term="技术" scheme="https://www.wmjtxt.net/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="C++" scheme="https://www.wmjtxt.net/tags/C/"/>
+      <category term="C++" scheme="https://wmjtxt.github.io/tags/C/"/>
     
-      <category term="斐波那契" scheme="https://www.wmjtxt.net/tags/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91/"/>
+      <category term="斐波那契" scheme="https://wmjtxt.github.io/tags/%E6%96%90%E6%B3%A2%E9%82%A3%E5%A5%91/"/>
     
   </entry>
   
   <entry>
     <title>LPA算法C++实现及模块度计算</title>
-    <link href="https://www.wmjtxt.net/2018/11/12/lpa%E7%AE%97%E6%B3%95c++%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%A8%A1%E5%9D%97%E5%BA%A6%E8%AE%A1%E7%AE%97/"/>
-    <id>https://www.wmjtxt.net/2018/11/12/lpa算法c++实现及模块度计算/</id>
+    <link href="https://wmjtxt.github.io/2018/11/12/lpa%E7%AE%97%E6%B3%95c++%E5%AE%9E%E7%8E%B0%E5%8F%8A%E6%A8%A1%E5%9D%97%E5%BA%A6%E8%AE%A1%E7%AE%97/"/>
+    <id>https://wmjtxt.github.io/2018/11/12/lpa算法c++实现及模块度计算/</id>
     <published>2018-11-11T16:00:00.000Z</published>
     <updated>2019-03-29T08:17:17.008Z</updated>
     
@@ -312,16 +312,16 @@
     </summary>
     
     
-      <category term="复杂网络" scheme="https://www.wmjtxt.net/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
+      <category term="复杂网络" scheme="https://wmjtxt.github.io/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
     
-      <category term="LPA" scheme="https://www.wmjtxt.net/tags/LPA/"/>
+      <category term="LPA" scheme="https://wmjtxt.github.io/tags/LPA/"/>
     
   </entry>
   
   <entry>
     <title>去掉Deepin登录界面的模糊效果</title>
-    <link href="https://www.wmjtxt.net/2018/11/06/deepin-lockscreen/"/>
-    <id>https://www.wmjtxt.net/2018/11/06/deepin-lockscreen/</id>
+    <link href="https://wmjtxt.github.io/2018/11/06/deepin-lockscreen/"/>
+    <id>https://wmjtxt.github.io/2018/11/06/deepin-lockscreen/</id>
     <published>2018-11-05T16:00:00.000Z</published>
     <updated>2019-03-29T07:59:52.798Z</updated>
     
@@ -336,14 +336,14 @@
     </summary>
     
     
-      <category term="Deepin" scheme="https://www.wmjtxt.net/tags/Deepin/"/>
+      <category term="Deepin" scheme="https://wmjtxt.github.io/tags/Deepin/"/>
     
   </entry>
   
   <entry>
     <title>一些想法</title>
-    <link href="https://www.wmjtxt.net/2018/10/28/somethinkings/"/>
-    <id>https://www.wmjtxt.net/2018/10/28/somethinkings/</id>
+    <link href="https://wmjtxt.github.io/2018/10/28/somethinkings/"/>
+    <id>https://wmjtxt.github.io/2018/10/28/somethinkings/</id>
     <published>2018-10-27T16:00:00.000Z</published>
     <updated>2019-03-30T13:13:46.486Z</updated>
     
@@ -362,14 +362,14 @@
     </summary>
     
     
-      <category term="随笔" scheme="https://www.wmjtxt.net/tags/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
   <entry>
     <title>从Excel导数据到MySQL</title>
-    <link href="https://www.wmjtxt.net/2018/10/17/importDatatoMySQL/"/>
-    <id>https://www.wmjtxt.net/2018/10/17/importDatatoMySQL/</id>
+    <link href="https://wmjtxt.github.io/2018/10/17/importDatatoMySQL/"/>
+    <id>https://wmjtxt.github.io/2018/10/17/importDatatoMySQL/</id>
     <published>2018-10-16T16:00:00.000Z</published>
     <updated>2019-04-10T00:57:45.228Z</updated>
     
@@ -382,20 +382,20 @@
     </summary>
     
     
-      <category term="技术" scheme="https://www.wmjtxt.net/tags/%E6%8A%80%E6%9C%AF/"/>
+      <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
-      <category term="mysql" scheme="https://www.wmjtxt.net/tags/mysql/"/>
+      <category term="mysql" scheme="https://wmjtxt.github.io/tags/mysql/"/>
     
   </entry>
   
   <entry>
     <title>The Config of My Deepin</title>
-    <link href="https://www.wmjtxt.net/2018/09/29/myDeepin/"/>
-    <id>https://www.wmjtxt.net/2018/09/29/myDeepin/</id>
+    <link href="https://wmjtxt.github.io/2018/09/29/myDeepin/"/>
+    <id>https://wmjtxt.github.io/2018/09/29/myDeepin/</id>
     <published>2018-09-28T16:00:00.000Z</published>
     <updated>2019-03-29T07:56:39.051Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li><a href="#ssh">ssh</a></li><li><a href="#git">git</a></li><li><a href="#gcc">gcc</a><a id="more"></a></li><li><a href="#youcompleteme">YouCompleteMe</a></li><li><a href="#vim-instant-markdown">vim-instant-markdown</a></li><li><a href="#variety">Variety</a></li><li><a href="#conky">Conky</a></li><li><a href="#pycharm">Pycharm</a></li><li><a href="#texstudio">TexStudio</a></li><li><a href="#atom">Atom</a></li><li><a href></a></li></ul><h1 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h1><ul><li>安装ssh<ul><li><code>sudo apt-get install openssh-server</code></li></ul></li><li>开启ssh服务<ul><li><code>sudo service sshd start</code></li></ul></li></ul><h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><ul><li>安装git<ul><li><code>sudo apt-get install git</code></li></ul></li><li>设置name和email<ul><li><code>git config --global user.name &quot;name&quot;</code></li><li><code>git config --global user.email &quot;email&quot;</code></li></ul></li><li>设置ssh-key<ul><li>先执行<code>ssh-keygen -t rsa -C &quot;email&quot;</code></li><li>然后在github上找到”Account settings”,”SSH Keys”页面,点击”Add SSH Key”,将~/.ssh/id_rsa.pub的内容粘贴到Key文本框内。</li></ul></li><li>连接远程库<ul><li><code>git remote add origin git@github.com:yourname/reponame.git</code></li></ul></li><li>常用命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git push origin master</span><br><span class="line">git pull origin master</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;text&quot;</span><br><span class="line">git status</span><br><span class="line">git log</span><br><span class="line">git clone repoAddress</span><br></pre></td></tr></table></figure></li></ul><h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><ul><li><p>系统好像是自带了gcc,但g++需要手动安装</p></li><li><p><code>sudo apt-get install g++</code></p></li></ul><h1 id="YouCompleteMe"><a href="#YouCompleteMe" class="headerlink" title="YouCompleteMe"></a>YouCompleteMe</h1><p>一款强大的vim插件</p><p>安装方法参考：<a href="https://wmjtxt.github.io/2018-05-14-%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/" target="_blank" rel="noopener">在deepin里安装YouCompleteMe</a></p><h1 id="vim-instant-markdown"><a href="#vim-instant-markdown" class="headerlink" title="vim-instant-markdown"></a>vim-instant-markdown</h1><p>一款vim插件，可以实现markdown文件即时预览</p><p>安装方法参考：<a href="https://github.com/yangyangwithgnu/use_vim_as_ide#8.4" target="_blank" rel="noopener">https://github.com/yangyangwithgnu/use_vim_as_ide.git</a></p><h1 id="Variety"><a href="#Variety" class="headerlink" title="Variety"></a>Variety</h1><p>Variety是一款自动更换壁纸的软件<br>来源:深度商店</p><h1 id="Conky"><a href="#Conky" class="headerlink" title="Conky"></a>Conky</h1><p>Conky是一款可以显示天气的桌面软件。来源：深度论坛</p><ul><li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=148009&amp;highlight=conky" target="_blank" rel="noopener">deepin利用conky打造一个炫酷的桌面</a></li><li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=152734&amp;highlight=conky" target="_blank" rel="noopener">conky-weather 3.0 (Conky天气)</a></li></ul><p>我用的第二个</p><h1 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h1><p><code>sudo apt-get install pycharm-community</code></p><h1 id="TexStudio"><a href="#TexStudio" class="headerlink" title="TexStudio"></a>TexStudio</h1><p>Latex编辑器</p><ul><li>首先安装texlive, 可以直接在官网下载下来安装, <a href="http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz" target="_blank" rel="noopener">install-tl-unx.tar.gz</a>, 也可以命令安装, <code>sudo apt-get install texlive-full</code></li><li>然后安装texstudio, <code>sudo apt-get install texstudio</code></li></ul><h1 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a>Atom</h1><p>开源文本编辑器, <code>sudo apt-get install atom</code>, 也可以在深度商店安装</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li><a href="#ssh">ssh</a></li><li><a href="#git">git</a></li><li><a href="#gcc">gcc</a><a id="more"></a></li><li><a href="#youcompleteme">YouCompleteMe</a></li><li><a href="#vim-instant-markdown">vim-instant-markdown</a></li><li><a href="#variety">Variety</a></li><li><a href="#conky">Conky</a></li><li><a href="#pycharm">Pycharm</a></li><li><a href="#texstudio">TexStudio</a></li><li><a href="#atom">Atom</a></li><li><a href></a></li></ul><h1 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h1><ul><li>安装ssh<ul><li><code>sudo apt-get install openssh-server</code></li></ul></li><li>开启ssh服务<ul><li><code>sudo service sshd start</code></li></ul></li></ul><h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><ul><li>安装git<ul><li><code>sudo apt-get install git</code></li></ul></li><li>设置name和email<ul><li><code>git config --global user.name &quot;name&quot;</code></li><li><code>git config --global user.email &quot;email&quot;</code></li></ul></li><li>设置ssh-key<ul><li>先执行<code>ssh-keygen -t rsa -C &quot;email&quot;</code></li><li>然后在github上找到”Account settings”,”SSH Keys”页面,点击”Add SSH Key”,将~/.ssh/id_rsa.pub的内容粘贴到Key文本框内。</li></ul></li><li>连接远程库<ul><li><code>git remote add origin git@github.com:yourname/reponame.git</code></li></ul></li><li>常用命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git push origin master</span><br><span class="line">git pull origin master</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;text&quot;</span><br><span class="line">git status</span><br><span class="line">git log</span><br><span class="line">git clone repoAddress</span><br></pre></td></tr></table></figure></li></ul><h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><ul><li><p>系统好像是自带了gcc,但g++需要手动安装</p></li><li><p><code>sudo apt-get install g++</code></p></li></ul><h1 id="YouCompleteMe"><a href="#YouCompleteMe" class="headerlink" title="YouCompleteMe"></a>YouCompleteMe</h1><p>一款强大的vim插件</p><p>安装方法参考：<a href="https://wmjtxt.github.io/2018-05-14-%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/" target="_blank" rel="noopener">在deepin里安装YouCompleteMe</a></p><h1 id="vim-instant-markdown"><a href="#vim-instant-markdown" class="headerlink" title="vim-instant-markdown"></a>vim-instant-markdown</h1><p>一款vim插件，可以实现markdown文件即时预览</p><p>安装方法参考：<a href="https://github.com/yangyangwithgnu/use_vim_as_ide#8.4" target="_blank" rel="noopener">https://github.com/yangyangwithgnu/use_vim_as_ide.git</a></p><h1 id="Variety"><a href="#Variety" class="headerlink" title="Variety"></a>Variety</h1><p>Variety是一款自动更换壁纸的软件<br>来源:深度商店</p><h1 id="Conky"><a href="#Conky" class="headerlink" title="Conky"></a>Conky</h1><p>Conky是一款可以显示天气的桌面软件。来源：深度论坛</p><ul><li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=148009&amp;highlight=conky" target="_blank" rel="noopener">deepin利用conky打造一个炫酷的桌面</a></li><li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=152734&amp;highlight=conky" target="_blank" rel="noopener">conky-weather 3.0 (Conky天气)</a></li></ul><p>我用的第二个</p><h1 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h1><p><code>sudo apt-get install pycharm-community</code></p><h1 id="TexStudio"><a href="#TexStudio" class="headerlink" title="TexStudio"></a>TexStudio</h1><p>Latex编辑器</p><ul><li>首先安装texlive, 可以直接在官网下载下来安装, <a href="https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz" target="_blank" rel="noopener">install-tl-unx.tar.gz</a>, 也可以命令安装, <code>sudo apt-get install texlive-full</code></li><li>然后安装texstudio, <code>sudo apt-get install texstudio</code></li></ul><h1 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a>Atom</h1><p>开源文本编辑器, <code>sudo apt-get install atom</code>, 也可以在深度商店安装</p>]]></content>
     
     <summary type="html">
     
@@ -407,18 +407,18 @@
     </summary>
     
     
-      <category term="Deepin" scheme="https://www.wmjtxt.net/tags/Deepin/"/>
+      <category term="Deepin" scheme="https://wmjtxt.github.io/tags/Deepin/"/>
     
   </entry>
   
   <entry>
     <title>社团检测基本概念</title>
-    <link href="https://www.wmjtxt.net/2018/09/28/Community-Detection-values/"/>
-    <id>https://www.wmjtxt.net/2018/09/28/Community-Detection-values/</id>
+    <link href="https://wmjtxt.github.io/2018/09/28/Community-Detection-values/"/>
+    <id>https://wmjtxt.github.io/2018/09/28/Community-Detection-values/</id>
     <published>2018-09-27T16:00:00.000Z</published>
     <updated>2019-03-29T07:56:21.061Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="1-模块度-Modularity"><a href="#1-模块度-Modularity" class="headerlink" title="1.模块度(Modularity)"></a>1.模块度(Modularity)</h2><p>&emsp;&emsp;把划分社团后的网络与相应的零模型(Null model)进行比较，以度量社团划分划分的质量。一个网络的模块度定义为：该网络的社团内部边数与相应的零模型的社团内部变数之差占整个网络边数的比例。<br><br>&emsp;&emsp;计算公式为：<br><br><a id="more"></a></p><p><center><images src="http://chart.googleapis.com/chart?cht=tx&chl= Q = \sum\limits_{v}[e_{vv} - (a_v)^2]"></images></center><br></p><p>&emsp;&emsp;其中,<images src="http://chart.googleapis.com/chart?cht=tx&chl= e_{vv}">为社团v和社团w之间的连边占整个网络边数的比例。<images src="http://chart.googleapis.com/chart?cht=tx&chl= a_v">为一端与社团v中节点相连的边的比例。<br></images></images></p><h2 id="2-度中心性-Degree-centrality"><a href="#2-度中心性-Degree-centrality" class="headerlink" title="2.度中心性(Degree centrality)"></a>2.度中心性(Degree centrality)</h2><p>&emsp;&emsp;度中心性值定义为：<center><images src="http://chart.googleapis.com/chart?cht=tx&chl= DC_i = \frac{k_i}{N-1}"></images></center><br><br>&emsp;&emsp;其中，<images src="http://chart.googleapis.com/chart?cht=tx&chl= k_i">为节点i的度，N为网络中的节点个数。<br></images></p><h2 id="3-介数中心性-Betweenness-centrality"><a href="#3-介数中心性-Betweenness-centrality" class="headerlink" title="3.介数中心性(Betweenness centrality)"></a>3.介数中心性(Betweenness centrality)</h2><p>&emsp;&emsp;介数中心性是以经过某个节点的最短路径的数目来刻画节点重要性的指标,简称介数(BC)。<br><br>&emsp;&emsp;节点i的介数定义为：<center><images src="http://chart.googleapis.com/chart?cht=tx&chl= BC_i= \sum\limits_{s{\ne}i{\ne}t}\frac{n_{st}^{i}}{g_{st}}"></images></center><br><br>&emsp;&emsp;其中,<images src="http://chart.googleapis.com/chart?cht=tx&chl= g_{st}">为从节点s到节点t的最短路径的数目, <images src="http://chart.googleapis.com/chart?cht=tx&chl=n_{st}^{i}">为从节点s到节点t的<images src="http://chart.googleapis.com/chart?cht=tx&chl= g_{st}">条最短路径中经过节点i的最短路径的数目。</images></images></images></p><h2 id="4-接近中心性-Closeness-centrality"><a href="#4-接近中心性-Closeness-centrality" class="headerlink" title="4.接近中心性(Closeness centrality)"></a>4.接近中心性(Closeness centrality)</h2><p>接近数，即平均路径长度的倒数。</p><h2 id="5-k-壳与k-核"><a href="#5-k-壳与k-核" class="headerlink" title="5.k-壳与k-核"></a>5.k-壳与k-核</h2><h2 id="6-特征向量中心性"><a href="#6-特征向量中心性" class="headerlink" title="6.特征向量中心性"></a>6.特征向量中心性</h2>]]></content>
+    <content type="html"><![CDATA[<h2 id="1-模块度-Modularity"><a href="#1-模块度-Modularity" class="headerlink" title="1.模块度(Modularity)"></a>1.模块度(Modularity)</h2><p>&emsp;&emsp;把划分社团后的网络与相应的零模型(Null model)进行比较，以度量社团划分划分的质量。一个网络的模块度定义为：该网络的社团内部边数与相应的零模型的社团内部变数之差占整个网络边数的比例。<br><br>&emsp;&emsp;计算公式为：<br><br><a id="more"></a></p><p><center><images src="https://chart.googleapis.com/chart?cht=tx&chl= Q = \sum\limits_{v}[e_{vv} - (a_v)^2]"></images></center><br></p><p>&emsp;&emsp;其中,<images src="https://chart.googleapis.com/chart?cht=tx&chl= e_{vv}">为社团v和社团w之间的连边占整个网络边数的比例。<images src="https://chart.googleapis.com/chart?cht=tx&chl= a_v">为一端与社团v中节点相连的边的比例。<br></images></images></p><h2 id="2-度中心性-Degree-centrality"><a href="#2-度中心性-Degree-centrality" class="headerlink" title="2.度中心性(Degree centrality)"></a>2.度中心性(Degree centrality)</h2><p>&emsp;&emsp;度中心性值定义为：<center><images src="https://chart.googleapis.com/chart?cht=tx&chl= DC_i = \frac{k_i}{N-1}"></images></center><br><br>&emsp;&emsp;其中，<images src="https://chart.googleapis.com/chart?cht=tx&chl= k_i">为节点i的度，N为网络中的节点个数。<br></images></p><h2 id="3-介数中心性-Betweenness-centrality"><a href="#3-介数中心性-Betweenness-centrality" class="headerlink" title="3.介数中心性(Betweenness centrality)"></a>3.介数中心性(Betweenness centrality)</h2><p>&emsp;&emsp;介数中心性是以经过某个节点的最短路径的数目来刻画节点重要性的指标,简称介数(BC)。<br><br>&emsp;&emsp;节点i的介数定义为：<center><images src="https://chart.googleapis.com/chart?cht=tx&chl= BC_i= \sum\limits_{s{\ne}i{\ne}t}\frac{n_{st}^{i}}{g_{st}}"></images></center><br><br>&emsp;&emsp;其中,<images src="https://chart.googleapis.com/chart?cht=tx&chl= g_{st}">为从节点s到节点t的最短路径的数目, <images src="https://chart.googleapis.com/chart?cht=tx&chl=n_{st}^{i}">为从节点s到节点t的<images src="https://chart.googleapis.com/chart?cht=tx&chl= g_{st}">条最短路径中经过节点i的最短路径的数目。</images></images></images></p><h2 id="4-接近中心性-Closeness-centrality"><a href="#4-接近中心性-Closeness-centrality" class="headerlink" title="4.接近中心性(Closeness centrality)"></a>4.接近中心性(Closeness centrality)</h2><p>接近数，即平均路径长度的倒数。</p><h2 id="5-k-壳与k-核"><a href="#5-k-壳与k-核" class="headerlink" title="5.k-壳与k-核"></a>5.k-壳与k-核</h2><h2 id="6-特征向量中心性"><a href="#6-特征向量中心性" class="headerlink" title="6.特征向量中心性"></a>6.特征向量中心性</h2>]]></content>
     
     <summary type="html">
     
@@ -427,14 +427,14 @@
     </summary>
     
     
-      <category term="复杂网络" scheme="https://www.wmjtxt.net/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
+      <category term="复杂网络" scheme="https://wmjtxt.github.io/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
     
   </entry>
   
   <entry>
     <title>配置Win10</title>
-    <link href="https://www.wmjtxt.net/2018/09/19/%E9%85%8D%E7%BD%AEwin10/"/>
-    <id>https://www.wmjtxt.net/2018/09/19/配置win10/</id>
+    <link href="https://wmjtxt.github.io/2018/09/19/%E9%85%8D%E7%BD%AEwin10/"/>
+    <id>https://wmjtxt.github.io/2018/09/19/配置win10/</id>
     <published>2018-09-18T16:00:00.000Z</published>
     <updated>2019-03-29T07:56:03.711Z</updated>
     
@@ -448,18 +448,18 @@
     </summary>
     
     
-      <category term="windows" scheme="https://www.wmjtxt.net/tags/windows/"/>
+      <category term="windows" scheme="https://wmjtxt.github.io/tags/windows/"/>
     
   </entry>
   
   <entry>
     <title>在deepin里安装YouCompleteMe</title>
-    <link href="https://www.wmjtxt.net/2018/05/14/%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/"/>
-    <id>https://www.wmjtxt.net/2018/05/14/在deepin上安装YouCompleteMe/</id>
+    <link href="https://wmjtxt.github.io/2018/05/14/%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/"/>
+    <id>https://wmjtxt.github.io/2018/05/14/在deepin上安装YouCompleteMe/</id>
     <published>2018-05-13T16:00:00.000Z</published>
     <updated>2019-03-29T08:18:01.166Z</updated>
     
-    <content type="html"><![CDATA[<p>参考<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">https://github.com/Valloric/YouCompleteMe</a></p><ul><li><p>1.安装Vundle</p><ul><li><code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</code></li><li><p>把以下内容复制到.vimrc:</p><a id="more"></a><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">set nocompatible              " be iMproved, required</span><br><span class="line">filetype off                  " required</span><br><span class="line"></span><br><span class="line">" set the runtime path to include Vundle and initialize</span><br><span class="line">set rtp+=~/.vim/bundle/Vundle.vim</span><br><span class="line">call vundle#begin()</span><br><span class="line">" alternatively, pass a path where Vundle should install plugins</span><br><span class="line">"call vundle#begin('~/some/path/here')</span><br><span class="line"></span><br><span class="line">" let Vundle manage Vundle, required</span><br><span class="line">Plugin 'VundleVim/Vundle.vim'</span><br><span class="line"></span><br><span class="line">" The following are examples of different formats supported.</span><br><span class="line">" Keep Plugin commands between vundle#begin/end.</span><br><span class="line">" plugin on GitHub repo</span><br><span class="line">Plugin 'tpope/vim-fugitive'</span><br><span class="line">" plugin from http://vim-scripts.org/vim/scripts.html</span><br><span class="line">" Plugin 'L9'</span><br><span class="line">" Git plugin not hosted on GitHub</span><br><span class="line">Plugin 'git://git.wincent.com/command-t.git'</span><br><span class="line">" git repos on your local machine (i.e. when working on your own plugin)</span><br><span class="line">"Plugin 'file:///home/gmarik/path/to/plugin'</span><br><span class="line">" The sparkup vim script is in a subdirectory of this repo called vim.</span><br><span class="line">" Pass the path to set the runtimepath properly.</span><br><span class="line">Plugin 'rstacruz/sparkup', &#123;'rtp': 'vim/'&#125;</span><br><span class="line">" Install L9 and avoid a Naming conflict if you've already installed a</span><br><span class="line">" different version somewhere else.</span><br><span class="line">" Plugin 'ascenator/L9', &#123;'name': 'newL9'&#125;</span><br><span class="line"></span><br><span class="line">" All of your Plugins must be added before the following line</span><br><span class="line">call vundle#end()            " required</span><br><span class="line">filetype plugin indent on    " required</span><br><span class="line">" To ignore plugin indent changes, instead use:</span><br><span class="line">"filetype plugin on</span><br><span class="line">"</span><br><span class="line">" Brief help</span><br><span class="line">" :PluginList       - lists configured plugins</span><br><span class="line">" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate</span><br><span class="line">" :PluginSearch foo - searches for foo; append `!` to refresh local cache</span><br><span class="line">" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal</span><br><span class="line">"</span><br><span class="line">" see :h vundle for more details or wiki for FAQ</span><br><span class="line">" Put your non-Plugin stuff after this line</span><br></pre></td></tr></table></figure></li><li><p>Install Plugins: 打开vim执行<code>:PluginInstall</code> 或者直接输入命令<code>sudo vim +PluginInstall +qall</code></p></li></ul></li><li>2.Install development tools and CMake:<ul><li><code>sudo apt-get install build-essential cmake</code></li></ul></li><li>3.Make sure you have Python headers installed:<ul><li><code>sudo apt-get install python-dev python3-dev</code></li></ul></li><li>4.安装clang<ul><li><code>sudo apt-get install clang</code></li></ul></li><li>5.Compiling YCM with semantic support for C-family languages:<ul><li><code>git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe</code></li><li><code>cd ~/.vim/bundle/YouCompleteMe</code></li><li><code>./install.py --clang-completer</code></li><li>如果出错执行 <code>git submodule update --init --recursive</code></li></ul></li><li><p>6.把以下内容复制到.vimrc中</p>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">"----------------------------"</span><br><span class="line">"------ YouCompleteMe -------"</span><br><span class="line">"----------------------------"</span><br><span class="line">let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">" YouCompleteMe</span><br><span class="line">set runtimepath+=~/.vim/bundle/YouCompleteMe</span><br><span class="line">let g:ycm_collect_identifiers_from_tags_files = 1           " 开启 YCM 基于标签引擎</span><br><span class="line">let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释与字符串中的内容也用于补全</span><br><span class="line">let g:syntastic_ignore_files=[".*\.py$"]</span><br><span class="line">let g:ycm_seed_identifiers_with_syntax = 1                  " 语法关键字补全</span><br><span class="line">let g:ycm_complete_in_comments = 1</span><br><span class="line">let g:ycm_confirm_extra_conf = 0</span><br><span class="line">let g:ycm_key_list_select_completion = ['&lt;c-n&gt;', '&lt;Down&gt;']  " 映射按键, 没有这个会拦截掉tab, 导致其他插件的tab不能用.</span><br><span class="line">let g:ycm_key_list_previous_completion = ['&lt;c-p&gt;', '&lt;Up&gt;']</span><br><span class="line">let g:ycm_complete_in_comments = 1                          " 在注释输入中也能补全</span><br><span class="line">let g:ycm_complete_in_strings = 1                           " 在字符串输入中也能补全</span><br><span class="line">let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串中的文字也会被收入补全</span><br><span class="line">let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'</span><br><span class="line">let g:ycm_show_diagnostics_ui = 0                           " 禁用语法检查</span><br><span class="line">inoremap &lt;expr&gt; &lt;CR&gt; pumvisible() ? "\&lt;C-y&gt;" : "\&lt;CR&gt;" |            " 回车即选中当前项</span><br><span class="line">nnoremap &lt;c-j&gt; :YcmCompleter GoToDefinitionElseDeclaration&lt;CR&gt;|     " 跳转到定义处</span><br><span class="line">"let g:ycm_min_num_of_chars_for_completion=2                 " 从第2个键入字符就开始罗列匹配项</span><br></pre></td></tr></table></figure></li></ul><p>按说这样应该就可以用了，不过提示有错误。</p><p><code>YouCompleteMe unavailable: requires Vim compiled with Python (2.7.1+ or 3.4+) support.</code></p><p>在网上找了好久，试了好多方法，最终还是按深度社区的方法才解决。<br><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=43716" target="_blank" rel="noopener">编译安装vim8.0,添加python支持</a></p><ul><li>1.<code>vim --version|grep python</code> 查看是否支持python</li><li>2.<code>sudo apt-get install python-dev python3-dev libncurses5-dev</code>，前面安装过python-dev python3-dev,这里会提示已是最新版本</li><li>3.<code>git clone https://github.com/vim/vim.git</code></li><li>4.<code>cd ~/vim</code></li><li>5.<code>./configure --with-features=huge --enable-python3interp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu/ --enable-rubyinterp --enable-luainterp --enable-perlinterp --with-python3-config-dir=/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/ --enable-multibyte --enable-cscope      --prefix=/usr/local/vim/</code>,这里python2.7和python3.6要跟你安装的版本相对应</li><li>6.<code>sudo make &amp;&amp; sudo make install</code></li><li>7.<code>which vim</code>查看vim安装位置，我的是/usr/bin/vim，然后<code>sudo cp /usr/local/vim/bin/vim /usr/bin/</code></li></ul><p>截图:</p><p><img src="/images/YouCompleteMe.JPG" alt="YCM"></p>]]></content>
+    <content type="html"><![CDATA[<p>参考<a href="https://github.com/Valloric/YouCompleteMe" target="_blank" rel="noopener">https://github.com/Valloric/YouCompleteMe</a></p><ul><li><p>1.安装Vundle</p><ul><li><code>git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim</code></li><li><p>把以下内容复制到.vimrc:</p><a id="more"></a><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">set nocompatible              " be iMproved, required</span><br><span class="line">filetype off                  " required</span><br><span class="line"></span><br><span class="line">" set the runtime path to include Vundle and initialize</span><br><span class="line">set rtp+=~/.vim/bundle/Vundle.vim</span><br><span class="line">call vundle#begin()</span><br><span class="line">" alternatively, pass a path where Vundle should install plugins</span><br><span class="line">"call vundle#begin('~/some/path/here')</span><br><span class="line"></span><br><span class="line">" let Vundle manage Vundle, required</span><br><span class="line">Plugin 'VundleVim/Vundle.vim'</span><br><span class="line"></span><br><span class="line">" The following are examples of different formats supported.</span><br><span class="line">" Keep Plugin commands between vundle#begin/end.</span><br><span class="line">" plugin on GitHub repo</span><br><span class="line">Plugin 'tpope/vim-fugitive'</span><br><span class="line">" plugin from https://vim-scripts.org/vim/scripts.html</span><br><span class="line">" Plugin 'L9'</span><br><span class="line">" Git plugin not hosted on GitHub</span><br><span class="line">Plugin 'git://git.wincent.com/command-t.git'</span><br><span class="line">" git repos on your local machine (i.e. when working on your own plugin)</span><br><span class="line">"Plugin 'file:///home/gmarik/path/to/plugin'</span><br><span class="line">" The sparkup vim script is in a subdirectory of this repo called vim.</span><br><span class="line">" Pass the path to set the runtimepath properly.</span><br><span class="line">Plugin 'rstacruz/sparkup', &#123;'rtp': 'vim/'&#125;</span><br><span class="line">" Install L9 and avoid a Naming conflict if you've already installed a</span><br><span class="line">" different version somewhere else.</span><br><span class="line">" Plugin 'ascenator/L9', &#123;'name': 'newL9'&#125;</span><br><span class="line"></span><br><span class="line">" All of your Plugins must be added before the following line</span><br><span class="line">call vundle#end()            " required</span><br><span class="line">filetype plugin indent on    " required</span><br><span class="line">" To ignore plugin indent changes, instead use:</span><br><span class="line">"filetype plugin on</span><br><span class="line">"</span><br><span class="line">" Brief help</span><br><span class="line">" :PluginList       - lists configured plugins</span><br><span class="line">" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate</span><br><span class="line">" :PluginSearch foo - searches for foo; append `!` to refresh local cache</span><br><span class="line">" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal</span><br><span class="line">"</span><br><span class="line">" see :h vundle for more details or wiki for FAQ</span><br><span class="line">" Put your non-Plugin stuff after this line</span><br></pre></td></tr></table></figure></li><li><p>Install Plugins: 打开vim执行<code>:PluginInstall</code> 或者直接输入命令<code>sudo vim +PluginInstall +qall</code></p></li></ul></li><li>2.Install development tools and CMake:<ul><li><code>sudo apt-get install build-essential cmake</code></li></ul></li><li>3.Make sure you have Python headers installed:<ul><li><code>sudo apt-get install python-dev python3-dev</code></li></ul></li><li>4.安装clang<ul><li><code>sudo apt-get install clang</code></li></ul></li><li>5.Compiling YCM with semantic support for C-family languages:<ul><li><code>git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe</code></li><li><code>cd ~/.vim/bundle/YouCompleteMe</code></li><li><code>./install.py --clang-completer</code></li><li>如果出错执行 <code>git submodule update --init --recursive</code></li></ul></li><li><p>6.把以下内容复制到.vimrc中</p>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">"----------------------------"</span><br><span class="line">"------ YouCompleteMe -------"</span><br><span class="line">"----------------------------"</span><br><span class="line">let g:ycm_global_ycm_extra_conf = '~/.vim/bundle/YouCompleteMe/cpp/ycm/.ycm_extra_conf.py'</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">" YouCompleteMe</span><br><span class="line">set runtimepath+=~/.vim/bundle/YouCompleteMe</span><br><span class="line">let g:ycm_collect_identifiers_from_tags_files = 1           " 开启 YCM 基于标签引擎</span><br><span class="line">let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释与字符串中的内容也用于补全</span><br><span class="line">let g:syntastic_ignore_files=[".*\.py$"]</span><br><span class="line">let g:ycm_seed_identifiers_with_syntax = 1                  " 语法关键字补全</span><br><span class="line">let g:ycm_complete_in_comments = 1</span><br><span class="line">let g:ycm_confirm_extra_conf = 0</span><br><span class="line">let g:ycm_key_list_select_completion = ['&lt;c-n&gt;', '&lt;Down&gt;']  " 映射按键, 没有这个会拦截掉tab, 导致其他插件的tab不能用.</span><br><span class="line">let g:ycm_key_list_previous_completion = ['&lt;c-p&gt;', '&lt;Up&gt;']</span><br><span class="line">let g:ycm_complete_in_comments = 1                          " 在注释输入中也能补全</span><br><span class="line">let g:ycm_complete_in_strings = 1                           " 在字符串输入中也能补全</span><br><span class="line">let g:ycm_collect_identifiers_from_comments_and_strings = 1 " 注释和字符串中的文字也会被收入补全</span><br><span class="line">let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'</span><br><span class="line">let g:ycm_show_diagnostics_ui = 0                           " 禁用语法检查</span><br><span class="line">inoremap &lt;expr&gt; &lt;CR&gt; pumvisible() ? "\&lt;C-y&gt;" : "\&lt;CR&gt;" |            " 回车即选中当前项</span><br><span class="line">nnoremap &lt;c-j&gt; :YcmCompleter GoToDefinitionElseDeclaration&lt;CR&gt;|     " 跳转到定义处</span><br><span class="line">"let g:ycm_min_num_of_chars_for_completion=2                 " 从第2个键入字符就开始罗列匹配项</span><br></pre></td></tr></table></figure></li></ul><p>按说这样应该就可以用了，不过提示有错误。</p><p><code>YouCompleteMe unavailable: requires Vim compiled with Python (2.7.1+ or 3.4+) support.</code></p><p>在网上找了好久，试了好多方法，最终还是按深度社区的方法才解决。<br><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=43716" target="_blank" rel="noopener">编译安装vim8.0,添加python支持</a></p><ul><li>1.<code>vim --version|grep python</code> 查看是否支持python</li><li>2.<code>sudo apt-get install python-dev python3-dev libncurses5-dev</code>，前面安装过python-dev python3-dev,这里会提示已是最新版本</li><li>3.<code>git clone https://github.com/vim/vim.git</code></li><li>4.<code>cd ~/vim</code></li><li>5.<code>./configure --with-features=huge --enable-python3interp --enable-pythoninterp --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu/ --enable-rubyinterp --enable-luainterp --enable-perlinterp --with-python3-config-dir=/usr/lib/python3.6/config-3.6m-x86_64-linux-gnu/ --enable-multibyte --enable-cscope      --prefix=/usr/local/vim/</code>,这里python2.7和python3.6要跟你安装的版本相对应</li><li>6.<code>sudo make &amp;&amp; sudo make install</code></li><li>7.<code>which vim</code>查看vim安装位置，我的是/usr/bin/vim，然后<code>sudo cp /usr/local/vim/bin/vim /usr/bin/</code></li></ul><p>截图:</p><p><img src="/images/YouCompleteMe.JPG" alt="YCM"></p>]]></content>
     
     <summary type="html">
     
@@ -473,9 +473,9 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://www.wmjtxt.net/tags/Linux/"/>
+      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
     
-      <category term="vim" scheme="https://www.wmjtxt.net/tags/vim/"/>
+      <category term="vim" scheme="https://wmjtxt.github.io/tags/vim/"/>
     
   </entry>
   
