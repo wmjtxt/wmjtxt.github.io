@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="https://wmjtxt.github.io">
+  <link rel="dns-prefetch" href="https://www.wmjtxt.net">
   <title>Find+wc统计代码行数(文件名含空格) | 木夕のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="一开始这样写find . -name &amp;quot;*.cpp&amp;quot; | xargs wc -l，名字有空格的文件无法处理 后来就在网上找，下面这个方法可以： 12&amp;lt;!-- more --&amp;gt;find . -name &quot;*.cpp&quot; -print0 | xargs -0 wc -l 好像是把空格替换成’\0’了">
 <meta name="keywords" content="shell,linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Find+wc统计代码行数(文件名含空格)">
-<meta property="og:url" content="https://wmjtxt.github.io/2019/03/25/find_wc/index.html">
+<meta property="og:url" content="https://www.wmjtxt.net/2019/03/25/find_wc/index.html">
 <meta property="og:site_name" content="木夕のBlog">
 <meta property="og:description" content="一开始这样写find . -name &amp;quot;*.cpp&amp;quot; | xargs wc -l，名字有空格的文件无法处理 后来就在网上找，下面这个方法可以： 12&amp;lt;!-- more --&amp;gt;find . -name &quot;*.cpp&quot; -print0 | xargs -0 wc -l 好像是把空格替换成’\0’了">
 <meta property="og:locale" content="default">
@@ -305,7 +305,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMUlEQVR42u3azbaCMAxFYd//pblTJ9Z9EvCuppuRCxH6MYjNz+uFj+vteD+zvpJcQ87fdsiQIWNbxrU81gz+SHL/T5/Xv5UhQ8Y5jE8P/nRN7Vcd0peny5AhQ8aSQZbCA7QMGTJk3MXgAHL9vwVcGTJkbMXg2zV0U1xiWwflR3JxGTJkbMjgxbLff36kvyFDhoytGFd48JJZZyMYr0qGDBmjGbWNXSftTBulwUZThgwZBzDWQZMHx7QZQBhosyhDhoyhjLSYRRbEXwQvw30By5Ah4xhG/ONwiZ3GQPCPIUOGjNGM4ogDbkDyMzeMWciQIWMQIy3ik7Cb3p+ntcX/EBkyZIxg8GYkD9P91mbakJAhQ8ZsRq3FSNLXtKCWjqbJkCHjBAYJcOtHpmNknEoS5mBZMmTI2JaRlvs7Jf670lq0KZQhQ8Y4Rq30xs/U0tHOdlOGDBmTGPx2vElZ20ryQbFi5JYhQ8a2jLRMzwth/WXFW08ZMmSMZnTaAyTpfSJhLg5eyJAhY1tGWtyvBWie4qajZjJkyDiHUYtdfCSCNxWKL06GDBmHMYKRrDBN5Y2BYMxChgwZoxlXePCOaH/kIqDKkCFjNKPTHyTfpqU6Xry7rc0pQ4aMTRhpkE1DbS0Njl+cDBkyDmA8MULBA2462CFDhgwZnREKHiLTV4CKbjJkyJDRKOJ3Mmw0LiZDhowDGCSJTRsGtQYnj6IyZMg4h8FTRx4Ea4t+YkRDhgwZmzP+AJrUIuCkCWvTAAAAAElFTkSuQmCC" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAB0UlEQVR42u3awU4DMQxF0f7/TxeJLSTcZyfuIN2sKiYdDiys+DmvF17v7/Xz82pnf09ryZUrt819b9eKuHq6/y751sogV67ceS4pXvwPI4Uv3SNXrtxncvfljxxiSFGTK1fu/+LuyxZvZmrFTq5cufPc9OCyf2n6kyu9mly5chvcTmB66vNQvitXrtz2VIIUlNqIpbbkypU7w+XHETIyqR1o0nZIrly5M9w0vKgVuPSfEjc/cuXKPcTl0Sd5SnCtAEWuXLkjXBJbpOEpaXgIDl3MkitX7gVu7XpE+ivTiGT5Hrly5Y5wTw1RapcqDuDkypV7gVsrVRy6PySlca1cuXInuSmlNoBJ3/yLSq5cuSNc3orwU1LtumdQOuXKlXuZW4tK+RWNNEL9451y5cod4fIiRRBk4JoWNTRQkStX7lEuKVV81Jq2UvFAV65cuYPctJzxeLTWPqGZsFy5ci9z+eKDFjLd5TtRfiNXrtxD3NoljHRwQsKOdKwrV67c29xO8eKlKi15y6dy5cod5JJCwxsefmkjDWflypX7NC4JUtODUXptS65cuU/m1kKWWrmUK1fup7h8pJqWp1qAciAWkStXboNbC0z5fh58yJUr9wHcLxf0n2YNEAp0AAAAAElFTkSuQmCC" alt="微信分享二维码">
     </div>
 </div>
 

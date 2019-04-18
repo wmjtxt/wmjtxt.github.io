@@ -5,14 +5,14 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="dns-prefetch" href="https://wmjtxt.github.io">
+  <link rel="dns-prefetch" href="https://www.wmjtxt.net">
   <title>学习爬虫 &amp; Linux登录页面截屏 | 木夕のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="想学爬虫，在知乎上看了帖子，然后不少人都建议用scrapy，就学习了一下，几经周折例子总算运行成功，但还是有点不太懂。 还有一个事，之前在网上找了一个给登录界面截屏(因为在锁屏状态，快捷键截屏无效)的脚本，在ubuntu上可以运行，一开始在deepin上也可以运行，但后来就不行了，不知道是不是更新了系统的原因。看来还是有问题。程序一运行，图形界面就黑屏了，也不报错，开始还会嘀一声，后来也没有什么声">
 <meta name="keywords" content="爬虫,技术">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习爬虫 &amp; Linux登录页面截屏">
-<meta property="og:url" content="https://wmjtxt.github.io/2018/05/01/学习爬虫/index.html">
+<meta property="og:url" content="https://www.wmjtxt.net/2018/05/01/学习爬虫/index.html">
 <meta property="og:site_name" content="木夕のBlog">
 <meta property="og:description" content="想学爬虫，在知乎上看了帖子，然后不少人都建议用scrapy，就学习了一下，几经周折例子总算运行成功，但还是有点不太懂。 还有一个事，之前在网上找了一个给登录界面截屏(因为在锁屏状态，快捷键截屏无效)的脚本，在ubuntu上可以运行，一开始在deepin上也可以运行，但后来就不行了，不知道是不是更新了系统的原因。看来还是有问题。程序一运行，图形界面就黑屏了，也不报错，开始还会嘀一声，后来也没有什么声">
 <meta property="og:locale" content="default">
@@ -305,7 +305,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACL0lEQVR42u3aQW7DMAxEUd//0u42QGF5ZmgHEfm1CopE9tOCJUUeh7zOj/X5l//fufrteuerpzy8YMCAsS3jXK71S6+/qXxWDmv9bjBgwJjDcEOh8jA9jGZgGDBgwMiSNj0Qrw8CBgwYMDKGXpTqSZ7+XBgwYMDI0js9WVT2+VItDgMGjA0Z+q379z+/0t+AAQPGVowzWusQqTQSlFLZeB8YMGC0ZrhB0E3R3DDqpqcwYMCYwNC3ztLESsjWeTBgwJjDyC7un2oM6HtK/zFgwIDRiKEHTXc4TC903eTypr8BAwaMdgz9sky/OKtc3mXjZTBgwJjAyMKue0Hmjm4YhwgDBowxjGzQodL4dEcuLt8NBgwYAxhvDFusH5zBpAwXBgwY7Rj6w7IhVzdNVK7k7H4sDBgwNmfUt64UrvWrt+OpE4IBA8YPM9wxi8rgqVuyulQYMGB0ZbiFqHK5rxexeil7c1gwYMBozXCLUrfR+GyzIdsNBgwYuzPcZM4NrNmQmb0bDBgwWjPcGlAfDsvamaUFAwaMpgxl9CoDZC8dthNgwIDRmuEmZzrbTSvdb97kuTBgwGjEqIyuuq1HJZgqpw4DBoxpjKzQrdSVlaZCqcsBAwaMzRlvBEd3MKIyAgsDBow5DDfwZUlhvT1wU4vDgAFjPEMPwVk4LhXPMGDAgLHcIms9KommUQzDgAFjAMMtYu0iM7rtM3aDAQNGa0Z20V8vdPWG5QPNSxgwYOzK+APXzfUbqjJEuwAAAABJRU5ErkJggg==" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMklEQVR42u3aQW7DMAwF0dz/0uk2QFF5PqkUEDVaBa4d+WXBkhRfL7zeH+vzyvoe/uz6G7YtGTJkHMt4L9fvjdebrZ9a37/e6693kyFDxj0M8kJ8A3In34XgZciQIYNsn35ep5IyZMiQUWOQ8pWvvQmlDBkybmDw9I6XsrWW3NdrcRkyZBzI4F33///8lfMNGTJkHMXYldKtUz1+PFl8HxkyZIxm1Bpk/OVI6EyPEP4MzTJkyBjK2DUwkYZLcjxAStxt/UIZMmQcxeAjEbVv6A92PPzHkCFDxjhGvym/K7CS+1ERK0OGjHGMvU00DuCJICqnZciQMZpBSlk+6JAy0uEJlBrKkCHjSkZ/5iFtrqVBX4YMGTcweCM+DZrpwQMvaBFJhgwZIxgkRNaSOR7E+8eiMmTImM1otbfSbfDYWdrUkyFDxs2MdMCi8+yGowUZMmRcw6iNU/C0r5MyPmBkyJBxAYOPX5AAvavpFuwlQ4aMoQz+unzY4hWutOhFYxYyZMgYxEjHGnhYTAGde2TIkDGbkR4fpk+lPxZPOh9SQxkyZAxipBuQiMefShPKoGsoQ4aMQYx3uGqhMz2S5IMXceUtQ4aMAxn9gpNfr5XKnVAuQ4aMSYx+kN371/S6DBky7mF8Yxiilnryohf1DmXIkHEZI30VXqamhW7Qt5MhQ8ZljFrRG6R3uK22LTWUIUPGUYxaEVs7zqwF4geMDBkyRjNapWP7IIH/cK3DSxkyZJzK+AGoZDMIeJs0sAAAAABJRU5ErkJggg==" alt="微信分享二维码">
     </div>
 </div>
 
