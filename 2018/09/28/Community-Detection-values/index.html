@@ -199,10 +199,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="1-模块度-Modularity"><a href="#1-模块度-Modularity" class="headerlink" title="1.模块度(Modularity)"></a>1.模块度(Modularity)</h2><p>&emsp;&emsp;把划分社团后的网络与相应的零模型(Null model)进行比较，以度量社团划分划分的质量。一个网络的模块度定义为：该网络的社团内部边数与相应的零模型的社团内部变数之差占整个网络边数的比例。<br><br>&emsp;&emsp;计算公式为：<br><br><a id="more"></a></p>
-<p><center><images src="https://chart.googleapis.com/chart?cht=tx&chl= Q = \sum\limits_{v}[e_{vv} - (a_v)^2]"></images></center><br></p>
-<p>&emsp;&emsp;其中,<images src="https://chart.googleapis.com/chart?cht=tx&chl= e_{vv}">为社团v和社团w之间的连边占整个网络边数的比例。<images src="https://chart.googleapis.com/chart?cht=tx&chl= a_v">为一端与社团v中节点相连的边的比例。<br></images></images></p>
-<h2 id="2-度中心性-Degree-centrality"><a href="#2-度中心性-Degree-centrality" class="headerlink" title="2.度中心性(Degree centrality)"></a>2.度中心性(Degree centrality)</h2><p>&emsp;&emsp;度中心性值定义为：<center><images src="https://chart.googleapis.com/chart?cht=tx&chl= DC_i = \frac{k_i}{N-1}"></images></center><br><br>&emsp;&emsp;其中，<images src="https://chart.googleapis.com/chart?cht=tx&chl= k_i">为节点i的度，N为网络中的节点个数。<br></images></p>
-<h2 id="3-介数中心性-Betweenness-centrality"><a href="#3-介数中心性-Betweenness-centrality" class="headerlink" title="3.介数中心性(Betweenness centrality)"></a>3.介数中心性(Betweenness centrality)</h2><p>&emsp;&emsp;介数中心性是以经过某个节点的最短路径的数目来刻画节点重要性的指标,简称介数(BC)。<br><br>&emsp;&emsp;节点i的介数定义为：<center><images src="https://chart.googleapis.com/chart?cht=tx&chl= BC_i= \sum\limits_{s{\ne}i{\ne}t}\frac{n_{st}^{i}}{g_{st}}"></images></center><br><br>&emsp;&emsp;其中,<images src="https://chart.googleapis.com/chart?cht=tx&chl= g_{st}">为从节点s到节点t的最短路径的数目, <images src="https://chart.googleapis.com/chart?cht=tx&chl=n_{st}^{i}">为从节点s到节点t的<images src="https://chart.googleapis.com/chart?cht=tx&chl= g_{st}">条最短路径中经过节点i的最短路径的数目。</images></images></images></p>
+<p><center><images src="http://chart.googleapis.com/chart?cht=tx&chl= Q = \sum\limits_{v}[e_{vv} - (a_v)^2]"></images></center><br></p>
+<p>&emsp;&emsp;其中,<images src="http://chart.googleapis.com/chart?cht=tx&chl= e_{vv}">为社团v和社团w之间的连边占整个网络边数的比例。<images src="http://chart.googleapis.com/chart?cht=tx&chl= a_v">为一端与社团v中节点相连的边的比例。<br></images></images></p>
+<h2 id="2-度中心性-Degree-centrality"><a href="#2-度中心性-Degree-centrality" class="headerlink" title="2.度中心性(Degree centrality)"></a>2.度中心性(Degree centrality)</h2><p>&emsp;&emsp;度中心性值定义为：<center><images src="http://chart.googleapis.com/chart?cht=tx&chl= DC_i = \frac{k_i}{N-1}"></images></center><br><br>&emsp;&emsp;其中，<images src="http://chart.googleapis.com/chart?cht=tx&chl= k_i">为节点i的度，N为网络中的节点个数。<br></images></p>
+<h2 id="3-介数中心性-Betweenness-centrality"><a href="#3-介数中心性-Betweenness-centrality" class="headerlink" title="3.介数中心性(Betweenness centrality)"></a>3.介数中心性(Betweenness centrality)</h2><p>&emsp;&emsp;介数中心性是以经过某个节点的最短路径的数目来刻画节点重要性的指标,简称介数(BC)。<br><br>&emsp;&emsp;节点i的介数定义为：<center><images src="http://chart.googleapis.com/chart?cht=tx&chl= BC_i= \sum\limits_{s{\ne}i{\ne}t}\frac{n_{st}^{i}}{g_{st}}"></images></center><br><br>&emsp;&emsp;其中,<images src="http://chart.googleapis.com/chart?cht=tx&chl= g_{st}">为从节点s到节点t的最短路径的数目, <images src="http://chart.googleapis.com/chart?cht=tx&chl=n_{st}^{i}">为从节点s到节点t的<images src="http://chart.googleapis.com/chart?cht=tx&chl= g_{st}">条最短路径中经过节点i的最短路径的数目。</images></images></images></p>
 <h2 id="4-接近中心性-Closeness-centrality"><a href="#4-接近中心性-Closeness-centrality" class="headerlink" title="4.接近中心性(Closeness centrality)"></a>4.接近中心性(Closeness centrality)</h2><p>接近数，即平均路径长度的倒数。</p>
 <h2 id="5-k-壳与k-核"><a href="#5-k-壳与k-核" class="headerlink" title="5.k-壳与k-核"></a>5.k-壳与k-核</h2><h2 id="6-特征向量中心性"><a href="#6-特征向量中心性" class="headerlink" title="6.特征向量中心性"></a>6.特征向量中心性</h2>
       
@@ -510,7 +510,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color2">Deepin</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -522,19 +526,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Deepin</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vim</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -547,6 +543,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">mysql</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">vim</a>
               </li>
              
               <li class="article-tag-list-item">
