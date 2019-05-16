@@ -18,7 +18,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://wmjtxt.github.io/images/lpa1.png">
 <meta property="og:image" content="https://wmjtxt.github.io/images/lpa2.png">
-<meta property="og:updated_time" content="2019-03-29T08:17:17.008Z">
+<meta property="og:updated_time" content="2019-05-16T09:12:05.116Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="LPA算法C++实现及模块度计算">
 <meta name="twitter:description" content="前言这学期开始看社团检测的东西，了解了一些经典算法。比如GN算法，BGLL算法(又叫Louvain，因为该算法是作者在Louvain大学时提出的)，LPA算法，等等。">
@@ -209,11 +209,7 @@
 <ul>
 <li>1 初始时，给每个节点一个标签，通常以其id作为初始标签。</li>
 <li>2 每个节点使用其邻居节点的标签中数量最多的标签更新自身标签。</li>
-<li>3 反复执行步骤2，直到满足终止条件。(至于终止条件是什么，这个可以自己设置，<pre><code>比如我就直接设定迭代5次结束，也可以根据每次迭代模块度的增加程度来设定，
-网上有说直到每个节点的标签不再变化为止，其实这比较难判定，
-而且据研究，大部分网络经过5次迭代，其95%的节点标签都不再变化，
-后面每次迭代虽部分标签还在变化，但相比来说性价比不高了)
-</code></pre></li>
+<li>3 反复执行步骤2，直到满足终止条件。(至于终止条件是什么，这个可以自己设置,<br>  比如我就直接设定迭代5次结束，也可以根据每次迭代模块度的增加程度来设定，<br>  网上有说直到每个节点的标签不再变化为止，其实这比较难判定，<br>  而且据研究，大部分网络经过5次迭代，其95%的节点标签都不再变化，<br>  后面每次迭代虽部分标签还在变化，但相比来说性价比不高了)</li>
 </ul>
 <p>LPA算法的优点是收敛周期很短，而且不需要任何先验知识。时间复杂度接近线性：对节点分配标签为O(n)，<br>每次迭代需要遍历所有的边两次，也就是O(2m)，所以时间复杂度为O(n+2m)，其中n为节点数，m为边数。</p>
 <p>同步更新和异步更新还没搞懂，回头看看再说。</p>
