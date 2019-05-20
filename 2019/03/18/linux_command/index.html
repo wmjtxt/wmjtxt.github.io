@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="木夕のBlog">
 <meta property="og:description" content="Linux常用命令">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-05-17T03:03:10.589Z">
+<meta property="og:updated_time" content="2019-05-20T10:53:16.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Linux常用命令总结(持续更新)">
 <meta name="twitter:description" content="Linux常用命令">
@@ -331,6 +331,21 @@
 <tr>
 <td><code>nl [file]</code></td>
 <td>查看文件内容，行号计算不包括空行，相当于<code>cat [file] -b</code></td>
+<td></td>
+</tr>
+<tr>
+<td><code>:%!xxd</code></td>
+<td>vim中显示16进制</td>
+<td>vim</td>
+</tr>
+<tr>
+<td><code>:%!xxd -r</code></td>
+<td>vim中从16进制恢复</td>
+<td>vim</td>
+</tr>
+<tr>
+<td><code>sed -i &#39;1,6d&#39; *.cpp</code></td>
+<td>删除所有cpp文件的前六行</td>
 <td></td>
 </tr>
 <tr>
