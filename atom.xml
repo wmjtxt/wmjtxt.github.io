@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>木夕のBlog</title>
+  <title>木夕木火のBlog</title>
   
   <subtitle>革命尚未成功，同志仍需努力</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>https://wmjtxt.github.io/</id>
   
   <author>
-    <name>写诗的木夕</name>
+    <name>木夕木火</name>
     
   </author>
   
