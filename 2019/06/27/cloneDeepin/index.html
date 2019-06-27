@@ -6,18 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>Archives: 2018/5 | 木夕木火のBlog</title>
+  <title>克隆Deepin系统 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="码农、诗人、旅行家">
-<meta property="og:type" content="website">
-<meta property="og:title" content="木夕木火のBlog">
-<meta property="og:url" content="https://wmjtxt.github.io/archives/2018/05/index.html">
+  <meta name="description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇">
+<meta name="keywords" content="Deepin,linux">
+<meta property="og:type" content="article">
+<meta property="og:title" content="克隆Deepin系统">
+<meta property="og:url" content="https://wmjtxt.github.io/2019/06/27/cloneDeepin/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="码农、诗人、旅行家">
+<meta property="og:description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-27T10:02:45.401Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="木夕木火のBlog">
-<meta name="twitter:description" content="码农、诗人、旅行家">
+<meta name="twitter:title" content="克隆Deepin系统">
+<meta name="twitter:description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -171,116 +173,129 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-cloneDeepin" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      克隆Deepin系统
+    </h1>
+  
+
+        
+        <a href="/2019/06/27/cloneDeepin/" class="archive-article-date">
+  	<time datetime="2019-06-27T08:08:26.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-27</time>
+</a>
+        
+        
+        		<span class="archive-article-date">
+        			阅读量 <span id="busuanzi_value_page_pv"></span>
+        		</span>
+        
+      </header>
     
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前记"><a href="#前记" class="headerlink" title="前记"></a>前记</h1><p>换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。</p>
+<h1 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h1><p>新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。</p>
+<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇到的问题<br>克隆完成后，将238G的硬盘连到新电脑，无法从该硬盘启动，Boot Device只显示电脑自带的硬盘而不显示外接硬盘。这样就没办法启动克隆的系统。</p>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>鉴于之前我曾在238G的硬盘上安装了Deepin 15.10，并在新电脑成功启动过，所以就想在电脑自带的硬盘安装一个Deepin系统，或许能解决这个问题。果不其然。</p>
+<p>ps : 一直以来，我都是用Windows10+Deepin双系统，efi引导启动(引导这块不太懂，我是先装好Windows10，再安装Deepin，然后开机就看到引导界面了，所以应该是Deepin自带的引导程序)。</p>
+<h1 id="为什么不用Deepin-15-10-以下简称15-10-了"><a href="#为什么不用Deepin-15-10-以下简称15-10-了" class="headerlink" title="为什么不用Deepin 15.10(以下简称15.10)了"></a>为什么不用Deepin 15.10(以下简称15.10)了</h1><p>其实先前是打算趁这次换电脑改用Deepin 15.10而放弃原来的Deepin 15.9(下称15.9)的(从15.5开始用，一路升级到15.9)，因为15.10是第一个stable版本，而且原来的unstable版本官方好像是今年7月以后不再更新了。</p>
+<p>所以新电脑一到，我就在238G移动固态上安装了15.10，一开始没发现什么大问题，只是<strong>引导有点问题</strong>：每次从Windows10重启，无法正常进入引导界面。这也许是本地硬盘Windows10+移动硬盘Deepin的问题，也可能是AMD处理器的问题。</p>
+<p>另外，在安装一个vim插件的时候（vim-instant-markdown），需要安装nodejs，而在15.10安装nodejs默认版本是4.8，在15.9安装是8.11，不知道是不是由于这个原因，总之结果就是<strong>vim-instant-markdown在15.10用不了</strong>，尝试了各种方法结果还是不行。</p>
+<p>综上，我就决定暂时放弃15.10了，虽然[解决办法]里在新电脑自带硬盘安装的系统是15.10，但那只是工具而已，以后的主力系统还是15.9。或许以后还有机会再用15.10或者别的linux系统。</p>
+<h1 id="实施步骤"><a href="#实施步骤" class="headerlink" title="实施步骤"></a>实施步骤</h1><p>大致说一下实施步骤，因为我先后尝试了多次，所以这里就不赘述，只说我认为是必要的步骤，如果遇到问题，欢迎留言交流。</p>
+<h3 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h3><ul>
+<li><p>原始系统，简称<strong>Deepin-老大</strong>；目标系统，也就是克隆系统，简称<strong>Deepin-小二</strong>。</p>
+</li>
+<li><p>一个第三方Deepin系统（我是在另一个移动机械硬盘上安装过一个Deepin 15.7，正好派上用场），简称<strong>Deepin-小三</strong>。<br>用live系统应该也可以，不过我没有试。如果在Deepin-老大上执行clone操作的话，会提示有个错误，好像是让你重启进入live系统再clone（我第一次是这样弄的，记不太清了，后来都是在第三方系统clone的）。</p>
+</li>
+<li><p>安装Clone软件（中文名是备份还原工具），在深度商店里就有。</p>
+</li>
+<li><p>在新电脑自带硬盘压缩出一个60G大小的空间并新建分区（这个过程是在自带Windows10系统进行），安装Deepin系统，简称<strong>Deepin-小四</strong>。</p>
+</li>
+</ul>
+<h3 id="克隆系统"><a href="#克隆系统" class="headerlink" title="克隆系统"></a>克隆系统</h3><p>打开Clone软件，第一步选择操作介质: 分区，选择介质对应的操作: 克隆分区，然后点击下一步，选择原始分区和目标分区，点击开始克隆，等待完成。</p>
+<h3 id="在新电脑启动"><a href="#在新电脑启动" class="headerlink" title="在新电脑启动"></a>在新电脑启动</h3><p>克隆完成后，建议就转移到新电脑，先启动<strong>Deepin-小四</strong>，执行命令<code>sudo update-grub</code>，然后重启就可以进入引导界面，并发现里面有<strong>Deepin-小二</strong>，就说明克隆成功了。</p>
+<p>之所以不建议在旧电脑启动<strong>Deepin-小二</strong>，是因为在旧电脑，<strong>Deepin-老大</strong>和<strong>Deepin-小二</strong>同时存在，引导程序可能对他们在识别上有点问题。<br>我在<strong>Deepin-小三</strong>执行<code>sudo update-grub</code>后，引导程序的确发现了这两个在不同位置的一模一样的系统，但启动的时候不论点击哪一个，似乎启动的都是原来的<strong>Deepin-老大</strong>。</p>
+<h3 id="解决Deepin-小二分区大小问题"><a href="#解决Deepin-小二分区大小问题" class="headerlink" title="解决Deepin-小二分区大小问题"></a>解决Deepin-小二分区大小问题</h3><p>启动<strong>Deepin-小二</strong>后，你也许会发现这个问题：<code>df -h</code>命令的结果显示，系统盘大小是110G（原系统Deepin-老大所在分区的大小），而<code>sudo fdisk -l</code>命令显示系统盘分区大小是238G（就是克隆操作目标硬盘的大小）。</p>
+<p>那些多余的空间去哪了？能不能找回来呢？答案是可以！</p>
+<p>只需要执行如下命令：</p>
+<p><code>resize2fs /dev/sda1</code></p>
+<p>其中<code>/dev/sda1</code>是系统<strong>Deepin-小二</strong>所在的分区名字。</p>
+<h3 id="领衔主演"><a href="#领衔主演" class="headerlink" title="领衔主演"></a>领衔主演</h3><table>
+<thead>
+<tr>
+<th style="text-align:center">姓名</th>
+<th style="text-align:center">版本</th>
+<th style="text-align:center">系统盘大小</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Deepin-老大</td>
+<td style="text-align:center">15.9.3</td>
+<td style="text-align:center">110G</td>
+</tr>
+<tr>
+<td style="text-align:center">Deepin-小二</td>
+<td style="text-align:center">15.9.3</td>
+<td style="text-align:center">238G</td>
+</tr>
+<tr>
+<td style="text-align:center">Deepin-小三</td>
+<td style="text-align:center">15.7.0</td>
+<td style="text-align:center">80G</td>
+</tr>
+<tr>
+<td style="text-align:center">Deepin-小四</td>
+<td style="text-align:center">15.10.1</td>
+<td style="text-align:center">60G</td>
+</tr>
+</tbody>
+</table>
+<h1 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h1><p>还有一些别的办法克隆系统，比如先备份，再还原，不再一一尝试啦，毕竟系统只是工具，弄好了就该办正事了，这才是最重要的。</p>
+
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zfb.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/wx.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/14/在deepin上安装YouCompleteMe/" class="archive-article-date">
-  	<time datetime="2018-05-13T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/14/在deepin上安装YouCompleteMe/">安装YouCompleteMe</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">vim</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/03/wmj-auto.sh/" class="archive-article-date">
-  	<time datetime="2018-05-03T05:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/03/wmj-auto.sh/">auto.sh</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">shell</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/03/chvt/" class="archive-article-date">
-  	<time datetime="2018-05-03T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/03/chvt/">Chvt-N</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -290,67 +305,154 @@
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aS1LDMBAFwNz/0uEAEPPeKKGw1F6liLHUXkzmo8cjvp4vruTOV/dc/+/jExcGBsZtGc/Lq2Xkq7zaerLuD6tjYGAcwLgOi9/vud5W++SVJ2BgYGDkyVweNJNXg4GBgbHCuE4KVzaKgYGBcc1Iithk60kROytx31aLY2Bg3JCRN8v+/vNH5hsYGBi3YjzL6zrI5olgHlKjXWFgYGzNmCV2syRy5ZVFiSYGBsYBjPahbRhNtpIH96U3jYGBcUPGrHCdbSJJH9s9YGBg7M3Ii9XZWLEN32/+xcDAwDiAMQums5QxBxQzWAwMjGMYyTGL9s51NgYGxsmMthGWJ4WzRlsUpjEwMLZmJK20JIyudPjyIx2/PBMDA2NTxsroMf+c/GV2aOOxklFiYGDclrGS3uXfvmvkgIGBcQJjZQCQbCVPOpNR5TDDxcDA2I4xS/KShfMg25IwMDDOYcyCYH48YpZc5iU0BgbG3owk/ZoVnG3AzUebv7xiDAyM7RgrY8s2HLeDhCJtxcDAOIaRN+DaZtx7xwzFPBYDA2MjxkoZ2TbgVgYDL18HBgbGpoxnea0E2ZZUUDEwMLZmzErQduHPHZCtYRgYGLdlJEF2dhS1beS1VAwMjNMYs8DXNsXyIWWNxMDAwCgL0WFzvxxhDruDGBgYRzJWjla0h8A+GHAxMDD+PaNtqCUJ3+y4xjAcY2BgbM3IS8d28Jk/s11xONTEwMC4H+MLztAi4LaBOKoAAAAASUVORK5CYII=" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/05/01/学习爬虫/" class="archive-article-date">
-  	<time datetime="2018-05-01T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/04/23/命名空间namespace数据成员重复定义问题/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">命名空间Namespace数据成员重复定义问题</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/05/01/学习爬虫/">学习爬虫 &amp; Linux登录页面截屏</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前记"><span class="toc-number">1.</span> <span class="toc-text">前记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#场景"><span class="toc-number">2.</span> <span class="toc-text">场景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#需求"><span class="toc-number">3.</span> <span class="toc-text">需求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决办法"><span class="toc-number">4.</span> <span class="toc-text">解决办法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#为什么不用Deepin-15-10-以下简称15-10-了"><span class="toc-number">5.</span> <span class="toc-text">为什么不用Deepin 15.10(以下简称15.10)了</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实施步骤"><span class="toc-number">6.</span> <span class="toc-text">实施步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备工作"><span class="toc-number">6.0.1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#克隆系统"><span class="toc-number">6.0.2.</span> <span class="toc-text">克隆系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在新电脑启动"><span class="toc-number">6.0.3.</span> <span class="toc-text">在新电脑启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决Deepin-小二分区大小问题"><span class="toc-number">6.0.4.</span> <span class="toc-text">解决Deepin-小二分区大小问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#领衔主演"><span class="toc-number">6.0.5.</span> <span class="toc-text">领衔主演</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">7.</span> <span class="toc-text">后记</span></a></li>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "4tTGIFVIbVtLxkWj9STjVP6q-gzGzoHsz",
+            app_key: "WyhzS2MIGIGDdxqiRCSEmHyh",
+            placeholder: "说点什么吧",
+            avatar:"mm"
+        });
+    }
+</script>
+
+    </section>
+  
+
+  
 
 
           </div>
@@ -387,8 +489,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
