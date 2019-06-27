@@ -217,7 +217,8 @@
 </ul>
 <h3 id="克隆系统"><a href="#克隆系统" class="headerlink" title="克隆系统"></a>克隆系统</h3><p>打开Clone软件，第一步选择操作介质: 分区，选择介质对应的操作: 克隆分区，然后点击下一步，选择原始分区和目标分区，点击开始克隆，等待完成。</p>
 <h3 id="在新电脑启动"><a href="#在新电脑启动" class="headerlink" title="在新电脑启动"></a>在新电脑启动</h3><p>克隆完成后，建议就转移到新电脑，先启动<strong>Deepin-小四</strong>，执行命令<code>sudo update-grub</code>，然后重启就可以进入引导界面，并发现里面有<strong>Deepin-小二</strong>，就说明克隆成功了。</p>
-<p>之所以不建议在旧电脑启动<strong>Deepin-小二</strong>，是因为在旧电脑，<strong>Deepin-老大</strong>和<strong>Deepin-小二</strong>同时存在，引导程序可能对他们在识别上有点问题。<br>我在<strong>Deepin-小三</strong>执行<code>sudo update-grub</code>后，引导程序的确发现了这两个在不同位置的一模一样的系统，但启动的时候不论点击哪一个，似乎启动的都是原来的<strong>Deepin-老大</strong>。</p>
+<p>之所以不建议在旧电脑启动<strong>Deepin-小二</strong>，是因为在旧电脑，<strong>Deepin-老大</strong>和<strong>Deepin-小二</strong>同时存在，引导程序可能对他们在识别上有点问题。<br>我在<strong>Deepin-小三</strong>执行<code>sudo update-grub</code>后，引导程序的确发现了这两个在不同位置的一模一样的系统，但启动的时候不论点击哪一个，似乎启动的都是原来的<strong>Deepin-小二</strong>，应该是<strong>Deepin-小二</strong>把<strong>Deepin-老大</strong>给覆盖了。</p>
+<p>ps : 晚上我又测试了一下，把原系统升级了，15.9.3 unstable –&gt; 15.10.1 stable，看来Deepin支持从unstable直接升级到stable版本了。还有就是升级过后，把<strong>Deepin-小二</strong>和<strong>Deepin-老大</strong>放到一起，开机，系统久久不能启动，大概维持了5分钟。<br>然后，我觉得情况不对劲，就强制关机，把<strong>Deepin-小二</strong>放到新电脑上，开机，提示有些错误，然后执行检查，最后很快正常启动。看来那5分钟旧电脑还是做了些什么，试图区分老大和小二。还好我及时制止了，不然可能要出大事的(认真脸)。<br>算了算了，以后他们还是不要相见了，这让我想起一个电影，好像是叫做《月球》，挺悲伤的。关于克隆，确实有些东西让人（系统）难以接受。</p>
 <h3 id="解决Deepin-小二分区大小问题"><a href="#解决Deepin-小二分区大小问题" class="headerlink" title="解决Deepin-小二分区大小问题"></a>解决Deepin-小二分区大小问题</h3><p>启动<strong>Deepin-小二</strong>后，你也许会发现这个问题：<code>df -h</code>命令的结果显示，系统盘大小是110G（原系统Deepin-老大所在分区的大小），而<code>sudo fdisk -l</code>命令显示系统盘分区大小是238G（就是克隆操作目标硬盘的大小）。</p>
 <p>那些多余的空间去哪了？能不能找回来呢？答案是可以！</p>
 <p>只需要执行如下命令：</p>
