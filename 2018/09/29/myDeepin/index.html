@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>The Config of My Deepin | 木夕木火のBlog</title>
+  <title>配置Deepin | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="目录 ssh git gcc">
+  <meta name="description" content="目录 Chrome SSH Git GCC YouCompleteMe MySQL vim-instant-markdown Variety Conky Pycharm TexStudio Atom">
 <meta name="keywords" content="Deepin">
 <meta property="og:type" content="article">
-<meta property="og:title" content="The Config of My Deepin">
+<meta property="og:title" content="配置Deepin">
 <meta property="og:url" content="https://wmjtxt.github.io/2018/09/29/myDeepin/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="目录 ssh git gcc">
+<meta property="og:description" content="目录 Chrome SSH Git GCC YouCompleteMe MySQL vim-instant-markdown Variety Conky Pycharm TexStudio Atom">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T07:56:39.051Z">
+<meta property="og:updated_time" content="2019-06-27T07:34:05.888Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="The Config of My Deepin">
-<meta name="twitter:description" content="目录 ssh git gcc">
+<meta name="twitter:title" content="配置Deepin">
+<meta name="twitter:description" content="目录 Chrome SSH Git GCC YouCompleteMe MySQL vim-instant-markdown Variety Conky Pycharm TexStudio Atom">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -180,7 +180,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      The Config of My Deepin
+      配置Deepin
     </h1>
   
 
@@ -199,10 +199,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul>
-<li><a href="#ssh">ssh</a></li>
-<li><a href="#git">git</a></li>
-<li><a href="#gcc">gcc</a><a id="more"></a></li>
+<li><a href="#chrome">Chrome</a></li>
+<li><a href="#ssh">SSH</a></li>
+<li><a href="#git">Git</a></li>
+<li><a href="#gcc">GCC</a></li>
 <li><a href="#youcompleteme">YouCompleteMe</a></li>
+<li><a href="#mysql">MySQL</a></li>
 <li><a href="#vim-instant-markdown">vim-instant-markdown</a></li>
 <li><a href="#variety">Variety</a></li>
 <li><a href="#conky">Conky</a></li>
@@ -211,7 +213,10 @@
 <li><a href="#atom">Atom</a></li>
 <li><a href></a></li>
 </ul>
-<h1 id="ssh"><a href="#ssh" class="headerlink" title="ssh"></a>ssh</h1><ul>
+<a id="more"></a>
+<h1 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h1><p>Deepin现在好像是自带Chrome。不过还需要登录Google账户同步书签，这才是最重要的。而登录Google账户必须翻-墙。<br>现如今梯子越来越难找了，很多都被封了。<br>目前能用的是这个<a href="https://github.com/yinghuocho/firefly-proxy" target="_blank" rel="noopener">firefly</a>，下载安装，然后打开会弹出一个页面，随便注册一个账户就有两天的时长可以用。</p>
+<p>真心希望有一天能取消这厚厚的wall。<br>当然也真心希望有一天我们的技术能领先全球。</p>
+<h1 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h1><ul>
 <li>安装ssh<ul>
 <li><code>sudo apt-get install openssh-server</code></li>
 </ul>
@@ -221,7 +226,7 @@
 </ul>
 </li>
 </ul>
-<h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><ul>
+<h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><ul>
 <li>安装git<ul>
 <li><code>sudo apt-get install git</code></li>
 </ul>
@@ -243,17 +248,17 @@
 <li>常用命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git push origin master</span><br><span class="line">git pull origin master</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;text&quot;</span><br><span class="line">git status</span><br><span class="line">git log</span><br><span class="line">git clone repoAddress</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
-<h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><ul>
+<h1 id="GCC"><a href="#GCC" class="headerlink" title="GCC"></a>GCC</h1><ul>
 <li><p>系统好像是自带了gcc,但g++需要手动安装</p>
 </li>
 <li><p><code>sudo apt-get install g++</code></p>
 </li>
 </ul>
 <h1 id="YouCompleteMe"><a href="#YouCompleteMe" class="headerlink" title="YouCompleteMe"></a>YouCompleteMe</h1><p>一款强大的vim插件</p>
-<p>安装方法参考：<a href="https://wmjtxt.github.io/2018-05-14-%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/">在deepin里安装YouCompleteMe</a></p>
-<h1 id="vim-instant-markdown"><a href="#vim-instant-markdown" class="headerlink" title="vim-instant-markdown"></a>vim-instant-markdown</h1><p>一款vim插件，可以实现markdown文件即时预览</p>
+<p>安装方法参考：<a href="https://wmjtxt.github.io/2018/05/14/%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/">安装YouCompleteMe</a></p>
+<h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><h1 id="vim-instant-markdown"><a href="#vim-instant-markdown" class="headerlink" title="vim-instant-markdown"></a>vim-instant-markdown</h1><p>一款vim插件，可以实现markdown文件即时预览</p>
 <p>安装方法参考：<a href="https://github.com/yangyangwithgnu/use_vim_as_ide#8.4" target="_blank" rel="noopener">https://github.com/yangyangwithgnu/use_vim_as_ide.git</a></p>
-<h1 id="Variety"><a href="#Variety" class="headerlink" title="Variety"></a>Variety</h1><p>Variety是一款自动更换壁纸的软件<br>来源:深度商店</p>
+<h1 id="Variety"><a href="#Variety" class="headerlink" title="Variety"></a>Variety</h1><p>Variety是一款自动更换壁纸的软件<br>直接在深度商店安装或者<code>sudo apt-get install variety</code></p>
 <h1 id="Conky"><a href="#Conky" class="headerlink" title="Conky"></a>Conky</h1><p>Conky是一款可以显示天气的桌面软件。来源：深度论坛</p>
 <ul>
 <li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=148009&amp;highlight=conky" target="_blank" rel="noopener">deepin利用conky打造一个炫酷的桌面</a></li>
@@ -418,7 +423,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目录"><span class="toc-number">1.</span> <span class="toc-text">目录</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#ssh"><span class="toc-number"></span> <span class="toc-text">ssh</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#git"><span class="toc-number"></span> <span class="toc-text">git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gcc"><span class="toc-number"></span> <span class="toc-text">gcc</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#YouCompleteMe"><span class="toc-number"></span> <span class="toc-text">YouCompleteMe</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim-instant-markdown"><span class="toc-number"></span> <span class="toc-text">vim-instant-markdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Variety"><span class="toc-number"></span> <span class="toc-text">Variety</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conky"><span class="toc-number"></span> <span class="toc-text">Conky</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Pycharm"><span class="toc-number"></span> <span class="toc-text">Pycharm</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TexStudio"><span class="toc-number"></span> <span class="toc-text">TexStudio</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Atom"><span class="toc-number"></span> <span class="toc-text">Atom</span></a>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#目录"><span class="toc-number">1.</span> <span class="toc-text">目录</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#Chrome"><span class="toc-number"></span> <span class="toc-text">Chrome</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SSH"><span class="toc-number"></span> <span class="toc-text">SSH</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Git"><span class="toc-number"></span> <span class="toc-text">Git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#GCC"><span class="toc-number"></span> <span class="toc-text">GCC</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#YouCompleteMe"><span class="toc-number"></span> <span class="toc-text">YouCompleteMe</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MySQL"><span class="toc-number"></span> <span class="toc-text">MySQL</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#vim-instant-markdown"><span class="toc-number"></span> <span class="toc-text">vim-instant-markdown</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Variety"><span class="toc-number"></span> <span class="toc-text">Variety</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conky"><span class="toc-number"></span> <span class="toc-text">Conky</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Pycharm"><span class="toc-number"></span> <span class="toc-text">Pycharm</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#TexStudio"><span class="toc-number"></span> <span class="toc-text">TexStudio</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Atom"><span class="toc-number"></span> <span class="toc-text">Atom</span></a>
                     </li></div>
                 </span>
             </div>

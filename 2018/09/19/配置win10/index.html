@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
   <title>配置Win10 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1.安装mingw一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。 安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个">
+  <meta name="description" content="两年来，装机很多次了，包括Windows10和Deepin，还有Ubuntu，ArchLinux等也都尝试过。用了快十年的老机子被折腾地不堪重负，尤其是近半年来，总是用着用着突然就关机了，温度很高，应该是散热太差了。一开始只是Windows10会这样，后来逐渐地Deepin也出现这种情况。于是就考虑换电脑了。由于资金紧张，就买了个3000多的低配点的机子，还是AMD的。当个过渡机子用吧，用到毕业工">
 <meta name="keywords" content="windows">
 <meta property="og:type" content="article">
 <meta property="og:title" content="配置Win10">
 <meta property="og:url" content="https://wmjtxt.github.io/2018/09/19/配置win10/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="1.安装mingw一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。 安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个">
+<meta property="og:description" content="两年来，装机很多次了，包括Windows10和Deepin，还有Ubuntu，ArchLinux等也都尝试过。用了快十年的老机子被折腾地不堪重负，尤其是近半年来，总是用着用着突然就关机了，温度很高，应该是散热太差了。一开始只是Windows10会这样，后来逐渐地Deepin也出现这种情况。于是就考虑换电脑了。由于资金紧张，就买了个3000多的低配点的机子，还是AMD的。当个过渡机子用吧，用到毕业工">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-29T07:56:03.711Z">
+<meta property="og:updated_time" content="2019-06-27T07:34:05.888Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置Win10">
-<meta name="twitter:description" content="1.安装mingw一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。 安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个">
+<meta name="twitter:description" content="两年来，装机很多次了，包括Windows10和Deepin，还有Ubuntu，ArchLinux等也都尝试过。用了快十年的老机子被折腾地不堪重负，尤其是近半年来，总是用着用着突然就关机了，温度很高，应该是散热太差了。一开始只是Windows10会这样，后来逐渐地Deepin也出现这种情况。于是就考虑换电脑了。由于资金紧张，就买了个3000多的低配点的机子，还是AMD的。当个过渡机子用吧，用到毕业工">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -198,9 +198,23 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="1-安装mingw"><a href="#1-安装mingw" class="headerlink" title="1.安装mingw"></a>1.安装mingw</h2><p>一开始安装了32位的mingw，就是mingw-get-setup.exe，安装好后gcc可以用，但g++老是报错，也找不到解决办法。后来看到有人说可能是版本不对，才想到搜一下mingw64，其实我之前已经安装了gitforwindows，就是mingw64。</p>
-<p>安装好后，gcc/g++都能用了。但在cmd里还是不方便，虽然mingw64和powershell还不错，但想着还是有个IDE比较好。<br><a id="more"></a></p>
-<h2 id="2-安装cdt"><a href="#2-安装cdt" class="headerlink" title="2.安装cdt"></a>2.安装cdt</h2><p>cdt是eclipse的插件，装好后可以在eclipse里运行c/c++代码。还是不错的。省的再装vs了。</p>
+        <p>两年来，装机很多次了，包括Windows10和Deepin，还有Ubuntu，ArchLinux等也都尝试过。用了快十年的老机子被折腾地不堪重负，尤其是近半年来，总是用着用着突然就关机了，温度很高，应该是散热太差了。<br>一开始只是Windows10会这样，后来逐渐地Deepin也出现这种情况。于是就考虑换电脑了。由于资金紧张，就买了个3000多的低配点的机子，还是AMD的。当个过渡机子用吧，用到毕业工作了再说。</p>
+<p>关于配置Deepin写在<a href="https://wmjtxt.github.io/2018/09/29/myDeepin/">配置Deepin</a>了，这篇是关于配置Windows10。其实配置这两个系统当然是有重复的地方的，比如装好系统后，首先我都是安装Chrome浏览器。<br>然后想办法登录Google账户，同步书签；比如配置C/C++编译环境（当然配置方法略有不同）；比如安装微信QQ网易云音乐百度网盘等常用软件；比如安装数据库管理软件。<br>对于这些呢，”酌情”处理。</p>
+<a id="more"></a>
+<h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><ul>
+<li><a href="#0常用软件">常用软件</a></li>
+<li><a href="#1git">Git</a></li>
+<li><a href="#2mingw64">mingw64</a></li>
+<li><a href></a></li>
+<li><a href></a></li>
+<li><a href></a></li>
+<li><a href></a></li>
+<li><a href></a></li>
+</ul>
+<h1 id="0-常用软件"><a href="#0-常用软件" class="headerlink" title="0.常用软件"></a>0.常用软件</h1><p>Chrome, 微信, QQ, 网易云音乐, 百度网盘等</p>
+<h1 id="1-Git"><a href="#1-Git" class="headerlink" title="1.Git"></a>1.Git</h1><p>在官网下载安装包进行安装。</p>
+<h1 id="2-mingw64"><a href="#2-mingw64" class="headerlink" title="2.mingw64"></a>2.mingw64</h1><p>在官网下载安装包进行安装。<br>安装好后，还需要配置环境变量，配置好后，gcc/g++都能用了。</p>
+<h1 id="3-cdt"><a href="#3-cdt" class="headerlink" title="3.cdt"></a>3.cdt</h1><p>cdt是eclipse的插件，装好后可以在eclipse里运行c/c++代码。还是不错的。省的再装vs了。</p>
 
       
       
@@ -325,7 +339,7 @@
   
   
     <a href="/2018/05/14/在deepin上安装YouCompleteMe/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">在deepin里安装YouCompleteMe</div>
+      <div class="article-nav-title">安装YouCompleteMe</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -352,7 +366,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-安装mingw"><span class="toc-number">1.</span> <span class="toc-text">1.安装mingw</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-安装cdt"><span class="toc-number">2.</span> <span class="toc-text">2.安装cdt</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#目录"><span class="toc-number">1.</span> <span class="toc-text">目录</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#0-常用软件"><span class="toc-number">2.</span> <span class="toc-text">0.常用软件</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Git"><span class="toc-number">3.</span> <span class="toc-text">1.Git</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-mingw64"><span class="toc-number">4.</span> <span class="toc-text">2.mingw64</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-cdt"><span class="toc-number">5.</span> <span class="toc-text">3.cdt</span></a></li></ol>
                     </div>
                 </span>
             </div>
