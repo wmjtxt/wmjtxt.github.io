@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
   <title>克隆Deepin系统 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇">
+  <meta name="description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。  遇到">
 <meta name="keywords" content="Deepin,linux">
 <meta property="og:type" content="article">
 <meta property="og:title" content="克隆Deepin系统">
 <meta property="og:url" content="https://wmjtxt.github.io/2019/06/27/cloneDeepin/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇">
+<meta property="og:description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。  遇到">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T10:02:45.401Z">
+<meta property="og:updated_time" content="2019-06-27T10:05:19.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="克隆Deepin系统">
-<meta name="twitter:description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇">
+<meta name="twitter:description" content="前记换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。 场景新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。 需求将Deepin系统从110G的硬盘克隆到238G的硬盘上。  遇到">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -200,7 +200,8 @@
       
         <h1 id="前记"><a href="#前记" class="headerlink" title="前记"></a>前记</h1><p>换了新电脑，就想着能否把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了一下，开始遇到一些问题，不过后来还是成功了。</p>
 <h1 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h1><p>新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，另有一个238G左右的移动固态硬盘。</p>
-<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将Deepin系统从110G的硬盘克隆到238G的硬盘上。 # 遇到的问题<br>克隆完成后，将238G的硬盘连到新电脑，无法从该硬盘启动，Boot Device只显示电脑自带的硬盘而不显示外接硬盘。这样就没办法启动克隆的系统。</p>
+<h1 id="需求"><a href="#需求" class="headerlink" title="需求"></a>需求</h1><p>将Deepin系统从110G的硬盘克隆到238G的硬盘上。 </p>
+<h1 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h1><p>克隆完成后，将238G的硬盘连到新电脑，无法从该硬盘启动，Boot Device只显示电脑自带的硬盘而不显示外接硬盘。这样就没办法启动克隆的系统。</p>
 <h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>鉴于之前我曾在238G的硬盘上安装了Deepin 15.10，并在新电脑成功启动过，所以就想在电脑自带的硬盘安装一个Deepin系统，或许能解决这个问题。果不其然。</p>
 <p>ps : 一直以来，我都是用Windows10+Deepin双系统，efi引导启动(引导这块不太懂，我是先装好Windows10，再安装Deepin，然后开机就看到引导界面了，所以应该是Deepin自带的引导程序)。</p>
 <h1 id="为什么不用Deepin-15-10-以下简称15-10-了"><a href="#为什么不用Deepin-15-10-以下简称15-10-了" class="headerlink" title="为什么不用Deepin 15.10(以下简称15.10)了"></a>为什么不用Deepin 15.10(以下简称15.10)了</h1><p>其实先前是打算趁这次换电脑改用Deepin 15.10而放弃原来的Deepin 15.9(下称15.9)的(从15.5开始用，一路升级到15.9)，因为15.10是第一个stable版本，而且原来的unstable版本官方好像是今年7月以后不再更新了。</p>
@@ -404,7 +405,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前记"><span class="toc-number">1.</span> <span class="toc-text">前记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#场景"><span class="toc-number">2.</span> <span class="toc-text">场景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#需求"><span class="toc-number">3.</span> <span class="toc-text">需求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决办法"><span class="toc-number">4.</span> <span class="toc-text">解决办法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#为什么不用Deepin-15-10-以下简称15-10-了"><span class="toc-number">5.</span> <span class="toc-text">为什么不用Deepin 15.10(以下简称15.10)了</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实施步骤"><span class="toc-number">6.</span> <span class="toc-text">实施步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备工作"><span class="toc-number">6.0.1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#克隆系统"><span class="toc-number">6.0.2.</span> <span class="toc-text">克隆系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在新电脑启动"><span class="toc-number">6.0.3.</span> <span class="toc-text">在新电脑启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决Deepin-小二分区大小问题"><span class="toc-number">6.0.4.</span> <span class="toc-text">解决Deepin-小二分区大小问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#领衔主演"><span class="toc-number">6.0.5.</span> <span class="toc-text">领衔主演</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">7.</span> <span class="toc-text">后记</span></a></li>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前记"><span class="toc-number">1.</span> <span class="toc-text">前记</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#场景"><span class="toc-number">2.</span> <span class="toc-text">场景</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#需求"><span class="toc-number">3.</span> <span class="toc-text">需求</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#遇到的问题"><span class="toc-number">4.</span> <span class="toc-text">遇到的问题</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解决办法"><span class="toc-number">5.</span> <span class="toc-text">解决办法</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#为什么不用Deepin-15-10-以下简称15-10-了"><span class="toc-number">6.</span> <span class="toc-text">为什么不用Deepin 15.10(以下简称15.10)了</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#实施步骤"><span class="toc-number">7.</span> <span class="toc-text">实施步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#准备工作"><span class="toc-number">7.0.1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#克隆系统"><span class="toc-number">7.0.2.</span> <span class="toc-text">克隆系统</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#在新电脑启动"><span class="toc-number">7.0.3.</span> <span class="toc-text">在新电脑启动</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#解决Deepin-小二分区大小问题"><span class="toc-number">7.0.4.</span> <span class="toc-text">解决Deepin-小二分区大小问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#领衔主演"><span class="toc-number">7.0.5.</span> <span class="toc-text">领衔主演</span></a></li></ol></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">8.</span> <span class="toc-text">后记</span></a></li>
                     </div>
                 </span>
             </div>
