@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>木夕木火のBlog</title>
+  <title>nc出问题了吗，老是Connection Refused | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="码农、诗人、旅行家">
-<meta property="og:type" content="website">
-<meta property="og:title" content="木夕木火のBlog">
-<meta property="og:url" content="https://wmjtxt.github.io/page/6/index.html">
+  <meta name="description" content="执行以下最简单的命令：12nc -l 2000nc 192.168.1.101 2000 就出现这个错误:(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused 在虚拟机上试了，还是同样的错误。 用我自己写的ftp服务器启动server，再用nc 192.168.1.101 2000可以连接成功但用nc -l 2000，再用">
+<meta property="og:type" content="article">
+<meta property="og:title" content="nc出问题了吗，老是Connection Refused">
+<meta property="og:url" content="https://wmjtxt.github.io/2019/06/30/nc-Connection-refused/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="码农、诗人、旅行家">
+<meta property="og:description" content="执行以下最简单的命令：12nc -l 2000nc 192.168.1.101 2000 就出现这个错误:(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused 在虚拟机上试了，还是同样的错误。 用我自己写的ftp服务器启动server，再用nc 192.168.1.101 2000可以连接成功但用nc -l 2000，再用">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-06-30T14:54:19.101Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="木夕木火のBlog">
-<meta name="twitter:description" content="码农、诗人、旅行家">
+<meta name="twitter:title" content="nc出问题了吗，老是Connection Refused">
+<meta name="twitter:description" content="执行以下最简单的命令：12nc -l 2000nc 192.168.1.101 2000 就出现这个错误:(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused 在虚拟机上试了，还是同样的错误。 用我自己写的ftp服务器启动server，再用nc 192.168.1.101 2000可以连接成功但用nc -l 2000，再用">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -171,69 +172,146 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-学习爬虫" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-nc-Connection-refused" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/05/01/学习爬虫/">学习爬虫 &amp; Linux登录页面截屏</a>
+    <h1 class="article-title" itemprop="name">
+      nc出问题了吗，老是Connection Refused
     </h1>
   
 
         
-        <a href="/2018/05/01/学习爬虫/" class="archive-article-date">
-  	<time datetime="2018-05-01T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-05-01</time>
+        <a href="/2019/06/30/nc-Connection-refused/" class="archive-article-date">
+  	<time datetime="2019-06-30T14:45:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-30</time>
 </a>
         
+        
+        		<span class="archive-article-date">
+        			阅读量 <span id="busuanzi_value_page_pv"></span>
+        		</span>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>想学爬虫，在知乎上看了帖子，然后不少人都建议用scrapy，就学习了一下，几经周折例子总算运行成功，但还是有点不太懂。</p>
-<p>还有一个事，之前在网上找了一个给登录界面截屏(因为在锁屏状态，快捷键截屏无效)的脚本，在ubuntu上可以运行，一开始在deepin上也可以运行，但后来就不行了，不知道是不是更新了系统的原因。看来还是有问题。程序一运行，图形界面就黑屏了，也不报错，开始还会嘀一声，后来也没有什么声音了。不知道为什么。同样的程序在ubuntu上运行一点事没有啊。</p>
-<p>真搞不懂。<br>
-        
-          <a class="article-more-a" href="/2018/05/01/学习爬虫/#more">more >></a>
-        
+        <p>执行以下最简单的命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nc -l 2000</span><br><span class="line">nc 192.168.1.101 2000</span><br></pre></td></tr></table></figure></p>
+<p>就出现这个错误:<code>(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused</code></p>
+<p>在虚拟机上试了，还是同样的错误。</p>
+<p>用我自己写的ftp服务器启动server，再用<code>nc 192.168.1.101 2000</code>可以连接成功<br>但用<code>nc -l 2000</code>，再用我写的ftp client，执行<code>./client 192.168.1.101 2000</code>出现上面的错误</p>
+<p>所以推测应该是nc的服务器没有正常启动或者类似的问题。</p>
+
       
       
-    </p></div>
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/zfb.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/images/wx.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
     <div class="article-info article-info-index">
       
       
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">爬虫</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		
-		</ul>
-	</div>
+      
 
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/05/01/学习爬虫/">展开全文 >></a>
-        </p>
-      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
 
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACLElEQVR42u3aS5LCMAxFUfa/6fQUimrnPssMIl2PKAhxTgYq6/N64XW9re9v1t+///p+Ddnl8JIhQ8ZjGddyrTfgG19gfSPJ9TJkyJjD+G9jfuv1lesd13dYP5sMGTJkpKT1g94ETRkyZMg4xCBHwL07kNchQ4aMyYz0wLfHI4W2n+fiMmTIeCDjVBj9xeef9DdkyJDxKMYVrvT4WElug6eSIUNGa8ap9JKnnZVXdnPQlCFDRlMG+Rsf4SINAxKy+RhZMPEhQ4aMxzJ4G5KMR5DRsaDQj1unMmTImMM4W9DnAxakJRBXBGXIkDGGwW/KQ3Y6Rha8dBkyZIxhpOMOaYGMpMGbwVeGDBlNGZVBKxJA0+85/uOzDBkyWjPS4x1PcUkQ32t/3oRgGTJktGPwxLKSoJI7VEgyZMiYwKiMPlSGLU4dEGXIkDGBQc6PvKBGQiov8KFXLEOGjNaMePSq8NCV0h5qZMqQIaM1gyeQ5EpeSuO7xI0BGTJktGPwZmT6QOkQRqnlKUOGjDEMnnzWC/rpqwmKbjJkyGjKqBf3K/epHzRlyJAxk8EbAHtpcH1kVoYMGRMYV7j2/rUXrIM2qgwZMloz6sGOB9aUV2mvypAhox+DB9n0+r0xizRYy5AhYw5jb6iijk+PfTeprAwZMmSAIYlK+poW9WpzZDJkyOjMWD9E+i+SYaPdZciQMYCRJqUoCOIKX3pnGTJkTGPw1PFYK/FQ4ipDhowBjD8+7JNhgRBZFAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2019/06/27/cloneDeepin/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">克隆Deepin系统</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -248,95 +326,61 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-WMJTXT" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/04/11/WMJTXT/">Some Notes of 201804</a>
-    </h1>
-  
-
-        
-        <a href="/2018/04/11/WMJTXT/" class="archive-article-date">
-  	<time datetime="2018-04-10T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-11</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="一些笔记"><a href="#一些笔记" class="headerlink" title="一些笔记"></a>一些笔记</h1><h1 id="2018-4-11"><a href="#2018-4-11" class="headerlink" title="2018.4.11"></a>2018.4.11</h1>
-        
-          <a class="article-more-a" href="/2018/04/11/WMJTXT/#more">more >></a>
-        
-      
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2018/04/11/WMJTXT/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
 
+  
+  
+  
 
   
+
   
-    <nav id="page-nav">
-      <a class="extend prev" rel="prev" href="/page/5/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span>
-    </nav>
+
+  
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "4tTGIFVIbVtLxkWj9STjVP6q-gzGzoHsz",
+            app_key: "WyhzS2MIGIGDdxqiRCSEmHyh",
+            placeholder: "说点什么吧",
+            avatar:"mm"
+        });
+    }
+</script>
+
+    </section>
+  
+
   
 
 
@@ -373,8 +417,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
