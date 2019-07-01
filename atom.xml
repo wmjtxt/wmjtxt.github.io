@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2019-06-30T15:05:49.113Z</updated>
+  <updated>2019-07-01T03:25:31.943Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -21,15 +21,17 @@
     <link href="https://wmjtxt.github.io/2019/06/30/nc-Connection-refused/"/>
     <id>https://wmjtxt.github.io/2019/06/30/nc-Connection-refused/</id>
     <published>2019-06-30T14:45:35.000Z</published>
-    <updated>2019-06-30T15:05:49.113Z</updated>
+    <updated>2019-07-01T03:25:31.943Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>已解决</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">原来是没有加-p的原因，估计是deepin装的netcat版本太老了。</span><br><span class="line">解决办法: 启动服务的时候在端口号前加上-p参数:`nc -l -p 2000`。</span><br></pre></td></tr></table></figure></p><p>执行以下最简单的命令：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nc -l 2000</span><br><span class="line">nc 192.168.1.101 2000</span><br></pre></td></tr></table></figure></p><p>就出现这个错误:<code>(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused</code></p><p>在虚拟机上试了，还是同样的错误。</p><p>用我自己写的ftp服务器启动server，再用<code>nc 192.168.1.101 2000</code>可以连接成功<br>但用<code>nc -l 2000</code>，再用我写的ftp client，执行<code>./client 192.168.1.101 2000</code>出现上面的错误</p><p>所以推测应该是nc的服务器没有正常启动或者类似的问题。</p>]]></content>
+    <content type="html"><![CDATA[<p><strong>已解决</strong></p><p>原来是没有加-p的原因，估计是deepin装的netcat版本太老了。<br>解决办法: 启动nc服务的时候在端口号前加上-p参数:<code>nc -l -p 2000</code>，就可以了。</p><p>以下是原文：</p><p>执行以下最简单的命令：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nc -l 2000</span><br><span class="line">nc 192.168.1.101 2000</span><br></pre></td></tr></table></figure></p><p>就出现这个错误:<br><code>(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused</code></p><p>在虚拟机上试了，还是同样的错误。</p><p>启动我自己写的ftp server</p><p><code>./server 192.168.1.101 2000 5 10</code></p><p>再执行</p><p><code>nc 192.168.1.101 2000</code></p><p>可以连接成功。</p><p>但先执行</p><p><code>nc -l 2000</code></p><p>再启动ftp client</p><p><code>./client 192.168.1.101 2000</code></p><p>仍会出现上面的错误。</p><p>所以推测应该是nc的服务器没有正常启动或者类似的问题。</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;strong&gt;已解决&lt;/strong&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;li
+        &lt;p&gt;&lt;strong&gt;已解决&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;原来是没有加-p的原因，估计是deepin装的netcat版本太老了。&lt;br&gt;解决办法: 启动nc服务的时候在端口号前加上-p参数:&lt;code&gt;nc -l -p 2000&lt;/code&gt;，就可以了。&lt;/p&gt;
+&lt;p&gt;以下是
       
     
     </summary>
