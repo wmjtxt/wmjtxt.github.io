@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2019-07-01T03:25:31.943Z</updated>
+  <updated>2019-07-07T11:45:59.100Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>七月刚来，已经走远</title>
+    <link href="https://wmjtxt.github.io/2019/07/07/july/"/>
+    <id>https://wmjtxt.github.io/2019/07/07/july/</id>
+    <published>2019-07-07T11:31:44.000Z</published>
+    <updated>2019-07-07T11:45:59.100Z</updated>
+    
+    <content type="html"><![CDATA[<p>明天回家。<br>本来准备7月5号回家的，9号去参加同学的婚礼，顺利的话中间还能去趟洛阳。<br>可是4号一大早被老师喊去实验室，一忙就是整整4天。<br>除了实验室的事情，这几天就是折腾系统，其他啥也没干。<br>之前的deepin系统（也就是现在在用的）总算是迁移到了新电脑上。以后就少折腾系统，挺麻烦的，也没啥意义。<br>win10也碰到个问题，不过已经解决，这里就不说了。</p><p>可能七月底才能回学校，而且那时实验室还不一定能装修好，所以可能还是得去图书馆学习。<br>一定要去图书馆。<br>过去的俩月没怎么取图书馆，几乎等于荒废了，在宿舍的学习效率太低了。<br>亡羊补牢，为时不晚。<br>在家也要保持状态，比如刷个题什么的，每天一两个小时就可以。</p><p>Fighting</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;明天回家。&lt;br&gt;本来准备7月5号回家的，9号去参加同学的婚礼，顺利的话中间还能去趟洛阳。&lt;br&gt;可是4号一大早被老师喊去实验室，一忙就是整整4天。&lt;br&gt;除了实验室的事情，这几天就是折腾系统，其他啥也没干。&lt;br&gt;之前的deepin系统（也就是现在在用的）总算是迁移到了新
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
   
   <entry>
     <title>nc出问题了吗，老是Connection Refused</title>
@@ -286,9 +309,9 @@
     </summary>
     
     
-      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
-    
       <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
     
       <category term="Socket" scheme="https://wmjtxt.github.io/tags/Socket/"/>
     
@@ -451,40 +474,6 @@
       <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
       <category term="mysql" scheme="https://wmjtxt.github.io/tags/mysql/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>配置Deepin</title>
-    <link href="https://wmjtxt.github.io/2018/09/29/myDeepin/"/>
-    <id>https://wmjtxt.github.io/2018/09/29/myDeepin/</id>
-    <published>2018-09-28T16:00:00.000Z</published>
-    <updated>2019-06-27T07:34:05.888Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><ul><li><a href="#chrome">Chrome</a></li><li><a href="#ssh">SSH</a></li><li><a href="#git">Git</a></li><li><a href="#gcc">GCC</a></li><li><a href="#youcompleteme">YouCompleteMe</a></li><li><a href="#mysql">MySQL</a></li><li><a href="#vim-instant-markdown">vim-instant-markdown</a></li><li><a href="#variety">Variety</a></li><li><a href="#conky">Conky</a></li><li><a href="#pycharm">Pycharm</a></li><li><a href="#texstudio">TexStudio</a></li><li><a href="#atom">Atom</a></li><li><a href></a></li></ul><a id="more"></a><h1 id="Chrome"><a href="#Chrome" class="headerlink" title="Chrome"></a>Chrome</h1><p>Deepin现在好像是自带Chrome。不过还需要登录Google账户同步书签，这才是最重要的。而登录Google账户必须翻-墙。<br>现如今梯子越来越难找了，很多都被封了。<br>目前能用的是这个<a href="https://github.com/yinghuocho/firefly-proxy" target="_blank" rel="noopener">firefly</a>，下载安装，然后打开会弹出一个页面，随便注册一个账户就有两天的时长可以用。</p><p>真心希望有一天能取消这厚厚的wall。<br>当然也真心希望有一天我们的技术能领先全球。</p><h1 id="SSH"><a href="#SSH" class="headerlink" title="SSH"></a>SSH</h1><ul><li>安装ssh<ul><li><code>sudo apt-get install openssh-server</code></li></ul></li><li>开启ssh服务<ul><li><code>sudo service sshd start</code></li></ul></li></ul><h1 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h1><ul><li>安装git<ul><li><code>sudo apt-get install git</code></li></ul></li><li>设置name和email<ul><li><code>git config --global user.name &quot;name&quot;</code></li><li><code>git config --global user.email &quot;email&quot;</code></li></ul></li><li>设置ssh-key<ul><li>先执行<code>ssh-keygen -t rsa -C &quot;email&quot;</code></li><li>然后在github上找到”Account settings”,”SSH Keys”页面,点击”Add SSH Key”,将~/.ssh/id_rsa.pub的内容粘贴到Key文本框内。</li></ul></li><li>连接远程库<ul><li><code>git remote add origin git@github.com:yourname/reponame.git</code></li></ul></li><li>常用命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br><span class="line">git push origin master</span><br><span class="line">git pull origin master</span><br><span class="line">git add -A</span><br><span class="line">git commit -m &quot;text&quot;</span><br><span class="line">git status</span><br><span class="line">git log</span><br><span class="line">git clone repoAddress</span><br></pre></td></tr></table></figure></li></ul><h1 id="GCC"><a href="#GCC" class="headerlink" title="GCC"></a>GCC</h1><ul><li><p>系统好像是自带了gcc,但g++需要手动安装</p></li><li><p><code>sudo apt-get install g++</code></p></li></ul><h1 id="YouCompleteMe"><a href="#YouCompleteMe" class="headerlink" title="YouCompleteMe"></a>YouCompleteMe</h1><p>一款强大的vim插件</p><p>安装方法参考：<a href="https://wmjtxt.github.io/2018/05/14/%E5%9C%A8deepin%E4%B8%8A%E5%AE%89%E8%A3%85YouCompleteMe/">安装YouCompleteMe</a></p><h1 id="MySQL"><a href="#MySQL" class="headerlink" title="MySQL"></a>MySQL</h1><h1 id="vim-instant-markdown"><a href="#vim-instant-markdown" class="headerlink" title="vim-instant-markdown"></a>vim-instant-markdown</h1><p>一款vim插件，可以实现markdown文件即时预览</p><p>安装方法参考：<a href="https://github.com/yangyangwithgnu/use_vim_as_ide#8.4" target="_blank" rel="noopener">https://github.com/yangyangwithgnu/use_vim_as_ide.git</a></p><h1 id="Variety"><a href="#Variety" class="headerlink" title="Variety"></a>Variety</h1><p>Variety是一款自动更换壁纸的软件<br>直接在深度商店安装或者<code>sudo apt-get install variety</code></p><h1 id="Conky"><a href="#Conky" class="headerlink" title="Conky"></a>Conky</h1><p>Conky是一款可以显示天气的桌面软件。来源：深度论坛</p><ul><li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=148009&amp;highlight=conky" target="_blank" rel="noopener">deepin利用conky打造一个炫酷的桌面</a></li><li><a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=152734&amp;highlight=conky" target="_blank" rel="noopener">conky-weather 3.0 (Conky天气)</a></li></ul><p>我用的第二个</p><h1 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h1><p><code>sudo apt-get install pycharm-community</code></p><h1 id="TexStudio"><a href="#TexStudio" class="headerlink" title="TexStudio"></a>TexStudio</h1><p>Latex编辑器</p><ul><li>首先安装texlive, 可以直接在官网下载下来安装, <a href="http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz" target="_blank" rel="noopener">install-tl-unx.tar.gz</a>, 也可以命令安装, <code>sudo apt-get install texlive-full</code></li><li>然后安装texstudio, <code>sudo apt-get install texstudio</code></li></ul><h1 id="Atom"><a href="#Atom" class="headerlink" title="Atom"></a>Atom</h1><p>开源文本编辑器, <code>sudo apt-get install atom</code>, 也可以在深度商店安装</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;目录&quot;&gt;&lt;a href=&quot;#目录&quot; class=&quot;headerlink&quot; title=&quot;目录&quot;&gt;&lt;/a&gt;目录&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#chrome&quot;&gt;Chrome&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#ssh&quot;&gt;SSH&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#git&quot;&gt;Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#gcc&quot;&gt;GCC&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#youcompleteme&quot;&gt;YouCompleteMe&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#mysql&quot;&gt;MySQL&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#vim-instant-markdown&quot;&gt;vim-instant-markdown&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#variety&quot;&gt;Variety&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#conky&quot;&gt;Conky&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#pycharm&quot;&gt;Pycharm&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#texstudio&quot;&gt;TexStudio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#atom&quot;&gt;Atom&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-    
-      <category term="Deepin" scheme="https://wmjtxt.github.io/tags/Deepin/"/>
     
   </entry>
   
