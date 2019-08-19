@@ -194,10 +194,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>其实Git我用的不多，<code>git rebase</code>命令之前都没听说过，偶然在牛客网看面经看到有人说面试官问<code>git rebase</code>和<code>git merge</code>的区别。<br>我才想去了解一下它。</p>
-<p>廖雪峰的官方网站上有提到<code>git rebase</code>的用法<sup>[1]</sup>，并举了一个例子，但他的例子不好，评论里也有人说到。</p>
-<h2 id="评论里有位同学详细说了git-rebase的用法-说得很好-摘抄如下："><a href="#评论里有位同学详细说了git-rebase的用法-说得很好-摘抄如下：" class="headerlink" title="评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下："></a>评论里有位同学详细说了<code>git rebase</code>的用法, 说得很好, 摘抄如下：</h2><p>一开始按照教程演示去操作，因为两个目录修改的不是同一文件，<code>git pull</code> 后直接合并了没有冲突，所以git<br>rebase有效果。如果<code>git pull</code>后提示有冲突后，先不管冲突的代码，因为修改后执行rebase还是变回有冲突<br>的代码。先执行<code>git add .</code>和<code>git commit -m &#39;xxx&#39;</code>。在执行git rebase 终端提示：Resolve all<br>conflicts manually, mark them as resolved with “git add/rm &lt;conflicted_files&gt;”, then run “git rebase<br>–continue”。这时再手动修改代码解决冲突，执行<code>git add .</code> 再执行 <code>git rebase --continue</code></p>
-<h2 id="就有效果了。这时直接git-push到远程仓库即可"><a href="#就有效果了。这时直接git-push到远程仓库即可" class="headerlink" title="就有效果了。这时直接git push到远程仓库即可"></a>就有效果了。这时直接<code>git push</code>到远程仓库即可</h2>
+        <p>其实我用Git不多，<code>git rebase</code>命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问<code>git rebase</code>和<code>git merge</code>的区别。<br>才想到去了解一下它。</p>
+<p>廖雪峰的官方网站上有提到<code>git rebase</code>的用法<sup>[1]</sup>，并举了一个例子，但他的例子不好，评论里也有人说到。<br>评论里有位同学详细说了<code>git rebase</code>的用法, 说得很好, 摘抄如下：</p>
+<hr>
+<p>一开始按照教程演示去操作，因为两个目录修改的不是同一文件，<code>git pull</code> 后直接合并了没有冲突，所以git<br>rebase有效果。如果<code>git pull</code>后提示有冲突后，先不管冲突的代码，因为修改后执行rebase还是变回有冲突<br>的代码。先执行<code>git add .</code>和<code>git commit -m &#39;xxx&#39;</code>。在执行git rebase 终端提示：Resolve all<br>conflicts manually, mark them as resolved with “git add/rm &lt;conflicted_files&gt;”, then run “git rebase<br>–continue”。这时再手动修改代码解决冲突，执行<code>git add .</code> 再执行 <code>git rebase --continue</code><br>就有效果了。这时直接<code>git push</code>到远程仓库即可</p>
+<hr>
         
           <a class="article-more-a" href="/2019/08/18/rebase/#more">more >></a>
         

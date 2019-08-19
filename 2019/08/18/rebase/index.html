@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
   <title>Git Rebase的用法 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="其实Git我用的不多，git rebase命令之前都没听说过，偶然在牛客网看面经看到有人说面试官问git rebase和git merge的区别。我才想去了解一下它。 廖雪峰的官方网站上有提到git rebase的用法[1]，并举了一个例子，但他的例子不好，评论里也有人说到。 评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下：一开始按照教程演示去操作，因为两个目录修改的不是">
+  <meta name="description" content="其实我用Git不多，git rebase命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问git rebase和git merge的区别。才想到去了解一下它。 廖雪峰的官方网站上有提到git rebase的用法[1]，并举了一个例子，但他的例子不好，评论里也有人说到。评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下：  一开始按照教程演示去操作，因为两个目录修改的不">
 <meta name="keywords" content="Git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git Rebase的用法">
 <meta property="og:url" content="https://wmjtxt.github.io/2019/08/18/rebase/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="其实Git我用的不多，git rebase命令之前都没听说过，偶然在牛客网看面经看到有人说面试官问git rebase和git merge的区别。我才想去了解一下它。 廖雪峰的官方网站上有提到git rebase的用法[1]，并举了一个例子，但他的例子不好，评论里也有人说到。 评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下：一开始按照教程演示去操作，因为两个目录修改的不是">
+<meta property="og:description" content="其实我用Git不多，git rebase命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问git rebase和git merge的区别。才想到去了解一下它。 廖雪峰的官方网站上有提到git rebase的用法[1]，并举了一个例子，但他的例子不好，评论里也有人说到。评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下：  一开始按照教程演示去操作，因为两个目录修改的不">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-08-18T15:13:48.624Z">
+<meta property="og:updated_time" content="2019-08-19T01:16:42.873Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git Rebase的用法">
-<meta name="twitter:description" content="其实Git我用的不多，git rebase命令之前都没听说过，偶然在牛客网看面经看到有人说面试官问git rebase和git merge的区别。我才想去了解一下它。 廖雪峰的官方网站上有提到git rebase的用法[1]，并举了一个例子，但他的例子不好，评论里也有人说到。 评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下：一开始按照教程演示去操作，因为两个目录修改的不是">
+<meta name="twitter:description" content="其实我用Git不多，git rebase命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问git rebase和git merge的区别。才想到去了解一下它。 廖雪峰的官方网站上有提到git rebase的用法[1]，并举了一个例子，但他的例子不好，评论里也有人说到。评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下：  一开始按照教程演示去操作，因为两个目录修改的不">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -198,12 +198,14 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>其实Git我用的不多，<code>git rebase</code>命令之前都没听说过，偶然在牛客网看面经看到有人说面试官问<code>git rebase</code>和<code>git merge</code>的区别。<br>我才想去了解一下它。</p>
-<p>廖雪峰的官方网站上有提到<code>git rebase</code>的用法<sup>[1]</sup>，并举了一个例子，但他的例子不好，评论里也有人说到。</p>
-<h2 id="评论里有位同学详细说了git-rebase的用法-说得很好-摘抄如下："><a href="#评论里有位同学详细说了git-rebase的用法-说得很好-摘抄如下：" class="headerlink" title="评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下："></a>评论里有位同学详细说了<code>git rebase</code>的用法, 说得很好, 摘抄如下：</h2><p>一开始按照教程演示去操作，因为两个目录修改的不是同一文件，<code>git pull</code> 后直接合并了没有冲突，所以git<br>rebase有效果。如果<code>git pull</code>后提示有冲突后，先不管冲突的代码，因为修改后执行rebase还是变回有冲突<br>的代码。先执行<code>git add .</code>和<code>git commit -m &#39;xxx&#39;</code>。在执行git rebase 终端提示：Resolve all<br>conflicts manually, mark them as resolved with “git add/rm &lt;conflicted_files&gt;”, then run “git rebase<br>–continue”。这时再手动修改代码解决冲突，执行<code>git add .</code> 再执行 <code>git rebase --continue</code></p>
-<h2 id="就有效果了。这时直接git-push到远程仓库即可"><a href="#就有效果了。这时直接git-push到远程仓库即可" class="headerlink" title="就有效果了。这时直接git push到远程仓库即可"></a>就有效果了。这时直接<code>git push</code>到远程仓库即可</h2><a id="more"></a>
+        <p>其实我用Git不多，<code>git rebase</code>命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问<code>git rebase</code>和<code>git merge</code>的区别。<br>才想到去了解一下它。</p>
+<p>廖雪峰的官方网站上有提到<code>git rebase</code>的用法<sup>[1]</sup>，并举了一个例子，但他的例子不好，评论里也有人说到。<br>评论里有位同学详细说了<code>git rebase</code>的用法, 说得很好, 摘抄如下：</p>
+<hr>
+<p>一开始按照教程演示去操作，因为两个目录修改的不是同一文件，<code>git pull</code> 后直接合并了没有冲突，所以git<br>rebase有效果。如果<code>git pull</code>后提示有冲突后，先不管冲突的代码，因为修改后执行rebase还是变回有冲突<br>的代码。先执行<code>git add .</code>和<code>git commit -m &#39;xxx&#39;</code>。在执行git rebase 终端提示：Resolve all<br>conflicts manually, mark them as resolved with “git add/rm &lt;conflicted_files&gt;”, then run “git rebase<br>–continue”。这时再手动修改代码解决冲突，执行<code>git add .</code> 再执行 <code>git rebase --continue</code><br>就有效果了。这时直接<code>git push</code>到远程仓库即可</p>
+<hr>
+<a id="more"></a>
 <p>按照廖雪峰以及那位同学的评论还有Git官网文档，我总结一下<code>git rebase</code>的用法</p>
-<h2 id="什么时候会用到git-rebase"><a href="#什么时候会用到git-rebase" class="headerlink" title="什么时候会用到git rebase"></a>什么时候会用到<code>git rebase</code></h2><p>当多人在同一个分支协作时，后push的同学需要先<code>git pull</code>，如果出现冲突，还要先处理合并文件，然后再push。<br>这样操作之后，提交历史就会出现分叉, 初一看有点眼花缭乱的感觉。<br>而<code>git rebase</code>通过一系列操作, 可以将提交历史改为一条直线, 看起来清晰一点。</p>
+<h2 id="什么时候用到git-rebase"><a href="#什么时候用到git-rebase" class="headerlink" title="什么时候用到git rebase"></a>什么时候用到<code>git rebase</code></h2><p>当多人在同一个分支协作时，后push的同学需要先<code>git pull</code>，如果出现冲突，还要先处理合并文件，然后再push。<br>这样操作之后，提交历史就会出现分叉, 初一看有点眼花缭乱的感觉。<br>而<code>git rebase</code>通过一系列操作, 可以将提交历史改为一条直线, 看起来清晰一点。</p>
 <h2 id="git-rebase的用法"><a href="#git-rebase的用法" class="headerlink" title="git rebase的用法"></a><code>git rebase</code>的用法</h2><p><strong>第一种情况: 修改的不是同一个文件</strong>，执行<code>git pull</code>后没有冲突，接着直接执行<code>git rebase</code>就可以了。</p>
 <p>第一种情况只需执行两条命令:</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br><span class="line">git rebase</span><br></pre></td></tr></table></figure>
@@ -355,7 +357,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#评论里有位同学详细说了git-rebase的用法-说得很好-摘抄如下："><span class="toc-number">1.</span> <span class="toc-text">评论里有位同学详细说了git rebase的用法, 说得很好, 摘抄如下：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#就有效果了。这时直接git-push到远程仓库即可"><span class="toc-number">2.</span> <span class="toc-text">就有效果了。这时直接git push到远程仓库即可</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#什么时候会用到git-rebase"><span class="toc-number">3.</span> <span class="toc-text">什么时候会用到git rebase</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-rebase的用法"><span class="toc-number">4.</span> <span class="toc-text">git rebase的用法</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#什么时候用到git-rebase"><span class="toc-number">1.</span> <span class="toc-text">什么时候用到git rebase</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git-rebase的用法"><span class="toc-number">2.</span> <span class="toc-text">git rebase的用法</span></a></li></ol>
                     </div>
                 </span>
             </div>
