@@ -195,10 +195,6 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>其实我用Git不多，<code>git rebase</code>命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问<code>git rebase</code>和<code>git merge</code>的区别。才想到去了解一下它。</p>
-<p>廖雪峰的官方网站上有提到<code>git rebase</code>的用法<sup>[1]</sup>，并举了一个例子，但他的例子不好，评论里也有人说到。<br>评论里有位同学详细说了<code>git rebase</code>的用法, 说得很好, 摘抄如下：</p>
-<hr>
-<p>一开始按照教程演示去操作，因为两个目录修改的不是同一文件，<code>git pull</code> 后直接合并了没有冲突，所以git rebase有效果。如果<code>git pull</code>后提示有冲突后，先不管冲突的代码，因为修改后执行rebase还是变回有冲突的代码。先执行<code>git add .</code>和<code>git commit -m &#39;xxx&#39;</code>。在执行git rebase 终端提示：Resolve all conflicts manually, mark them as resolved with “git add/rm &lt;conflicted_files&gt;”, then run “git rebase –continue”。这时再手动修改代码解决冲突，执行<code>git add .</code> 再执行 <code>git rebase --continue</code>就有效果了。这时直接<code>git push</code>到远程仓库即可</p>
-<hr>
         
           <a class="article-more-a" href="/2019/08/18/rebase/#more">more >></a>
         
@@ -275,7 +271,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>明天回家。<br>本来准备7月5号回家的，9号去参加同学的婚礼，顺利的话中间还能去趟洛阳。<br>可是4号一大早被老师喊去实验室，一忙就是整整4天。<br>除了实验室的事情，这几天就是折腾系统，其他啥也没干。<br>之前的deepin系统（也就是现在在用的）总算是迁移到了新电脑上。以后就少折腾系统，挺麻烦的，也没啥意义。<br>win10也碰到个问题，不过已经解决，这里就不说了。</p>
+        <a id="more"></a>
+<p>明天回家。<br>本来准备7月5号回家的，9号去参加同学的婚礼，顺利的话中间还能去趟洛阳。<br>可是4号一大早被老师喊去实验室，一忙就是整整4天。<br>除了实验室的事情，这几天就是折腾系统，其他啥也没干。<br>之前的deepin系统（也就是现在在用的）总算是迁移到了新电脑上。以后就少折腾系统，挺麻烦的，也没啥意义。<br>win10也碰到个问题，不过已经解决，这里就不说了。</p>
 <p>可能七月底才能回学校，而且那时实验室还不一定能装修好，所以可能还是得去图书馆学习。<br>一定要去图书馆。<br>过去的俩月没怎么取图书馆，几乎等于荒废了，在宿舍的学习效率太低了。<br>亡羊补牢，为时不晚。<br>在家也要保持状态，比如刷个题什么的，每天一两个小时就可以。</p>
 <p>Fighting</p>
 <p>ps : 对了，有个地方可以说一下，Deepin clone克隆后的系统，跟原系统相当于是一个系统。<br>比如：他们的Github仓库就是共用的；两个系统同时引导，克隆系统会把原系统覆盖掉。还不错。</p>
@@ -430,14 +427,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>换了新电脑，就想把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了试，开始遇到一些问题，不过后来还是成功了。</p>
-<p>想看具体步骤可以跳转到<a href="#实施步骤">实施步骤</a>，或者<a href="#精简版">精简版</a> 。</p>
+        <p>换了新电脑，就想把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了试，开始遇到一些问题，不过后来还是成功了。<br>
         
           <a class="article-more-a" href="/2019/06/27/cloneDeepin/#more">more >></a>
         
       
       
-    </div>
+    </p></div>
     <div class="article-info article-info-index">
       
       
@@ -445,10 +441,6 @@
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Deepin</a>
-        		</li>
-      		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
         		</li>
@@ -512,13 +504,13 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>C++ Primer终于快看完了。<br>真是越往后看的越慢，跳过了几章，今天直接看第18章命名空间部分，遇到了一个小问题。如下所示。<br>文件：</p>
+        <p>C++ Primer终于快看完了。<br>
         
           <a class="article-more-a" href="/2019/04/23/命名空间namespace数据成员重复定义问题/#more">more >></a>
         
       
       
-    </div>
+    </p></div>
     <div class="article-info article-info-index">
       
       

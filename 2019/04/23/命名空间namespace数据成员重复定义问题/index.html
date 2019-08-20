@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
   <title>命名空间Namespace数据成员重复定义问题 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="C++ Primer终于快看完了。真是越往后看的越慢，跳过了几章，今天直接看第18章命名空间部分，遇到了一个小问题。如下所示。文件：">
+  <meta name="description" content="C++ Primer终于快看完了。">
 <meta name="keywords" content="C++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="命名空间Namespace数据成员重复定义问题">
 <meta property="og:url" content="https://wmjtxt.github.io/2019/04/23/命名空间namespace数据成员重复定义问题/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="C++ Primer终于快看完了。真是越往后看的越慢，跳过了几章，今天直接看第18章命名空间部分，遇到了一个小问题。如下所示。文件：">
+<meta property="og:description" content="C++ Primer终于快看完了。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T07:34:05.888Z">
+<meta property="og:updated_time" content="2019-08-20T15:43:13.570Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="命名空间Namespace数据成员重复定义问题">
-<meta name="twitter:description" content="C++ Primer终于快看完了。真是越往后看的越慢，跳过了几章，今天直接看第18章命名空间部分，遇到了一个小问题。如下所示。文件：">
+<meta name="twitter:description" content="C++ Primer终于快看完了。">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -198,8 +198,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>C++ Primer终于快看完了。<br>真是越往后看的越慢，跳过了几章，今天直接看第18章命名空间部分，遇到了一个小问题。如下所示。<br>文件：</p>
-<a id="more"></a>
+        <p>C++ Primer终于快看完了。<br><a id="more"></a><br>真是越往后看的越慢，跳过了几章，今天直接看第18章命名空间部分，遇到了一个小问题。如下所示。<br>文件：</p>
 <ul>
 <li><p>np.h</p>
 <figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">ifndef</span> __NP_H__ </span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> __NP_H__ </span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">namespace</span> np&#123;</span><br><span class="line">    <span class="class"><span class="keyword">class</span> <span class="title">NpTest</span>&#123;</span></span><br><span class="line">    <span class="keyword">public</span>:</span><br><span class="line">        <span class="function"><span class="keyword">void</span> <span class="title">print</span><span class="params">()</span></span>;</span><br><span class="line">    <span class="keyword">private</span>:</span><br><span class="line">        <span class="keyword">int</span> val = <span class="number">2</span>;</span><br><span class="line">    &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">add</span><span class="params">(<span class="keyword">int</span> &amp;)</span></span>;</span><br><span class="line">    <span class="comment">//int np_val;//这样不行，重复定义，用嵌套的匿名空间可以，如下所示(不太清楚为啥。。。)</span></span><br><span class="line">    <span class="keyword">namespace</span>&#123;</span><br><span class="line">        <span class="keyword">int</span> np_val;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br></pre></td></tr></table></figure>
