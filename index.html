@@ -354,29 +354,26 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><strong>已解决</strong></p>
-<p>原来是没有加-p的原因，估计是deepin装的netcat版本太老了。<br>解决办法: 启动nc服务的时候在端口号前加上-p参数:<code>nc -l -p 2000</code>，就可以了。</p>
-<p>以下是原文：</p>
-<p>执行以下最简单的命令：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nc -l 2000</span><br><span class="line">nc 192.168.1.101 2000</span><br></pre></td></tr></table></figure></p>
-<p>就出现这个错误:<br><code>(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused</code></p>
-<p>在虚拟机上试了，还是同样的错误。</p>
-<p>启动我自己写的ftp server</p>
-<p><code>./server 192.168.1.101 2000 5 10</code></p>
-<p>再执行</p>
-<p><code>nc 192.168.1.101 2000</code></p>
-<p>可以连接成功。</p>
-<p>但先执行</p>
-<p><code>nc -l 2000</code></p>
-<p>再启动ftp client</p>
-<p><code>./client 192.168.1.101 2000</code></p>
-<p>仍会出现上面的错误。</p>
-<p>所以推测应该是nc的服务器没有正常启动或者类似的问题。</p>
-
+        
+          <a class="article-more-a" href="/2019/06/30/nc-Connection-refused/#more">more >></a>
+        
       
       
     </div>
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">问题</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -767,6 +764,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">Git</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">问题</a>
               </li>
             
             <div class="clearfix"></div>
