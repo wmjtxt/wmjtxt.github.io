@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>Linux常用命令总结(持续更新) | 木夕木火のBlog</title>
+  <title>美团面试 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Linux常用命令">
-<meta name="keywords" content="shell,linux,c">
+  <meta name="description" content="背景：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧，那我说下周一吧，他说那好，周一早上10点半行吧，我说好。挂了电话才想起了周末有浦发的面试，要去西安，周一早上赶回来没多少时间准备了。瞬间觉得完了，但也不好意思打电话改">
+<meta name="keywords" content="随笔,面经">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux常用命令总结(持续更新)">
-<meta property="og:url" content="https://wmjtxt.github.io/2019/03/18/linux_command/index.html">
+<meta property="og:title" content="美团面试">
+<meta property="og:url" content="https://wmjtxt.github.io/2019/08/27/meituan-interview/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="Linux常用命令">
+<meta property="og:description" content="背景：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧，那我说下周一吧，他说那好，周一早上10点半行吧，我说好。挂了电话才想起了周末有浦发的面试，要去西安，周一早上赶回来没多少时间准备了。瞬间觉得完了，但也不好意思打电话改">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T07:34:05.892Z">
+<meta property="og:updated_time" content="2019-08-27T01:22:37.800Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux常用命令总结(持续更新)">
-<meta name="twitter:description" content="Linux常用命令">
+<meta name="twitter:title" content="美团面试">
+<meta name="twitter:description" content="背景：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧，那我说下周一吧，他说那好，周一早上10点半行吧，我说好。挂了电话才想起了周末有浦发的面试，要去西安，周一早上赶回来没多少时间准备了。瞬间觉得完了，但也不好意思打电话改">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -173,20 +173,20 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-linux_command" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-meituan-interview" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      Linux常用命令总结(持续更新)
+      美团面试
     </h1>
   
 
         
-        <a href="/2019/03/18/linux_command/" class="archive-article-date">
-  	<time datetime="2019-03-18T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-18</time>
+        <a href="/2019/08/27/meituan-interview/" class="archive-article-date">
+  	<time datetime="2019-08-27T01:20:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-27</time>
 </a>
         
         
@@ -198,162 +198,34 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><a id="more"></a>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>df -h</code></td>
-<td>查看磁盘使用情况</td>
-<td>磁盘</td>
-</tr>
-<tr>
-<td><code>du -ah --max-depth==1</code></td>
-<td>查看当前目录下的文件及文件夹的大小</td>
-<td></td>
-</tr>
-<tr>
-<td><code>du -sh</code></td>
-<td>查看当前文件夹大小</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -ltr</code></td>
-<td>按修改时间排序</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -l</code>&#124;<code>wc -l</code></td>
-<td>查看当前文件夹下文件及文件夹个数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -l</code>&#124;<code>grep &quot;^-&quot;</code>&#124;<code>wc -l</code></td>
-<td>查看当前文件夹下文件个数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -l</code>&#124;<code>grep &quot;^d&quot;</code>&#124;<code>wc -l</code></td>
-<td>查看当前文件夹下文件夹个数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>free</code></td>
-<td>查看内存使用情况</td>
-<td>内存</td>
-</tr>
-<tr>
-<td><code>top</code></td>
-<td>实时显示系统运行各项信息，相当于任务管理器</td>
-<td>cpu</td>
-</tr>
-<tr>
-<td><code>ps -ef</code>&#124;<code>grep sth</code></td>
-<td>查看当前运行进程</td>
-<td></td>
-</tr>
-<tr>
-<td><code>rename &#39;s/\.cc$/.cpp/&#39; *.cc</code></td>
-<td>将后缀为.cc的文件后缀修改为.cpp</td>
-<td>批量修改文件名</td>
-</tr>
-<tr>
-<td><code>rename &#39;s/\s/./&#39; *.c</code></td>
-<td>将后缀为.c的文件名中的空格替换为”.”</td>
-<td>批量修改文件名</td>
-</tr>
-<tr>
-<td><code>rename &#39;s/^/00/&#39; [0-9]*</code></td>
-<td>将文件名以数字开头的文件前面加上00</td>
-<td>批量修改文件名</td>
-</tr>
-<tr>
-<td><code>history</code>&#124;<code>awk &#39;{print $2}&#39;</code>&#124;<code>sort</code>&#124;<code>uniq -c</code>&#124;<code>sort -rn</code>&#124;<code>head -15</code></td>
-<td>查看使用频次前15的历史命令</td>
-<td></td>
-</tr>
-<tr>
-<td><code>linuxlogo</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>wc [filename]</code></td>
-<td>统计指定文件中的行数、字数、字节数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>usermod -l [新用户名] -d /home/[新用户名] -m [旧用户名]</code></td>
-<td>修改用户名</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ln</code></td>
-<td>链接，软链接，硬链接</td>
-<td></td>
-</tr>
-<tr>
-<td><code>scp</code></td>
-<td>linux之间文件远程传输</td>
-<td></td>
-</tr>
-<tr>
-<td><code>more</code></td>
-<td>与cat类似，可以翻页浏览,空格键下一页，b回上一页</td>
-<td></td>
-</tr>
-<tr>
-<td><code>less</code></td>
-<td>与more类似，还可以使用vi编辑查找</td>
-<td></td>
-</tr>
-<tr>
-<td><code>awk</code></td>
-<td>AWK是一种处理文本文件的语言，是一个强大的文本分析工具</td>
-<td></td>
-</tr>
-<tr>
-<td><code>:%s/foo/bar/g</code></td>
-<td>全文查找替换</td>
-<td></td>
-</tr>
-<tr>
-<td><code>gg=G</code></td>
-<td>vim中代码智能对齐</td>
-<td>vim</td>
-</tr>
-<tr>
-<td><code>nl [file]</code></td>
-<td>查看文件内容，行号计算不包括空行，相当于<code>cat [file] -b</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>:%!xxd</code></td>
-<td>vim中显示16进制</td>
-<td>vim</td>
-</tr>
-<tr>
-<td><code>:%!xxd -r</code></td>
-<td>vim中从16进制恢复</td>
-<td>vim</td>
-</tr>
-<tr>
-<td><code>sed -i &#39;1,6d&#39; *.cpp</code></td>
-<td>删除所有cpp文件的前六行</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
+        <p><strong>背景</strong>：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),<br>    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧，那我说下周一吧，他说那好，周一早上10点半行吧，我说好。挂了电话才想起了周末有浦发的面试，要去西安，周一早上赶回来没多少时间准备了。瞬间觉得完了，但也不好意思打电话改时间了。<br>    就想硬着头皮上吧。</p>
+<p>这还没完呢，周六是京东的笔试，周末是快手和头条的笔试。周末去西安的高铁上还做了几套快手往年的笔试题，然后紧赶慢赶提前到达面试地点，还算顺利地面试完，下午4点半，刚好快手的笔试开始，可是没有找到有网的地方，只能放弃。后来找了家网吧，等到7点做了头条的笔试。然后去西安城墙看了看，就坐火车回学校了。</p>
+<p>然后本来8点到站的火车晚点了一个小时，绿皮火车真是卑微啊，都快到站了，也没有资格进站，要在一个小站苦等。等的时候，有几个女声跟乘务员说她们到站还要转火车，赶不上的话怎么改签，乘务员欢快地回应说你们去7车找列车长说, 要不怎么体现他列车长的作用。等的时候无聊，我也简单看了下面经，想着回去应该还有时间看看基础知识。到站后下车出站，还下雨了，赶上公交，吃了早饭，9点半赶回宿舍。跟室友唠了两句，然后讨论头一天的头条编程题，突然接到电话，是那个熟悉的号码，心想惨了，一点没准备啊（这时才10点05分左右）。这一面就是一个小时。</p>
+<p>面试时随便记在一张纸上，所以比较乱。</p>
+<p>一面(电面)</p>
+<ul>
+<li>1.自我介绍</li>
+<li>2.malloc与new</li>
+<li>3.先问知不知道C++11,我说知道点，然后问了智能指针, 说了share_ptr,weak_ptr, 问share_ptr跟普通指针比有什么优点，说了更安全，问还有什么，我说不知道了</li>
+<li>4.问会不会STL,我说会一点, 然后问map和multimap, multimap的底层实现, 我说都是他们红黑树，但不知道multimap具体怎么实现,<br>  然后问如果是我会怎么去实现，我说对相等节点建立开链来实现。(回头好好看看STL去)</li>
+<li>5.平衡树(应该就是指AVL)和红黑树, 为什么红黑树应用更广泛</li>
+<li>6.完全二叉树和满二叉树，这里还有点插曲，我说满二叉树节点数2^n-1, 他说不对，然后说后面看书上怎么说，也可能他记错了(后来证明就是他错了)</li>
+<li>7.堆排序过程</li>
+<li>8.TCP三次握手, 以及为什么必须有第三次的ACK. 然后接着还问了全双工, 半双工和单工</li>
+<li>9.计算机网络各个协议的端口号，这个没答出来，TCP的都忘了……我说TCP的记不清了，FTP的是20,21，HTTP的是80（其实模模糊糊的也不知道对不对）</li>
+<li>10.进程和线程的区别, 多线程相对于多进程的优势和缺点，缺点我说了多线程，当其中一个线程挂掉，该线程所属进程就会挂掉，问为什么，我说不知道..</li>
+<li>11.多线程，读多写少的情况（比如平均读1000次写1次）怎么处理。后来实在不会, 问我知道读写锁吗，我说知道，但不会用, 说可以去了解下+-+</li>
+<li>12.然后结合项目问，客户端连接服务器的时候，能ping通但是连不上服务器, 会是什么原因？答有可能到最大连接数了，问还有呢？不知道，最后他问我知道防火墙吗，我说听说过，但不清楚原理，然后他还给我解释了一下</li>
+<li>13.客户端给服务器发送数据(send)的时候，突然服务器断开，此时send返回什么, 记不清了，我答的是要么0要么-1</li>
+<li>14.signal</li>
+<li>15.epoll</li>
+<li><p>16.socket阻塞与非阻塞, 这个真忘了，没说出来，他说没事，如果想不起来的也不要瞎说，瞎说反而给面试官印象不好</p>
+</li>
+<li><p>最后问我有什么问题，就简单问了他们的面试批次什么的</p>
+</li>
+<li><p>然后下午还在睡觉，就来电话，没接到，我又打过去，没通，又打过来，说我过了，下一面是视频面，约个时间，我说那周四吧，说那好周四上午10点半。</p>
+</li>
+</ul>
 
       
       
@@ -397,15 +269,11 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">shell</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">c</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面经</a>
         		</li>
       		
 		</ul>
@@ -461,7 +329,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3aS46DMBAFwNz/0sx2pATyuu1EwS5WETMCF4tW/x6P+Dr+Xc93kvvXT7u+P+3CwMC4LeO4vPLDVd/y/Nez39dnw8DA2Idx9uL8Ndf/ef3G8SdgYGBgJGlcHjRH3ouBgYFRZXwCj4GBgTFSxFbDYt5Ky4vnCbU4BgbGDRl5s+z7vz8y38DAwLgV4yhesxLB3hjg9FQYGBhLM3qJ3cgwIB+UlhNNDAyMDRjV8jIJvtXlsGQVY3KVjIGBcStGtd2fJ5HNRn9xyQMDA2NVxshIIAmL1WI4H2FOm2xgYGD8PCMPfNX+fHJnfJkDAwNjB0avgOxRq0OCQgmNgYGxNCM/XH70vKzNP2Iz+GJgYCzBmLboEKR9Qxlr0m7DwMDYhpE35asD0eT51aWNaPKAgYGxBKMXRqsNtVk7Ei/uYGBgbMAYSe/GF8UmBGgMDIylGfkL8kP0FjUmDFMxMDAWZeSNsJEmfrUBlxexLxZYMTAwlmNUC9G86M0DbnXZ4vQTYGBgbMPohcI81cuDeLnQxcDA2IYxq3E/PiQoj1ExMDC2YVTTvnwJo9d0K+R+GBgYizKO4jU+SOgNJN58JgwMjKUZvWDXSw3zZDFJB3shGwMD476MPMjm+WYv3axSMTAwdmP0Gm15kjcr7XtTi2NgYGC0Rp7JE/Jk9E1FjoGBgREHzV6orQ4kJgdcDAyMn2fkRWk+VBhfufhILY6BgXFDRl46NsvL4SNOG2piYGDcj/EH+OiTYYW3WXEAAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACJUlEQVR42u3ay27rIBQF0P7/T6fTK93a3RtwJcNiZEWJYWVwxHl8fcXr88+6+uT/z5PvJJ8vWxgYGK9lfG5XsvHYLvd/UH42DAyMcxhXGyfP+SGudkz2+uXMGBgYGBPUVe/EwMDAaI84c4j772NgYGDMJLHtZnkpLUlxl+XiGBgYL2TkxbK/f36kv4GBgfEqxqdcbRDMC20zCwMDY2/GqotdnhKPNUqj82BgYGzKaMNoOzBxf6BlIx0YGBjHMFrkWMNgbaL7Q8DFwMDYlJGE3fsUtE1Q25ZAUW7DwMA4jJE3GvO3jf1BxZgFBgbGdoyx2DUVHMsDDQ5YYGBgbMRIAuhMkW4scc0vl5edWAwMjI0Y+bGS4lryzfxXdYqLgYGxKSNJL+cT1DxNbUNw0cHAwMB4LSMPo3konBkjy0tsGBgY5zDa8NqGwqfD8eWwBQYGxnaMdsu2rJ9T82CNgYFxMmPVmNfMSMeyXBwDA2MLRl6CH7s4ziexbXsVAwNjV0YbNMcui0kjM7meRsMWGBgYWzOeCKbzF8FodwwMjAMY7ejDfJls5k+pG5kYGBivZXzKlSei7W/bS2F068TAwNiCka9ksydaAkmTFQMD4wRGEmTHntvg25b2MDAwTmO0zcU8NV1VvPsFiYGBgTHUtmxnIRZMi2BgYGAsCr5thp28BwMD4wTGzNhW3irI258P5uIYGBgvZLQXu3zwYj4xXtzUxMDAeB/jGwv/2xm6lgJ0AAAAAElFTkSuQmCC" alt="微信分享二维码">
     </div>
 </div>
 
@@ -475,18 +343,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/03/25/find_wc/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Find+wc统计代码行数(文件名含空格)
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/03/09/epoll/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Epoll、Select与poll</div>
+    <a href="/2019/08/18/rebase/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Git Rebase的用法</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -513,7 +372,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux常用命令"><span class="toc-number">1.</span> <span class="toc-text">Linux常用命令</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>

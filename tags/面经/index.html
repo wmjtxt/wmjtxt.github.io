@@ -6,20 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>Linux常用命令总结(持续更新) | 木夕木火のBlog</title>
+  <title>Tag: 面经 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Linux常用命令">
-<meta name="keywords" content="shell,linux,c">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Linux常用命令总结(持续更新)">
-<meta property="og:url" content="https://wmjtxt.github.io/2019/03/18/linux_command/index.html">
+  <meta name="description" content="码农、诗人、旅行家">
+<meta property="og:type" content="website">
+<meta property="og:title" content="木夕木火のBlog">
+<meta property="og:url" content="https://wmjtxt.github.io/tags/面经/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="Linux常用命令">
+<meta property="og:description" content="码农、诗人、旅行家">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T07:34:05.892Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Linux常用命令总结(持续更新)">
-<meta name="twitter:description" content="Linux常用命令">
+<meta name="twitter:title" content="木夕木火のBlog">
+<meta name="twitter:description" content="码农、诗人、旅行家">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -173,395 +171,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-linux_command" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      Linux常用命令总结(持续更新)
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/08/27/meituan-interview/" class="archive-article-date">
+  	<time datetime="2019-08-27T01:20:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-08-27</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/08/27/meituan-interview/">美团面试</a>
     </h1>
   
 
-        
-        <a href="/2019/03/18/linux_command/" class="archive-article-date">
-  	<time datetime="2019-03-18T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-03-18</time>
-</a>
-        
-        
-        		<span class="archive-article-date">
-        			阅读量 <span id="busuanzi_value_page_pv"></span>
-        		</span>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><a id="more"></a>
-<table>
-<thead>
-<tr>
-<th>命令</th>
-<th>含义</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>df -h</code></td>
-<td>查看磁盘使用情况</td>
-<td>磁盘</td>
-</tr>
-<tr>
-<td><code>du -ah --max-depth==1</code></td>
-<td>查看当前目录下的文件及文件夹的大小</td>
-<td></td>
-</tr>
-<tr>
-<td><code>du -sh</code></td>
-<td>查看当前文件夹大小</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -ltr</code></td>
-<td>按修改时间排序</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -l</code>&#124;<code>wc -l</code></td>
-<td>查看当前文件夹下文件及文件夹个数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -l</code>&#124;<code>grep &quot;^-&quot;</code>&#124;<code>wc -l</code></td>
-<td>查看当前文件夹下文件个数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ls -l</code>&#124;<code>grep &quot;^d&quot;</code>&#124;<code>wc -l</code></td>
-<td>查看当前文件夹下文件夹个数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>free</code></td>
-<td>查看内存使用情况</td>
-<td>内存</td>
-</tr>
-<tr>
-<td><code>top</code></td>
-<td>实时显示系统运行各项信息，相当于任务管理器</td>
-<td>cpu</td>
-</tr>
-<tr>
-<td><code>ps -ef</code>&#124;<code>grep sth</code></td>
-<td>查看当前运行进程</td>
-<td></td>
-</tr>
-<tr>
-<td><code>rename &#39;s/\.cc$/.cpp/&#39; *.cc</code></td>
-<td>将后缀为.cc的文件后缀修改为.cpp</td>
-<td>批量修改文件名</td>
-</tr>
-<tr>
-<td><code>rename &#39;s/\s/./&#39; *.c</code></td>
-<td>将后缀为.c的文件名中的空格替换为”.”</td>
-<td>批量修改文件名</td>
-</tr>
-<tr>
-<td><code>rename &#39;s/^/00/&#39; [0-9]*</code></td>
-<td>将文件名以数字开头的文件前面加上00</td>
-<td>批量修改文件名</td>
-</tr>
-<tr>
-<td><code>history</code>&#124;<code>awk &#39;{print $2}&#39;</code>&#124;<code>sort</code>&#124;<code>uniq -c</code>&#124;<code>sort -rn</code>&#124;<code>head -15</code></td>
-<td>查看使用频次前15的历史命令</td>
-<td></td>
-</tr>
-<tr>
-<td><code>linuxlogo</code></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td><code>wc [filename]</code></td>
-<td>统计指定文件中的行数、字数、字节数</td>
-<td></td>
-</tr>
-<tr>
-<td><code>usermod -l [新用户名] -d /home/[新用户名] -m [旧用户名]</code></td>
-<td>修改用户名</td>
-<td></td>
-</tr>
-<tr>
-<td><code>ln</code></td>
-<td>链接，软链接，硬链接</td>
-<td></td>
-</tr>
-<tr>
-<td><code>scp</code></td>
-<td>linux之间文件远程传输</td>
-<td></td>
-</tr>
-<tr>
-<td><code>more</code></td>
-<td>与cat类似，可以翻页浏览,空格键下一页，b回上一页</td>
-<td></td>
-</tr>
-<tr>
-<td><code>less</code></td>
-<td>与more类似，还可以使用vi编辑查找</td>
-<td></td>
-</tr>
-<tr>
-<td><code>awk</code></td>
-<td>AWK是一种处理文本文件的语言，是一个强大的文本分析工具</td>
-<td></td>
-</tr>
-<tr>
-<td><code>:%s/foo/bar/g</code></td>
-<td>全文查找替换</td>
-<td></td>
-</tr>
-<tr>
-<td><code>gg=G</code></td>
-<td>vim中代码智能对齐</td>
-<td>vim</td>
-</tr>
-<tr>
-<td><code>nl [file]</code></td>
-<td>查看文件内容，行号计算不包括空行，相当于<code>cat [file] -b</code></td>
-<td></td>
-</tr>
-<tr>
-<td><code>:%!xxd</code></td>
-<td>vim中显示16进制</td>
-<td>vim</td>
-</tr>
-<tr>
-<td><code>:%!xxd -r</code></td>
-<td>vim中从16进制恢复</td>
-<td>vim</td>
-</tr>
-<tr>
-<td><code>sed -i &#39;1,6d&#39; *.cpp</code></td>
-<td>删除所有cpp文件的前六行</td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-</tr>
-</tbody>
-</table>
-
-      
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zfb.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/wx.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
-        </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
+        <div class="article-info info-on-right">
+          
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">shell</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
         		</li>
       		 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">c</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">面经</a>
         		</li>
       		
 		</ul>
 	</div>
 
-      
+          
 
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACM0lEQVR42u3aS46DMBAFwNz/0sx2pATyuu1EwS5WETMCF4tW/x6P+Dr+Xc93kvvXT7u+P+3CwMC4LeO4vPLDVd/y/Nez39dnw8DA2Idx9uL8Ndf/ef3G8SdgYGBgJGlcHjRH3ouBgYFRZXwCj4GBgTFSxFbDYt5Ky4vnCbU4BgbGDRl5s+z7vz8y38DAwLgV4yhesxLB3hjg9FQYGBhLM3qJ3cgwIB+UlhNNDAyMDRjV8jIJvtXlsGQVY3KVjIGBcStGtd2fJ5HNRn9xyQMDA2NVxshIIAmL1WI4H2FOm2xgYGD8PCMPfNX+fHJnfJkDAwNjB0avgOxRq0OCQgmNgYGxNCM/XH70vKzNP2Iz+GJgYCzBmLboEKR9Qxlr0m7DwMDYhpE35asD0eT51aWNaPKAgYGxBKMXRqsNtVk7Ei/uYGBgbMAYSe/GF8UmBGgMDIylGfkL8kP0FjUmDFMxMDAWZeSNsJEmfrUBlxexLxZYMTAwlmNUC9G86M0DbnXZ4vQTYGBgbMPohcI81cuDeLnQxcDA2IYxq3E/PiQoj1ExMDC2YVTTvnwJo9d0K+R+GBgYizKO4jU+SOgNJN58JgwMjKUZvWDXSw3zZDFJB3shGwMD476MPMjm+WYv3axSMTAwdmP0Gm15kjcr7XtTi2NgYGC0Rp7JE/Jk9E1FjoGBgREHzV6orQ4kJgdcDAyMn2fkRWk+VBhfufhILY6BgXFDRl46NsvL4SNOG2piYGDcj/EH+OiTYYW3WXEAAAAASUVORK5CYII=" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-<nav id="article-nav">
-  
-    <a href="/2019/03/25/find_wc/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          Find+wc统计代码行数(文件名含空格)
-        
-      </div>
-    </a>
   
   
-    <a href="/2019/03/09/epoll/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Epoll、Select与poll</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Linux常用命令"><span class="toc-number">1.</span> <span class="toc-text">Linux常用命令</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-
-  
-  
+    </div></section>
   
 
-  
-
-  
-
-  
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "4tTGIFVIbVtLxkWj9STjVP6q-gzGzoHsz",
-            app_key: "WyhzS2MIGIGDdxqiRCSEmHyh",
-            placeholder: "说点什么吧",
-            avatar:"mm"
-        });
-    }
-</script>
-
-    </section>
-  
-
-  
+    
 
 
           </div>
@@ -598,9 +265,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
+		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,
