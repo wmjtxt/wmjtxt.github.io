@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2019-08-27T01:22:37.800Z</updated>
+  <updated>2019-09-01T03:06:25.574Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -17,25 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>京东一面</title>
+    <link href="https://wmjtxt.github.io/2019/09/01/jdinterview/"/>
+    <id>https://wmjtxt.github.io/2019/09/01/jdinterview/</id>
+    <published>2019-09-01T02:36:03.000Z</published>
+    <updated>2019-09-01T03:06:25.574Z</updated>
+    
+    <content type="html"><![CDATA[<p>笔试做的一般，编程两道都没AC。运气好还是收到了京东的面试通知，很惊讶，又暗自叹息恐怕还是抓不住。但也要加油啊。</p><a id="more"></a><p>时间很快来到9月1号早上，面试官的电话如约而至，甚至还提前了几分钟。</p><p>不出意外，一面问的很基础，总体答的还行，裸面居然挺过来了。可我自知，如果再问深一点，可能就答不上来了。</p><p>临了说应该会有后续通知，我想我得再突击一下了。</p><p>下面简单总结一下面试的知识点：</p><ul><li>1.new和malloc(这个几乎逢面必问, 没认真总结过，总感觉每次都说的不全)</li><li>2.new申请内存失败返回什么，malloc呢</li><li>3.在C++里，struct和class的区别</li><li>4.static的作用</li><li>5.如何理解static变量具有文件作用域</li><li>6.C++里的多态</li><li>7.虚函数</li><li>8.虚函数底层实现, 以及如何实现多态的</li><li>9.fread, fwrite, fprintf 区别</li><li>10.线程锁(我答了互斥锁，读写锁，他说还有自旋锁，我说没有用过, 看来知识还是要知道全才好)</li><li>11.explicit, 举例, 我举了string str = “hello”;这个, 他问explicit加在哪里，记不清了，我就说复制构造，他说构造函数，好吧</li><li>12.大端和小端，什么时候需要注意</li><li>13.知道哪些排序，说了快排、堆排序、归并，稳定的含义，哪些是稳定的</li><li>14.c里的哪些函数(比如random)可以在多线程里用</li><li>15.可重入函数，直接说了不了解</li><li>16.STL里有哪些序列容器, vector和list的区别</li><li>17.linux命令，查找当前文件夹及子文件夹下，三天内修改过的文件，我说用find，他就不让说了???</li><li>18.最后问项目里我负责哪些部分，我说去重和倒排索引，简单说了说，没聊太深(太深我也记不清了)</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;笔试做的一般，编程两道都没AC。运气好还是收到了京东的面试通知，很惊讶，又暗自叹息恐怕还是抓不住。但也要加油啊。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>美团面试</title>
     <link href="https://wmjtxt.github.io/2019/08/27/meituan-interview/"/>
     <id>https://wmjtxt.github.io/2019/08/27/meituan-interview/</id>
     <published>2019-08-27T01:20:35.000Z</published>
-    <updated>2019-08-27T01:22:37.800Z</updated>
+    <updated>2019-09-01T03:05:59.138Z</updated>
     
-    <content type="html"><![CDATA[<p><strong>背景</strong>：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),<br>    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧，那我说下周一吧，他说那好，周一早上10点半行吧，我说好。挂了电话才想起了周末有浦发的面试，要去西安，周一早上赶回来没多少时间准备了。瞬间觉得完了，但也不好意思打电话改时间了。<br>    就想硬着头皮上吧。</p><p>这还没完呢，周六是京东的笔试，周末是快手和头条的笔试。周末去西安的高铁上还做了几套快手往年的笔试题，然后紧赶慢赶提前到达面试地点，还算顺利地面试完，下午4点半，刚好快手的笔试开始，可是没有找到有网的地方，只能放弃。后来找了家网吧，等到7点做了头条的笔试。然后去西安城墙看了看，就坐火车回学校了。</p><p>然后本来8点到站的火车晚点了一个小时，绿皮火车真是卑微啊，都快到站了，也没有资格进站，要在一个小站苦等。等的时候，有几个女声跟乘务员说她们到站还要转火车，赶不上的话怎么改签，乘务员欢快地回应说你们去7车找列车长说, 要不怎么体现他列车长的作用。等的时候无聊，我也简单看了下面经，想着回去应该还有时间看看基础知识。到站后下车出站，还下雨了，赶上公交，吃了早饭，9点半赶回宿舍。跟室友唠了两句，然后讨论头一天的头条编程题，突然接到电话，是那个熟悉的号码，心想惨了，一点没准备啊（这时才10点05分左右）。这一面就是一个小时。</p><p>面试时随便记在一张纸上，所以比较乱。</p><p>一面(电面)</p><ul><li>1.自我介绍</li><li>2.malloc与new</li><li>3.先问知不知道C++11,我说知道点，然后问了智能指针, 说了share_ptr,weak_ptr, 问share_ptr跟普通指针比有什么优点，说了更安全，问还有什么，我说不知道了</li><li>4.问会不会STL,我说会一点, 然后问map和multimap, multimap的底层实现, 我说都是他们红黑树，但不知道multimap具体怎么实现,<br>  然后问如果是我会怎么去实现，我说对相等节点建立开链来实现。(回头好好看看STL去)</li><li>5.平衡树(应该就是指AVL)和红黑树, 为什么红黑树应用更广泛</li><li>6.完全二叉树和满二叉树，这里还有点插曲，我说满二叉树节点数2^n-1, 他说不对，然后说后面看书上怎么说，也可能他记错了(后来证明就是他错了)</li><li>7.堆排序过程</li><li>8.TCP三次握手, 以及为什么必须有第三次的ACK. 然后接着还问了全双工, 半双工和单工</li><li>9.计算机网络各个协议的端口号，这个没答出来，TCP的都忘了……我说TCP的记不清了，FTP的是20,21，HTTP的是80（其实模模糊糊的也不知道对不对）</li><li>10.进程和线程的区别, 多线程相对于多进程的优势和缺点，缺点我说了多线程，当其中一个线程挂掉，该线程所属进程就会挂掉，问为什么，我说不知道..</li><li>11.多线程，读多写少的情况（比如平均读1000次写1次）怎么处理。后来实在不会, 问我知道读写锁吗，我说知道，但不会用, 说可以去了解下+-+</li><li>12.然后结合项目问，客户端连接服务器的时候，能ping通但是连不上服务器, 会是什么原因？答有可能到最大连接数了，问还有呢？不知道，最后他问我知道防火墙吗，我说听说过，但不清楚原理，然后他还给我解释了一下</li><li>13.客户端给服务器发送数据(send)的时候，突然服务器断开，此时send返回什么, 记不清了，我答的是要么0要么-1</li><li>14.signal</li><li>15.epoll</li><li><p>16.socket阻塞与非阻塞, 这个真忘了，没说出来，他说没事，如果想不起来的也不要瞎说，瞎说反而给面试官印象不好</p></li><li><p>最后问我有什么问题，就简单问了他们的面试批次什么的</p></li><li><p>然后下午还在睡觉，就来电话，没接到，我又打过去，没通，又打过来，说我过了，下一面是视频面，约个时间，我说那周四吧，说那好周四上午10点半。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<p><strong>后续</strong>：二面很惨，不说了，学习去了QAQ</p><a id="more"></a><p><strong>背景</strong>：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),<br>    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧，那我说下周一吧，他说那好，周一早上10点半行吧，我说好。挂了电话才想起了周末有浦发的面试，要去西安，周一早上赶回来没多少时间准备了。瞬间觉得完了，但也不好意思打电话改时间了。<br>    就想硬着头皮上吧。</p><p>这还没完呢，周六是京东的笔试，周末是快手和头条的笔试。周末去西安的高铁上还做了几套快手往年的笔试题，然后紧赶慢赶提前到达面试地点，还算顺利地面试完，下午4点半，刚好快手的笔试开始，可是没有找到有网的地方，只能放弃。后来找了家网吧，等到7点做了头条的笔试。然后去西安城墙看了看，就坐火车回学校了。</p><p>然后本来8点到站的火车晚点了一个小时，绿皮火车真是卑微啊，都快到站了，也没有资格进站，要在一个小站苦等。等的时候，有几个女声跟乘务员说她们到站还要转火车，赶不上的话怎么改签，乘务员欢快地回应说你们去7车找列车长说, 要不怎么体现他列车长的作用。等的时候无聊，我也简单看了下面经，想着回去应该还有时间看看基础知识。到站后下车出站，还下雨了，赶上公交，吃了早饭，9点半赶回宿舍。跟室友唠了两句，然后讨论头一天的头条编程题，突然接到电话，是那个熟悉的号码，心想惨了，一点没准备啊（这时才10点05分左右）。这一面就是一个小时。</p><p>面试时随便记在一张纸上，所以比较乱。</p><p>一面(电面)</p><ul><li>1.自我介绍</li><li>2.malloc与new</li><li>3.先问知不知道C++11,我说知道点，然后问了智能指针, 说了share_ptr,weak_ptr, 问share_ptr跟普通指针比有什么优点，说了更安全，问还有什么，我说不知道了</li><li>4.问会不会STL,我说会一点, 然后问map和multimap, multimap的底层实现, 我说都是他们红黑树，但不知道multimap具体怎么实现,<br>  然后问如果是我会怎么去实现，我说对相等节点建立开链来实现。(回头好好看看STL去)</li><li>5.平衡树(应该就是指AVL)和红黑树, 为什么红黑树应用更广泛</li><li>6.完全二叉树和满二叉树，这里还有点插曲，我说满二叉树节点数2^n-1, 他说不对，然后说后面看书上怎么说，也可能他记错了(后来证明就是他错了)</li><li>7.堆排序过程</li><li>8.TCP三次握手, 以及为什么必须有第三次的ACK. 然后接着还问了全双工, 半双工和单工</li><li>9.计算机网络各个协议的端口号，这个没答出来，TCP的都忘了……我说TCP的记不清了，FTP的是20,21，HTTP的是80（其实模模糊糊的也不知道对不对）</li><li>10.进程和线程的区别, 多线程相对于多进程的优势和缺点，缺点我说了多线程，当其中一个线程挂掉，该线程所属进程就会挂掉，问为什么，我说不知道..</li><li>11.多线程，读多写少的情况（比如平均读1000次写1次）怎么处理。后来实在不会, 问我知道读写锁吗，我说知道，但不会用, 说可以去了解下+-+</li><li>12.然后结合项目问，客户端连接服务器的时候，能ping通但是连不上服务器, 会是什么原因？答有可能到最大连接数了，问还有呢？不知道，最后他问我知道防火墙吗，我说听说过，但不清楚原理，然后他还给我解释了一下</li><li>13.客户端给服务器发送数据(send)的时候，突然服务器断开，此时send返回什么, 记不清了，我答的是要么0要么-1</li><li>14.signal</li><li>15.epoll</li><li><p>16.socket阻塞与非阻塞, 这个真忘了，没说出来，他说没事，如果想不起来的也不要瞎说，瞎说反而给面试官印象不好</p></li><li><p>最后问我有什么问题，就简单问了他们的面试批次什么的</p></li><li><p>然后下午还在睡觉，就来电话，没接到，我又打过去，没通，又打过来，说我过了，下一面是视频面，约个时间，我说那周四吧，说那好周四上午10点半。</p></li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;&lt;strong&gt;背景&lt;/strong&gt;：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),&lt;br&gt;    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧
-      
+      &lt;p&gt;&lt;strong&gt;后续&lt;/strong&gt;：二面很惨，不说了，学习去了QAQ&lt;/p&gt;
     
     </summary>
     
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
     
       <category term="面经" scheme="https://wmjtxt.github.io/tags/%E9%9D%A2%E7%BB%8F/"/>
     
@@ -331,9 +350,9 @@
     
       <category term="shell" scheme="https://wmjtxt.github.io/tags/shell/"/>
     
-      <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
-    
       <category term="c" scheme="https://wmjtxt.github.io/tags/c/"/>
+    
+      <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
     
   </entry>
   
@@ -452,28 +471,6 @@
       <category term="复杂网络" scheme="https://wmjtxt.github.io/tags/%E5%A4%8D%E6%9D%82%E7%BD%91%E7%BB%9C/"/>
     
       <category term="LPA" scheme="https://wmjtxt.github.io/tags/LPA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>去掉Deepin登录界面的模糊效果</title>
-    <link href="https://wmjtxt.github.io/2018/11/06/deepin-lockscreen/"/>
-    <id>https://wmjtxt.github.io/2018/11/06/deepin-lockscreen/</id>
-    <published>2018-11-05T16:00:00.000Z</published>
-    <updated>2019-06-27T07:34:05.888Z</updated>
-    
-    <content type="html"><![CDATA[<p>引自: <a href="https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=149463&amp;extra=" target="_blank" rel="noopener">https://bbs.deepin.org/forum.php?mod=viewthread&amp;tid=149463&amp;extra=</a></p><p>其实这个页面我收藏了，但今天想设置的时候网络不好页面打不开，所以自己复制一个吧。</p><p>deepin会将所有切换过的锁屏壁纸模糊效果保存到目录：/var/cache/image-blur/下<br><a id="more"></a></p><ul><li>1.首先把这个文件夹下的所有文件都删除;</li><li>2.锁屏;</li><li>3.再次登录后，进到这个文件夹下，就可以看到只有一个文件(file.jpg);</li><li>4.把需要用的图片替换掉这个文件即可。<ul><li><code>sudo cp 需要使用的图片.jpg /var/cache/image-blur/file.jpg</code></li></ul></li></ul>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;引自: &lt;a href=&quot;https://bbs.deepin.org/forum.php?mod=viewthread&amp;amp;tid=149463&amp;amp;extra=&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;https://bbs.deepin.org/forum.php?mod=viewthread&amp;amp;tid=149463&amp;amp;extra=&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;其实这个页面我收藏了，但今天想设置的时候网络不好页面打不开，所以自己复制一个吧。&lt;/p&gt;
-&lt;p&gt;deepin会将所有切换过的锁屏壁纸模糊效果保存到目录：/var/cache/image-blur/下&lt;br&gt;
-    
-    </summary>
-    
-    
-      <category term="Deepin" scheme="https://wmjtxt.github.io/tags/Deepin/"/>
     
   </entry>
   
