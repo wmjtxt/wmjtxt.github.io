@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2019-09-06T00:35:08.981Z</updated>
+  <updated>2019-09-06T15:29:12.609Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -17,9 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>京东面试风波之后续</title>
+    <link href="https://wmjtxt.github.io/2019/09/06/interview4/"/>
+    <id>https://wmjtxt.github.io/2019/09/06/interview4/</id>
+    <published>2019-09-06T14:51:39.000Z</published>
+    <updated>2019-09-06T15:29:12.609Z</updated>
+    
+    <content type="html"><![CDATA[<p>其实我知道，即使我通过了所有面试，进入池子里面，大概率也会被刷。但是那至少是合理的流程, 如果那样，我会心服口服。</p><p>前面说了，京东校招组给我回复了邮件。但我没有给他（她）回复，一是不知道说什么，二是我觉得我说什么其实都没什么用了。<br>我是几乎肯定以为他们会以怎样圆滑的方式来说服我接受这个结果。最小概率的情况，也是我仅有的一丝丝希望，就是我还能有机会进入京东最终的备胎池里。</p><p>但又觉得，如果那样，又有种奇怪的感觉。就好像买东西，有很多顾客买到了假货（或者说是有瑕疵的货物），只有我去找店家理论了，最终店家也只给我一个人换了货。<br>我的本意并不是这样。我的确很缺这样的机会，但我更在意的是，一件事情是否公平合理，何况这是与我极其相关的一件事。</p><p>杜甫有一句话，可能我不配说，但那话说的真好，大家也都知道，“安得广厦千万间，大庇天下寒士俱欢颜”。遇到一件事，不能只想到自己。</p><p>废话不多说了，说结果吧。</p><p>今天从西安回来的高铁上，接到京东校招组一位工作人员的电话，因为车上信号不稳定，就说好下车后我再打给她。</p><p>经历高铁加地铁，回到宿舍我才回电话，这时已经是两个小时后。她跟我详细说明了情况，并解释说是HR搞错了他们公司校招的政策，并不存在所谓“但凡是有工作经历的人就不能参加他们的校招”的说法，也跟复试面试官核实了我前面的面试没什么问题。</p><p>她讲到这里，其实我就明白了。跟我原来想的那一丝丝希望是如此的相像。她说给我改了状态。还是很开心的，只是我没有太表现出来。不过，她也解释了后续还会进行筛选，我说我了解的。</p><p>临了，她也很客气说，有事随时可以联系她。我说，好的谢谢你。</p><p>我改高兴的，但并不稳，甚至可以说非常不稳，所以又高兴不起来。</p><p>好累啊，有希望却希望不大。</p><p>晚上，又收到滴滴的面试邀请，过几天还得去西安。钱包咕咕在叫了。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;其实我知道，即使我通过了所有面试，进入池子里面，大概率也会被刷。但是那至少是合理的流程, 如果那样，我会心服口服。&lt;/p&gt;
+&lt;p&gt;前面说了，京东校招组给我回复了邮件。但我没有给他（她）回复，一是不知道说什么，二是我觉得我说什么其实都没什么用了。&lt;br&gt;我是几乎肯定以为他们会
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>京东HR面挂——一个出乎所有人意料的原因</title>
-    <link href="https://wmjtxt.github.io/2019/09/05/jdinterview/"/>
-    <id>https://wmjtxt.github.io/2019/09/05/jdinterview/</id>
+    <link href="https://wmjtxt.github.io/2019/09/05/jdinterview3/"/>
+    <id>https://wmjtxt.github.io/2019/09/05/jdinterview3/</id>
     <published>2019-09-05T12:35:19.000Z</published>
     <updated>2019-09-06T00:35:08.981Z</updated>
     
@@ -440,28 +466,6 @@
     <summary type="html">
     
       &lt;h1 id=&quot;LeedCode-37-Sudoku-Solver&quot;&gt;&lt;a href=&quot;#LeedCode-37-Sudoku-Solver&quot; class=&quot;headerlink&quot; title=&quot;LeedCode 37.Sudoku Solver&quot;&gt;&lt;/a&gt;LeedCode 37.Sudoku Solver&lt;/h1&gt;&lt;h1 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述&quot;&gt;&lt;/a&gt;题目描述&lt;/h1&gt;
-    
-    </summary>
-    
-    
-      <category term="LeetCode" scheme="https://wmjtxt.github.io/tags/LeetCode/"/>
-    
-      <category term="刷题" scheme="https://wmjtxt.github.io/tags/%E5%88%B7%E9%A2%98/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>LeetCode 438.Find All Anagrams in a String</title>
-    <link href="https://wmjtxt.github.io/2019/03/06/LeedCode_438/"/>
-    <id>https://wmjtxt.github.io/2019/03/06/LeedCode_438/</id>
-    <published>2019-03-06T04:00:00.000Z</published>
-    <updated>2019-06-27T07:34:05.892Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="438-Find-All-Anagrams-in-a-String"><a href="#438-Find-All-Anagrams-in-a-String" class="headerlink" title="438.Find All Anagrams in a String"></a>438.Find All Anagrams in a String</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述:"></a>题目描述:</h2><a id="more"></a><p>Given a string s and a non-empty string p, find all the start indices of p’s anagrams in s. Strings consists of lowercase English letters only and the length of both strings s and p will not be larger than 20,100. The order of output does not matter.</p><p>给定一个字符串s和一个非空字符串p，在s中查找p的变位词的所有起始索引。字符串仅由小写英文字母组成，字符串s和p的长度将不大于20,100。输出顺序无关紧要。 </p><h2 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h2><p>一开始，我只当是字符串匹配来做了，做出来发现最后一个超时，又加了KMP，还是超时。后来也有了想法，只是花太多时间了，就没有再去写，于是参考大神的解法。</p><h2 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h2><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//解法1(没有AC，并且考虑不周全)：</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; findAnagrams(<span class="built_in">string</span> s, <span class="built_in">string</span> p) &#123;</span><br><span class="line">        <span class="keyword">int</span> n = s.size();</span><br><span class="line">        <span class="keyword">int</span> m = p.size();</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; res;</span><br><span class="line">        <span class="built_in">unordered_set</span>&lt;<span class="keyword">char</span>&gt; dict;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">auto</span> e : p)</span><br><span class="line">            dict.insert(e);</span><br><span class="line">        sort(p.begin(), p.end());</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt;= n-m; ++i)&#123;</span><br><span class="line">            <span class="built_in">string</span> tmp = s.substr(i,m);</span><br><span class="line">            <span class="comment">//cout &lt;&lt; tmp &lt;&lt; endl;</span></span><br><span class="line">            <span class="keyword">int</span> j = <span class="number">0</span>;</span><br><span class="line">            <span class="keyword">for</span>(; j &lt; m; ++j)&#123;</span><br><span class="line">                <span class="keyword">if</span>(dict.find(tmp[j]) == dict.end())&#123;</span><br><span class="line">                    <span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            sort(tmp.begin(), tmp.end());</span><br><span class="line">            <span class="keyword">if</span>(j == m)&#123;</span><br><span class="line">                <span class="keyword">if</span>(p == tmp)&#123;</span><br><span class="line">                    res.push_back(i);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                i += j;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//解法2(滑动窗口)：</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; findAnagrams(<span class="built_in">string</span> s, <span class="built_in">string</span> p) &#123;</span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; pv(<span class="number">26</span>,<span class="number">0</span>), sv(<span class="number">26</span>,<span class="number">0</span>), res;</span><br><span class="line">        <span class="keyword">if</span>(s.size() &lt; p.size())</span><br><span class="line">            <span class="keyword">return</span> res;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; p.size(); ++i)</span><br><span class="line">        &#123;</span><br><span class="line">            ++pv[p[i]-<span class="string">'a'</span>];</span><br><span class="line">            ++sv[s[i]-<span class="string">'a'</span>];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(pv == sv)</span><br><span class="line">           res.push_back(<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i = p.size(); i &lt; s.size(); ++i) </span><br><span class="line">        &#123;</span><br><span class="line">            ++sv[s[i]-<span class="string">'a'</span>];</span><br><span class="line">            --sv[s[i-p.size()]-<span class="string">'a'</span>]; </span><br><span class="line">            <span class="keyword">if</span>(pv == sv)</span><br><span class="line">                res.push_back(i-p.size()+<span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> res;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;438-Find-All-Anagrams-in-a-String&quot;&gt;&lt;a href=&quot;#438-Find-All-Anagrams-in-a-String&quot; class=&quot;headerlink&quot; title=&quot;438.Find All Anagrams in a String&quot;&gt;&lt;/a&gt;438.Find All Anagrams in a String&lt;/h1&gt;&lt;h2 id=&quot;题目描述&quot;&gt;&lt;a href=&quot;#题目描述&quot; class=&quot;headerlink&quot; title=&quot;题目描述:&quot;&gt;&lt;/a&gt;题目描述:&lt;/h2&gt;
     
     </summary>
     
