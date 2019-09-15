@@ -8,20 +8,20 @@
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
   <title>C++多线程并行计算 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。 为了搞懂多线程，就想找个题目实践一下。 然后我就找到一篇博客，用Java写的多线程并行计算的代">
+  <meta name="description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。">
 <meta name="keywords" content="技术,C++,多线程">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C++多线程并行计算">
 <meta property="og:url" content="https://wmjtxt.github.io/2019/09/15/multiThread/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。 为了搞懂多线程，就想找个题目实践一下。 然后我就找到一篇博客，用Java写的多线程并行计算的代">
+<meta property="og:description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://wmjtxt.github.io/images/thread1.png">
 <meta property="og:image" content="https://wmjtxt.github.io/images/thread2.png">
-<meta property="og:updated_time" content="2019-09-15T15:48:05.373Z">
+<meta property="og:updated_time" content="2019-09-15T16:06:10.342Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C++多线程并行计算">
-<meta name="twitter:description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。 为了搞懂多线程，就想找个题目实践一下。 然后我就找到一篇博客，用Java写的多线程并行计算的代">
+<meta name="twitter:description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。">
 <meta name="twitter:image" content="https://wmjtxt.github.io/images/thread1.png">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
@@ -201,7 +201,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，<br>后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。</p>
+        <p>关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，<br>后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。<br><a id="more"></a></p>
 <p>为了搞懂多线程，就想找个题目实践一下。</p>
 <p>然后我就找到一篇博客，用Java写的多线程并行计算的代码，就是简单的求1到N的和，N是90000000。<br>那篇博客地址:<a href="https://blog.csdn.net/whandwho/article/details/80159377" target="_blank" rel="noopener">https://blog.csdn.net/whandwho/article/details/80159377</a></p>
 <p>于是我就想用C++的多线程来实现一下。</p>
