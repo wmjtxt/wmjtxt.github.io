@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>木夕木火のBlog</title>
+  <title>Tag: 多线程 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeanCloud                h3 {       text-align: center;       margin-top: 50px;       font-weight: normal;     }                                var url = &quot;/1/verifyEmail/&quot;;//如果页面运行在自己的服务">
+  <meta name="description" content="码农、诗人、旅行家">
 <meta property="og:type" content="website">
 <meta property="og:title" content="木夕木火のBlog">
-<meta property="og:url" content="https://wmjtxt.github.io/verify-1.html">
+<meta property="og:url" content="https://wmjtxt.github.io/tags/多线程/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="LeanCloud                h3 {       text-align: center;       margin-top: 50px;       font-weight: normal;     }                                var url = &quot;/1/verifyEmail/&quot;;//如果页面运行在自己的服务">
+<meta property="og:description" content="码农、诗人、旅行家">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T07:34:05.888Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="木夕木火のBlog">
-<meta name="twitter:description" content="LeanCloud                h3 {       text-align: center;       margin-top: 50px;       font-weight: normal;     }                                var url = &quot;/1/verifyEmail/&quot;;//如果页面运行在自己的服务">
+<meta name="twitter:description" content="码农、诗人、旅行家">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -172,259 +171,68 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!DOCTYPE html>
-<html lang="en">
-  <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <title>LeanCloud</title>
-    <link href="https://lc-avoscloud.cn-n1.lcfile.com/statics/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-    h3 {
-      text-align: center;
-      margin-top: 50px;
-      font-weight: normal;
-    }
-    </style>
-  </head>
-  <body>
-
-<div class=" container">
-   <h3 id="tip" style="display:none"></h3>
-   <!-- <h3 id="tip">Test</h3> -->
-
-
-
-</div><!--end container-->
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.min.js"></script>
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.jsonp.js"></script>
-
-<script type="text/javascript">
-  var url = "/1/verifyEmail/";//如果页面运行在自己的服务器，需要写定一个绝对 URL,类似 "https://api.leancloud.cn/1.1/verifyEmail/"
-  var tip_err ="邮箱验证出错"; //邮箱验证出错提示
-  var tip_success ="邮箱验证成功";//邮箱验证成功提示
-  function getParam() {
-    var prmstr = window.location.search.substr(1);
-    var prmarr = prmstr.split("&");
-    var params = {};
-
-    for (var i = 0; i < prmarr.length; i++) {
-      var tmparr = prmarr[i].split("=");
-      params[tmparr[0]] = tmparr[1];
-    }
-    return params;
-  }
-
-  //获得token,以验证邮件合法性
-  var token = location.search.match(/token=(\w*)/);
-  if(token&&token[1]){
-    token = token[1];
-  }
-  function verify(){
-    if(!token){
-      return;
-    }
-    $.jsonp({
-        url:url+token,
-        callbackParameter: "callback",
-        cache: false,
-        success:function(result){
-          $("#tip").show();
-          if(result.error){
-            $("#tip").text(result.error);
-          }else{
-            $("#tip").html(tip_success);
-          }
-        },
-        error:function(result,text){
-          $("#tip").text("服务器发生错误");
-        }
-      });
-  }
-
-  $(function(){
-    verify();
-  })
-
-</script>
-
-  </body>
-  </html>
-
+    
       
       
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zfb.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/wx.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2019" class="archive-year">2019</a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2019/09/15/multiThread/" class="archive-article-date">
+  	<time datetime="2019-09-15T15:00:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-15</time>
+</a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2019/09/15/multiThread/">C++多线程并行计算</a>
+    </h1>
+  
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3aQW6FMAwFQO5/abrthvAcJxGtJquvLzADCyu2c13xun+ttVdeOxYuLm6bew/X+Jrx45M4uQEXF/c8d5xoclye2sbxH//HxcX9PDffpjylLVxc3P/BHROT18DFxf0r3KT4qRLz8mlLrYaLi9vgzm1Q1v7e0t/FxcWd4t7FlUfotEcfY+Li4h7h5gmlT8/jvGyecHFxN3OTJmZ14No/fhGlMFxc3CPcav6rgpIk+PI5cHFxj3Dzxsfcw5IIcyNeXFzc3dwkSfU3Ovk/Ua2Gi4u7jZuPRVc1QBcXP7i4uBu445v7LZK5CWl0zAsXF3czN7+0/7BqzKj4wcXF3cadG3tEObLRdmnNhHFxcdvctWPU6jGLcmcXFxf3CLc63ugc6uoMZnBxcb/A7Q9N86Q2Wfzg4uJu486FS0qafGMUJUdcXNzN3Lu48kFLtZ0aFUi4uLhHuNVWRZ7mFrQ/pmLi4uKu4pbHnHEyqh7IiF4bFxf3IHcu0SRFUaf4KcyEcXFxP8BN2iKrhisLEhkuLu5mbvIaySvNHcjAxcU9yc0PY1VHJtV7Xz4KLi7uEW45lRShUUmzqAmLi4vb5v4ABUTiMTh0jw8AAAAASUVORK5CYII=" alt="微信分享二维码">
-    </div>
-</div>
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#tip"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-
   
   
+    </div></section>
   
 
-  
-
-  
-
-  
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "4tTGIFVIbVtLxkWj9STjVP6q-gzGzoHsz",
-            app_key: "WyhzS2MIGIGDdxqiRCSEmHyh",
-            placeholder: "说点什么吧",
-            avatar:"mm"
-        });
-    }
-</script>
-
-    </section>
-  
-
-  
+    
 
 
           </div>
@@ -463,7 +271,7 @@
 		isHome: false,
 		isPost: false,
 		isArchive: false,
-		isTag: false,
+		isTag: true,
 		isCategory: false,
 		open_in_new: false,
 		toc_hide_index: true,

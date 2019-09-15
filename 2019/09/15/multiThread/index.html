@@ -6,19 +6,23 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>木夕木火のBlog</title>
+  <title>C++多线程并行计算 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeanCloud                h3 {       text-align: center;       margin-top: 50px;       font-weight: normal;     }                                var url = &quot;/1/verifyEmail/&quot;;//如果页面运行在自己的服务">
-<meta property="og:type" content="website">
-<meta property="og:title" content="木夕木火のBlog">
-<meta property="og:url" content="https://wmjtxt.github.io/verify-1.html">
+  <meta name="description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。 为了搞懂多线程，就想找个题目实践一下。 然后我就找到一篇博客，用Java写的多线程并行计算的代">
+<meta name="keywords" content="技术,C++,多线程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C++多线程并行计算">
+<meta property="og:url" content="https://wmjtxt.github.io/2019/09/15/multiThread/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="LeanCloud                h3 {       text-align: center;       margin-top: 50px;       font-weight: normal;     }                                var url = &quot;/1/verifyEmail/&quot;;//如果页面运行在自己的服务">
+<meta property="og:description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。 为了搞懂多线程，就想找个题目实践一下。 然后我就找到一篇博客，用Java写的多线程并行计算的代">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T07:34:05.888Z">
+<meta property="og:image" content="https://wmjtxt.github.io/images/thread1.png">
+<meta property="og:image" content="https://wmjtxt.github.io/images/thread2.png">
+<meta property="og:updated_time" content="2019-09-15T15:48:05.373Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="木夕木火のBlog">
-<meta name="twitter:description" content="LeanCloud                h3 {       text-align: center;       margin-top: 50px;       font-weight: normal;     }                                var url = &quot;/1/verifyEmail/&quot;;//如果页面运行在自己的服务">
+<meta name="twitter:title" content="C++多线程并行计算">
+<meta name="twitter:description" content="关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。 为了搞懂多线程，就想找个题目实践一下。 然后我就找到一篇博客，用Java写的多线程并行计算的代">
+<meta name="twitter:image" content="https://wmjtxt.github.io/images/thread1.png">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -172,89 +176,43 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-multiThread" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      C++多线程并行计算
+    </h1>
+  
+
+        
+        <a href="/2019/09/15/multiThread/" class="archive-article-date">
+  	<time datetime="2019-09-15T15:00:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-15</time>
+</a>
+        
+        
+        		<span class="archive-article-date">
+        			阅读量 <span id="busuanzi_value_page_pv"></span>
+        		</span>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html lang="en">
-  <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <title>LeanCloud</title>
-    <link href="https://lc-avoscloud.cn-n1.lcfile.com/statics/bootstrap.min.css" rel="stylesheet">
-
-    <style>
-    h3 {
-      text-align: center;
-      margin-top: 50px;
-      font-weight: normal;
-    }
-    </style>
-  </head>
-  <body>
-
-<div class=" container">
-   <h3 id="tip" style="display:none"></h3>
-   <!-- <h3 id="tip">Test</h3> -->
-
-
-
-</div><!--end container-->
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.min.js"></script>
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.jsonp.js"></script>
-
-<script type="text/javascript">
-  var url = "/1/verifyEmail/";//如果页面运行在自己的服务器，需要写定一个绝对 URL,类似 "https://api.leancloud.cn/1.1/verifyEmail/"
-  var tip_err ="邮箱验证出错"; //邮箱验证出错提示
-  var tip_success ="邮箱验证成功";//邮箱验证成功提示
-  function getParam() {
-    var prmstr = window.location.search.substr(1);
-    var prmarr = prmstr.split("&");
-    var params = {};
-
-    for (var i = 0; i < prmarr.length; i++) {
-      var tmparr = prmarr[i].split("=");
-      params[tmparr[0]] = tmparr[1];
-    }
-    return params;
-  }
-
-  //获得token,以验证邮件合法性
-  var token = location.search.match(/token=(\w*)/);
-  if(token&&token[1]){
-    token = token[1];
-  }
-  function verify(){
-    if(!token){
-      return;
-    }
-    $.jsonp({
-        url:url+token,
-        callbackParameter: "callback",
-        cache: false,
-        success:function(result){
-          $("#tip").show();
-          if(result.error){
-            $("#tip").text(result.error);
-          }else{
-            $("#tip").html(tip_success);
-          }
-        },
-        error:function(result,text){
-          $("#tip").text("服务器发生错误");
-        }
-      });
-  }
-
-  $(function(){
-    verify();
-  })
-
-</script>
-
-  </body>
-  </html>
+        <p>关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，<br>后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。</p>
+<p>为了搞懂多线程，就想找个题目实践一下。</p>
+<p>然后我就找到一篇博客，用Java写的多线程并行计算的代码，就是简单的求1到N的和，N是90000000。<br>那篇博客地址:<a href="https://blog.csdn.net/whandwho/article/details/80159377" target="_blank" rel="noopener">https://blog.csdn.net/whandwho/article/details/80159377</a></p>
+<p>于是我就想用C++的多线程来实现一下。</p>
+<p>就找到了这篇博客<a href="https://blog.csdn.net/whandwho/article/details/80159377" target="_blank" rel="noopener">https://blog.csdn.net/whandwho/article/details/80159377</a>, 里面用C++的thread实现了并行加法，<br>稍作改动，便解决了上面的问题。</p>
+<p>然后，考虑用pthread来实现, 毕竟我之前做项目有用过pthread, 对它还算熟悉。经过好一番折腾，总算是做出来了。</p>
+<p>下面奉上代码和运行结果比较。<br>为了方便对比，一开始就写了单线程计算的，其实后来多线程版本都支持输入线程数, 但方便对比就按原来的吧。<br>另外，N设为900000000，也就是9亿，比那个Java的多个0。</p>
+<h2 id="运行结果1-单线程，thread和pthread"><a href="#运行结果1-单线程，thread和pthread" class="headerlink" title="运行结果1 : 单线程，thread和pthread"></a>运行结果1 : 单线程，thread和pthread</h2><p><img src="/images/thread1.png" alt="pic1"></p>
+<h2 id="运行结果2-thread和pthread，不同线程数"><a href="#运行结果2-thread和pthread，不同线程数" class="headerlink" title="运行结果2 : thread和pthread，不同线程数"></a>运行结果2 : thread和pthread，不同线程数</h2><p><img src="/images/thread2.png" alt="pic2"><br>可以看到，开启8个线程比开3个线程更快。事实上，我试了很多，基本上8个线程是最快的，这道题属于密集计算型任务，线程数跟CPU核心数量一样比较好。<br>还有，thread和pthread的速度也差不多。</p>
+<h3 id="1-单线程"><a href="#1-单线程" class="headerlink" title="1.单线程"></a>1.单线程</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;chrono&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> N 900000000</span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">auto</span> start = <span class="built_in">std</span>::chrono::system_clock::now();</span><br><span class="line">    <span class="built_in">std</span>::<span class="keyword">time_t</span> start_time = <span class="built_in">std</span>::chrono::system_clock::<span class="keyword">to_time_t</span>(start);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"开始时间: "</span> &lt;&lt; <span class="built_in">std</span>::ctime(&amp;start_time);</span><br><span class="line"></span><br><span class="line">	<span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">long</span> i = <span class="number">1</span>; i &lt;= N; ++i)&#123;</span><br><span class="line">        sum += i;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> end = <span class="built_in">std</span>::chrono::system_clock::now();</span><br><span class="line">    <span class="built_in">std</span>::chrono::duration&lt;<span class="keyword">double</span>&gt; elapsed_seconds = end-start;</span><br><span class="line">    <span class="built_in">std</span>::<span class="keyword">time_t</span> end_time = <span class="built_in">std</span>::chrono::system_clock::<span class="keyword">to_time_t</span>(end);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"sum     = "</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"结束时间: "</span> &lt;&lt; <span class="built_in">std</span>::ctime(&amp;end_time);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"用    时: "</span> &lt;&lt; elapsed_seconds.count() &lt;&lt; <span class="string">"s"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="2-std-thread"><a href="#2-std-thread" class="headerlink" title="2.std::thread"></a>2.std::thread</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;thread&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;future&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;condition_variable&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;mutex&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;chrono&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;  </span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">long</span> <span class="keyword">long</span> N = <span class="number">900000000</span>;</span><br><span class="line">mutex m;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">long</span> <span class="keyword">long</span> <span class="title">run</span><span class="params">(<span class="keyword">long</span> <span class="keyword">long</span> from, <span class="keyword">long</span> <span class="keyword">long</span> to)</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> ret = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">long</span> <span class="keyword">long</span> i = from+<span class="number">1</span>; i &lt;= to; i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">        ret += i;</span><br><span class="line">    &#125;  </span><br><span class="line">	<span class="built_in">cout</span> &lt;&lt;<span class="string">"线程ID："</span>&lt;&lt; this_thread::get_id() &lt;&lt;<span class="string">", ret="</span>&lt;&lt;ret&lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> ret;</span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"CPU核心个数       : "</span> &lt;&lt; thread::hardware_concurrency() &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"请输入启动线程个数: "</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="comment">//计时</span></span><br><span class="line">    <span class="keyword">auto</span> start = <span class="built_in">std</span>::chrono::system_clock::now();</span><br><span class="line">    <span class="built_in">vector</span>&lt;future&lt;<span class="keyword">long</span> <span class="keyword">long</span>&gt;&gt; result;</span><br><span class="line">    <span class="built_in">std</span>::<span class="keyword">time_t</span> start_time = <span class="built_in">std</span>::chrono::system_clock::<span class="keyword">to_time_t</span>(start);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"开始时间: "</span> &lt;&lt; <span class="built_in">std</span>::ctime(&amp;start_time);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">long</span> i = <span class="number">0</span>; i &lt; n; ++i)&#123;</span><br><span class="line">        result.push_back(async(run, i*N/n, (i+<span class="number">1</span>)*N/n));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">long</span> <span class="keyword">long</span> i = <span class="number">0</span>; i &lt; n; ++i)&#123;</span><br><span class="line">        sum += result[i].get();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> end = <span class="built_in">std</span>::chrono::system_clock::now();</span><br><span class="line">    <span class="built_in">std</span>::chrono::duration&lt;<span class="keyword">double</span>&gt; elapsed_seconds = end-start;</span><br><span class="line">    <span class="built_in">std</span>::<span class="keyword">time_t</span> end_time = <span class="built_in">std</span>::chrono::system_clock::<span class="keyword">to_time_t</span>(end);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"sum     = "</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"结束时间: "</span> &lt;&lt; <span class="built_in">std</span>::ctime(&amp;end_time);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"用    时: "</span> &lt;&lt; elapsed_seconds.count() &lt;&lt; <span class="string">"s"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="3-pthread"><a href="#3-pthread" class="headerlink" title="3.pthread"></a>3.pthread</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;vector&gt;  </span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;chrono&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;ctime&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;pthread.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;unistd.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;  </span><br><span class="line"></span><br><span class="line"><span class="keyword">const</span> <span class="keyword">long</span> <span class="keyword">long</span> N = <span class="number">900000000</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> <span class="title">A</span>&#123;</span></span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> from;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> to;</span><br><span class="line">&#125;<span class="keyword">a_t</span>, *<span class="keyword">pa_t</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">pthread_mutex_t</span> mutex;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">void</span>* <span class="title">run</span><span class="params">(<span class="keyword">void</span> *arg)</span></span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line">    <span class="keyword">pa_t</span> at = (<span class="keyword">pa_t</span>)arg;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> from = at-&gt;from, to = at-&gt;to;</span><br><span class="line">    pthread_mutex_unlock(&amp;mutex);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> ret = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">long</span> <span class="keyword">long</span> i = from+<span class="number">1</span>; i &lt;= to; i++)  </span><br><span class="line">    &#123;  </span><br><span class="line">        ret += i;</span><br><span class="line">    &#125;  </span><br><span class="line">    <span class="comment">//cout &lt;&lt; "from = " &lt;&lt; from &lt;&lt; ", to = " &lt;&lt; to &lt;&lt; endl;</span></span><br><span class="line">    <span class="comment">//cout &lt;&lt; "ret = " &lt;&lt; ret &lt;&lt; endl;</span></span><br><span class="line">	<span class="comment">//cout &lt;&lt;"线程ID："&lt;&lt; pthread_self() &lt;&lt; "	sum="&lt;&lt;ret&lt;&lt; endl;</span></span><br><span class="line">    <span class="keyword">return</span> (<span class="keyword">void</span>*)ret;</span><br><span class="line">&#125;  </span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>  </span></span><br><span class="line"><span class="function"></span>&#123;  </span><br><span class="line"></span><br><span class="line">    <span class="keyword">int</span> n;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"CPU核心个数       : "</span> &lt;&lt; sysconf(_SC_NPROCESSORS_CONF) &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"请输入启动线程个数: "</span>;</span><br><span class="line">    <span class="built_in">cin</span> &gt;&gt; n;</span><br><span class="line">    <span class="keyword">pthread_t</span> pthid[n] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">    pthread_mutex_init(&amp;mutex, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> from, to;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//计时</span></span><br><span class="line">    <span class="keyword">auto</span> start = <span class="built_in">std</span>::chrono::system_clock::now();</span><br><span class="line">    <span class="built_in">std</span>::<span class="keyword">time_t</span> start_time = <span class="built_in">std</span>::chrono::system_clock::<span class="keyword">to_time_t</span>(start);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"开始时间: "</span> &lt;&lt; <span class="built_in">std</span>::ctime(&amp;start_time);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)&#123;</span><br><span class="line">        pthread_mutex_lock(&amp;mutex);</span><br><span class="line">        <span class="keyword">a_t</span> arg;</span><br><span class="line">        arg.from = i*N/n;</span><br><span class="line">        arg.to = (i+<span class="number">1</span>)*N/n;</span><br><span class="line">        pthread_create(&amp;pthid[i], <span class="literal">NULL</span>, run, (<span class="keyword">void</span>*)&amp;arg);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">long</span> <span class="keyword">long</span> sum = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">void</span>* ret;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; n; ++i)&#123;</span><br><span class="line">        pthread_join(pthid[i], &amp;ret);</span><br><span class="line">        <span class="built_in">cout</span> &lt;&lt; <span class="string">"pthid   = "</span>&lt;&lt; pthid[i] &lt;&lt;  <span class="string">", ret = "</span> &lt;&lt; (<span class="keyword">long</span> <span class="keyword">long</span>)ret &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">        sum += (<span class="keyword">long</span> <span class="keyword">long</span>)ret;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">auto</span> end = <span class="built_in">std</span>::chrono::system_clock::now();</span><br><span class="line">    <span class="built_in">std</span>::chrono::duration&lt;<span class="keyword">double</span>&gt; elapsed_seconds = end-start;</span><br><span class="line">    <span class="built_in">std</span>::<span class="keyword">time_t</span> end_time = <span class="built_in">std</span>::chrono::system_clock::<span class="keyword">to_time_t</span>(end);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"sum     = "</span> &lt;&lt; sum &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"结束时间: "</span> &lt;&lt; <span class="built_in">std</span>::ctime(&amp;end_time);</span><br><span class="line">    <span class="built_in">cout</span> &lt;&lt; <span class="string">"用    时: "</span> &lt;&lt; elapsed_seconds.count() &lt;&lt; <span class="string">"s"</span> &lt;&lt; <span class="built_in">endl</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
       
@@ -293,6 +251,25 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -343,7 +320,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAABwUlEQVR42u3aQW6FMAwFQO5/abrthvAcJxGtJquvLzADCyu2c13xun+ttVdeOxYuLm6bew/X+Jrx45M4uQEXF/c8d5xoclye2sbxH//HxcX9PDffpjylLVxc3P/BHROT18DFxf0r3KT4qRLz8mlLrYaLi9vgzm1Q1v7e0t/FxcWd4t7FlUfotEcfY+Li4h7h5gmlT8/jvGyecHFxN3OTJmZ14No/fhGlMFxc3CPcav6rgpIk+PI5cHFxj3Dzxsfcw5IIcyNeXFzc3dwkSfU3Ovk/Ua2Gi4u7jZuPRVc1QBcXP7i4uBu445v7LZK5CWl0zAsXF3czN7+0/7BqzKj4wcXF3cadG3tEObLRdmnNhHFxcdvctWPU6jGLcmcXFxf3CLc63ugc6uoMZnBxcb/A7Q9N86Q2Wfzg4uJu486FS0qafGMUJUdcXNzN3Lu48kFLtZ0aFUi4uLhHuNVWRZ7mFrQ/pmLi4uKu4pbHnHEyqh7IiF4bFxf3IHcu0SRFUaf4KcyEcXFxP8BN2iKrhisLEhkuLu5mbvIaySvNHcjAxcU9yc0PY1VHJtV7Xz4KLi7uEW45lRShUUmzqAmLi4vb5v4ABUTiMTh0jw8AAAAASUVORK5CYII=" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACKklEQVR42u3aQXLEIAwEwPz/05trDgk7I7ypMm5OqS3b0BwUkPT1FY/Xj/Hzl/WT62eSWS4eGBgYt2W8luOqfVrz/tqgZG0YGBjPYazDYvLp9VvrGfe/gIGBgTGjrkPtVfNiYGBgrJfVLiIJ0BgYGBg7l9idBNkM/5G7OAYGxg0ZebLs///+SH0DAwPjVoxXOdqiZlJgWL8VrQoDA+NoRh7grioGzLYsOmhiYGAcythpsEjCaLKsZMY3MAwMjKMZSevDrFS5UyoYFicwMDCOZiSLyI9reUBvixN16g0DA+NQxqzpIT9ctk9GbRYYGBhHM/JL5qww8IkiQd3HgYGBcRBj1hY2m/6qtrOiEouBgXFbRn6Am6X486XkR883WUMMDIzjGLOA2ybx98sPUbcIBgbGoYw2lZb8vlNOyFNsGBgYT2PkS98P03njVxKOiwQcBgbGbRmzFoqdANoWA6K5MDAwHsBoiwHtxLOGs+ItDAyMoxk77RQ7Sbf86psfJTEwMJ7AyF+rk1+jTUlKp7/898DAwDiaUXRnjAJo2yhWN3BgYGA8gJEf8mYBNy885O9iYGA8gfEqRxsK95tTIyoGBsbRjLYw2R4f8yW2gT4vc2JgYJzBmDV4tcttWyjqAicGBsYDGG3gazFtkbJGYmBgYIwWfe3z0Y0cAwMDo5wsv462hczLAi4GBsatGHlC7YLGiODwV28fBgbG0YzZp9uSZ36Wy4MsBgbGAxjf1TyTYfTSZ7YAAAAASUVORK5CYII=" alt="微信分享二维码">
     </div>
 </div>
 
@@ -355,6 +332,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2019/09/06/interview4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">京东面试风波之后续</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -376,7 +363,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#tip"><span class="toc-number">1.</span> <span class="toc-text"></span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#运行结果1-单线程，thread和pthread"><span class="toc-number">1.</span> <span class="toc-text">运行结果1 : 单线程，thread和pthread</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运行结果2-thread和pthread，不同线程数"><span class="toc-number">2.</span> <span class="toc-text">运行结果2 : thread和pthread，不同线程数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-单线程"><span class="toc-number">2.1.</span> <span class="toc-text">1.单线程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-std-thread"><span class="toc-number">2.2.</span> <span class="toc-text">2.std::thread</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-pthread"><span class="toc-number">2.3.</span> <span class="toc-text">3.pthread</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -461,7 +448,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
