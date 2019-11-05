@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="木夕木火のBlog">
 <meta property="og:description" content="背景知识Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是硬链接(hard link)。因此，硬链接可以理解为同一个文件的多个别名。而软链接(soft link)则是文件的用户数据存放指向另一个文件的">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-11-05T12:51:13.922Z">
+<meta property="og:updated_time" content="2019-11-05T13:00:32.391Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="浅析软链接与硬链接">
 <meta name="twitter:description" content="背景知识Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是硬链接(hard link)。因此，硬链接可以理解为同一个文件的多个别名。而软链接(soft link)则是文件的用户数据存放指向另一个文件的">
@@ -198,7 +198,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。<br>软链接与Windows系统的快捷方式很相似。</p>
+        <h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。软链接与Windows系统的快捷方式很相似。</p>
+<a id="more"></a>
 <h1 id="如何创建"><a href="#如何创建" class="headerlink" title="如何创建"></a>如何创建</h1><ul>
 <li>创建软链接(soft link): <code>ln -s file softfile</code></li>
 <li>创建硬链接(hard link): <code>ln file hardfile</code> or <code>link file hardfile</code></li>

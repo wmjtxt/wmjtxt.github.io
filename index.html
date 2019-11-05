@@ -194,24 +194,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。<br>软链接与Windows系统的快捷方式很相似。</p>
-<h1 id="如何创建"><a href="#如何创建" class="headerlink" title="如何创建"></a>如何创建</h1><ul>
-<li>创建软链接(soft link): <code>ln -s file softfile</code></li>
-<li>创建硬链接(hard link): <code>ln file hardfile</code> or <code>link file hardfile</code></li>
-</ul>
-<h1 id="底层实现"><a href="#底层实现" class="headerlink" title="底层实现"></a>底层实现</h1><ul>
-<li>软链接 : 文件类型为符号链接，文件中存放有一个指向原文件路径的指针</li>
-<li>硬链接 : 下为VFS中的inode结构体<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">inode</span>&#123;</span></span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="keyword">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">inode_operations</span>   *<span class="title">i_op</span>;</span>      <span class="comment">//索引节点操作</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span>                   i_ino;      <span class="comment">//索引节点号</span></span><br><span class="line">    <span class="keyword">atomic_t</span>                        i_count;    <span class="comment">//引用计数器</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span>                    i_nlink;    <span class="comment">//硬链接数目</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>创建硬链接后，i_nlink加1</p>
-<h1 id="区别与联系-简述"><a href="#区别与联系-简述" class="headerlink" title="区别与联系(简述)"></a>区别与联系(简述)</h1><ul>
-<li>软链接是新建一个文件，硬链接是为文件建一个别名。</li>
-<li>软链接可以跨文件系统，硬链接不可以。</li>
-<li>软链接可以对目录操作，硬链接不可以。</li>
-<li>删除原文件，软链接失效，硬链接不影响。</li>
-</ul>
-
+        <h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。软链接与Windows系统的快捷方式很相似。</p>
+        
+          <a class="article-more-a" href="/2019/11/05/ln/#more">more >></a>
+        
       
       
     </div>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2019-11-05T12:51:13.922Z</updated>
+  <updated>2019-11-05T13:00:32.391Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -21,16 +21,13 @@
     <link href="https://wmjtxt.github.io/2019/11/05/ln/"/>
     <id>https://wmjtxt.github.io/2019/11/05/ln/</id>
     <published>2019-11-05T03:26:42.000Z</published>
-    <updated>2019-11-05T12:51:13.922Z</updated>
+    <updated>2019-11-05T13:00:32.391Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。<br>软链接与Windows系统的快捷方式很相似。</p><h1 id="如何创建"><a href="#如何创建" class="headerlink" title="如何创建"></a>如何创建</h1><ul><li>创建软链接(soft link): <code>ln -s file softfile</code></li><li>创建硬链接(hard link): <code>ln file hardfile</code> or <code>link file hardfile</code></li></ul><h1 id="底层实现"><a href="#底层实现" class="headerlink" title="底层实现"></a>底层实现</h1><ul><li>软链接 : 文件类型为符号链接，文件中存放有一个指向原文件路径的指针</li><li>硬链接 : 下为VFS中的inode结构体<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">inode</span>&#123;</span></span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="keyword">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">inode_operations</span>   *<span class="title">i_op</span>;</span>      <span class="comment">//索引节点操作</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span>                   i_ino;      <span class="comment">//索引节点号</span></span><br><span class="line">    <span class="keyword">atomic_t</span>                        i_count;    <span class="comment">//引用计数器</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span>                    i_nlink;    <span class="comment">//硬链接数目</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>创建硬链接后，i_nlink加1</p><h1 id="区别与联系-简述"><a href="#区别与联系-简述" class="headerlink" title="区别与联系(简述)"></a>区别与联系(简述)</h1><ul><li>软链接是新建一个文件，硬链接是为文件建一个别名。</li><li>软链接可以跨文件系统，硬链接不可以。</li><li>软链接可以对目录操作，硬链接不可以。</li><li>删除原文件，软链接失效，硬链接不影响。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。软链接与Windows系统的快捷方式很相似。</p><a id="more"></a><h1 id="如何创建"><a href="#如何创建" class="headerlink" title="如何创建"></a>如何创建</h1><ul><li>创建软链接(soft link): <code>ln -s file softfile</code></li><li>创建硬链接(hard link): <code>ln file hardfile</code> or <code>link file hardfile</code></li></ul><h1 id="底层实现"><a href="#底层实现" class="headerlink" title="底层实现"></a>底层实现</h1><ul><li>软链接 : 文件类型为符号链接，文件中存放有一个指向原文件路径的指针</li><li>硬链接 : 下为VFS中的inode结构体<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">inode</span>&#123;</span></span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="keyword">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">inode_operations</span>   *<span class="title">i_op</span>;</span>      <span class="comment">//索引节点操作</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span>                   i_ino;      <span class="comment">//索引节点号</span></span><br><span class="line">    <span class="keyword">atomic_t</span>                        i_count;    <span class="comment">//引用计数器</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span>                    i_nlink;    <span class="comment">//硬链接数目</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>创建硬链接后，i_nlink加1</p><h1 id="区别与联系-简述"><a href="#区别与联系-简述" class="headerlink" title="区别与联系(简述)"></a>区别与联系(简述)</h1><ul><li>软链接是新建一个文件，硬链接是为文件建一个别名。</li><li>软链接可以跨文件系统，硬链接不可以。</li><li>软链接可以对目录操作，硬链接不可以。</li><li>删除原文件，软链接失效，硬链接不影响。</li></ul>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;p&gt;Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数
-      
+      &lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;p&gt;Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。&lt;br&gt;元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是&lt;strong&gt;硬链接(hard link)&lt;/strong&gt;。因此，&lt;br&gt;硬链接可以理解为同一个文件的多个别名。而&lt;strong&gt;软链接(soft link)&lt;/strong&gt;则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。软链接与Windows系统的快捷方式很相似。&lt;/p&gt;
     
     </summary>
     
@@ -240,7 +237,7 @@
     <link href="https://wmjtxt.github.io/2019/06/27/cloneDeepin/"/>
     <id>https://wmjtxt.github.io/2019/06/27/cloneDeepin/</id>
     <published>2019-06-27T08:08:26.000Z</published>
-    <updated>2019-08-20T15:42:26.122Z</updated>
+    <updated>2019-11-05T12:57:08.006Z</updated>
     
     <content type="html"><![CDATA[<p>换了新电脑，就想把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了试，开始遇到一些问题，不过后来还是成功了。<br><a id="more"></a></p><p>想看具体步骤可以跳转到<a href="#实施步骤">实施步骤</a>，或者<a href="#精简版">精简版</a> 。</p><p>新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，需要把它克隆到一个238G左右的移动固态硬盘。</p><p>然后就遇到一个问题：克隆完成后，将238G的硬盘连到新电脑，无法从该硬盘启动，Boot Device只显示电脑自带的硬盘而不显示外接硬盘，不知道是新电脑的问题还是锐龙处理器的问题，总之就是没办法启动克隆的系统。</p><p>所谓兵来将挡水来土掩，问题总是有解决的办法，很快就想到一个：那就是在电脑自带的硬盘安装一个Deepin系统，由它来引导。果不其然，安装好以后，再启动的时候就可以看到238G硬盘上的系统了，启动它也没什么问题。这样，克隆系统就大功告成。</p><p>ps : 一直以来，我都是用Windows10+Deepin双系统，efi引导启动(引导这块不太懂，我是先装好Windows10，再安装Deepin，然后开机就看到引导界面了，所以应该是Deepin自带的引导程序)。</p><p>至于，为什么我不用Deepin 15.10(以下简称15.10)了？其实先前是打算趁这次换电脑改用Deepin 15.10而放弃原来的Deepin 15.9(下称15.9)的(从15.5开始用，一路升级到15.9)，因为15.10是第一个stable版本，而且原来的unstable版本官方好像是今年7月以后不再更新了。</p><p>所以新电脑一到，我就在238G移动固态上安装了15.10，一开始没发现什么大问题，只是<strong>引导有点问题</strong>：每次从Windows10重启，无法正常进入引导界面。这也许是本地硬盘Windows10+移动硬盘Deepin的问题，也可能是AMD处理器的问题。</p><p>另外，在安装一个vim插件的时候（vim-instant-markdown），需要安装nodejs，而在15.10安装nodejs默认版本是4.8，在15.9安装是8.11，不知道是不是由于这个原因，总之结果就是<strong>vim-instant-markdown在15.10用不了</strong>，尝试了各种方法结果还是不行。</p><p>综上，我就决定暂时放弃15.10了，虽然[解决办法]里在新电脑自带硬盘安装的系统是15.10，但那只是工具而已，以后的主力系统还是15.9。或许以后还有机会再用15.10或者别的linux系统。</p><h3 id="实施步骤"><a href="#实施步骤" class="headerlink" title="实施步骤"></a>实施步骤</h3><p>大致说一下实施步骤，因为我先后尝试了多次，所以这里就不赘述，只说我认为是必要的步骤，如果遇到问题，欢迎留言交流。</p><ul><li><p>1.准备工作</p><ul><li><p>原始系统，简称<strong>Deepin-老大</strong>；目标系统，也就是克隆系统，简称<strong>Deepin-小二</strong>。</p></li><li><p>一个第三方Deepin系统（我是在另一个移动机械硬盘上安装过一个Deepin 15.7，正好派上用场），简称<strong>Deepin-小三</strong>。<br>用live系统应该也可以，不过我没有试。如果在Deepin-老大上执行clone操作的话，会提示有个错误，好像是让你重启进入live系统再clone（我第一次是这样弄的，记不太清了，后来都是在第三方系统clone的）。</p></li><li><p>安装Clone软件（中文名是备份还原工具），在深度商店里就有。</p></li><li><p>在新电脑自带硬盘压缩出一个60G大小的空间并新建分区（这个过程是在自带Windows10系统进行），安装Deepin系统，简称<strong>Deepin-小四</strong>。</p></li></ul></li><li><p>2.克隆系统</p></li></ul><p>打开Clone软件，第一步选择操作介质: 分区，选择介质对应的操作: 克隆分区，然后点击下一步，选择原始分区和目标分区，点击开始克隆，等待完成。</p><ul><li>3.在新电脑启动</li></ul><p>克隆完成后，建议就转移到新电脑，先启动<strong>Deepin-小四</strong>，执行命令<code>sudo update-grub</code>，然后重启就可以进入引导界面，并发现里面有<strong>Deepin-小二</strong>，就说明克隆成功了。</p><p>之所以不建议在旧电脑启动<strong>Deepin-小二</strong>，是因为在旧电脑，<strong>Deepin-老大</strong>和<strong>Deepin-小二</strong>同时存在，引导程序可能对他们在识别上有点问题。<br>我在<strong>Deepin-小三</strong>执行<code>sudo update-grub</code>后，引导程序的确发现了这两个在不同位置的一模一样的系统，但启动的时候不论点击哪一个，似乎启动的都是原来的<strong>Deepin-小二</strong>，应该是<strong>Deepin-小二</strong>把<strong>Deepin-老大</strong>给覆盖了。</p><p>ps : 晚上我又测试了一下，把原系统升级了，15.9.3 unstable –&gt; 15.10.1 stable，看来Deepin支持从unstable直接升级到stable版本了。还有就是升级过后，把<strong>Deepin-小二</strong>和<strong>Deepin-老大</strong>放到一起，开机，系统久久不能启动，大概维持了5分钟。<br>然后，我觉得情况不对劲，就强制关机，把<strong>Deepin-小二</strong>放到新电脑上，开机，提示有些错误，然后执行检查，最后很快正常启动。看来那5分钟旧电脑还是做了些什么，试图区分老大和小二。还好我及时制止了，不然可能要出大事的(认真脸)。<br>算了算了，以后他们还是不要相见了，这让我想起一个电影，好像是叫做《月球》，挺悲伤的。关于克隆，确实有些东西让人（系统）难以接受。</p><ul><li>4.解决Deepin-小二分区大小问题</li></ul><p>启动<strong>Deepin-小二</strong>后，你也许会发现这个问题：<code>df -h</code>命令的结果显示，系统盘大小是110G（原系统Deepin-老大所在分区的大小），而<code>sudo fdisk -l</code>命令显示系统盘分区大小是238G（就是克隆操作目标硬盘的大小）。</p><p>那些多余的空间去哪了？能不能找回来呢？答案是可以！</p><p>只需要执行如下命令：</p><p><code>sudo resize2fs /dev/sda1</code></p><p>其中<code>/dev/sda1</code>是系统<strong>Deepin-小二</strong>所在的分区名字。</p><ul><li>5.领衔主演</li></ul><table><thead><tr><th style="text-align:center">姓名</th><th style="text-align:center">版本</th><th style="text-align:center">系统盘大小</th></tr></thead><tbody><tr><td style="text-align:center">Deepin-老大</td><td style="text-align:center">15.9.3</td><td style="text-align:center">110G</td></tr><tr><td style="text-align:center">Deepin-小二</td><td style="text-align:center">15.9.3</td><td style="text-align:center">238G</td></tr><tr><td style="text-align:center">Deepin-小三</td><td style="text-align:center">15.7.0</td><td style="text-align:center">80G</td></tr><tr><td style="text-align:center">Deepin-小四</td><td style="text-align:center">15.10.1</td><td style="text-align:center">60G</td></tr></tbody></table><h3 id="精简版"><a href="#精简版" class="headerlink" title="精简版"></a>精简版</h3><ul><li>1.在第三方系统上，使用Clone软件将待克隆系统从原始分区克隆到目标分区。</li><li>2.启动克隆系统后，执行<code>sudo resize2fs /dev/sda1</code>，其中<code>/dev/sda1</code>是克隆系统所在的分区名字。</li><li><strong>注意</strong>：不要在原电脑启动克隆系统</li></ul><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>还有一些别的办法克隆系统，比如先备份，再还原，不再一一尝试啦，毕竟系统只是工具，弄好了就该办正事了，这才是最重要的。</p>]]></content>
     
@@ -251,7 +248,7 @@
     </summary>
     
     
-      <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
+      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
     
   </entry>
   
@@ -425,7 +422,7 @@
     <link href="https://wmjtxt.github.io/2019/03/25/find_wc/"/>
     <id>https://wmjtxt.github.io/2019/03/25/find_wc/</id>
     <published>2019-03-25T04:00:00.000Z</published>
-    <updated>2019-06-27T07:34:05.892Z</updated>
+    <updated>2019-11-05T12:58:38.135Z</updated>
     
     <content type="html"><![CDATA[<p>一开始这样写<code>find . -name &quot;*.cpp&quot; | xargs wc -l</code>，名字有空格的文件无法处理</p><p>后来就在网上找，下面这个方法可以：</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- more --&gt;</span><br><span class="line">find . -name "*.cpp" -print0 | xargs -0 wc -l</span><br></pre></td></tr></table></figure><p>好像是把空格替换成’\0’了</p>]]></content>
     
@@ -441,9 +438,9 @@
     </summary>
     
     
-      <category term="shell" scheme="https://wmjtxt.github.io/tags/shell/"/>
+      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
     
-      <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
+      <category term="shell" scheme="https://wmjtxt.github.io/tags/shell/"/>
     
   </entry>
   
@@ -452,7 +449,7 @@
     <link href="https://wmjtxt.github.io/2019/03/18/linux_command/"/>
     <id>https://wmjtxt.github.io/2019/03/18/linux_command/</id>
     <published>2019-03-18T04:00:00.000Z</published>
-    <updated>2019-09-02T08:42:46.533Z</updated>
+    <updated>2019-11-05T12:58:10.567Z</updated>
     
     <content type="html"><![CDATA[<h1 id="Linux常用命令"><a href="#Linux常用命令" class="headerlink" title="Linux常用命令"></a>Linux常用命令</h1><a id="more"></a><table><thead><tr><th>命令</th><th>含义</th><th>备注</th></tr></thead><tbody><tr><td><code>df -h</code></td><td>查看磁盘使用情况</td><td>磁盘</td></tr><tr><td><code>du -ah --max-depth==1</code></td><td>查看当前目录下的文件及文件夹的大小</td><td></td></tr><tr><td><code>du -sh</code></td><td>查看当前文件夹大小</td><td></td></tr><tr><td><code>ls -ltr</code></td><td>按修改时间排序</td><td></td></tr><tr><td><code>ls -l</code>&#124;<code>wc -l</code></td><td>查看当前文件夹下文件及文件夹个数</td><td></td></tr><tr><td><code>ls -l</code>&#124;<code>grep &quot;^-&quot;</code>&#124;<code>wc -l</code></td><td>查看当前文件夹下文件个数</td><td></td></tr><tr><td><code>ls -l</code>&#124;<code>grep &quot;^d&quot;</code>&#124;<code>wc -l</code></td><td>查看当前文件夹下文件夹个数</td><td></td></tr><tr><td><code>free</code></td><td>查看内存使用情况</td><td>内存</td></tr><tr><td><code>top</code></td><td>实时显示系统运行各项信息，相当于任务管理器</td><td>cpu</td></tr><tr><td><code>ps -ef</code>&#124;<code>grep sth</code></td><td>查看当前运行进程</td><td></td></tr><tr><td><code>rename &#39;s/\.cc$/.cpp/&#39; *.cc</code></td><td>将后缀为.cc的文件后缀修改为.cpp</td><td>批量修改文件名</td></tr><tr><td><code>rename &#39;s/\s/./&#39; *.c</code></td><td>将后缀为.c的文件名中的空格替换为”.”</td><td>批量修改文件名</td></tr><tr><td><code>rename &#39;s/^/00/&#39; [0-9]*</code></td><td>将文件名以数字开头的文件前面加上00</td><td>批量修改文件名</td></tr><tr><td><code>history</code>&#124;<code>awk &#39;{print $2}&#39;</code>&#124;<code>sort</code>&#124;<code>uniq -c</code>&#124;<code>sort -rn</code>&#124;<code>head -15</code></td><td>查看使用频次前15的历史命令</td><td></td></tr><tr><td><code>linuxlogo</code></td><td></td><td></td></tr><tr><td><code>wc [filename]</code></td><td>统计指定文件中的行数、字数、字节数</td><td></td></tr><tr><td><code>usermod -l [新用户名] -d /home/[新用户名] -m [旧用户名]</code></td><td>修改用户名</td><td></td></tr><tr><td><code>ln</code></td><td>链接，软链接，硬链接</td><td></td></tr><tr><td><code>scp</code></td><td>linux之间文件远程传输</td><td></td></tr><tr><td><code>more</code></td><td>与cat类似，可以翻页浏览,空格键下一页，b回上一页</td><td></td></tr><tr><td><code>less</code></td><td>与more类似，还可以使用vi编辑查找</td><td></td></tr><tr><td><code>awk</code></td><td>AWK是一种处理文本文件的语言，是一个强大的文本分析工具</td><td></td></tr><tr><td><code>:%s/foo/bar/g</code></td><td>全文查找替换</td><td></td></tr><tr><td><code>gg=G</code></td><td>vim中代码智能对齐</td><td>vim</td></tr><tr><td><code>nl [file]</code></td><td>查看文件内容，行号计算不包括空行，相当于<code>cat [file] -b</code></td><td></td></tr><tr><td><code>:%!xxd</code></td><td>vim中显示16进制</td><td>vim</td></tr><tr><td><code>:%!xxd -r</code></td><td>vim中从16进制恢复</td><td>vim</td></tr><tr><td><code>sed -i &#39;1,6d&#39; *.cpp</code></td><td>删除所有cpp文件的前六行</td><td></td></tr><tr><td><code>find -mtime -3</code></td><td>查找3天以内修改过的文件</td><td>如果3前面没有-，意思是3天前修改的文件，还有类似的-atime,-mmin</td></tr><tr><td><code>:split</code>, <code>:vsplit</code></td><td>vim分屏</td><td>vim</td></tr><tr><td><code>ifconfig+端口+ip</code></td><td>修改该端口的ip</td><td></td></tr><tr><td><code>nl file</code>==<code>cat -b file</code></td><td></td><td></td></tr><tr><td><code></code></td><td></td></tr></tbody></table>]]></content>
     
@@ -463,11 +460,9 @@
     </summary>
     
     
-      <category term="shell" scheme="https://wmjtxt.github.io/tags/shell/"/>
+      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
     
-      <category term="c" scheme="https://wmjtxt.github.io/tags/c/"/>
-    
-      <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
+      <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
     
   </entry>
   
