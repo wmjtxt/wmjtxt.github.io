@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2019-09-15T16:06:10.342Z</updated>
+  <updated>2019-11-05T12:51:13.922Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>浅析软链接与硬链接</title>
+    <link href="https://wmjtxt.github.io/2019/11/05/ln/"/>
+    <id>https://wmjtxt.github.io/2019/11/05/ln/</id>
+    <published>2019-11-05T03:26:42.000Z</published>
+    <updated>2019-11-05T12:51:13.922Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。<br>软链接与Windows系统的快捷方式很相似。</p><h1 id="如何创建"><a href="#如何创建" class="headerlink" title="如何创建"></a>如何创建</h1><ul><li>创建软链接(soft link): <code>ln -s file softfile</code></li><li>创建硬链接(hard link): <code>ln file hardfile</code> or <code>link file hardfile</code></li></ul><h1 id="底层实现"><a href="#底层实现" class="headerlink" title="底层实现"></a>底层实现</h1><ul><li>软链接 : 文件类型为符号链接，文件中存放有一个指向原文件路径的指针</li><li>硬链接 : 下为VFS中的inode结构体<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">inode</span>&#123;</span></span><br><span class="line">    <span class="comment">//...</span></span><br><span class="line">    <span class="keyword">const</span> <span class="class"><span class="keyword">struct</span> <span class="title">inode_operations</span>   *<span class="title">i_op</span>;</span>      <span class="comment">//索引节点操作</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">long</span>                   i_ino;      <span class="comment">//索引节点号</span></span><br><span class="line">    <span class="keyword">atomic_t</span>                        i_count;    <span class="comment">//引用计数器</span></span><br><span class="line">    <span class="keyword">unsigned</span> <span class="keyword">int</span>                    i_nlink;    <span class="comment">//硬链接数目</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><p>创建硬链接后，i_nlink加1</p><h1 id="区别与联系-简述"><a href="#区别与联系-简述" class="headerlink" title="区别与联系(简述)"></a>区别与联系(简述)</h1><ul><li>软链接是新建一个文件，硬链接是为文件建一个别名。</li><li>软链接可以跨文件系统，硬链接不可以。</li><li>软链接可以对目录操作，硬链接不可以。</li><li>删除原文件，软链接失效，硬链接不影响。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;p&gt;Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数
+      
+    
+    </summary>
+    
+    
+      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
+    
+      <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>C++多线程并行计算</title>
@@ -100,9 +125,9 @@
     </summary>
     
     
-      <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
-    
       <category term="面经" scheme="https://wmjtxt.github.io/tags/%E9%9D%A2%E7%BB%8F/"/>
+    
+      <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
     
   </entry>
   
@@ -144,9 +169,9 @@
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
-    
       <category term="面经" scheme="https://wmjtxt.github.io/tags/%E9%9D%A2%E7%BB%8F/"/>
+    
+      <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
     
   </entry>
   
@@ -443,34 +468,6 @@
       <category term="c" scheme="https://wmjtxt.github.io/tags/c/"/>
     
       <category term="linux" scheme="https://wmjtxt.github.io/tags/linux/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Epoll、Select与poll</title>
-    <link href="https://wmjtxt.github.io/2019/03/09/epoll/"/>
-    <id>https://wmjtxt.github.io/2019/03/09/epoll/</id>
-    <published>2019-03-09T04:00:00.000Z</published>
-    <updated>2019-06-27T07:34:05.888Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="1-epoll"><a href="#1-epoll" class="headerlink" title="1.epoll"></a>1.epoll</h1><p>epoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。</p><ul><li>首先，epoll使用一组函数来完成任务，而不是单个函数。</li><li>其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。</li><li>但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。<a id="more"></a></li><li>这个文件描述符使用<code>epoll_create</code>函数来创建：<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/epoll.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">epoll_create</span><span class="params">(<span class="keyword">int</span> size)</span></span>;</span><br></pre></td></tr></table></figure></li></ul><p>size参数现在不起作用,只是给内核一个提示，告诉它事件表需要多大。</p><ul><li><code>epoll_ctl</code>用来操作epoll的内核事件表。</li><li><p>epoll系列系统调用的主要接口是<code>epoll_wait</code>函数。</p></li><li><p>epoll对文件描述符的操作有两种模式：LT和ET</p><ul><li>LT（Level Trigger，电平触发）模式是默认的工作模式，在这种模式下epoll相当于一个效率较高的poll。</li><li>ET（Edge Trigger，边沿触发）模式是epoll的高效工作模式。</li></ul></li></ul><h1 id="2-poll"><a href="#2-poll" class="headerlink" title="2.poll"></a>2.poll</h1><p>poll系统调用和select类似，也是在指定时间内轮询一定数量的文件描述符，以测试其中是否有就绪者。poll的原型如下：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;poll.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">poll</span><span class="params">(struct pollfd* fds, <span class="keyword">nfds_t</span> nfds, <span class="keyword">int</span> timeout)</span></span>;</span><br></pre></td></tr></table></figure></p><ul><li>fds参数是一个pollfd结构类型的数组，它指定所有我们感兴趣的文件描述符上发生的可读、可写和异常等事件。pollfd结构体的定义如下：<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">pollfd</span></span></span><br><span class="line"><span class="class">&#123;</span></span><br><span class="line">    <span class="keyword">int</span> fd;         <span class="comment">//文件描述符</span></span><br><span class="line">    <span class="keyword">short</span> events;   <span class="comment">//注册的事件</span></span><br><span class="line">    <span class="keyword">short</span> revents;  <span class="comment">//实际发生的事件，由内核填充</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure></li></ul><h1 id="3-select"><a href="#3-select" class="headerlink" title="3.select"></a>3.select</h1><p>select的用途：在一段指定时间内，监听用户感兴趣的文件描述符上的可读、可写和异常等事件。<br><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;sys/select.h&gt;</span></span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">select</span><span class="params">(<span class="keyword">int</span> nfds, fd_set* readfds, fd_set* writefds, fd_set* exceptfds, struct timeval* timeout)</span></span>;</span><br></pre></td></tr></table></figure></p><p>其中：</p><ul><li>nfds参数指定被监听的文件描述符的总数。</li><li>readfds,writefds,exceptfds参数分别指向可读、可写和异常等事件对应的文件描述符。</li><li>timeout参数用来设置select函数的超时时间。如果timeout传递NULL，则select将一直阻塞，直到某个文件描述符就绪。</li></ul><table><thead><tr><th style="text-align:center">系统调用</th><th style="text-align:center">select</th><th style="text-align:center">poll</th><th style="text-align:center">epoll</th></tr></thead><tbody><tr><td style="text-align:center">事件集合</td><td style="text-align:center">用户通过3个参数<br>分别传入感兴趣的<br>可读、可写及异常<br>等事件，内核通过<br>对这些参数的在线<br>修改来反馈其中的<br>就绪事件。这使得<br>用户每次调用select<br>都要重置这<br>3个参数</td><td style="text-align:center">统一处理所有事件<br>类型，因此只需<br>一个事件集参数。用<br>户通过pollfd.events<br>传入感兴趣的事件，<br>内核通过修改<br>pollfd.revents反馈<br>其中就绪的事件</td><td style="text-align:center">内核通过一个事件表<br>直接管理用户感兴趣的<br>所有事件。因此每次<br>调用epoll_wait时，<br>无须反复传入用户感<br>兴趣的事件。epoll_wait<br>系统调用的参数events<br>仅用来反馈就绪的事件</td></tr><tr><td style="text-align:center">应用程序索引<br>就绪文件描述符<br>的时间复杂度</td><td style="text-align:center">O(n)</td><td style="text-align:center">O(n)</td><td style="text-align:center">O(1)</td></tr><tr><td style="text-align:center">最大支持<br>文件描述符数</td><td style="text-align:center">一般有最大值限制，1024或2048</td><td style="text-align:center">65535</td><td style="text-align:center">65535</td></tr><tr><td style="text-align:center">工作模式</td><td style="text-align:center">LT</td><td style="text-align:center">LT</td><td style="text-align:center">LT,同时支持ET高效模式</td></tr><tr><td style="text-align:center">内核实现<br>和工作效率</td><td style="text-align:center">采用轮询方式来<br>检测就绪事件，<br>算法时间复杂度为<br>O(n)</td><td style="text-align:center">采用轮询方式<br>来检测就绪事件，<br>算法时间复杂度为<br>O(n)</td><td style="text-align:center">采用回调方式来<br>检测就绪事件，<br>算法时间复杂度为<br>O(1)</td></tr></tbody></table>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;1-epoll&quot;&gt;&lt;a href=&quot;#1-epoll&quot; class=&quot;headerlink&quot; title=&quot;1.epoll&quot;&gt;&lt;/a&gt;1.epoll&lt;/h1&gt;&lt;p&gt;epoll是linux特有的I/O复用函数。它在实现和使用上与select、poll有很大差异。&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;首先，epoll使用一组函数来完成任务，而不是单个函数。&lt;/li&gt;
-&lt;li&gt;其次，epoll把用户关心的文件描述符上的事件放在内核里的一个事件表中，从而无须像select和poll那样每次调用都要重复传入文件描述符集或事件集。&lt;/li&gt;
-&lt;li&gt;但epoll需要使用一个额外的文件描述符，来唯一标示内核中的这个事件表。
-    
-    </summary>
-    
-    
-      <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
-    
-      <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
-    
-      <category term="Socket" scheme="https://wmjtxt.github.io/tags/Socket/"/>
     
   </entry>
   
