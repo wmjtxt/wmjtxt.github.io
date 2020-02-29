@@ -6,19 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>木夕木火のBlog</title>
+  <title>Python画直方图和点线图及Gephi的使用方法 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeanCloud                重置密码                         &amp;times;                  新密码                                         重新输入                                                  重置">
-<meta property="og:type" content="website">
-<meta property="og:title" content="木夕木火のBlog">
-<meta property="og:url" content="https://wmjtxt.github.io/reset-1.html">
+  <meta name="description" content="毕业论文里需要画图，先想到matlab，但之前的安装包用不了，网上有但几个G下载太慢。所以就用了Python。用Python也是一波三折，一开始matplotlib老是安装不了。后来还是在Windows10上弄成了。 另外，毕业论文是复杂网络社团检测相关的，所以要用Gephi画网络的社团结构划分图，也在这里记录一下。 一、Python画直方图直接看例子吧1234567891011121314151">
+<meta name="keywords" content="Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python画直方图和点线图及Gephi的使用方法">
+<meta property="og:url" content="https://wmjtxt.github.io/2020/02/29/Python-matplotlib/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="LeanCloud                重置密码                         &amp;times;                  新密码                                         重新输入                                                  重置">
+<meta property="og:description" content="毕业论文里需要画图，先想到matlab，但之前的安装包用不了，网上有但几个G下载太慢。所以就用了Python。用Python也是一波三折，一开始matplotlib老是安装不了。后来还是在Windows10上弄成了。 另外，毕业论文是复杂网络社团检测相关的，所以要用Gephi画网络的社团结构划分图，也在这里记录一下。 一、Python画直方图直接看例子吧1234567891011121314151">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T07:34:05.888Z">
+<meta property="og:image" content="https://wmjtxt.github.io/images/zhifang.png">
+<meta property="og:image" content="https://wmjtxt.github.io/images/dianxian.png">
+<meta property="og:image" content="https://wmjtxt.github.io/images/matplotlib1.png">
+<meta property="og:image" content="https://wmjtxt.github.io/images/matplotlib3.png">
+<meta property="og:image" content="https://wmjtxt.github.io/images/matplotlib4.png">
+<meta property="og:image" content="https://wmjtxt.github.io/images/karate.png">
+<meta property="og:updated_time" content="2020-02-29T13:50:53.792Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="木夕木火のBlog">
-<meta name="twitter:description" content="LeanCloud                重置密码                         &amp;times;                  新密码                                         重新输入                                                  重置">
+<meta name="twitter:title" content="Python画直方图和点线图及Gephi的使用方法">
+<meta name="twitter:description" content="毕业论文里需要画图，先想到matlab，但之前的安装包用不了，网上有但几个G下载太慢。所以就用了Python。用Python也是一波三折，一开始matplotlib老是安装不了。后来还是在Windows10上弄成了。 另外，毕业论文是复杂网络社团检测相关的，所以要用Gephi画网络的社团结构划分图，也在这里记录一下。 一、Python画直方图直接看例子吧1234567891011121314151">
+<meta name="twitter:image" content="https://wmjtxt.github.io/images/zhifang.png">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -172,103 +180,42 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
+            <article id="post-Python-matplotlib" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Python画直方图和点线图及Gephi的使用方法
+    </h1>
+  
+
+        
+        <a href="/2020/02/29/Python-matplotlib/" class="archive-article-date">
+  	<time datetime="2020-02-29T06:16:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-29</time>
+</a>
+        
+        
+        		<span class="archive-article-date">
+        			阅读量 <span id="busuanzi_value_page_pv"></span>
+        		</span>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!DOCTYPE html>
-<html lang="en">
-  <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <title>LeanCloud</title>
-    <link href="https://lc-avoscloud.cn-n1.lcfile.com/statics/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-<div class="container">
-
-  <h3>重置密码</h3>
-  <hr>
-
-  <form class="form-horizontal form login-form" name="resetform">
-    <!-- <legend>重置密码</legend> -->
-
-    <div class="alert" style="display:none" id="error">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
-    </div>
-
-    <div class="form-group">
-      <label class="col-sm-2 control-label" for="inputEmail">新密码</label>
-      <div class="col-sm-4">
-        <input type="password" id="inputEmail" class="form-control" placeholder="新密码" name="password" required>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-sm-2 control-label" for="inputPassword">重新输入</label>
-      <div class="col-sm-4">
-        <input type="password" id="inputPassword" class="form-control" placeholder="新密码" name="password1" required>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-4">
-        <button type="button" class="btn btn-default" id="reset">重置</button>
-      </div>
-    </div>
-
-  </form>
-
-
-
-
-</div><!--end container-->
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.min.js"></script>
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.jsonp.js"></script>
-
-<script type="text/javascript">
-  //获得token
-  var token = location.search.match(/token=(\w*)/);
-  if(token&&token[1]){
-    token = token[1];
-  }
-  $(function(){
-    $("#reset").click(function(){
-      var p = $("[name=password]");
-      var p1 = $("[name=password1]");
-      if(p.val()!=p1.val()){
-        $("#error").show();
-        $("#error").text("两次输入不一致");//密码输入不一致提示
-      }
-      if(p.val()&&p1.val()&&p.val()==p1.val()){
-        $.jsonp({
-          url:"/1/resetPassword/"+token,//如果页面运行在自己的服务器，需要写定一个绝对 URL,类似 "https://api.leancloud.cn/1.1/resetPassword/"
-          data:{"password":p.val()},
-          callbackParameter: "callback",
-          cache: false,
-          success:function(result){
-            $("#error").show();//成功和失败都会有提示信息, 共用 #error
-            if(result.error){
-              $("#error").text(result.error);
-            }else{
-              $("#error").text("密码重置成功");
-            }
-          },
-          error:function(result,text){
-            $("#error").text("服务器发生错误");
-          }
-        });
-      }
-
-    });
-  });
-
-
-
-
-</script>
-  </body>
-  </html>
+        <p>毕业论文里需要画图，先想到matlab，但之前的安装包用不了，网上有但几个G下载太慢。所以就用了Python。用Python也是一波三折，一开始matplotlib老是安装不了。后来还是在Windows10上弄成了。</p>
+<p>另外，毕业论文是复杂网络社团检测相关的，所以要用Gephi画网络的社团结构划分图，也在这里记录一下。</p>
+<h1 id="一、Python画直方图"><a href="#一、Python画直方图" class="headerlink" title="一、Python画直方图"></a>一、Python画直方图</h1><p>直接看例子吧<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> mpl</span><br><span class="line"></span><br><span class="line">mpl.rcParams[<span class="string">'font.sans-serif'</span>] = [<span class="string">'FangSong'</span>] <span class="comment">#设置字体</span></span><br><span class="line">mpl.rcParams[<span class="string">'axes.unicode_minus'</span>] = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">k = [<span class="number">0.2</span>,<span class="number">0.3</span>,<span class="number">0.3</span>,<span class="number">0.3</span>]</span><br><span class="line">d = [<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.5</span>,<span class="number">0.5</span>]</span><br><span class="line">l = [<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.5</span>]</span><br><span class="line">p = [<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.4</span>]</span><br><span class="line">f = [<span class="number">0.5</span>,<span class="number">0.5</span>,<span class="number">0.6</span>,<span class="number">0.6</span>]</span><br><span class="line"></span><br><span class="line">data = pd.DataFrame(</span><br><span class="line">        [k,d,l,p,f],</span><br><span class="line">        index=[<span class="string">'K'</span>,<span class="string">'D'</span>,<span class="string">'L'</span>,<span class="string">'P'</span>,<span class="string">'F'</span>],</span><br><span class="line">        columns=[<span class="string">'A'</span>,<span class="string">'B'</span>,<span class="string">'C'</span>,<span class="string">'D'</span>]</span><br><span class="line">        )</span><br><span class="line"><span class="comment">#data.hist()</span></span><br><span class="line">data.plot.bar(rot=<span class="number">0</span>) <span class="comment">#rot设置坐标轴文字的方向</span></span><br><span class="line"><span class="comment">#data.plot.barh()</span></span><br><span class="line">plt.title(<span class="string">"Title"</span>)</span><br><span class="line"><span class="comment">#plt.ylim(0,0.8) #y轴的范围</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure></p>
+<p>结果：<br><img src="/images/zhifang.png" alt="直方图"></p>
+<h1 id="二、Python画点线图"><a href="#二、Python画点线图" class="headerlink" title="二、Python画点线图"></a>二、Python画点线图</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> mpl</span><br><span class="line"></span><br><span class="line">mpl.rcParams[<span class="string">'font.sans-serif'</span>] = [<span class="string">'FangSong'</span>]</span><br><span class="line">mpl.rcParams[<span class="string">'axes.unicode_minus'</span>] = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">plt.title(<span class="string">"title"</span>)</span><br><span class="line"></span><br><span class="line">x = [<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.6</span>,<span class="number">0.7</span>]</span><br><span class="line"></span><br><span class="line">y1 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.8</span>,<span class="number">0.6</span>,<span class="number">0.3</span>]</span><br><span class="line">y2 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.9</span>,<span class="number">0.6</span>,<span class="number">0.2</span>]</span><br><span class="line">y3 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.7</span>,<span class="number">0.4</span>,<span class="number">0.0</span>]</span><br><span class="line">y4 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.7</span>,<span class="number">0.3</span>,<span class="number">0.0</span>]</span><br><span class="line"><span class="comment"># 下面几行的gbcr表示颜色</span></span><br><span class="line"><span class="comment"># ×s^v表示点的格式</span></span><br><span class="line"><span class="comment"># 后面的-表示画线，不加-的话只画点图了</span></span><br><span class="line">plt.plot(x,y1,<span class="string">'g*-'</span>,label=<span class="string">'A'</span>) </span><br><span class="line">plt.plot(x,y2,<span class="string">'bs-'</span>,label=<span class="string">'B'</span>)</span><br><span class="line">plt.plot(x,y3,<span class="string">'c^-'</span>,label=<span class="string">'C'</span>)</span><br><span class="line">plt.plot(x,y4,<span class="string">'rv-'</span>,label=<span class="string">'D'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line"></span><br><span class="line">plt.xlabel(<span class="string">r'$\mu$'</span>) <span class="comment">#x轴标签为希腊字母谬</span></span><br><span class="line">plt.ylabel(<span class="string">'Q'</span>)</span><br><span class="line">plt.xlim(<span class="number">0.3</span>,<span class="number">0.7</span>)<span class="comment">#设置x轴范围</span></span><br><span class="line">plt.ylim(<span class="number">0</span>,<span class="number">1</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p>结果：<br><img src="/images/dianxian.png" alt="点线图"></p>
+<h1 id="三、Gephi的使用步骤"><a href="#三、Gephi的使用步骤" class="headerlink" title="三、Gephi的使用步骤"></a>三、Gephi的使用步骤</h1><p>以Karate网络为例</p>
+<h4 id="1-添加网络的邻接表"><a href="#1-添加网络的邻接表" class="headerlink" title="1.添加网络的邻接表"></a>1.添加网络的邻接表</h4><p><img src="/images/matplotlib1.png" alt="1"><br>选择图的类型：无向的，选New workspace</p>
+<h4 id="2-添加网络的社团划分"><a href="#2-添加网络的社团划分" class="headerlink" title="2.添加网络的社团划分"></a>2.添加网络的社团划分</h4><p><img src="/images/matplotlib3.png" alt="2"><br>选择图的类型：无向的，选Append to existing workspace</p>
+<h4 id="3-调整参数，选择布局，调整网络图"><a href="#3-调整参数，选择布局，调整网络图" class="headerlink" title="3.调整参数，选择布局，调整网络图"></a>3.调整参数，选择布局，调整网络图</h4><p><img src="/images/matplotlib4.png" alt="3"></p>
+<h4 id="4-结果"><a href="#4-结果" class="headerlink" title="4.结果"></a>4.结果</h4><p><img src="/images/karate.png" alt="karate"></p>
 
       
       
@@ -307,6 +254,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -357,7 +315,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByUlEQVR42u3aQWoDMQwF0Nz/0il0VSjjfkljTwrPq5ASz3MXYqyv1yte7++1/ubn91d/TXa4YeHi4o657+X6vXUCvTrees+1ARcX9zx3XWjWx0gevD52YsDFxf1MbvVISdnCxcX979yktOXXIVxc3M/nJmWoV7aSA2y5q+Hi4g641Ybpjs8b+7u4uLhF7ru4eq8vtz0dFxf3CLcXoObcalskKnO4uLhHuHkrpNcqrY5fFPbBxcXdwO3dlvIGaLXN+sfOuLi4B7nVkCMpW72YJLr24OLibuYmRaQXt1TDmOrlChcXdze3V7YmAUnylHKqg4uLexM3b4Lk4UfShO29EuHi4p7hzgvWvSFKYcwLFxd3G3dfO6N6oYpevHBxcR/l5oUmGd2oNkou6bi4uEe4+WDWpBebHzV6kcLFxd3MHWUvrfGsassVFxf3KW4+RpmHMVGGUx0Cw8XFPcjN1zx0aebA+T0MFxd3zK0WlHlYsjF2xcXFvZU7j1d7YxnVxisuLu557mRsK49Jkgpa7u/i4uI+yp0/uFqXLifIcHFxP5g7H6oo/xYXF/cgN0fkEWkSrOZRKy4u7klur2GaDHLlD6v+C3BxcbdxvwCsOZWMY7ILJAAAAABJRU5ErkJggg==" alt="微信分享二维码">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMYAAADGCAAAAACs8KCBAAACMUlEQVR42u3aS27DMAwFwNz/0u42QGH7kXQLSB6tgjSwNF6w/Ojzidfxtc6++f399W+SXR5eGBgYyzKOy3X2m/zJ1ddxve/pGTAwMF7AuD5EdeMkKOd7JS8IAwMDo5cCJvlbdV8MDAyMasDNQ+ekVMbAwMDIi9hJaywJsknx/EAtjoGBsSCj2jj7z89/Mt/AwMBYinEUV29UmbTqJgsDA2NvRh7gRuVlXAb32nYYGBh7M6pt+nwwWT1QdeQ5mjZgYGAsxciDaR5qqxcv8pd18zQMDIytGdU2fXWbXjE8GgBgYGBsx6imeslR8ubaJAHFwMDAmAwAqmPRKhsDA+M9jOuNm3OGOATnjbabMI2BgbE1o5r2Vb+ZpJXlEQIGBsbWjGrjfnLc/Jt8/ICBgbE3o5ec9cJ0HkbzchcDA+MNjMnGkytfeVr5cGqIgYGxIOMormoorF72yl/TTRWOgYGxNaPX6uodPdkxSlUxMDC2ZkwabVVe9cpF8i/hgX4hBgbGUoxPceXpY/naRK8Nh4GB8TJGEubml7qS4FsI5RgYGC9gzNtqvbDbC/HNphsGBsaCjMlgIG+xJWE0H3YWsk4MDIwtGPNgl6SPvZFA8rkMw8DAWJZRLVknIfs6cPeCNQYGxnsY1eHlvHruPf/msgUGBgbGoImWXBdL/npTkWNgYGC00sT8WNXfjAIuBgbGgoz8EL2WWR6ye9cvMDAw9mbkpWN0dyMuSquF6+QJGBgYyzJ+AOeQdHKCvcssAAAAAElFTkSuQmCC" alt="微信分享二维码">
     </div>
 </div>
 
@@ -369,6 +327,16 @@
 </article>
 
   
+<nav id="article-nav">
+  
+  
+    <a href="/2019/03/18/linux_command/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Linux常用命令总结(持续更新)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -390,7 +358,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">重置密码</span></a></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#一、Python画直方图"><span class="toc-number">1.</span> <span class="toc-text">一、Python画直方图</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#二、Python画点线图"><span class="toc-number">2.</span> <span class="toc-text">二、Python画点线图</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#三、Gephi的使用步骤"><span class="toc-number">3.</span> <span class="toc-text">三、Gephi的使用步骤</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-添加网络的邻接表"><span class="toc-number">3.0.0.1.</span> <span class="toc-text">1.添加网络的邻接表</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-添加网络的社团划分"><span class="toc-number">3.0.0.2.</span> <span class="toc-text">2.添加网络的社团划分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-调整参数，选择布局，调整网络图"><span class="toc-number">3.0.0.3.</span> <span class="toc-text">3.调整参数，选择布局，调整网络图</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-结果"><span class="toc-number">3.0.0.4.</span> <span class="toc-text">4.结果</span></a></li></ol></li></ol>
                     </div>
                 </span>
             </div>
@@ -475,7 +443,7 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,

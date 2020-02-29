@@ -345,20 +345,20 @@
 
 
   
-    <article id="post-ln" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-Python-matplotlib" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/05/ln/">浅析软链接与硬链接</a>
+      <a class="article-title" href="/2020/02/29/Python-matplotlib/">Python画直方图和点线图及Gephi的使用方法</a>
     </h1>
   
 
         
-        <a href="/2019/11/05/ln/" class="archive-article-date">
-  	<time datetime="2019-11-05T03:26:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-11-05</time>
+        <a href="/2020/02/29/Python-matplotlib/" class="archive-article-date">
+  	<time datetime="2020-02-29T06:16:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-29</time>
 </a>
         
         
@@ -366,10 +366,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。软链接与Windows系统的快捷方式很相似。</p>
-        
-          <a class="article-more-a" href="/2019/11/05/ln/#more">more >></a>
-        
+        <p>毕业论文里需要画图，先想到matlab，但之前的安装包用不了，网上有但几个G下载太慢。所以就用了Python。用Python也是一波三折，一开始matplotlib老是安装不了。后来还是在Windows10上弄成了。</p>
+<p>另外，毕业论文是复杂网络社团检测相关的，所以要用Gephi画网络的社团结构划分图，也在这里记录一下。</p>
+<h1 id="一、Python画直方图"><a href="#一、Python画直方图" class="headerlink" title="一、Python画直方图"></a>一、Python画直方图</h1><p>直接看例子吧<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> mpl</span><br><span class="line"></span><br><span class="line">mpl.rcParams[<span class="string">'font.sans-serif'</span>] = [<span class="string">'FangSong'</span>] <span class="comment">#设置字体</span></span><br><span class="line">mpl.rcParams[<span class="string">'axes.unicode_minus'</span>] = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">k = [<span class="number">0.2</span>,<span class="number">0.3</span>,<span class="number">0.3</span>,<span class="number">0.3</span>]</span><br><span class="line">d = [<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.5</span>,<span class="number">0.5</span>]</span><br><span class="line">l = [<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.5</span>]</span><br><span class="line">p = [<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.4</span>]</span><br><span class="line">f = [<span class="number">0.5</span>,<span class="number">0.5</span>,<span class="number">0.6</span>,<span class="number">0.6</span>]</span><br><span class="line"></span><br><span class="line">data = pd.DataFrame(</span><br><span class="line">        [k,d,l,p,f],</span><br><span class="line">        index=[<span class="string">'K'</span>,<span class="string">'D'</span>,<span class="string">'L'</span>,<span class="string">'P'</span>,<span class="string">'F'</span>],</span><br><span class="line">        columns=[<span class="string">'A'</span>,<span class="string">'B'</span>,<span class="string">'C'</span>,<span class="string">'D'</span>]</span><br><span class="line">        )</span><br><span class="line"><span class="comment">#data.hist()</span></span><br><span class="line">data.plot.bar(rot=<span class="number">0</span>) <span class="comment">#rot设置坐标轴文字的方向</span></span><br><span class="line"><span class="comment">#data.plot.barh()</span></span><br><span class="line">plt.title(<span class="string">"Title"</span>)</span><br><span class="line"><span class="comment">#plt.ylim(0,0.8) #y轴的范围</span></span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure></p>
+<p>结果：<br><img src="/images/zhifang.png" alt="直方图"></p>
+<h1 id="二、Python画点线图"><a href="#二、Python画点线图" class="headerlink" title="二、Python画点线图"></a>二、Python画点线图</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">from</span> pylab <span class="keyword">import</span> mpl</span><br><span class="line"></span><br><span class="line">mpl.rcParams[<span class="string">'font.sans-serif'</span>] = [<span class="string">'FangSong'</span>]</span><br><span class="line">mpl.rcParams[<span class="string">'axes.unicode_minus'</span>] = <span class="literal">False</span></span><br><span class="line"></span><br><span class="line">plt.title(<span class="string">"title"</span>)</span><br><span class="line"></span><br><span class="line">x = [<span class="number">0.3</span>,<span class="number">0.4</span>,<span class="number">0.5</span>,<span class="number">0.6</span>,<span class="number">0.7</span>]</span><br><span class="line"></span><br><span class="line">y1 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.8</span>,<span class="number">0.6</span>,<span class="number">0.3</span>]</span><br><span class="line">y2 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.9</span>,<span class="number">0.6</span>,<span class="number">0.2</span>]</span><br><span class="line">y3 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.7</span>,<span class="number">0.4</span>,<span class="number">0.0</span>]</span><br><span class="line">y4 = [<span class="number">1</span>,<span class="number">0.9</span>,<span class="number">0.7</span>,<span class="number">0.3</span>,<span class="number">0.0</span>]</span><br><span class="line"><span class="comment"># 下面几行的gbcr表示颜色</span></span><br><span class="line"><span class="comment"># ×s^v表示点的格式</span></span><br><span class="line"><span class="comment"># 后面的-表示画线，不加-的话只画点图了</span></span><br><span class="line">plt.plot(x,y1,<span class="string">'g*-'</span>,label=<span class="string">'A'</span>) </span><br><span class="line">plt.plot(x,y2,<span class="string">'bs-'</span>,label=<span class="string">'B'</span>)</span><br><span class="line">plt.plot(x,y3,<span class="string">'c^-'</span>,label=<span class="string">'C'</span>)</span><br><span class="line">plt.plot(x,y4,<span class="string">'rv-'</span>,label=<span class="string">'D'</span>)</span><br><span class="line">plt.legend()</span><br><span class="line"></span><br><span class="line">plt.xlabel(<span class="string">r'$\mu$'</span>) <span class="comment">#x轴标签为希腊字母谬</span></span><br><span class="line">plt.ylabel(<span class="string">'Q'</span>)</span><br><span class="line">plt.xlim(<span class="number">0.3</span>,<span class="number">0.7</span>)<span class="comment">#设置x轴范围</span></span><br><span class="line">plt.ylim(<span class="number">0</span>,<span class="number">1</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p>结果：<br><img src="/images/dianxian.png" alt="点线图"></p>
+<h1 id="三、Gephi的使用步骤"><a href="#三、Gephi的使用步骤" class="headerlink" title="三、Gephi的使用步骤"></a>三、Gephi的使用步骤</h1><p>以Karate网络为例</p>
+<h4 id="1-添加网络的邻接表"><a href="#1-添加网络的邻接表" class="headerlink" title="1.添加网络的邻接表"></a>1.添加网络的邻接表</h4><p><img src="/images/matplotlib1.png" alt="1"><br>选择图的类型：无向的，选New workspace</p>
+<h4 id="2-添加网络的社团划分"><a href="#2-添加网络的社团划分" class="headerlink" title="2.添加网络的社团划分"></a>2.添加网络的社团划分</h4><p><img src="/images/matplotlib3.png" alt="2"><br>选择图的类型：无向的，选Append to existing workspace</p>
+<h4 id="3-调整参数，选择布局，调整网络图"><a href="#3-调整参数，选择布局，调整网络图" class="headerlink" title="3.调整参数，选择布局，调整网络图"></a>3.调整参数，选择布局，调整网络图</h4><p><img src="/images/matplotlib4.png" alt="3"></p>
+<h4 id="4-结果"><a href="#4-结果" class="headerlink" title="4.结果"></a>4.结果</h4><p><img src="/images/karate.png" alt="karate"></p>
+
       
       
     </div>
@@ -381,11 +389,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">Linux</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
         		</li>
       		
 		</ul>
@@ -395,7 +399,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2019/11/05/ln/">展开全文 >></a>
+          <a class="article-more-a" href="/2020/02/29/Python-matplotlib/">展开全文 >></a>
         </p>
       
 
@@ -426,176 +430,6 @@
 
 
   
-    <article id="post-multiThread" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/15/multiThread/">C++多线程并行计算</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/15/multiThread/" class="archive-article-date">
-  	<time datetime="2019-09-15T15:00:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-15</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>关于多线程一直没有搞懂，最近面试也被问到C++11的thread和linux的pthread，由于我之前只用过pthread，连thread咋用都不知道，<br>后来看了thread的用法，编译的时候也要加-lpthread，难道底层是pthread？无从得知，网上也找不到。可能只是部分用到了pthread吧。<br>
-        
-          <a class="article-more-a" href="/2019/09/15/multiThread/#more">more >></a>
-        
-      
-      
-    </p></div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">C++</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">多线程</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/15/multiThread/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-    <article id="post-interview4" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/09/06/interview4/">京东面试风波之后续</a>
-    </h1>
-  
-
-        
-        <a href="/2019/09/06/interview4/" class="archive-article-date">
-  	<time datetime="2019-09-06T14:51:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-09-06</time>
-</a>
-        
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>其实我知道，即使我通过了所有面试，进入池子里面，大概率也会被刷。但是那至少是合理的流程, 如果那样，我会心服口服。<br>
-        
-          <a class="article-more-a" href="/2019/09/06/interview4/#more">more >></a>
-        
-      
-      
-    </p></div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">随笔</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">2020校招</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2019/09/06/interview4/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
-  
-  
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -613,7 +447,7 @@
                 本站访问量<span id="busuanzi_value_site_pv"></span>人次
             </span>
     	<div class="footer-left">
-    		&copy; 2019 木夕木火
+    		&copy; 2020 木夕木火
     	</div>
         <br>
       	<div class="footer-left">
@@ -703,43 +537,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">爬虫</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">技术</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Deepin</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">shell</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">windows</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">vim</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">复杂网络</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">mysql</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -747,55 +545,15 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">LeetCode</a>
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">刷题</a>
+                <a href="javascript:void(0)" class="js-tag color1">Linux</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">C++</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">斐波那契</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">Socket</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">笔记</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">照片</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">诗歌</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">问题</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">面经</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">2020校招</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">Git</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">多线程</a>
+                <a href="javascript:void(0)" class="js-tag color2">Python</a>
               </li>
             
             <div class="clearfix"></div>

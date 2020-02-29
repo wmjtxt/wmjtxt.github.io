@@ -6,19 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="https://wmjtxt.github.io">
-  <title>木夕木火のBlog</title>
+  <title>Archives: 2020/2 | 木夕木火のBlog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="LeanCloud                重置密码                         &amp;times;                  新密码                                         重新输入                                                  重置">
+  <meta name="description" content="码农、诗人、旅行家">
 <meta property="og:type" content="website">
 <meta property="og:title" content="木夕木火のBlog">
-<meta property="og:url" content="https://wmjtxt.github.io/reset-1.html">
+<meta property="og:url" content="https://wmjtxt.github.io/archives/2020/02/index.html">
 <meta property="og:site_name" content="木夕木火のBlog">
-<meta property="og:description" content="LeanCloud                重置密码                         &amp;times;                  新密码                                         重新输入                                                  重置">
+<meta property="og:description" content="码农、诗人、旅行家">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-06-27T07:34:05.888Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="木夕木火のBlog">
-<meta name="twitter:description" content="LeanCloud                重置密码                         &amp;times;                  新密码                                         重新输入                                                  重置">
+<meta name="twitter:description" content="码农、诗人、旅行家">
   
     <link rel="alternative" href="/atom.xml" title="木夕木火のBlog" type="application/atom+xml">
   
@@ -172,273 +171,60 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="page-" class="article article-type-page " itemscope itemprop="blogPost">
-  <div class="article-inner">
+            
+  
+  
     
-    <div class="article-entry" itemprop="articleBody">
-      
-        <!DOCTYPE html>
-<html lang="en">
-  <head><meta name="generator" content="Hexo 3.8.0">
-    <meta charset="utf-8">
-    <title>LeanCloud</title>
-    <link href="https://lc-avoscloud.cn-n1.lcfile.com/statics/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-<div class="container">
-
-  <h3>重置密码</h3>
-  <hr>
-
-  <form class="form-horizontal form login-form" name="resetform">
-    <!-- <legend>重置密码</legend> -->
-
-    <div class="alert" style="display:none" id="error">
-      <button type="button" class="close" data-dismiss="alert">&times;</button>
-    </div>
-
-    <div class="form-group">
-      <label class="col-sm-2 control-label" for="inputEmail">新密码</label>
-      <div class="col-sm-4">
-        <input type="password" id="inputEmail" class="form-control" placeholder="新密码" name="password" required>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <label class="col-sm-2 control-label" for="inputPassword">重新输入</label>
-      <div class="col-sm-4">
-        <input type="password" id="inputPassword" class="form-control" placeholder="新密码" name="password1" required>
-      </div>
-    </div>
-
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-4">
-        <button type="button" class="btn btn-default" id="reset">重置</button>
-      </div>
-    </div>
-
-  </form>
-
-
-
-
-</div><!--end container-->
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.min.js"></script>
-<script src="https://lc-avoscloud.cn-n1.lcfile.com/statics/jquery.jsonp.js"></script>
-
-<script type="text/javascript">
-  //获得token
-  var token = location.search.match(/token=(\w*)/);
-  if(token&&token[1]){
-    token = token[1];
-  }
-  $(function(){
-    $("#reset").click(function(){
-      var p = $("[name=password]");
-      var p1 = $("[name=password1]");
-      if(p.val()!=p1.val()){
-        $("#error").show();
-        $("#error").text("两次输入不一致");//密码输入不一致提示
-      }
-      if(p.val()&&p1.val()&&p.val()==p1.val()){
-        $.jsonp({
-          url:"/1/resetPassword/"+token,//如果页面运行在自己的服务器，需要写定一个绝对 URL,类似 "https://api.leancloud.cn/1.1/resetPassword/"
-          data:{"password":p.val()},
-          callbackParameter: "callback",
-          cache: false,
-          success:function(result){
-            $("#error").show();//成功和失败都会有提示信息, 共用 #error
-            if(result.error){
-              $("#error").text(result.error);
-            }else{
-              $("#error").text("密码重置成功");
-            }
-          },
-          error:function(result,text){
-            $("#error").text("服务器发生错误");
-          }
-        });
-      }
-
-    });
-  });
-
-
-
-
-</script>
-  </body>
-  </html>
-
+    
       
       
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/zfb.png">
-                      <span class="reward-type">支付宝</span>
-                    </div>
-                    
-                    
-                    <div class="reward-box-item">
-                      <img class="reward-img" src="/images/wx.png">
-                      <span class="reward-type">微信</span>
-                    </div>
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2020" class="archive-year">2020</a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2020/02/29/Python-matplotlib/" class="archive-article-date">
+  	<time datetime="2020-02-29T06:16:19.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-02-29</time>
+</a>
         </div>
-      </div>
-    </span>
-  </div>
-</div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2020/02/29/Python-matplotlib/">Python画直方图和点线图及Gephi的使用方法</a>
+    </h1>
+  
 
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAK4AAACuCAAAAACKZ2kyAAAByUlEQVR42u3aQWoDMQwF0Nz/0il0VSjjfkljTwrPq5ASz3MXYqyv1yte7++1/ubn91d/TXa4YeHi4o657+X6vXUCvTrees+1ARcX9zx3XWjWx0gevD52YsDFxf1MbvVISdnCxcX979yktOXXIVxc3M/nJmWoV7aSA2y5q+Hi4g641Ybpjs8b+7u4uLhF7ru4eq8vtz0dFxf3CLcXoObcalskKnO4uLhHuHkrpNcqrY5fFPbBxcXdwO3dlvIGaLXN+sfOuLi4B7nVkCMpW72YJLr24OLibuYmRaQXt1TDmOrlChcXdze3V7YmAUnylHKqg4uLexM3b4Lk4UfShO29EuHi4p7hzgvWvSFKYcwLFxd3G3dfO6N6oYpevHBxcR/l5oUmGd2oNkou6bi4uEe4+WDWpBebHzV6kcLFxd3MHWUvrfGsassVFxf3KW4+RpmHMVGGUx0Cw8XFPcjN1zx0aebA+T0MFxd3zK0WlHlYsjF2xcXFvZU7j1d7YxnVxisuLu557mRsK49Jkgpa7u/i4uI+yp0/uFqXLifIcHFxP5g7H6oo/xYXF/cgN0fkEWkSrOZRKy4u7klur2GaDHLlD6v+C3BxcbdxvwCsOZWMY7ILJAAAAABJRU5ErkJggg==" alt="微信分享二维码">
-    </div>
-</div>
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
-  
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-        <div class="toc-container tooltip-left">
-            <i class="icon-font icon-category"></i>
-            <div class="tooltip tooltip-east">
-                <span class="tooltip-item">
-                </span>
-                <span class="tooltip-content">
-                    <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#undefined"><span class="toc-number">1.</span> <span class="toc-text">重置密码</span></a></li></ol>
-                    </div>
-                </span>
-            </div>
-        </div>
-        
-    </div>
-</aside>
-
-
-
-
   
   
+    </div></section>
   
 
-  
-
-  
-
-  
-  <section id="comments" class="comments">
-    <style>
-      .comments{margin:30px;padding:10px;background:#fff}
-      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
-    </style>
-    <div id="vcomment" class="comment"></div> 
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-<script>
-   var notify = 'true' == true ? true : false;
-   var verify = 'true' == true ? true : false;
-    window.onload = function() {
-        new Valine({
-            el: '.comment',
-            notify: notify,
-            verify: verify,
-            app_id: "4tTGIFVIbVtLxkWj9STjVP6q-gzGzoHsz",
-            app_key: "WyhzS2MIGIGDdxqiRCSEmHyh",
-            placeholder: "说点什么吧",
-            avatar:"mm"
-        });
-    }
-</script>
-
-    </section>
-  
-
-  
+    
 
 
           </div>
@@ -476,7 +262,7 @@
 		mathjax: false,
 		isHome: false,
 		isPost: false,
-		isArchive: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
