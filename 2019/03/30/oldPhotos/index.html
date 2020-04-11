@@ -393,30 +393,35 @@
   
 
   
-
-  
-  
-  
-  <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script type="text/javascript">
-
-if(true){
-	var gitalk = new Gitalk({
-  	clientID: 'f8c5b48d3c5e1451977b',
-  	clientSecret: '6b22bba429ecbd20d384543f76a8c6421aa6e503',
-  	repo: 'muxicomment',
-  	owner: 'wmjtxt',
-  	admin: ['wmjtxt'],
-  	id: 'Sat Mar 30 2019 22:03:30 GMT+0800',
-  	distractionFreeMode: 'true'
-})
-gitalk.render('gitalk-container') 
-}
+  <section id="comments" class="comments">
+    <style>
+      .comments{margin:30px;padding:10px;background:#fff}
+      @media screen and (max-width:800px){.comments{margin:auto;padding:10px;background:#fff}}
+    </style>
+    <div id="vcomment" class="comment"></div> 
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+   var notify = 'true' == true ? true : false;
+   var verify = 'true' == true ? true : false;
+    window.onload = function() {
+        new Valine({
+            el: '.comment',
+            notify: notify,
+            verify: verify,
+            app_id: "4tTGIFVIbVtLxkWj9STjVP6q-gzGzoHsz",
+            app_key: "WyhzS2MIGIGDdxqiRCSEmHyh",
+            placeholder: "欢迎评论^-^, 评论时最好留下你的邮箱哦，就写在上面^，不然你就收不到我的回复啦",
+            avatar:"mm"
+        });
+    }
 </script>
 
+    </section>
+  
+
+  
+  
   
 
 
