@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2020-04-11T05:04:38.291Z</updated>
+  <updated>2020-04-16T13:28:55.419Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://wmjtxt.github.io/2020/04/11/kangyi/"/>
     <id>https://wmjtxt.github.io/2020/04/11/kangyi/</id>
     <published>2020-04-11T04:39:15.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:28:55.419Z</updated>
     
     <content type="html"><![CDATA[<p>过年时，疫情爆发，武汉封城，全国禁足。那时候以为疫情最多一个月也就结束了，由于论文还没写完，在家写的实在太慢，感到很焦急，只希望疫情赶快结束，回校写论文。</p><a id="more"></a><p>后学校发通知，说3月1号前不开学，于是只能在家安心写论文，效率低也得慢慢挤。挤的是真的慢。3月1号左右才基本完成初稿，后来又查重，重复率很高，想尽各种办法降重，提交学校初检，然后送审。送审前的几天家里有点事，正文一点没改就交了。交完才发现，万一盲审不过，后面挺麻烦的，可已经送审出去，也没办法了，只能听天由命。</p><p>3月1日依旧没有开学的消息，甘肃省发通知说3月15日前不开学。3月15日依旧没消息，可能是受到国外疫情的输入病例影响，记得当时兰州有大概几十例，还有一例是从湖北返兰复工确诊的。一直到后来，甘肃省通知4月13日高三先开学，高校毕业年级可先开学，不过学校依旧没有消息。其实现在去学校也没啥事了，论文盲审要一个月左右，所以5.1之后开学也来得及。</p><p>前两天，在院群里让填一个问卷，说第二天研究开学事宜，不过后来还是没有消息。倒是又强调了一遍，不准擅自返校。</p><p>在国内拐点出现、湖北省外基本无新增、湖北新增陆续减少、国内新增降至100以内等等一系列好消息之后，我本以为开学在望，偏偏3月初国外疫情大爆发，远甚于国内，并且有一些国外输入病例。全国机场海关不得不严阵以待，严防输入病例。</p><p>另外，国内还零星发现一些病例，以及一些无症状感染者。自4月1日起，每日报告新增无症状感染者，并继续采取隔离措施（原本无症状的阳性就隔离，只是没公布数量）。现在每天会有几十例无症状感染者，主要还是来自湖北。由于无症状比较难以发现，容易在人群中悄然传播，所以依旧不能放松。这也是这个病毒真正厉害之处。在疫情爆发之初，就曾有无症状感染者，当时就觉得无症状也能传染，实在是防不胜防。我还担心会不会疫情因此难以有效控制，不过好在我国采取了几乎可以说完美的隔离防控措施，很快就控制住了疫情。之后无症状感染也被再提起，并引起重视。可谓乘胜追击，无往不胜。</p><p>国外的爆发，尤其是欧美等国家，实在是出人意料，说他们是猪脑子一点不为过。有我国的前车之鉴在先，他们不仅不重视，而且几乎是反其道而行之，似乎真觉得这病毒只感染亚洲人。</p><p>现在全球140多万，美国50万，拐点还不知道在哪。中国如今就是世界的诺亚方舟。但国外这么严重，我们也难以独善其身，一方面要派援助，捐赠或者出口物资和防护用品，一方面还得严防输入病例，全国上下不敢松一口气。</p><p>4月以来，部分省份的学校开始试点开学，这是对的，总不能一直不开学吧。只是开学后，一旦再发现病例，就要及时采取有效措施。比如隔离、封校等等。代价当然有，但总比坐吃等死强吧。</p><p>论文送审，暂时闲下来，看电视剧看电影玩游戏，真的颓废。</p><p>有时间要开始学学Python了，上次存了几个G的视频和资料，Github上也有不少资源，都可以参考。</p><p>fightingggggggggggggggggggggg</p>]]></content>
     
@@ -30,6 +30,8 @@
       &lt;p&gt;过年时，疫情爆发，武汉封城，全国禁足。那时候以为疫情最多一个月也就结束了，由于论文还没写完，在家写的实在太慢，感到很焦急，只希望疫情赶快结束，回校写论文。&lt;/p&gt;
     
     </summary>
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -43,7 +45,7 @@
     <link href="https://wmjtxt.github.io/2020/02/29/Python-matplotlib/"/>
     <id>https://wmjtxt.github.io/2020/02/29/Python-matplotlib/</id>
     <published>2020-02-29T06:16:19.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:28:42.187Z</updated>
     
     <content type="html"><![CDATA[<p>毕业论文里需要画图，先想到matlab，但之前的安装包用不了，网上有但几个G下载太慢。所以就用了Python。用Python也是一波三折，一开始matplotlib老是安装不了。后来还是在Windows10上弄成了。</p><p>另外，毕业论文是复杂网络社团检测相关的，所以要用Gephi画网络的社团结构划分图，也在这里记录一下。</p><a id="more"></a><h1 id="一、Python画直方图"><a href="#一、Python画直方图" class="headerlink" title="一、Python画直方图"></a>一、Python画直方图</h1><p>直接看例子吧</p><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt<span class="token keyword">from</span> pylab <span class="token keyword">import</span> mplmpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'FangSong'</span><span class="token punctuation">]</span> <span class="token comment" spellcheck="true">#设置字体</span>mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'axes.unicode_minus'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>k <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0.2</span><span class="token punctuation">,</span><span class="token number">0.3</span><span class="token punctuation">,</span><span class="token number">0.3</span><span class="token punctuation">,</span><span class="token number">0.3</span><span class="token punctuation">]</span>d <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0.4</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">]</span>l <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0.3</span><span class="token punctuation">,</span><span class="token number">0.4</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">]</span>p <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0.3</span><span class="token punctuation">,</span><span class="token number">0.4</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.4</span><span class="token punctuation">]</span>f <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">]</span>data <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>        <span class="token punctuation">[</span>k<span class="token punctuation">,</span>d<span class="token punctuation">,</span>l<span class="token punctuation">,</span>p<span class="token punctuation">,</span>f<span class="token punctuation">]</span><span class="token punctuation">,</span>        index<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'K'</span><span class="token punctuation">,</span><span class="token string">'D'</span><span class="token punctuation">,</span><span class="token string">'L'</span><span class="token punctuation">,</span><span class="token string">'P'</span><span class="token punctuation">,</span><span class="token string">'F'</span><span class="token punctuation">]</span><span class="token punctuation">,</span>        columns<span class="token operator">=</span><span class="token punctuation">[</span><span class="token string">'A'</span><span class="token punctuation">,</span><span class="token string">'B'</span><span class="token punctuation">,</span><span class="token string">'C'</span><span class="token punctuation">,</span><span class="token string">'D'</span><span class="token punctuation">]</span>        <span class="token punctuation">)</span><span class="token comment" spellcheck="true">#data.hist()</span>data<span class="token punctuation">.</span>plot<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>rot<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#rot设置坐标轴文字的方向</span><span class="token comment" spellcheck="true">#data.plot.barh()</span>plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"Title"</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#plt.ylim(0,0.8) #y轴的范围</span>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><p>结果：<br><img src="/images/zhifang.png" alt="直方图"></p><h1 id="二、Python画点线图"><a href="#二、Python画点线图" class="headerlink" title="二、Python画点线图"></a>二、Python画点线图</h1><pre class=" language-python"><code class="language-python"><span class="token keyword">import</span> numpy <span class="token keyword">as</span> np<span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd<span class="token keyword">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword">as</span> plt<span class="token keyword">from</span> pylab <span class="token keyword">import</span> mplmpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'font.sans-serif'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'FangSong'</span><span class="token punctuation">]</span>mpl<span class="token punctuation">.</span>rcParams<span class="token punctuation">[</span><span class="token string">'axes.unicode_minus'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token boolean">False</span>plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">"title"</span><span class="token punctuation">)</span>x <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">0.3</span><span class="token punctuation">,</span><span class="token number">0.4</span><span class="token punctuation">,</span><span class="token number">0.5</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">,</span><span class="token number">0.7</span><span class="token punctuation">]</span>y1 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0.9</span><span class="token punctuation">,</span><span class="token number">0.8</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">,</span><span class="token number">0.3</span><span class="token punctuation">]</span>y2 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0.9</span><span class="token punctuation">,</span><span class="token number">0.9</span><span class="token punctuation">,</span><span class="token number">0.6</span><span class="token punctuation">,</span><span class="token number">0.2</span><span class="token punctuation">]</span>y3 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0.9</span><span class="token punctuation">,</span><span class="token number">0.7</span><span class="token punctuation">,</span><span class="token number">0.4</span><span class="token punctuation">,</span><span class="token number">0.0</span><span class="token punctuation">]</span>y4 <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">0.9</span><span class="token punctuation">,</span><span class="token number">0.7</span><span class="token punctuation">,</span><span class="token number">0.3</span><span class="token punctuation">,</span><span class="token number">0.0</span><span class="token punctuation">]</span><span class="token comment" spellcheck="true"># 下面几行的gbcr表示颜色</span><span class="token comment" spellcheck="true"># ×s^v表示点的格式</span><span class="token comment" spellcheck="true"># 后面的-表示画线，不加-的话只画点图了</span>plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y1<span class="token punctuation">,</span><span class="token string">'g*-'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'A'</span><span class="token punctuation">)</span> plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y2<span class="token punctuation">,</span><span class="token string">'bs-'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'B'</span><span class="token punctuation">)</span>plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y3<span class="token punctuation">,</span><span class="token string">'c^-'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'C'</span><span class="token punctuation">)</span>plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x<span class="token punctuation">,</span>y4<span class="token punctuation">,</span><span class="token string">'rv-'</span><span class="token punctuation">,</span>label<span class="token operator">=</span><span class="token string">'D'</span><span class="token punctuation">)</span>plt<span class="token punctuation">.</span>legend<span class="token punctuation">(</span><span class="token punctuation">)</span>plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span>r<span class="token string">'$\mu$'</span><span class="token punctuation">)</span> <span class="token comment" spellcheck="true">#x轴标签为希腊字母谬</span>plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Q'</span><span class="token punctuation">)</span>plt<span class="token punctuation">.</span>xlim<span class="token punctuation">(</span><span class="token number">0.3</span><span class="token punctuation">,</span><span class="token number">0.7</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">#设置x轴范围</span>plt<span class="token punctuation">.</span>ylim<span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span>plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre><p>结果：<br><img src="/images/dianxian.png" alt="点线图"></p><h1 id="三、Gephi的使用步骤"><a href="#三、Gephi的使用步骤" class="headerlink" title="三、Gephi的使用步骤"></a>三、Gephi的使用步骤</h1><p>以Karate网络为例</p><h4 id="1-添加网络的邻接表-格式为csv"><a href="#1-添加网络的邻接表-格式为csv" class="headerlink" title="1.添加网络的邻接表, 格式为csv"></a>1.添加网络的邻接表, 格式为csv</h4><p><img src="/images/matplotlib1.png" alt="1"><br>选择图的类型：无向的，选New workspace</p><h4 id="2-添加网络的社团划分-格式为csv"><a href="#2-添加网络的社团划分-格式为csv" class="headerlink" title="2.添加网络的社团划分, 格式为csv"></a>2.添加网络的社团划分, 格式为csv</h4><p><img src="/images/matplotlib3.png" alt="2"><br>选择图的类型：无向的，选Append to existing workspace</p><h4 id="3-调整参数，选择布局，调整网络图"><a href="#3-调整参数，选择布局，调整网络图" class="headerlink" title="3.调整参数，选择布局，调整网络图"></a>3.调整参数，选择布局，调整网络图</h4><p><img src="/images/matplotlib4.png" alt="3"></p><h4 id="4-结果"><a href="#4-结果" class="headerlink" title="4.结果"></a>4.结果</h4><p><img src="/images/karate.png" alt="karate"></p>]]></content>
     
@@ -53,6 +55,8 @@
 &lt;p&gt;另外，毕业论文是复杂网络社团检测相关的，所以要用Gephi画网络的社团结构划分图，也在这里记录一下。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Python" scheme="https://wmjtxt.github.io/categories/Python/"/>
     
     
       <category term="Python" scheme="https://wmjtxt.github.io/tags/Python/"/>
@@ -64,7 +68,7 @@
     <link href="https://wmjtxt.github.io/2019/11/05/ln/"/>
     <id>https://wmjtxt.github.io/2019/11/05/ln/</id>
     <published>2019-11-05T03:26:42.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:28:22.531Z</updated>
     
     <content type="html"><![CDATA[<h1 id="背景知识"><a href="#背景知识" class="headerlink" title="背景知识"></a>背景知识</h1><p>Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。<br>元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是<strong>硬链接(hard link)</strong>。因此，<br>硬链接可以理解为同一个文件的多个别名。而<strong>软链接(soft link)</strong>则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。软链接与Windows系统的快捷方式很相似。</p><a id="more"></a><h1 id="如何创建"><a href="#如何创建" class="headerlink" title="如何创建"></a>如何创建</h1><ul><li>创建软链接(soft link): <code>ln -s file softfile</code></li><li>创建硬链接(hard link): <code>ln file hardfile</code> or <code>link file hardfile</code></li></ul><h1 id="底层实现"><a href="#底层实现" class="headerlink" title="底层实现"></a>底层实现</h1><ul><li>软链接 : 文件类型为符号链接，文件中存放有一个指向原文件路径的指针</li><li>硬链接 : 下为VFS中的inode结构体<pre class=" language-c"><code class="language-c"><span class="token keyword">struct</span> inode<span class="token punctuation">{</span>  <span class="token comment" spellcheck="true">//...</span>  <span class="token keyword">const</span> <span class="token keyword">struct</span> inode_operations   <span class="token operator">*</span>i_op<span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">//索引节点操作</span>  <span class="token keyword">unsigned</span> <span class="token keyword">long</span>                   i_ino<span class="token punctuation">;</span>      <span class="token comment" spellcheck="true">//索引节点号</span>  atomic_t                        i_count<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//引用计数器</span>  <span class="token keyword">unsigned</span> <span class="token keyword">int</span>                    i_nlink<span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//硬链接数目</span><span class="token punctuation">}</span></code></pre>创建硬链接后，i_nlink加1</li></ul><h1 id="区别与联系-简述"><a href="#区别与联系-简述" class="headerlink" title="区别与联系(简述)"></a>区别与联系(简述)</h1><ul><li>软链接是新建一个文件，硬链接是为文件建一个别名。</li><li>软链接可以跨文件系统，硬链接不可以。</li><li>软链接可以对目录操作，硬链接不可以。</li><li>删除原文件，软链接失效，硬链接不影响。</li></ul>]]></content>
     
@@ -73,6 +77,8 @@
       &lt;h1 id=&quot;背景知识&quot;&gt;&lt;a href=&quot;#背景知识&quot; class=&quot;headerlink&quot; title=&quot;背景知识&quot;&gt;&lt;/a&gt;背景知识&lt;/h1&gt;&lt;p&gt;Linux系统中的文件包含两个部分：用户数据(user data)与元数据(metadata)。用户数据存放文件的内容，元数据则存储文件的属性。&lt;br&gt;元数据中的inode号是文件的唯一标识, 而不是文件名。其实，一个inode号对应一个或多个文件名，这就是&lt;strong&gt;硬链接(hard link)&lt;/strong&gt;。因此，&lt;br&gt;硬链接可以理解为同一个文件的多个别名。而&lt;strong&gt;软链接(soft link)&lt;/strong&gt;则是文件的用户数据存放指向另一个文件的指针，它拥有自己的inode号。软链接与Windows系统的快捷方式很相似。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Linux" scheme="https://wmjtxt.github.io/categories/Linux/"/>
     
     
       <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
@@ -110,7 +116,7 @@
     <link href="https://wmjtxt.github.io/2019/09/06/interview4/"/>
     <id>https://wmjtxt.github.io/2019/09/06/interview4/</id>
     <published>2019-09-06T14:51:39.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:28:08.887Z</updated>
     
     <content type="html"><![CDATA[<p>其实我知道，即使我通过了所有面试，进入池子里面，大概率也会被刷。但是那至少是合理的流程, 如果那样，我会心服口服。<br><a id="more"></a></p><p>前面说了，京东校招组给我回复了邮件。但我没有给他（她）回复，一是不知道说什么，二是我觉得我说什么其实都没什么用了。<br>我是几乎肯定以为他们会以怎样圆滑的方式来说服我接受这个结果。最小概率的情况，也是我仅有的一丝丝希望，就是我还能有机会进入京东最终的备胎池里。</p><p>但又觉得，如果那样，又有种奇怪的感觉。就好像买东西，有很多顾客买到了假货（或者说是有瑕疵的货物），只有我去找店家理论了，最终店家也只给我一个人换了货。<br>我的本意并不是这样。我的确很缺这样的机会，但我更在意的是，一件事情是否公平合理，何况这是与我极其相关的一件事。</p><p>杜甫有一句话，可能我不配说，但那话说的真好，大家也都知道，“安得广厦千万间，大庇天下寒士俱欢颜”。遇到一件事，不能只想到自己。</p><p>废话不多说了，说结果吧。</p><p>今天从西安回来的高铁上，接到京东校招组一位工作人员的电话，因为车上信号不稳定，就说好下车后我再打给她。</p><p>经历高铁加地铁，回到宿舍我才回电话，这时已经是两个小时后。她跟我详细说明了情况，并解释说是HR搞错了他们公司校招的原则，并不存在所谓“但凡是有工作经历的人就不能参加他们的校招”的说法，也跟复试面试官核实了我前面的面试没什么问题。</p><p>如下图所示，hr应该是误解了应届生身份的问题。<br><img src="/images/jd_help.png" alt="京东帮助"></p><p>她讲到这里，其实我就明白了。跟我原来想的那一丝丝希望是如此的相像。她说给我改了状态。还是很开心的，只是我没有太表现出来。不过，她也解释了后续还会进行筛选，我说我了解的。</p><p>临了，她也很客气说，有事随时可以联系她。我说，好的谢谢你。</p><p>我该高兴的，但并不稳，甚至可以说非常不稳，所以又高兴不起来。</p><p>好累啊，有希望却希望不大。</p><p>晚上，又收到滴滴的面试邀请，过几天还得去西安。钱包咕咕在叫了。</p><p>最后，我去查了状态，果然变了哈<br><img src="/images/jd_status.png" alt="京东面试结果"></p>]]></content>
     
@@ -119,6 +125,8 @@
       &lt;p&gt;其实我知道，即使我通过了所有面试，进入池子里面，大概率也会被刷。但是那至少是合理的流程, 如果那样，我会心服口服。&lt;br&gt;
     
     </summary>
+    
+      <category term="面经" scheme="https://wmjtxt.github.io/categories/%E9%9D%A2%E7%BB%8F/"/>
     
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -132,7 +140,7 @@
     <link href="https://wmjtxt.github.io/2019/09/05/jdinterview3/"/>
     <id>https://wmjtxt.github.io/2019/09/05/jdinterview3/</id>
     <published>2019-09-05T12:35:19.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:27:55.143Z</updated>
     
     <content type="html"><![CDATA[<p>9月3号早上面试后，我因为答得还不错，所以心情很好，以为京东稳了。后来在牛客网了解到京东HR面还要刷不少人，才觉得事情不妙，<br>但仍觉得应该问题不大。事实证明我还是太过于自信了。<br><a id="more"></a></p><p>中间还有很多插曲，太复杂就不详述了，直接说结果吧。HR面试完（电面），我还觉得回答的不错，应该问题不大，准备跟室友出去吃饭。顺手刷新了一下京东校招官网的状态，<br>醒目的灰色的令人沮丧的“HR面试未通过映入眼帘”，还没等室友看到，我就迅速关掉了网页。因为实在想不通为什么会被挂，所以我就给HR发了短信询问（没有打电话是怕打扰她，<br>也担心我情绪过于激动，表述不当）。</p><p>我以为就这样石沉大海了，没想到的是，没过多久，HR就打电话过来了。她解释说是因为我有几年的工作经历，所以是不能参加他们的校招的。<br>我表示很惊讶，简直闻所未闻，以前真没听说过还有这样的说法！然后，HR说前面两轮面试我表现的不错，但很可惜，由于这个原因无法给我通过。还说我可以参加社招。最后，可能是看我<br>还是难以接受，她说我可以发邮件跟京东校招组反馈这个事情。然后，谢谢再见，挂了电话。</p><p>这个时候，心情好了一些。说实话HR打电话过来我还挺惊讶的，她人真的挺好的。后来我跟室友也说了这个情况，大家好一阵感慨，甚至有些打退堂鼓：秋招怎么这么难啊？！不如回家种田算了！</p><p>不过抱怨归抱怨，我想了想，还真应该跟京东校招组反馈一下。就算说了没有用，我也要说，因为真的不合理。写了有几百字，详细陈述了这个事情，自认为言辞还算恳切，点击发送。仍然做好<br>石沉大海不被回复的准备。</p><p>后来去参加宣讲会，人真的超级超级多。找工作太难了。还要再努力点才行。</p><p>大概到了晚上，京东校招组回复邮件了。说会了解情况再给我回复，但其实我不抱什么希望了。</p><p>其实我也不是有多优秀，所有可能我压根配不上去大厂吧。</p>]]></content>
     
@@ -141,6 +149,8 @@
       &lt;p&gt;9月3号早上面试后，我因为答得还不错，所以心情很好，以为京东稳了。后来在牛客网了解到京东HR面还要刷不少人，才觉得事情不妙，&lt;br&gt;但仍觉得应该问题不大。事实证明我还是太过于自信了。&lt;br&gt;
     
     </summary>
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -154,7 +164,7 @@
     <link href="https://wmjtxt.github.io/2019/09/03/jdinterview2/"/>
     <id>https://wmjtxt.github.io/2019/09/03/jdinterview2/</id>
     <published>2019-09-03T03:23:32.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:27:33.167Z</updated>
     
     <content type="html"><![CDATA[<p>幸运进入复试，还是通知去现场面，我又申请远程，然后面试官给我发邮件，说加微信面试。在牛客网看到有人说申请远程面试被拒绝，看来我还是幸运的，碰到的面试官都很好。<br><a id="more"></a></p><p>快到约定时间的时候，面试官发短信说延迟十到十五分钟，后来又说随时联系我。</p><p>大概9点半，开始面试。</p><ul><li>1.STL的底层实现，是不是线程安全的</li><li>2.int a[256]; char b[256]; sizeof(a), sizeof(b)分别是多大</li><li>3.vector底层实现</li></ul><p>然后，面试官说，来做道题吧。</p><ul><li>4.手写一个queue。10min</li></ul><p>写好后，拍照片，发给他，然后解释(手写程序，真的很乱)。</p><p>然后，面试官说，那再来一道吧。</p><ul><li>5.有n个数组，每个数组有m个升序排好的数，将所有数排序。15min</li></ul><p>我的方法复杂度是O(m*n<sup>2</sup>)，然后他问可以优化吗，我说可以用堆排序(其实建个堆就行，不需要堆排序)优化，又问具体怎么做……<br>其实我没想清楚都，最后在他提示下才明白，建个堆就好，复杂度提高到O(m*n*logn)。</p><p>然后面试官说就到这里。好突然的感觉</p>]]></content>
     
@@ -163,6 +173,8 @@
       &lt;p&gt;幸运进入复试，还是通知去现场面，我又申请远程，然后面试官给我发邮件，说加微信面试。在牛客网看到有人说申请远程面试被拒绝，看来我还是幸运的，碰到的面试官都很好。&lt;br&gt;
     
     </summary>
+    
+      <category term="面经" scheme="https://wmjtxt.github.io/categories/%E9%9D%A2%E7%BB%8F/"/>
     
     
       <category term="面经" scheme="https://wmjtxt.github.io/tags/%E9%9D%A2%E7%BB%8F/"/>
@@ -176,7 +188,7 @@
     <link href="https://wmjtxt.github.io/2019/09/01/jdinterview/"/>
     <id>https://wmjtxt.github.io/2019/09/01/jdinterview/</id>
     <published>2019-09-01T02:36:03.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:27:19.010Z</updated>
     
     <content type="html"><![CDATA[<p>笔试做的一般，编程两道都没AC。运气好还是收到了京东的面试通知，很惊讶，又暗自叹息恐怕还是抓不住。但也要加油啊。</p><a id="more"></a><p>时间很快来到9月1号早上，面试官的电话如约而至，甚至还提前了几分钟。</p><p>不出意外，一面问的很基础，总体答的还行，裸面居然挺过来了。可我自知，如果再问深一点，可能就答不上来了。</p><p>临了说应该会有后续通知，我想我得再突击一下了。</p><p>下面简单总结一下面试的知识点：</p><ul><li>1.new和malloc(这个几乎逢面必问, 没认真总结过，总感觉每次都说的不全)</li><li>2.new申请内存失败返回什么，malloc呢</li><li>3.在C++里，struct和class的区别</li><li>4.static的作用</li><li>5.如何理解static变量具有文件作用域</li><li>6.C++里的多态</li><li>7.虚函数</li><li>8.虚函数底层实现, 以及如何实现多态的</li><li>9.fread, fwrite, fprintf 区别</li><li>10.线程锁(我答了互斥锁，读写锁，他说还有自旋锁，我说没有用过, 看来知识还是要知道全才好)</li><li>11.explicit, 举例, 我举了string str = “hello”;这个, 他问explicit加在哪里，记不清了，我就说复制构造，他说构造函数，好吧</li><li>12.大端和小端，什么时候需要注意</li><li>13.知道哪些排序，说了快排、堆排序、归并，稳定的含义，哪些是稳定的</li><li>14.c里的哪些函数(比如random)可以在多线程里用</li><li>15.可重入函数，直接说了不了解</li><li>16.STL里有哪些序列容器, vector和list的区别</li><li>17.linux命令，查找当前文件夹及子文件夹下，三天内修改过的文件，我说用find，他就不让说了???</li><li>18.最后问项目里我负责哪些部分，我说去重和倒排索引，简单说了说，没聊太深(太深我也记不清了)</li><li>19.(补一个)软连接和硬链接</li></ul>]]></content>
     
@@ -185,6 +197,8 @@
       &lt;p&gt;笔试做的一般，编程两道都没AC。运气好还是收到了京东的面试通知，很惊讶，又暗自叹息恐怕还是抓不住。但也要加油啊。&lt;/p&gt;
     
     </summary>
+    
+      <category term="面经" scheme="https://wmjtxt.github.io/categories/%E9%9D%A2%E7%BB%8F/"/>
     
     
       <category term="2020校招" scheme="https://wmjtxt.github.io/tags/2020%E6%A0%A1%E6%8B%9B/"/>
@@ -196,7 +210,7 @@
     <link href="https://wmjtxt.github.io/2019/08/27/meituan-interview/"/>
     <id>https://wmjtxt.github.io/2019/08/27/meituan-interview/</id>
     <published>2019-08-27T01:20:35.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:27:01.878Z</updated>
     
     <content type="html"><![CDATA[<p><strong>后续</strong>：二面很惨，不说了，学习去了QAQ</p><a id="more"></a><p><strong>背景</strong>：投了之后也没管，可能是内推，然后周五下午突然接到电话，约电话面试，问我哪天有空，惊讶+紧张之余，我说要不就明天吧(我怕拖太久机会溜走了，毕竟是秋招的第一个面试啊),<br>    然后他说明天周末啊，我们(美团)周末休息，约工作时间吧，那我说下周一吧，他说那好，周一早上10点半行吧，我说好。挂了电话才想起了周末有浦发的面试，要去西安，周一早上赶回来没多少时间准备了。瞬间觉得完了，但也不好意思打电话改时间了。<br>    就想硬着头皮上吧。</p><p>这还没完呢，周六是京东的笔试，周末是快手和头条的笔试。周末去西安的高铁上还做了几套快手往年的笔试题，然后紧赶慢赶提前到达面试地点，还算顺利地面试完，下午4点半，刚好快手的笔试开始，可是没有找到有网的地方，只能放弃。后来找了家网吧，等到7点做了头条的笔试。然后去西安城墙看了看，就坐火车回学校了。</p><p>然后本来8点到站的火车晚点了一个小时，绿皮火车真是卑微啊，都快到站了，也没有资格进站，要在一个小站苦等。等的时候，有几个女声跟乘务员说她们到站还要转火车，赶不上的话怎么改签，乘务员欢快地回应说你们去7车找列车长说, 要不怎么体现他列车长的作用。等的时候无聊，我也简单看了下面经，想着回去应该还有时间看看基础知识。到站后下车出站，还下雨了，赶上公交，吃了早饭，9点半赶回宿舍。跟室友唠了两句，然后讨论头一天的头条编程题，突然接到电话，是那个熟悉的号码，心想惨了，一点没准备啊（这时才10点05分左右）。这一面就是一个小时。</p><p>面试时随便记在一张纸上，所以比较乱。</p><p>一面(电面)</p><ul><li>1.自我介绍</li><li>2.malloc与new</li><li>3.先问知不知道C++11,我说知道点，然后问了智能指针, 说了share_ptr,weak_ptr, 问share_ptr跟普通指针比有什么优点，说了更安全，问还有什么，我说不知道了</li><li>4.问会不会STL,我说会一点, 然后问map和multimap, multimap的底层实现, 我说都是他们红黑树，但不知道multimap具体怎么实现,<br>  然后问如果是我会怎么去实现，我说对相等节点建立开链来实现。(回头好好看看STL去)</li><li>5.平衡树(应该就是指AVL)和红黑树, 为什么红黑树应用更广泛</li><li>6.完全二叉树和满二叉树，这里还有点插曲，我说满二叉树节点数2^n-1, 他说不对，然后说后面看书上怎么说，也可能他记错了(后来证明就是他错了)</li><li>7.堆排序过程</li><li>8.TCP三次握手, 以及为什么必须有第三次的ACK. 然后接着还问了全双工, 半双工和单工</li><li>9.计算机网络各个协议的端口号，这个没答出来，TCP的都忘了……我说TCP的记不清了，FTP的是20,21，HTTP的是80（其实模模糊糊的也不知道对不对）</li><li>10.进程和线程的区别, 多线程相对于多进程的优势和缺点，缺点我说了多线程，当其中一个线程挂掉，该线程所属进程就会挂掉，问为什么，我说不知道..</li><li>11.多线程，读多写少的情况（比如平均读1000次写1次）怎么处理。后来实在不会, 问我知道读写锁吗，我说知道，但不会用, 说可以去了解下+-+</li><li>12.然后结合项目问，客户端连接服务器的时候，能ping通但是连不上服务器, 会是什么原因？答有可能到最大连接数了，问还有呢？不知道，最后他问我知道防火墙吗，我说听说过，但不清楚原理，然后他还给我解释了一下</li><li>13.客户端给服务器发送数据(send)的时候，突然服务器断开，此时send返回什么, 记不清了，我答的是要么0要么-1</li><li>14.signal</li><li>15.epoll</li><li><p>16.socket阻塞与非阻塞, 这个真忘了，没说出来，他说没事，如果想不起来的也不要瞎说，瞎说反而给面试官印象不好</p></li><li><p>最后问我有什么问题，就简单问了他们的面试批次什么的</p></li><li><p>然后下午还在睡觉，就来电话，没接到，我又打过去，没通，又打过来，说我过了，下一面是视频面，约个时间，我说那周四吧，说那好周四上午10点半。</p></li></ul>]]></content>
     
@@ -205,6 +219,8 @@
       &lt;p&gt;&lt;strong&gt;后续&lt;/strong&gt;：二面很惨，不说了，学习去了QAQ&lt;/p&gt;
     
     </summary>
+    
+      <category term="面经" scheme="https://wmjtxt.github.io/categories/%E9%9D%A2%E7%BB%8F/"/>
     
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -220,7 +236,7 @@
     <link href="https://wmjtxt.github.io/2019/08/18/rebase/"/>
     <id>https://wmjtxt.github.io/2019/08/18/rebase/</id>
     <published>2019-08-18T11:25:12.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:26:23.862Z</updated>
     
     <content type="html"><![CDATA[<p>其实我用Git不多，<code>git rebase</code>命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问<code>git rebase</code>和<code>git merge</code>的区别。才想到去了解一下它。</p><a id="more"></a><p>廖雪峰的官方网站上有提到<code>git rebase</code>的用法<sup>[1]</sup>，并举了一个例子，但他的例子不好，评论里也有人说到。<br>评论里有位同学详细说了<code>git rebase</code>的用法, 说得很好, 摘抄如下：</p><hr><p>一开始按照教程演示去操作，因为两个目录修改的不是同一文件，<code>git pull</code> 后直接合并了没有冲突，所以git rebase有效果。如果<code>git pull</code>后提示有冲突后，先不管冲突的代码，因为修改后执行rebase还是变回有冲突的代码。先执行<code>git add .</code>和<code>git commit -m &#39;xxx&#39;</code>。在执行git rebase 终端提示：Resolve all conflicts manually, mark them as resolved with “git add/rm &lt;conflicted_files&gt;”, then run “git rebase –continue”。这时再手动修改代码解决冲突，执行<code>git add .</code> 再执行 <code>git rebase --continue</code>就有效果了。这时直接<code>git push</code>到远程仓库即可</p><hr><p>按照廖雪峰以及那位同学的评论还有Git官网文档，我总结一下<code>git rebase</code>的用法</p><h2 id="什么时候用到git-rebase"><a href="#什么时候用到git-rebase" class="headerlink" title="什么时候用到git rebase"></a>什么时候用到<code>git rebase</code></h2><p>当多人在同一个分支协作时，后push的同学需要先<code>git pull</code>，如果出现冲突，还要先处理合并文件，然后再push, 这时就算merge完成了，然后你通过<code>git log --graph --pretty-oneline --abbrev-commit</code>查看提交历史，会发现提交历史有分叉, 初一看有点眼花缭乱的感觉。而<code>git rebase</code>通过一系列操作, 可以将提交历史改为一条直线, 看起来清晰一点。</p><h2 id="git-rebase的用法"><a href="#git-rebase的用法" class="headerlink" title="git rebase的用法"></a><code>git rebase</code>的用法</h2><p><strong>第一种情况: 修改的不是同一个文件</strong>，执行<code>git pull</code>后没有冲突，接着直接执行<code>git rebase</code>就可以了。</p><p>第一种情况只需执行两条命令:</p><pre class=" language-c"><code class="language-c">git pullgit rebase</code></pre><p><strong>第二种情况: 修改同一个文件, 出现冲突</strong>，这时执行<code>git pull</code>后，会显示需要你手动更改冲突文件，先不要改，而是先执行<code>git add x</code>和<code>git commit -m &quot;y&quot;</code>, 然后再执行<code>git rebase</code>, 然后将冲突文件里的\&lt;\&lt;\&lt;\&lt;HEAD那些无关内容删掉即可, <strong>千万不要做其他改动</strong>，然后执行<code>git rebase --continue</code>就可以了。</p><p>第二种情况需要以下6步</p><pre class=" language-c"><code class="language-c">git pullgit add x <span class="token comment" spellcheck="true">//x是冲突文件</span>git commit <span class="token operator">-</span>m <span class="token string">"y"</span> <span class="token comment" spellcheck="true">//y是那个什么</span>git rebase将冲突文件里的<span class="token operator">&lt;&lt;</span><span class="token operator">&lt;&lt;</span>HEAD那些无关内容删掉git rebase <span class="token operator">--</span><span class="token keyword">continue</span></code></pre><p>参考：</p><p>[1] <a href="https://www.liaoxuefeng.com/wiki/896043488029600/1216289527823648" target="_blank" rel="noopener">廖雪峰的官方网站_Git教程_Rebase及评论区</a></p><p>[2] <a href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%8F%98%E5%9F%BA" target="_blank" rel="noopener">Git官方文档之分支-变基</a></p>]]></content>
     
@@ -229,6 +245,8 @@
       &lt;p&gt;其实我用Git不多，&lt;code&gt;git rebase&lt;/code&gt;命令之前也都没听说过，偶然在牛客网看面经看到有人说面试官问&lt;code&gt;git rebase&lt;/code&gt;和&lt;code&gt;git merge&lt;/code&gt;的区别。才想到去了解一下它。&lt;/p&gt;
     
     </summary>
+    
+      <category term="Git" scheme="https://wmjtxt.github.io/categories/Git/"/>
     
     
       <category term="Git" scheme="https://wmjtxt.github.io/tags/Git/"/>
@@ -240,7 +258,7 @@
     <link href="https://wmjtxt.github.io/2019/07/07/july/"/>
     <id>https://wmjtxt.github.io/2019/07/07/july/</id>
     <published>2019-07-07T11:31:44.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:26:00.994Z</updated>
     
     <content type="html"><![CDATA[<p>明天回家。<br><a id="more"></a></p><p>本来准备7月5号回家的，9号去参加同学的婚礼，顺利的话中间还能去趟洛阳。<br>可是4号一大早被老师喊去实验室，一忙就是整整4天。<br>除了实验室的事情，这几天就是折腾系统，其他啥也没干。<br>之前的deepin系统（也就是现在在用的）总算是迁移到了新电脑上。以后就少折腾系统，挺麻烦的，也没啥意义。<br>win10也碰到个问题，不过已经解决，这里就不说了。</p><p>可能七月底才能回学校，而且那时实验室还不一定能装修好，所以可能还是得去图书馆学习。<br>一定要去图书馆。<br>过去的俩月没怎么取图书馆，几乎等于荒废了，在宿舍的学习效率太低了。<br>亡羊补牢，为时不晚。<br>在家也要保持状态，比如刷个题什么的，每天一两个小时就可以。</p><p>Fighting</p><p>ps : 对了，有个地方可以说一下，Deepin clone克隆后的系统，跟原系统相当于是一个系统。<br>比如：他们的Github仓库就是共用的；两个系统同时引导，克隆系统会把原系统覆盖掉。还不错。</p>]]></content>
     
@@ -249,6 +267,8 @@
       &lt;p&gt;明天回家。&lt;br&gt;
     
     </summary>
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -260,7 +280,7 @@
     <link href="https://wmjtxt.github.io/2019/06/30/nc-Connection-refused/"/>
     <id>https://wmjtxt.github.io/2019/06/30/nc-Connection-refused/</id>
     <published>2019-06-30T14:45:35.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:25:44.978Z</updated>
     
     <content type="html"><![CDATA[<p><strong>已解决</strong></p><a id="more"></a><p>原来是没有加-p的原因，估计是deepin装的netcat版本太老了。<br>解决办法: 启动nc服务的时候在端口号前加上-p参数:<code>nc -l -p 2000</code>，就可以了。</p><p>以下是原文：</p><p>执行以下最简单的命令：</p><pre class=" language-shell"><code class="language-shell">nc -l 2000nc 192.168.1.101 2000</code></pre><p>就出现这个错误:<br><code>(UNKNOWN) [192.168.1.101] 2000 (cisco-sccp) : Connection refused</code></p><p>在虚拟机上试了，还是同样的错误。</p><p>启动我自己写的ftp server</p><p><code>./server 192.168.1.101 2000 5 10</code></p><p>再执行</p><p><code>nc 192.168.1.101 2000</code></p><p>可以连接成功。</p><p>但先执行</p><p><code>nc -l 2000</code></p><p>再启动ftp client</p><p><code>./client 192.168.1.101 2000</code></p><p>仍会出现上面的错误。</p><p>所以推测应该是nc的服务器没有正常启动或者类似的问题。</p>]]></content>
     
@@ -269,6 +289,8 @@
       &lt;p&gt;&lt;strong&gt;已解决&lt;/strong&gt;&lt;/p&gt;
     
     </summary>
+    
+      <category term="电脑配置" scheme="https://wmjtxt.github.io/categories/%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE/"/>
     
     
       <category term="问题" scheme="https://wmjtxt.github.io/tags/%E9%97%AE%E9%A2%98/"/>
@@ -280,7 +302,7 @@
     <link href="https://wmjtxt.github.io/2019/06/27/cloneDeepin/"/>
     <id>https://wmjtxt.github.io/2019/06/27/cloneDeepin/</id>
     <published>2019-06-27T08:08:26.000Z</published>
-    <updated>2020-04-11T05:04:38.291Z</updated>
+    <updated>2020-04-16T13:23:02.511Z</updated>
     
     <content type="html"><![CDATA[<p>换了新电脑，就想把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了试，开始遇到一些问题，不过后来还是成功了。<br><a id="more"></a></p><p>想看具体步骤可以跳转到<a href="#实施步骤">实施步骤</a>，或者<a href="#精简版">精简版</a> 。</p><p>新电脑是AMD锐龙处理器，自带Windows10，原Deepin系统是在大小110G左右的固态硬盘上，需要把它克隆到一个238G左右的移动固态硬盘。</p><p>然后就遇到一个问题：克隆完成后，将238G的硬盘连到新电脑，无法从该硬盘启动，Boot Device只显示电脑自带的硬盘而不显示外接硬盘，不知道是新电脑的问题还是锐龙处理器的问题，总之就是没办法启动克隆的系统。</p><p>所谓兵来将挡水来土掩，问题总是有解决的办法，很快就想到一个：那就是在电脑自带的硬盘安装一个Deepin系统，由它来引导。果不其然，安装好以后，再启动的时候就可以看到238G硬盘上的系统了，启动它也没什么问题。这样，克隆系统就大功告成。</p><p>ps : 一直以来，我都是用Windows10+Deepin双系统，efi引导启动(引导这块不太懂，我是先装好Windows10，再安装Deepin，然后开机就看到引导界面了，所以应该是Deepin自带的引导程序)。</p><p>至于，为什么我不用Deepin 15.10(以下简称15.10)了？其实先前是打算趁这次换电脑改用Deepin 15.10而放弃原来的Deepin 15.9(下称15.9)的(从15.5开始用，一路升级到15.9)，因为15.10是第一个stable版本，而且原来的unstable版本官方好像是今年7月以后不再更新了。</p><p>所以新电脑一到，我就在238G移动固态上安装了15.10，一开始没发现什么大问题，只是<strong>引导有点问题</strong>：每次从Windows10重启，无法正常进入引导界面。这也许是本地硬盘Windows10+移动硬盘Deepin的问题，也可能是AMD处理器的问题。</p><p>另外，在安装一个vim插件的时候（vim-instant-markdown），需要安装nodejs，而在15.10安装nodejs默认版本是4.8，在15.9安装是8.11，不知道是不是由于这个原因，总之结果就是<strong>vim-instant-markdown在15.10用不了</strong>，尝试了各种方法结果还是不行。</p><p>综上，我就决定暂时放弃15.10了，虽然[解决办法]里在新电脑自带硬盘安装的系统是15.10，但那只是工具而已，以后的主力系统还是15.9。或许以后还有机会再用15.10或者别的linux系统。</p><h3 id="实施步骤"><a href="#实施步骤" class="headerlink" title="实施步骤"></a>实施步骤</h3><p>大致说一下实施步骤，因为我先后尝试了多次，所以这里就不赘述，只说我认为是必要的步骤，如果遇到问题，欢迎留言交流。</p><ul><li><p>1.准备工作</p><ul><li><p>原始系统，简称<strong>Deepin-老大</strong>；目标系统，也就是克隆系统，简称<strong>Deepin-小二</strong>。</p></li><li><p>一个第三方Deepin系统（我是在另一个移动机械硬盘上安装过一个Deepin 15.7，正好派上用场），简称<strong>Deepin-小三</strong>。<br>用live系统应该也可以，不过我没有试。如果在Deepin-老大上执行clone操作的话，会提示有个错误，好像是让你重启进入live系统再clone（我第一次是这样弄的，记不太清了，后来都是在第三方系统clone的）。</p></li><li><p>安装Clone软件（中文名是备份还原工具），在深度商店里就有。</p></li><li><p>在新电脑自带硬盘压缩出一个60G大小的空间并新建分区（这个过程是在自带Windows10系统进行），安装Deepin系统，简称<strong>Deepin-小四</strong>。</p></li></ul></li><li><p>2.克隆系统</p></li></ul><p>打开Clone软件，第一步选择操作介质: 分区，选择介质对应的操作: 克隆分区，然后点击下一步，选择原始分区和目标分区，点击开始克隆，等待完成。</p><ul><li>3.在新电脑启动</li></ul><p>克隆完成后，建议就转移到新电脑，先启动<strong>Deepin-小四</strong>，执行命令<code>sudo update-grub</code>，然后重启就可以进入引导界面，并发现里面有<strong>Deepin-小二</strong>，就说明克隆成功了。</p><p>之所以不建议在旧电脑启动<strong>Deepin-小二</strong>，是因为在旧电脑，<strong>Deepin-老大</strong>和<strong>Deepin-小二</strong>同时存在，引导程序可能对他们在识别上有点问题。<br>我在<strong>Deepin-小三</strong>执行<code>sudo update-grub</code>后，引导程序的确发现了这两个在不同位置的一模一样的系统，但启动的时候不论点击哪一个，似乎启动的都是原来的<strong>Deepin-小二</strong>，应该是<strong>Deepin-小二</strong>把<strong>Deepin-老大</strong>给覆盖了。</p><p>ps : 晚上我又测试了一下，把原系统升级了，15.9.3 unstable –&gt; 15.10.1 stable，看来Deepin支持从unstable直接升级到stable版本了。还有就是升级过后，把<strong>Deepin-小二</strong>和<strong>Deepin-老大</strong>放到一起，开机，系统久久不能启动，大概维持了5分钟。<br>然后，我觉得情况不对劲，就强制关机，把<strong>Deepin-小二</strong>放到新电脑上，开机，提示有些错误，然后执行检查，最后很快正常启动。看来那5分钟旧电脑还是做了些什么，试图区分老大和小二。还好我及时制止了，不然可能要出大事的(认真脸)。<br>算了算了，以后他们还是不要相见了，这让我想起一个电影，好像是叫做《月球》，挺悲伤的。关于克隆，确实有些东西让人（系统）难以接受。</p><ul><li>4.解决Deepin-小二分区大小问题</li></ul><p>启动<strong>Deepin-小二</strong>后，你也许会发现这个问题：<code>df -h</code>命令的结果显示，系统盘大小是110G（原系统Deepin-老大所在分区的大小），而<code>sudo fdisk -l</code>命令显示系统盘分区大小是238G（就是克隆操作目标硬盘的大小）。</p><p>那些多余的空间去哪了？能不能找回来呢？答案是可以！</p><p>只需要执行如下命令：</p><p><code>sudo resize2fs /dev/sda1</code></p><p>其中<code>/dev/sda1</code>是系统<strong>Deepin-小二</strong>所在的分区名字。</p><ul><li>5.领衔主演</li></ul><table><thead><tr><th style="text-align:center">姓名</th><th style="text-align:center">版本</th><th style="text-align:center">系统盘大小</th></tr></thead><tbody><tr><td style="text-align:center">Deepin-老大</td><td style="text-align:center">15.9.3</td><td style="text-align:center">110G</td></tr><tr><td style="text-align:center">Deepin-小二</td><td style="text-align:center">15.9.3</td><td style="text-align:center">238G</td></tr><tr><td style="text-align:center">Deepin-小三</td><td style="text-align:center">15.7.0</td><td style="text-align:center">80G</td></tr><tr><td style="text-align:center">Deepin-小四</td><td style="text-align:center">15.10.1</td><td style="text-align:center">60G</td></tr></tbody></table><h3 id="精简版"><a href="#精简版" class="headerlink" title="精简版"></a>精简版</h3><ul><li>1.在第三方系统上，使用Clone软件将待克隆系统从原始分区克隆到目标分区。</li><li>2.启动克隆系统后，执行<code>sudo resize2fs /dev/sda1</code>，其中<code>/dev/sda1</code>是克隆系统所在的分区名字。</li><li><strong>注意</strong>：不要在原电脑启动克隆系统</li></ul><h3 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h3><p>还有一些别的办法克隆系统，比如先备份，再还原，不再一一尝试啦，毕竟系统只是工具，弄好了就该办正事了，这才是最重要的。</p>]]></content>
     
@@ -289,6 +311,8 @@
       &lt;p&gt;换了新电脑，就想把原来的系统迁移到新电脑上，毕竟新配置一个系统还是挺麻烦的。在论坛搜了一下，看到有说可以clone分区。然后就试了试，开始遇到一些问题，不过后来还是成功了。&lt;br&gt;
     
     </summary>
+    
+      <category term="电脑配置" scheme="https://wmjtxt.github.io/categories/%E7%94%B5%E8%84%91%E9%85%8D%E7%BD%AE/"/>
     
     
       <category term="Linux" scheme="https://wmjtxt.github.io/tags/Linux/"/>
@@ -300,7 +324,7 @@
     <link href="https://wmjtxt.github.io/2019/04/23/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4namespace%E6%95%B0%E6%8D%AE%E6%88%90%E5%91%98%E9%87%8D%E5%A4%8D%E5%AE%9A%E4%B9%89%E9%97%AE%E9%A2%98/"/>
     <id>https://wmjtxt.github.io/2019/04/23/命名空间namespace数据成员重复定义问题/</id>
     <published>2019-04-23T13:40:14.000Z</published>
-    <updated>2020-04-11T05:04:38.287Z</updated>
+    <updated>2020-04-16T13:22:08.174Z</updated>
     
     <content type="html"><![CDATA[<p>C++ Primer终于快看完了。<br><a id="more"></a><br>真是越往后看的越慢，跳过了几章，今天直接看第18章命名空间部分，遇到了一个小问题。如下所示。<br>文件：</p><ul><li>np.h<br><code>`</code>c<br>#ifndef <strong>NP_H</strong><br>#define <strong>NP_H</strong> </li></ul><p>#include <iostream></iostream></p><p>namespace np{<br>    class NpTest{<br>    public:<br>        void print();<br>    private:<br>        int val = 2;<br>    };</p><pre><code>void add(int &amp;);//int np_val;//这样不行，重复定义，用嵌套的匿名空间可以，如下所示(不太清楚为啥。。。)namespace{    int np_val;}</code></pre><p>}</p><p>#endif</p><pre><code>* np.cpp```c#include &quot;np.h&quot;#include &lt;iostream&gt;using namespace np;namespace np{    void NpTest::print(){        std::cout &lt;&lt; &quot;val = &quot; &lt;&lt; val &lt;&lt; std::endl;    }    void add(int &amp;a){        ++a;    }}</code></pre><ul><li>main.cpp<br><code>`</code>c<br>#include “np.h”<br>#include <iostream><br>using namespace std;<br>using namespace np;</iostream></li></ul><p>namespace np1{<br>    int np_val = 10;<br>}<br>namespace np1{<br>    void test(){<br>        ++np_val;<br>    }<br>}</p><p>int main(){<br>    NpTest a;<br>    a.print();<br>    int x = 1;<br>    add(x);<br>    cout &lt;&lt; x &lt;&lt; endl;<br>    np::np_val = 100;<br>    cout &lt;&lt; np::np_val &lt;&lt; endl;<br>    cout &lt;&lt; np1::np_val &lt;&lt; endl;<br>    np1::test();<br>    cout &lt;&lt; np1::np_val &lt;&lt; endl;<br>    return 0;<br>}<br><code>`</code><br>Problem: 其实就是注释的那一行，np_val存在重复定义问题。<br>就是每当np.h被include一次，np_val就被定义一次。<br>但是改成把np_val放到嵌套的匿名空间里就没有问题了。<br>现在还不太理解原因，待后面再看看。</p>]]></content>
     
@@ -309,6 +333,8 @@
       &lt;p&gt;C++ Primer终于快看完了。&lt;br&gt;
     
     </summary>
+    
+      <category term="Linux" scheme="https://wmjtxt.github.io/categories/Linux/"/>
     
     
       <category term="C++" scheme="https://wmjtxt.github.io/tags/C/"/>
@@ -320,7 +346,7 @@
     <link href="https://wmjtxt.github.io/2019/04/10/mjpoet/"/>
     <id>https://wmjtxt.github.io/2019/04/10/mjpoet/</id>
     <published>2019-04-10T01:01:34.000Z</published>
-    <updated>2020-04-11T05:04:38.287Z</updated>
+    <updated>2020-04-16T13:21:46.754Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/sunset.jpg" alt="sunset"></p><p>一些旧诗<br><a id="more"></a></p><h6 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h6><p><a href="#夜思">夜思(2009.10.01于海口)</a><br><a href></a><br><a href></a><br><a href></a></p><h6 id="夜思"><a href="#夜思" class="headerlink" title="夜思"></a>夜思</h6><p>2009.10.01 于海口<br>黛入秋空忽夜半，窗台露水月如弓。<br>风冲雾里花滴落，雨撞墙根草速生。<br>语逸心烦德不事，情闲意乱道难清。<br>方思铁血南疆撒，岂敢从心荡鼓钟。</p>]]></content>
     
@@ -330,6 +356,8 @@
 &lt;p&gt;一些旧诗&lt;br&gt;
     
     </summary>
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="诗歌" scheme="https://wmjtxt.github.io/tags/%E8%AF%97%E6%AD%8C/"/>
@@ -341,7 +369,7 @@
     <link href="https://wmjtxt.github.io/2019/03/31/drink/"/>
     <id>https://wmjtxt.github.io/2019/03/31/drink/</id>
     <published>2019-03-31T13:49:40.000Z</published>
-    <updated>2020-04-11T05:04:38.287Z</updated>
+    <updated>2020-04-16T13:21:32.513Z</updated>
     
     <content type="html"><![CDATA[<h1 id="饮酒"><a href="#饮酒" class="headerlink" title="饮酒"></a>饮酒</h1><p>陶渊明</p><p>结庐在人境，而无车马喧。<br>问君何能尔？心远地自偏。<br>采菊东篱下，悠然见南山。<br>山气日夕佳，飞鸟相与还。<br>此中有真意，欲辨已忘言。</p>]]></content>
     
@@ -355,6 +383,8 @@
     
     </summary>
     
+      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
     
       <category term="诗歌" scheme="https://wmjtxt.github.io/tags/%E8%AF%97%E6%AD%8C/"/>
     
@@ -365,7 +395,7 @@
     <link href="https://wmjtxt.github.io/2019/03/30/oldPhotos/"/>
     <id>https://wmjtxt.github.io/2019/03/30/oldPhotos/</id>
     <published>2019-03-30T14:03:30.000Z</published>
-    <updated>2020-04-11T05:04:38.287Z</updated>
+    <updated>2020-04-16T13:20:43.145Z</updated>
     
     <content type="html"><![CDATA[<h1 id="一些照片"><a href="#一些照片" class="headerlink" title="一些照片"></a>一些照片</h1><a id="more"></a><p><img src="/myPhoto/20140930_115321.jpg" alt><br><img src="/myPhoto/DSC00483.JPG" alt><br><img src="/myPhoto/DSC00484.JPG" alt><br><img src="/myPhoto/DSC00485.JPG" alt><br><img src="/myPhoto/DSC00486.JPG" alt><br><img src="/myPhoto/DSC00487.JPG" alt><br><img src="/myPhoto/DSC_0134.JPG" alt><br><img src="/myPhoto/DSC_0240.JPG" alt><br><img src="/myPhoto/DSC_0248.JPG" alt><br><img src="/myPhoto/DSC_0254.JPG" alt><br><img src="/myPhoto/DSC_0255.JPG" alt><br><img src="/myPhoto/DSC_0274.JPG" alt><br><img src="/myPhoto/IMG20150626016.jpg" alt><br><img src="/myPhoto/1岁.jpg" alt></p>]]></content>
     
@@ -374,6 +404,8 @@
       &lt;h1 id=&quot;一些照片&quot;&gt;&lt;a href=&quot;#一些照片&quot; class=&quot;headerlink&quot; title=&quot;一些照片&quot;&gt;&lt;/a&gt;一些照片&lt;/h1&gt;
     
     </summary>
+    
+      <category term="照片" scheme="https://wmjtxt.github.io/categories/%E7%85%A7%E7%89%87/"/>
     
     
       <category term="照片" scheme="https://wmjtxt.github.io/tags/%E7%85%A7%E7%89%87/"/>
@@ -385,7 +417,7 @@
     <link href="https://wmjtxt.github.io/2019/03/30/reading/"/>
     <id>https://wmjtxt.github.io/2019/03/30/reading/</id>
     <published>2019-03-30T13:16:37.000Z</published>
-    <updated>2020-04-11T05:04:38.287Z</updated>
+    <updated>2020-04-16T13:21:14.889Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/myPhoto/DSC_0274.JPG" alt="pic"></p><h5 id="读书笔记-C-Primer"><a href="#读书笔记-C-Primer" class="headerlink" title="读书笔记 C++ Primer"></a>读书笔记 C++ Primer</h5><p>这本800多页的大块头，我已经翻了很久了。才看一半左右。刚开始的看的很快，一天近百页，两三天后就啃不动了。<br>越到后面新知识越多，也越来越难理解，因为前面几章是基础，后面是各种复杂的东西，容器、动态内存、拷贝控制什么的。<br>不过还是要尽快看。前几天因为实验室还有论文的事情耽误了些时间，后面几天应该没啥事了。专心看书，啃书。看完这本，还有三本……<br>其实不止……比如STL剖析、Linux内核与实现、csapp、EffectiveC++、Redis、MySQL等等。真的是太多书需要看了。</p><a id="more"></a><h5 id="摄影"><a href="#摄影" class="headerlink" title="摄影"></a>摄影</h5><p>相机一直在睡觉。</p><p>我的所谓爱好摄影何止是一句空话，简直是真空的。不过今天翻了翻相册，以前拍的照片，质量还不错的（比如文首所示），<br>它们也一直在睡觉。自从拍完回来，从手机或相机的存储卡里拷贝到电脑里，就再也没“惠顾”过他们！</p><p>其实有时间可以多出门拍拍照片，把这个爱好给坐实了！比如上次文学院的同学邀请，就可以去啊，虽然认识的方式略尴尬，但也无伤大雅。<br>也不是以找对象为纯粹目的的啊，做个朋友总是可以的。嗯，有时间问一下。</p><h5 id="找实习"><a href="#找实习" class="headerlink" title="找实习"></a>找实习</h5><p>参加了不少笔试，面试不多，面了的也一个都没过。现状是基础不牢、项目不精，要啥啥不行。还是补基础先。</p><h5 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h5><p>兰大双选会其实就是个大型招聘会，是挺不错的，不过跟我们专业关系不太大。</p><p>作息方面，基本上达到要求了，还需要长期坚持。尽量做到不玩手机，虽然现在已经玩的很少了，但还没有完全杜绝。</p><p>个人形象方面，既然丑的事实已经无法改变，那就只能接受，并在其他方面做出补充。比如健身，发型，衣着等等。<br>说到底，我还是一个在意外表的人。以前嘛，不修边幅，对长相还自信，所以也没啥。现在呢，要啥没啥了，天天跟裸奔一样，很不自在。<br>这一点亟待改善。</p><p>就说这么多吧，兰州最近的昼夜温差挺大的，不穿秋裤晚上还挺冷的！</p><p>2019,03,30 二月廿四 星期六</p><p>于兰州</p>]]></content>
     
@@ -395,6 +427,8 @@
 &lt;h5 id=&quot;读书笔记-C-Primer&quot;&gt;&lt;a href=&quot;#读书笔记-C-Primer&quot; class=&quot;headerlink&quot; title=&quot;读书笔记 C++ Primer&quot;&gt;&lt;/a&gt;读书笔记 C++ Primer&lt;/h5&gt;&lt;p&gt;这本800多页的大块头，我已经翻了很久了。才看一半左右。刚开始的看的很快，一天近百页，两三天后就啃不动了。&lt;br&gt;越到后面新知识越多，也越来越难理解，因为前面几章是基础，后面是各种复杂的东西，容器、动态内存、拷贝控制什么的。&lt;br&gt;不过还是要尽快看。前几天因为实验室还有论文的事情耽误了些时间，后面几天应该没啥事了。专心看书，啃书。看完这本，还有三本……&lt;br&gt;其实不止……比如STL剖析、Linux内核与实现、csapp、EffectiveC++、Redis、MySQL等等。真的是太多书需要看了。&lt;/p&gt;
     
     </summary>
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
       <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
@@ -406,7 +440,7 @@
     <link href="https://wmjtxt.github.io/2019/03/29/blog-transfer-to-Hexo/"/>
     <id>https://wmjtxt.github.io/2019/03/29/blog-transfer-to-Hexo/</id>
     <published>2019-03-29T06:49:54.000Z</published>
-    <updated>2020-04-11T05:04:38.287Z</updated>
+    <updated>2020-04-16T13:20:19.597Z</updated>
     
     <content type="html"><![CDATA[<p><img src="/images/path.jpg" alt="img"></p><p>把博客迁移到<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">hexo</a>了，主题是<a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="noopener">yilia</a>,<br>比原来的好看，也好用。不过这个主题的作者好像不更新了，以后可以换别的主题试试。<br>其实之前就想试试Hexo，当时安装Node.js出了点问题，就放弃了。这次也碰到问题了，不过参考网上的方法很快解决了，<br><a href="https://www.jianshu.com/p/31744aa44824" target="_blank" rel="noopener">这里是方法链接</a>。</p><a id="more"></a><p>然后，简单了解了一下Hexo的命令，就可以开始使用Hexo啦。原来需要<code>git add/commit/push</code>几条命令才能发布，<br>现在只需要一条命令(<code>hexo g -d</code>)就可以了。</p><p>下面简单说一下步骤。</p><ul><li>安装Node.js, Git</li><li>安装Hexo : <code>npm install hexo-cli -g</code></li><li>Setup your blog : <code>hexo init blog</code> </li><li>进入blog<code>cd blog</code>并下载主题 : <code>git clone https://github.com/litten/hexo-theme-yilia.git theme/yilia</code></li><li>选择主题<code>theme: yilia</code></li><li>配置<code>/blog/_config.yml</code><ul><li><code>new_post_name: year-:month-:day:title.md</code></li><li><code>deploy:</code><pre><code>  type: git  repository: git@github.com:yourname/yourname.github.io.git  branch: master</code></pre></li></ul></li><li>常用Hexo命令<ul><li>新建博客：<code>hexo new title</code></li><li>发布：<code>hexo g -d</code></li></ul></li></ul>]]></content>
     
@@ -417,8 +451,10 @@
     
     </summary>
     
+      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
-      <category term="笔记" scheme="https://wmjtxt.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
+    
+      <category term="随笔" scheme="https://wmjtxt.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
     
   </entry>
   
@@ -427,7 +463,7 @@
     <link href="https://wmjtxt.github.io/2019/03/25/gdb_make/"/>
     <id>https://wmjtxt.github.io/2019/03/25/gdb_make/</id>
     <published>2019-03-25T05:00:00.000Z</published>
-    <updated>2020-04-11T05:04:38.287Z</updated>
+    <updated>2020-04-16T13:20:00.721Z</updated>
     
     <content type="html"><![CDATA[<ul><li><a href>MySQL</a></li><li><a href>Oracle</a></li><li><a href>poi</a></li><li><a href>epoll</a></li><li><a href>redis</a></li><li><a href>log4cpp</a></li><li><a href>socket</a></li><li><a href>C/S模式</a></li><li><a href>C++, Java, Python</a></li><li><a href>STL</a></li><li><a href>Linux环境编程</a></li><li><a href="#GDB">GDB</a></li><li><a href="#Make">Make</a></li><li><a href>多线程编程</a></li><li><a href>git,github</a></li></ul><a id="more"></a><h1 id="GDB"><a href="#GDB" class="headerlink" title="GDB"></a>GDB</h1><ul><li>1.编译时加上-g<pre><code>$ g++ *.cpp -g</code></pre></li><li>2.执行时<pre><code>$ gdb a.out</code></pre>或者分两步<pre><code>$ gdb(gdb)file a.out</code></pre></li><li>命令</li></ul><table><thead><tr><th>命令</th><th>含义</th><th>对应windows</th></tr></thead><tbody><tr><td>l</td><td>显示代码</td><td></td></tr><tr><td>r</td><td>开始运行</td><td>F9</td></tr><tr><td>b 4</td><td>在第四行设置断点</td><td>F5</td></tr><tr><td>info b</td><td>查看所有断点</td><td></td></tr><tr><td>delete [断点号]</td><td>查看所有断点</td><td></td></tr><tr><td>n</td><td>下一步,不进入函数</td><td>F10</td></tr><tr><td>s</td><td>表示单步进入函数</td><td>F11</td></tr><tr><td>p i</td><td>打印变量i</td><td></td></tr><tr><td>c</td><td>继续运行,直到函数结束或遇到新的断点</td><td></td></tr><tr><td>q</td><td>退出</td></tr></tbody></table><h1 id="Make"><a href="#Make" class="headerlink" title="Make"></a>Make</h1><p>格式：</p><pre><code>target: dependency_files&lt; tab &gt; command</code></pre><p>.PHONY是Makefile文件的关键字，表示它后面列表中的目标均为伪目标。伪目标通常用在清理文件、强制重新编译等情况下</p><p>自定义文件名的话,比如makename执行时在后面加上-f makename</p><pre><code>make -f makename</code></pre><p><strong>变量函数与规则</strong></p><p>随着项目越来越大，源文件也越来越复杂，这个时候就要用到变量，写出通用性较强的makefile文件</p><h2 id="定义变量的两种方法"><a href="#定义变量的两种方法" class="headerlink" title="定义变量的两种方法"></a>定义变量的两种方法</h2><ul><li>1.变量名=变量值   递归变量展开（几个变量共享一个值） //不常用</li><li>2.变量名:=变量值  简单变量展开（类似于C++的赋值）    //常用</li></ul><p>变量分为; 用户自定义变量，预定义变量（CFLAGS），自动变量，环境变量</p><p>自动变量：指在使用的时候，自动用特定的值替换，常用的有: </p><table><thead><tr><th>变量</th><th>说明</th></tr></thead><tbody><tr><td>$@</td><td>当前规则的目标文件（重点）</td></tr><tr><td>$&lt;</td><td>当前规则的第一个依赖文件</td></tr><tr><td>$^</td><td>当前规则的所有依赖文件，以空格分隔（重点）</td></tr><tr><td>$?</td><td>规则中日期新于目标文件的所有相关文件列表，逗号分隔</td></tr><tr><td>$(@D)</td><td>目标文件的目录名部分</td></tr><tr><td>$(@F)</td><td>目标文件的文件名部分</td></tr></tbody></table><p>预定义变量：内部事先定义好的变量，但是它的值是固定的，并且有些的值是为空的。</p><ul><li>AR: 库文件打包程序默认为ar</li><li>AS: 汇编程序，默认为as</li><li>CC: c编译器默认为cc</li><li>CPP: C预编译器，默认为$(CC) -E</li><li>CXX: C++编译器，默认为g++</li><li>RM: 删除，默认为rm -f</li><li>ARFLAGS: 库选项，无默认</li><li>ASFLAGS: 汇编选项，无默认</li><li>CFLAGS: c编译器选项，无默认</li><li>CPPFLAGS: c预编译器选项，无默认</li><li>CXXFLAGS: c++编译器选项</li></ul><h2 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h2><ul><li><p>1.wildcard : 搜索当前目录下的文件名，展开成一列所有符合由其参数描述的文件名，文件间以空格间隔。<br><code>SOURCES=$(wildcard *.cpp)</code>把当前目录下所有.cpp文件存入变量SOURCES里。</p></li><li><p>2.字符串替换函数: $(patsubst要查找的子串，替换后的目标子串，源字符串)。将源字符串(以空格分隔)中的<br>所有要查找的子串替换成目标子串。如OBJS=$(patsubst %.cpp,%.o,$(SOURCES))<br>把SOURCES中的.cpp替换为.o</p></li><li><p>3.$(addprefix 前缀，源字符串)函数把第二个参数列表的每一项前缀上第一个参数值???</p></li></ul><p>下面是一个较为通用的makefile:</p><pre class=" language-makefile"><code class="language-makefile">DIR      <span class="token operator">:=</span> ./debugEXE      <span class="token operator">:=</span> <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/main.exeCC       <span class="token operator">:=</span> g++LIBS     <span class="token operator">:=</span>SRCS     <span class="token operator">:=</span> <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">wildcard</span> *.cpp<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">wildcard</span> *.c<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">wildcard</span> *.cc<span class="token punctuation">)</span>OCPP     <span class="token operator">:=</span> <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">patsubst</span> %.cpp, <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/%.o, <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">wildcard</span> *.cpp<span class="token punctuation">)</span><span class="token punctuation">)</span>OC       <span class="token operator">:=</span> <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">patsubst</span> %.c, <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/%.co, <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">wildcard</span> *.c<span class="token punctuation">)</span><span class="token punctuation">)</span>OCC      <span class="token operator">:=</span> <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">patsubst</span> %.cc, <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/%.cco, <span class="token variable">$</span><span class="token punctuation">(</span><span class="token keyword">wildcard</span> *.cc<span class="token punctuation">)</span><span class="token punctuation">)</span>OCC      <span class="token operator">:=</span> <span class="token variable">$</span><span class="token punctuation">(</span>OC<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>OCC<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>OCPP<span class="token punctuation">)</span>RM       <span class="token operator">:=</span> rm -rfCXXFLAGS <span class="token operator">:=</span> -Wall -g<span class="token symbol">start </span><span class="token punctuation">:</span> mkdebug <span class="token variable">$</span><span class="token punctuation">(</span>EXE<span class="token punctuation">)</span><span class="token symbol">mkdebug </span><span class="token punctuation">:</span>    <span class="token operator">@</span>if[! -d <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>]<span class="token punctuation">;</span> then mkdir <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span><span class="token punctuation">;</span> fi<span class="token punctuation">;</span><span class="token symbol"><span class="token variable">$</span>(EXE) </span><span class="token punctuation">:</span> <span class="token variable">$</span><span class="token punctuation">(</span>OBJS<span class="token punctuation">)</span>    <span class="token variable">$</span><span class="token punctuation">(</span>CC<span class="token punctuation">)</span> -o <span class="token variable">$@</span> <span class="token variable">$</span><span class="token punctuation">(</span>OBJS<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>addprefix -l, <span class="token variable">$</span><span class="token punctuation">(</span>LIBS<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token symbol"><span class="token variable">$</span>(DIR)/%.o </span><span class="token punctuation">:</span> %.cpp    <span class="token variable">$</span><span class="token punctuation">(</span>CC<span class="token punctuation">)</span> -c <span class="token variable">$</span><span class="token punctuation">(</span>CXXFLAGS<span class="token punctuation">)</span> <span class="token variable">$&lt;</span> -o <span class="token variable">$@</span><span class="token symbol"><span class="token variable">$</span>(DIR)/%.co </span><span class="token punctuation">:</span> %.c    <span class="token variable">$</span><span class="token punctuation">(</span>CC<span class="token punctuation">)</span> -c <span class="token variable">$</span><span class="token punctuation">(</span>CXXFLAGS<span class="token punctuation">)</span> <span class="token variable">$&lt;</span> -o <span class="token variable">$@</span><span class="token symbol"><span class="token variable">$</span>(DIR)/%.cco </span><span class="token punctuation">:</span> %.cc    <span class="token variable">$</span><span class="token punctuation">(</span>CC<span class="token punctuation">)</span> -c <span class="token variable">$</span><span class="token punctuation">(</span>CXXFLAGS<span class="token punctuation">)</span> <span class="token variable">$&lt;</span> -o <span class="token variable">$@</span><span class="token builtin">.PHONY</span><span class="token symbol"> </span><span class="token punctuation">:</span> clean rebuild<span class="token symbol">clean </span><span class="token punctuation">:</span>    <span class="token operator">@</span>D<span class="token variable">$</span><span class="token punctuation">(</span>RM<span class="token punctuation">)</span> <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/*.exe <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/*.o <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/*.co <span class="token variable">$</span><span class="token punctuation">(</span>DIR<span class="token punctuation">)</span>/*.cco<span class="token symbol">rebuild </span><span class="token punctuation">:</span> clean start</code></pre><h2 id="make的命令行选项"><a href="#make的命令行选项" class="headerlink" title="make的命令行选项"></a>make的命令行选项</h2><table><thead><tr><th>命令格式</th><th>含义</th></tr></thead><tbody><tr><td>-C dir</td><td>读入指定目录下的makefile</td></tr><tr><td>-f file</td><td>读入当前目录下的file文件作为makefile</td></tr><tr><td>-i</td><td>忽略所有的命令行执行错误</td></tr><tr><td>-I dir</td><td>指定被包含的makefile所在目录</td></tr><tr><td>-n</td><td>只打印要执行的命令，但不执行这些命令</td></tr><tr><td>-p</td><td>显示make变量数据库和隐含规则</td></tr><tr><td>-s</td><td>在执行命令时不显示命令</td></tr><tr><td>-w</td><td>如果make在执行过程中改变目录, 则打印当前目录名</td></tr></tbody></table><h2 id="采用for循环编译多个目标文件的Makefile写法"><a href="#采用for循环编译多个目标文件的Makefile写法" class="headerlink" title="采用for循环编译多个目标文件的Makefile写法"></a>采用for循环编译多个目标文件的Makefile写法</h2><p>…</p>]]></content>
     
@@ -452,6 +488,8 @@
 &lt;/ul&gt;
     
     </summary>
+    
+      <category term="后端" scheme="https://wmjtxt.github.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
       <category term="技术" scheme="https://wmjtxt.github.io/tags/%E6%8A%80%E6%9C%AF/"/>
