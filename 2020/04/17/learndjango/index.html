@@ -466,7 +466,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>总字数:&nbsp;&nbsp;
-                    1.5k
+                    1.4k
                 </div>
                 
 
@@ -499,9 +499,9 @@
 <a id="more"></a>
 <h1 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h1><p>@[TOC]</p>
 <ul>
-<li><a href="###0环境搭建">0.环境搭建</a></li>
-<li><a href="###1新建django项目">1.新建Django项目</a></li>
-<li><a href="#2django应用">2.Django应用</a></li>
+<li><a href="##0环境搭建">0.环境搭建</a></li>
+<li><a href="##1新建django项目">1.新建Django项目</a></li>
+<li><a href="##2django应用">2.Django应用</a></li>
 <li><a href="#3第一个视图helloworld">3.第一个视图：Hello,World</a></li>
 <li><a href="#4系统设计">4.系统设计</a></li>
 <li><a href="#5django模型设计">5.Django模型设计</a></li>
@@ -510,10 +510,8 @@
 <li><a href="#8测试">8.测试</a></li>
 <li><a href="#9静态文件设置">9.静态文件设置</a></li>
 <li><a href="#10djangoadmin">10.Django Admin</a></li>
-<li><a href>11.</a></li>
-<li><a href>12.</a></li>
 </ul>
-<h2 id="建站步骤（简略）"><a href="#建站步骤（简略）" class="headerlink" title="建站步骤（简略）"></a>建站步骤（简略）</h2><h3 id="0-环境搭建"><a href="#0-环境搭建" class="headerlink" title="0.环境搭建"></a>0.环境搭建</h3><ul>
+<h2 id="0-环境搭建"><a href="#0-环境搭建" class="headerlink" title="0.环境搭建"></a>0.环境搭建</h2><ul>
 <li>安装python3<ul>
 <li>略</li>
 </ul>
@@ -534,7 +532,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="1-新建Django项目"><a href="#1-新建Django项目" class="headerlink" title="1.新建Django项目"></a>1.新建Django项目</h3><ul>
+<h2 id="1-新建Django项目"><a href="#1-新建Django项目" class="headerlink" title="1.新建Django项目"></a>1.新建Django项目</h2><ul>
 <li><p><strong>创建Django项目</strong>: 在myproject文件夹下，开启虚拟环境后，执行下面的命令，创建新的Django项目, 其中<code>myproject</code>为项目名称:</p>
 <ul>
 <li><code>django-admin startproject myproject</code></li>
@@ -555,7 +553,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="2-Django应用"><a href="#2-Django应用" class="headerlink" title="2.Django应用"></a>2.Django应用</h3><ul>
+<h2 id="2-Django应用"><a href="#2-Django应用" class="headerlink" title="2.Django应用"></a>2.Django应用</h2><ul>
 <li><p>在Django项目中，有两个重要的概念：</p>
 <ul>
 <li><strong>app</strong>: 完成某个任务的web应用程序, app由models（数据库表）, views（视图）, templates（模板）, tests（测试）组成。</li>
@@ -583,7 +581,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="3-第一个视图：Hello-World"><a href="#3-第一个视图：Hello-World" class="headerlink" title="3.第一个视图：Hello, World!"></a>3.第一个视图：Hello, World!</h3><p>在views.py和urls.py中添加如下代码:</p>
+<h2 id="3-第一个视图：Hello-World"><a href="#3-第一个视图：Hello-World" class="headerlink" title="3.第一个视图：Hello, World!"></a>3.第一个视图：Hello, World!</h2><p>在views.py和urls.py中添加如下代码:</p>
 <p>views.py</p>
 <pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>http <span class="token keyword">import</span> HttpResponse<span class="token comment" spellcheck="true">#new</span>
 <span class="token keyword">def</span> <span class="token function">home</span><span class="token punctuation">(</span>request<span class="token punctuation">)</span><span class="token punctuation">:</span><span class="token comment" spellcheck="true">#new</span>
@@ -601,7 +599,7 @@ urlpatterns <span class="token operator">=</span> <span class="token punctuation
 <span class="token punctuation">]</span>
 </code></pre>
 <p>执行命令<code>python manage.py runserver</code>，在浏览器打开<a href="http://127.0.0.1:8000，可以看到效果啦" target="_blank" rel="noopener">http://127.0.0.1:8000，可以看到效果啦</a></p>
-<h3 id="4-系统设计"><a href="#4-系统设计" class="headerlink" title="4.系统设计"></a>4.系统设计</h3><p>项目是一个论坛系统，由多个板块(Boards)组成, 板块由主题帖(Topic)组成，主题帖里有回复帖(Post)，主题帖和回复帖均由用户(User)创建。</p>
+<h2 id="4-系统设计"><a href="#4-系统设计" class="headerlink" title="4.系统设计"></a>4.系统设计</h2><p>项目是一个论坛系统，由多个板块(Boards)组成, 板块由主题帖(Topic)组成，主题帖里有回复帖(Post)，主题帖和回复帖均由用户(User)创建。</p>
 <p>所以这个项目共包含四个类Board, Topic, Post, User。由于Django在contrib中内置了User类，所以只需创建其余三个类。</p>
 <p>以下两方面需要考虑：</p>
 <ul>
@@ -619,7 +617,7 @@ urlpatterns <span class="token operator">=</span> <span class="token punctuation
 </ul>
 </li>
 </ul>
-<h3 id="5-Django模型设计"><a href="#5-Django模型设计" class="headerlink" title="5.Django模型设计"></a>5.Django模型设计</h3><p>Board, Topic, Post这些模型的设计对应着应用程序的数据库设计。</p>
+<h2 id="5-Django模型设计"><a href="#5-Django模型设计" class="headerlink" title="5.Django模型设计"></a>5.Django模型设计</h2><p>Board, Topic, Post这些模型的设计对应着应用程序的数据库设计。</p>
 <p>根据上面的模型设计，相关代码实现在boards/models.py文件中。</p>
 <pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>db <span class="token keyword">import</span> models
 <span class="token keyword">from</span> django<span class="token punctuation">.</span>contrib<span class="token punctuation">.</span>auth<span class="token punctuation">.</span>models <span class="token keyword">import</span> User
@@ -646,10 +644,10 @@ urlpatterns <span class="token operator">=</span> <span class="token punctuation
     updated_by <span class="token operator">=</span> models<span class="token punctuation">.</span>ForeignKey<span class="token punctuation">(</span>User<span class="token punctuation">,</span> null<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">,</span> related_name<span class="token operator">=</span><span class="token string">'+'</span><span class="token punctuation">)</span>
 </code></pre>
 <p>上面所有模型都是django.db.models.Model类的子类，每个类都将被转换成数据库表。</p>
-<h3 id="6-迁移模型"><a href="#6-迁移模型" class="headerlink" title="6.迁移模型"></a>6.迁移模型</h3><p>迁移模型就是告诉Django创建数据库，分两步</p>
+<h2 id="6-迁移模型"><a href="#6-迁移模型" class="headerlink" title="6.迁移模型"></a>6.迁移模型</h2><p>迁移模型就是告诉Django创建数据库，分两步</p>
 <p>第一步，执行<code>python manage.py makemigrations</code>，执行完产生一个0000_initial.py文件，该文件代表了应用的当前状态，相当于做了一个汇总，为接下来转换数据库做准备。</p>
 <p>第二步，执行<code>python manage.py migrate</code>，这一步根据迁移文件生成数据库。</p>
-<h3 id="7-模型操作"><a href="#7-模型操作" class="headerlink" title="7.模型操作"></a>7.模型操作</h3><p>建好模型，就可以对它进行操作了。</p>
+<h2 id="7-模型操作"><a href="#7-模型操作" class="headerlink" title="7.模型操作"></a>7.模型操作</h2><p>建好模型，就可以对它进行操作了。</p>
 <p>操作之前，要先启动Python shell:</p>
 <p><code>python manage.py shell</code></p>
 <p>对模型进行操作的方法总结如下:</p>
@@ -683,7 +681,7 @@ urlpatterns <span class="token operator">=</span> <span class="token punctuation
 </tr>
 </tbody>
 </table>
-<h3 id="8-测试"><a href="#8-测试" class="headerlink" title="8.测试"></a>8.测试</h3><p>测试环节非常重要。比如下面的简单例子:</p>
+<h2 id="8-测试"><a href="#8-测试" class="headerlink" title="8.测试"></a>8.测试</h2><p>测试环节非常重要。比如下面的简单例子:</p>
 <pre class=" language-python"><code class="language-python"><span class="token keyword">from</span> django<span class="token punctuation">.</span>core<span class="token punctuation">.</span>urlresolvers <span class="token keyword">import</span> reverse
 <span class="token keyword">from</span> django<span class="token punctuation">.</span>test <span class="token keyword">import</span> TestCase
 
@@ -695,8 +693,8 @@ urlpatterns <span class="token operator">=</span> <span class="token punctuation
 </code></pre>
 <p>这是一个非常简单但非常有用的测试用例，测试的是请求URL后返回的响应状态码。状态码200意味着成功。当有很多个视图（比如上百个），<br>用上述测试，只需一个命令，就能够测试是否所有视图返回成功。如果没有自动化测试，我们就需要逐一检查每个页面。</p>
 <p>若要查看更详细的信息，可以设置verbosity为2<br><code>python manage.py test --verbosity=2</code><br><code>verbosity为0表示无输出，为1表示正常输出，2表示详细输入</code></p>
-<h3 id="9-静态文件设置"><a href="#9-静态文件设置" class="headerlink" title="9.静态文件设置"></a>9.静态文件设置</h3><p>静态文件是指CSS, JavaScript</p>
-<h3 id="10-Django-Admin"><a href="#10-Django-Admin" class="headerlink" title="10.Django Admin"></a>10.Django Admin</h3><h3 id="11"><a href="#11" class="headerlink" title="11."></a>11.</h3>
+<h2 id="9-静态文件设置"><a href="#9-静态文件设置" class="headerlink" title="9.静态文件设置"></a>9.静态文件设置</h2><p>静态文件是指CSS, JavaScript</p>
+<h2 id="10-Django-Admin"><a href="#10-Django-Admin" class="headerlink" title="10.Django Admin"></a>10.Django Admin</h2><h2 id="11"><a href="#11" class="headerlink" title="11."></a>11.</h2>
             </div>
             <hr>
 
@@ -1516,7 +1514,7 @@ code[class*="language-"], pre[class*="language-"] { white-space: pre !important;
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>
             
-            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">22.7k</span>&nbsp;字
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span class="white-color">22.6k</span>&nbsp;字
             
             
             
