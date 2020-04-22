@@ -971,7 +971,6 @@ find . -name "*.cpp" -print0 | xargs -0 wc -l
     </div>
 </div>
 
-<script src="/libs/valine/av-min.js"></script>
 <script src="https://unpkg.com/valine@1.3.1/dist/Valine.min.js"></script>
 <script>
     new Valine({
@@ -984,7 +983,10 @@ find . -name "*.cpp" -print0 | xargs -0 wc -l
         avatar: 'retro',
         pageSize: '10',
         lang: 'en',
-        placeholder: 'just go go'
+        placeholder: 'just go go',
+        recordIP: 'true',
+        emojiCDN: 'true',
+        enableQQ: 'true'
     });
 </script>
 
