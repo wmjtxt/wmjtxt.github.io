@@ -440,7 +440,7 @@ header .side-nav .social-link {
         top: 0;
     }
 }
-/*banner渐变效果
+/*banner渐变效果*/
 @-webkit-keyframes scroll-down {
     0% {
         opacity: 0.4;
@@ -463,7 +463,7 @@ header .side-nav .social-link {
         top: 0;
     }
 }
-*/
+
 
 @-o-keyframes scroll-down {
     0% {
