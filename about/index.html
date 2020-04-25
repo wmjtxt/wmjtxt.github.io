@@ -38,6 +38,20 @@ WIDGET = {FID: 'Gs07hs0eOu'}
 </script>
 <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
+<!-- 天气接口 洪卫 shw2018 add 2019.09.09 --> 
+<script type="text/javascript"> 
+WIDGET = {FID: '1tFpFZ5Mtj'} 
+</script> 
+<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> --> 
+<script type="text/javascript"> 
+//只在桌面版网页启用特效 
+    var windowWidth = $(window).width(); 
+    if (windowWidth > 768) { 
+        document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>'); 
+    } 
+</script>
+
+
 
 <body>
     <header class="navbar-fixed">
@@ -733,7 +747,7 @@ WIDGET = {FID: 'Gs07hs0eOu'}
         xAxis: [
             {
                 type: 'category',
-                data: ["随笔","Linux","技术","2020校招","C++","Deepin","面经","LeetCode","shell","诗歌"]
+                data: ["随笔","Linux","技术","2020校招","C++","Deepin","LeetCode","面经","shell","诗歌"]
             }
         ],
         yAxis: [
@@ -882,8 +896,8 @@ WIDGET = {FID: 'Gs07hs0eOu'}
             
             
             
-            <a href="/tags/windows/">
-                <span class="chip center-align waves-effect waves-light chip-default">windows</span>
+            <a href="/tags/vim/">
+                <span class="chip center-align waves-effect waves-light chip-default">vim</span>
             </a>
             
             
@@ -894,8 +908,8 @@ WIDGET = {FID: 'Gs07hs0eOu'}
             
             
             
-            <a href="/tags/vim/">
-                <span class="chip center-align waves-effect waves-light chip-default">vim</span>
+            <a href="/tags/windows/">
+                <span class="chip center-align waves-effect waves-light chip-default">windows</span>
             </a>
             
             
@@ -972,14 +986,14 @@ WIDGET = {FID: 'Gs07hs0eOu'}
             
             
             
-            <a href="/tags/2020校招/">
-                <span class="chip center-align waves-effect waves-light chip-default">2020校招</span>
+            <a href="/tags/面经/">
+                <span class="chip center-align waves-effect waves-light chip-default">面经</span>
             </a>
             
             
             
-            <a href="/tags/面经/">
-                <span class="chip center-align waves-effect waves-light chip-default">面经</span>
+            <a href="/tags/2020校招/">
+                <span class="chip center-align waves-effect waves-light chip-default">2020校招</span>
             </a>
             
             

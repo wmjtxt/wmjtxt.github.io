@@ -38,6 +38,20 @@ WIDGET = {FID: 'Gs07hs0eOu'}
 </script>
 <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
+<!-- 天气接口 洪卫 shw2018 add 2019.09.09 --> 
+<script type="text/javascript"> 
+WIDGET = {FID: '1tFpFZ5Mtj'} 
+</script> 
+<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> --> 
+<script type="text/javascript"> 
+//只在桌面版网页启用特效 
+    var windowWidth = $(window).width(); 
+    if (windowWidth > 768) { 
+        document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>'); 
+    } 
+</script>
+
+
 
 <body>
     <header class="navbar-fixed">
