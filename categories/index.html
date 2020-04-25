@@ -32,26 +32,6 @@
 <link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
 
 
-<!-- weather -->
-<script type="text/javascript">
-WIDGET = {FID: 'Gs07hs0eOu'}
-</script>
-<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
-
-<!-- 天气接口 洪卫 shw2018 add 2019.09.09 --> 
-<script type="text/javascript"> 
-WIDGET = {FID: '1tFpFZ5Mtj'} 
-</script> 
-<!-- <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script> --> 
-<script type="text/javascript"> 
-//只在桌面版网页启用特效 
-    var windowWidth = $(window).width(); 
-    if (windowWidth > 768) { 
-        document.write('<script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"><\/script>'); 
-    } 
-</script>
-
-
 
 <body>
     <header class="navbar-fixed">
@@ -556,18 +536,18 @@ WIDGET = {FID: '1tFpFZ5Mtj'}
                 </a>
                 
                 
-                <a href="/categories/Git/" title="Git: 1">
+                <a href="/categories/面经/" title="面经: 4">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #85C1E9;">Git
-                        <span class="tag-length">1</span>
+                             chip-default " style="background-color: #85C1E9;">面经
+                        <span class="tag-length">4</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/面经/" title="面经: 4">
+                <a href="/categories/Git/" title="Git: 1">
                     <span class="chip center-align waves-effect waves-light
-                             chip-default " style="background-color: #F8C471;">面经
-                        <span class="tag-length">4</span>
+                             chip-default " style="background-color: #F8C471;">Git
+                        <span class="tag-length">1</span>
                     </span>
                 </a>
                 
@@ -622,7 +602,7 @@ WIDGET = {FID: '1tFpFZ5Mtj'}
                     color: '#3C4858'
                 }
             },
-            indicator: [{"name":"随笔","max":11},{"name":"电脑配置","max":11},{"name":"shell","max":11},{"name":"复杂网络","max":11},{"name":"MySQL","max":11},{"name":"刷题","max":11},{"name":"后端","max":11},{"name":"Linux","max":11},{"name":"照片","max":11},{"name":"Git","max":11},{"name":"面经","max":11},{"name":"Python","max":11}],
+            indicator: [{"name":"随笔","max":11},{"name":"电脑配置","max":11},{"name":"shell","max":11},{"name":"复杂网络","max":11},{"name":"MySQL","max":11},{"name":"刷题","max":11},{"name":"后端","max":11},{"name":"Linux","max":11},{"name":"照片","max":11},{"name":"面经","max":11},{"name":"Git","max":11},{"name":"Python","max":11}],
             nameGap: 5,
             center: ['50%','55%'],
             radius: '66%'
@@ -633,7 +613,7 @@ WIDGET = {FID: '1tFpFZ5Mtj'}
             itemStyle: {normal: {areaStyle: {type: 'default'}}},
             data : [
                 {
-                    value : [10,7,1,2,1,2,2,4,1,1,4,2],
+                    value : [10,7,1,2,1,2,2,4,1,4,1,2],
                     name : 'Number of Categories'
                 }
             ]
@@ -820,6 +800,12 @@ $(function () {
 
 
     <script src="/js/snow.js"></script>
+
+    <!-- weather -->
+    <script type="text/javascript">
+        WIDGET = {FID: 'Gs07hs0eOu'}
+    </script>
+    <script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>
 
     <script src="/libs/materialize/materialize.min.js"></script>
     <script src="/libs/masonry/masonry.pkgd.min.js"></script>
