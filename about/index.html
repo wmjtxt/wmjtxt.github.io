@@ -393,7 +393,7 @@
 
 <script>
     // 每天切换 banner 图.  Switch banner image every day.
-    $('.bg-cover').css('background-image', 'url(/medias/banner/6.jpg)');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/2.jpg)');
 </script>
 
 
@@ -586,7 +586,7 @@
         },
         xAxis: {
             type: 'category',
-            data: ["2019-11","2019-12","2020-01","2020-02","2020-03","2020-04","2020-05","2020-06","2020-07","2020-08","2020-09","2020-10","2020-11"]
+            data: ["2020-06","2020-07","2020-08","2020-09","2020-10","2020-11","2020-12","2021-01","2021-02","2021-03","2021-04","2021-05","2021-06"]
         },
         yAxis: {
             type: 'value',
@@ -596,7 +596,7 @@
                 name: 'Number of posts',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [1,0,0,1,0,2,0,0,0,0,0,0,1],
+                data: [0,0,0,0,0,1,0,0,0,0,0,0,0],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -638,7 +638,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"随笔","value":10},{"name":"电脑配置","value":7},{"name":"shell","value":1},{"name":"复杂网络","value":2},{"name":"MySQL","value":1},{"name":"刷题","value":2},{"name":"后端","value":2},{"name":"Linux","value":4},{"name":"照片","value":1},{"name":"Git","value":1},{"name":"面经","value":4},{"name":"笔记","value":1},{"name":"Python","value":2}],
+                data: [{"name":"随笔","value":10},{"name":"电脑配置","value":7},{"name":"复杂网络","value":2},{"name":"MySQL","value":1},{"name":"刷题","value":2},{"name":"Linux","value":4},{"name":"后端","value":2},{"name":"照片","value":1},{"name":"面经","value":4},{"name":"Git","value":1},{"name":"Python","value":2},{"name":"笔记","value":1},{"name":"shell","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -662,7 +662,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["随笔","Linux","技术","2020校招","C++","Deepin","面经","shell","复杂网络","诗歌"]
+                data: ["随笔","技术","Linux","2020校招","C++","Deepin","Python","复杂网络","shell","诗歌"]
             }
         ],
         yAxis: [
@@ -805,20 +805,14 @@
             
             
             
-            <a href="/tags/shell/">
-                <span class="chip center-align waves-effect waves-light chip-default">shell</span>
+            <a href="/tags/vim/">
+                <span class="chip center-align waves-effect waves-light chip-default">vim</span>
             </a>
             
             
             
             <a href="/tags/复杂网络/">
                 <span class="chip center-align waves-effect waves-light chip-default">复杂网络</span>
-            </a>
-            
-            
-            
-            <a href="/tags/windows/">
-                <span class="chip center-align waves-effect waves-light chip-default">windows</span>
             </a>
             
             
@@ -831,6 +825,12 @@
             
             <a href="/tags/技术/">
                 <span class="chip center-align waves-effect waves-light chip-default">技术</span>
+            </a>
+            
+            
+            
+            <a href="/tags/LPA/">
+                <span class="chip center-align waves-effect waves-light chip-default">LPA</span>
             </a>
             
             
@@ -859,26 +859,14 @@
             
             
             
-            <a href="/tags/vim/">
-                <span class="chip center-align waves-effect waves-light chip-default">vim</span>
-            </a>
-            
-            
-            
             <a href="/tags/Socket/">
                 <span class="chip center-align waves-effect waves-light chip-default">Socket</span>
             </a>
             
             
             
-            <a href="/tags/LPA/">
-                <span class="chip center-align waves-effect waves-light chip-default">LPA</span>
-            </a>
-            
-            
-            
-            <a href="/tags/诗歌/">
-                <span class="chip center-align waves-effect waves-light chip-default">诗歌</span>
+            <a href="/tags/shell/">
+                <span class="chip center-align waves-effect waves-light chip-default">shell</span>
             </a>
             
             
@@ -889,8 +877,20 @@
             
             
             
+            <a href="/tags/诗歌/">
+                <span class="chip center-align waves-effect waves-light chip-default">诗歌</span>
+            </a>
+            
+            
+            
             <a href="/tags/问题/">
                 <span class="chip center-align waves-effect waves-light chip-default">问题</span>
+            </a>
+            
+            
+            
+            <a href="/tags/2020校招/">
+                <span class="chip center-align waves-effect waves-light chip-default">2020校招</span>
             </a>
             
             
@@ -907,20 +907,14 @@
             
             
             
-            <a href="/tags/2020校招/">
-                <span class="chip center-align waves-effect waves-light chip-default">2020校招</span>
-            </a>
-            
-            
-            
-            <a href="/tags/笔记/">
-                <span class="chip center-align waves-effect waves-light chip-default">笔记</span>
-            </a>
-            
-            
-            
             <a href="/tags/多线程/">
                 <span class="chip center-align waves-effect waves-light chip-default">多线程</span>
+            </a>
+            
+            
+            
+            <a href="/tags/Python/">
+                <span class="chip center-align waves-effect waves-light chip-default">Python</span>
             </a>
             
             
@@ -931,8 +925,14 @@
             
             
             
-            <a href="/tags/Python/">
-                <span class="chip center-align waves-effect waves-light chip-default">Python</span>
+            <a href="/tags/笔记/">
+                <span class="chip center-align waves-effect waves-light chip-default">笔记</span>
+            </a>
+            
+            
+            
+            <a href="/tags/windows/">
+                <span class="chip center-align waves-effect waves-light chip-default">windows</span>
             </a>
             
             
