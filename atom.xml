@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://wmjtxt.github.io/"/>
-  <updated>2022-03-17T04:47:00.558Z</updated>
+  <updated>2022-11-06T07:08:36.514Z</updated>
   <id>https://wmjtxt.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>操作系统</title>
+    <link href="https://wmjtxt.github.io/2022/10/28/os/"/>
+    <id>https://wmjtxt.github.io/2022/10/28/os/</id>
+    <published>2022-10-28T09:54:03.000Z</published>
+    <updated>2022-11-06T07:08:36.514Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="/images/os.png" alt="deepin 15.11桌面版"></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;/images/os.png&quot; alt=&quot;deepin 15.11桌面版&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>隔离日记</title>
@@ -462,29 +484,6 @@
     
     
       <category term="C++" scheme="https://wmjtxt.github.io/tags/C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>木夕的诗</title>
-    <link href="https://wmjtxt.github.io/2019/04/10/mjpoet/"/>
-    <id>https://wmjtxt.github.io/2019/04/10/mjpoet/</id>
-    <published>2019-04-10T01:01:34.000Z</published>
-    <updated>2020-04-16T13:21:46.754Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="/images/sunset.jpg" alt="sunset"></p><p>一些旧诗<br><span id="more"></span></p><h6 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h6><p><a href="#夜思">夜思(2009.10.01于海口)</a><br><a href=""></a><br><a href=""></a><br><a href=""></a></p><h6 id="夜思"><a href="#夜思" class="headerlink" title="夜思"></a>夜思</h6><p>2009.10.01 于海口<br>黛入秋空忽夜半，窗台露水月如弓。<br>风冲雾里花滴落，雨撞墙根草速生。<br>语逸心烦德不事，情闲意乱道难清。<br>方思铁血南疆撒，岂敢从心荡鼓钟。</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;img src=&quot;/images/sunset.jpg&quot; alt=&quot;sunset&quot;&gt;&lt;/p&gt;
-&lt;p&gt;一些旧诗&lt;br&gt;
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://wmjtxt.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-      <category term="诗歌" scheme="https://wmjtxt.github.io/tags/%E8%AF%97%E6%AD%8C/"/>
     
   </entry>
   
